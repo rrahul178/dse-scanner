@@ -1,0 +1,37 @@
+name: DSE Scraper
+
+on:
+  schedule:
+    # DSE ট্রেডিং সময়: রবি-বৃহস্পতি সকাল ১০টা - বিকাল ২:৩০টা (বাংলাদেশ সময়, UTC+6)
+    # UTC-তে এটা হয়: ০৪:০০ - ০৮:৩০ UTC, রবি-বৃহস্পতি (cron এ 0=Sunday, 4=Thursday)
+    - cron: "*/15 4-8 * * 0-4"
+  workflow_dispatch: {} # ম্যানুয়ালি "Run workflow" বাটন দিয়েও চালানো যাবে
+
+permissions:
+  contents: write # data/ ফোল্ডারে commit+push করার অনুমতি
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run scraper
+        run: npm run scrape
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet && echo "কোনো পরিবর্তন নেই, commit স্কিপ করা হলো" || git commit -m "chore: DSE data আপডেট $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
