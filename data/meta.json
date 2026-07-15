@@ -1,10 +1,5 @@
 {
-  "lastScrapedAt": "2026-07-15T02:26:50.416Z",
-  "watchlist": [
-    "GP",
-    "BEXIMCO",
-    "SQURPHARMA",
-    "ACI",
-    "BATBC"
-  ]
+  "lastScrapedAt": "2026-07-15T03:38:37.386Z",
+  "watchlist": [],
+  "strategy": "auto: RSI + MA ক্রসওভার + ২০-দিনের ব্রেকআউট + সাপোর্ট/রেজিস্ট্যান্স + Smart Money Concept (Order Block/FVG/Liquidity Sweep) + ক্যান্ডেলস্টিক প্যাটার্ন + ভলিউম কনফার্মেশন"
 }
