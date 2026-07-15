@@ -1,1 +1,280 @@
-[]
+[
+  {
+    "code": "ACIFORMULA",
+    "buyScore": 100,
+    "rsi": 67.18526703248912,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 2.072044449348269,
+    "pattern": {
+      "name": "বুলিশ এনগাল্ফিং",
+      "type": "bullish"
+    },
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 2.1x)",
+      "বুলিশ এনগাল্ফিং ক্যান্ডেলস্টিক প্যাটার্ন (বুলিশ)",
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳153.1-156.4)"
+    ],
+    "sr": {
+      "resistance": null,
+      "resistanceTouches": 0,
+      "support": 141.9,
+      "supportTouches": 1
+    },
+    "orderBlock": {
+      "type": "bullish",
+      "zoneLow": 153.1,
+      "zoneHigh": 156.4
+    },
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "AFTABAUTO",
+    "buyScore": 93,
+    "rsi": 59.8203851933304,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 1.9654530745691685,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 2.0x)",
+      "RSI 60 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳30.0-30.7)"
+    ],
+    "sr": {
+      "resistance": 33.2,
+      "resistanceTouches": 1,
+      "support": 30.05,
+      "supportTouches": 2
+    },
+    "orderBlock": {
+      "type": "bullish",
+      "zoneLow": 30,
+      "zoneHigh": 30.7
+    },
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "AMCL(PRAN)",
+    "buyScore": 93,
+    "rsi": 64.36073858901254,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 1.3062466106834467,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 1.3x)",
+      "RSI 64 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳224.6-228.4)"
+    ],
+    "sr": {
+      "resistance": 234.9,
+      "resistanceTouches": 1,
+      "support": 215.35,
+      "supportTouches": 2
+    },
+    "orderBlock": {
+      "type": "bullish",
+      "zoneLow": 224.6,
+      "zoneHigh": 228.4
+    },
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "AGNISYSL",
+    "buyScore": 89,
+    "rsi": 66.61941680082462,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 2.139596395248724,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 2.1x)",
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳30.2-31.0)"
+    ],
+    "sr": {
+      "resistance": null,
+      "resistanceTouches": 0,
+      "support": 27.6,
+      "supportTouches": 1
+    },
+    "orderBlock": {
+      "type": "bullish",
+      "zoneLow": 30.2,
+      "zoneHigh": 31
+    },
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "1STPRIMFMF",
+    "buyScore": 87,
+    "rsi": 64.03633852259162,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 0.626030567851854,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "RSI 64 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳23.1-24.8)"
+    ],
+    "sr": {
+      "resistance": null,
+      "resistanceTouches": 0,
+      "support": 18.9,
+      "supportTouches": 1
+    },
+    "orderBlock": {
+      "type": "bullish",
+      "zoneLow": 23.1,
+      "zoneHigh": 24.8
+    },
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "ABB1STMF",
+    "buyScore": 87,
+    "rsi": 60.63205825275308,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 0.9300471255582455,
+    "pattern": {
+      "name": "ডোজি",
+      "type": "neutral"
+    },
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "RSI 61 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳3.4-3.6)"
+    ],
+    "sr": {
+      "resistance": 3.9,
+      "resistanceTouches": 1,
+      "support": 3.2,
+      "supportTouches": 5
+    },
+    "orderBlock": {
+      "type": "bullish",
+      "zoneLow": 3.4,
+      "zoneHigh": 3.6
+    },
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "ADNTEL",
+    "buyScore": 87,
+    "rsi": 62.42680646305555,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 0.966608038637547,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "RSI 62 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳69.5-70.9)"
+    ],
+    "sr": {
+      "resistance": 71,
+      "resistanceTouches": 1,
+      "support": 64.4,
+      "supportTouches": 1
+    },
+    "orderBlock": {
+      "type": "bullish",
+      "zoneLow": 69.5,
+      "zoneHigh": 70.9
+    },
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "AL-HAJTEX",
+    "buyScore": 87,
+    "rsi": 69.75468117622833,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 3.262332197205473,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 3.3x)",
+      "বুলিশ Fair Value Gap (৳106.4-106.8)"
+    ],
+    "sr": {
+      "resistance": 124.5,
+      "resistanceTouches": 1,
+      "support": 99.1,
+      "supportTouches": 1
+    },
+    "orderBlock": null,
+    "fvg": {
+      "type": "bullish",
+      "top": 106.8,
+      "bottom": 106.4
+    },
+    "liquiditySweep": null
+  },
+  {
+    "code": "ANWARGALV",
+    "buyScore": 85,
+    "rsi": 60.49273418145806,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 0.8673503105887054,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "RSI 60 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "বুলিশ Fair Value Gap (৳118.3-118.8)"
+    ],
+    "sr": {
+      "resistance": 120.9,
+      "resistanceTouches": 1,
+      "support": 110.7,
+      "supportTouches": 1
+    },
+    "orderBlock": null,
+    "fvg": {
+      "type": "bullish",
+      "top": 118.8,
+      "bottom": 118.3
+    },
+    "liquiditySweep": null
+  },
+  {
+    "code": "1JANATAMF",
+    "buyScore": 83,
+    "rsi": 64.87385610669854,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 1.9285414490338182,
+    "pattern": {
+      "name": "ডোজি",
+      "type": "neutral"
+    },
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 1.9x)",
+      "RSI 65 - সুস্থ momentum জোনে (ওভারবট নয়)"
+    ],
+    "sr": {
+      "resistance": null,
+      "resistanceTouches": 0,
+      "support": 3,
+      "supportTouches": 24
+    },
+    "orderBlock": null,
+    "fvg": null,
+    "liquiditySweep": null
+  }
+]
