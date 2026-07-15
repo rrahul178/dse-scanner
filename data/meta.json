@@ -1,19 +1,19 @@
 {
-  "lastScrapedAt": "2026-07-15T03:38:37.386Z",
-  "lastAttemptedAt": "2026-07-15T03:56:55.862Z",
+  "lastScrapedAt": "2026-07-15T04:19:32.058Z",
+  "lastAttemptedAt": "2026-07-15T04:19:32.058Z",
   "watchlist": [
     "ACIFORMULA",
-    "AFTABAUTO",
-    "AMCL(PRAN)",
-    "AGNISYSL",
-    "1STPRIMFMF",
-    "ABB1STMF",
-    "ADNTEL",
-    "AL-HAJTEX",
-    "ANWARGALV",
-    "1JANATAMF"
+    "WATACHEM",
+    "SALVO",
+    "HEIDELBCEM",
+    "DOREENPWR",
+    "RINGSHINE",
+    "RAKCERAMIC",
+    "SINOBANGLA",
+    "BSRMSTEEL",
+    "SILVAPHL"
   ],
-  "noFreshSession": true,
+  "noFreshSession": false,
   "scrapeFailed": false,
   "strategy": "auto: RSI + MA ক্রসওভার + ২০-দিনের ব্রেকআউট + সাপোর্ট/রেজিস্ট্যান্স + Smart Money Concept (Order Block/FVG/Liquidity Sweep) + ক্যান্ডেলস্টিক প্যাটার্ন + ভলিউম কনফার্মেশন"
 }
