@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DSE Scanner — লাইভ স্ক্যানার</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js';document.head.appendChild(s);"></script>
 <style>
   :root{
     --bg: #0a0e14;
@@ -347,9 +347,19 @@ function renderWatchlistCard(a) {
   `;
 }
 
-function drawChart(a) {
+function drawChart(a, retriesLeft = 12) {
   const ctx = document.getElementById(`chart-${a.code}`);
   if (!ctx) return;
+  if (typeof Chart === "undefined") {
+    // Chart.js লোড হতে দেরি হচ্ছে বা ব্যর্থ হয়েছে - একটু পর আবার চেষ্টা করি,
+    // কিন্তু এর জন্য বাকি dashboard (কার্ড/টেবিল) আটকে থাকবে না। সর্বোচ্চ কয়েকবার চেষ্টার পর থেমে যাবে।
+    if (retriesLeft <= 0) {
+      ctx.parentElement.innerHTML = '<div style="color:var(--text-faint); font-size:12px; text-align:center; padding-top:50px;">চার্ট লোড করা যায়নি</div>';
+      return;
+    }
+    setTimeout(() => drawChart(a, retriesLeft - 1), 400);
+    return;
+  }
   new Chart(ctx, {
     type: "line",
     data: {
@@ -459,7 +469,9 @@ async function main() {
     }
 
     document.getElementById("watchlistGrid").innerHTML = analyses.map(renderWatchlistCard).join("");
-    analyses.forEach(drawChart);
+    analyses.forEach(a => {
+      try { drawChart(a); } catch (e) { console.error(`${a.code} চার্ট আঁকতে সমস্যা:`, e); }
+    });
 
     renderMarketTable();
 
