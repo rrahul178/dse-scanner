@@ -241,7 +241,9 @@ function analyzeWatchlistStock(code, historyRaw, latestRow) {
       open: num(r["OPENP*"]),
       volume: num(r["VOLUME"]),
     }))
-    .filter(r => !isNaN(r.close));
+    // dsebd.org ট্রেডিং-বন্ধ (suspended) দিনে কখনো কখনো 0 বা খালি মান দেয় -
+    // এগুলো আসল প্রাইস না, তাই 52-week high/low ও চার্ট থেকে বাদ দেওয়া হচ্ছে
+    .filter(r => !isNaN(r.close) && r.close > 0 && r.high > 0 && r.low > 0);
 
   if (history.length < 20) return null;
 
