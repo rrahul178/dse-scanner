@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSE Scanner — লাইভ স্ক্যানার</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg: #0a0e14;
+    --bg-panel: #10161f;
+    --bg-card: #151b26;
+    --border: #232b38;
+    --text: #e6ecf5;
+    --text-dim: #7c8798;
+    --text-faint: #4d5666;
+    --up: #2fd67f;
+    --up-bg: rgba(47,214,127,0.1);
+    --down: #ff5470;
+    --down-bg: rgba(255,84,112,0.1);
+    --accent: #4fa0ff;
+    --amber: #ffb84f;
+    --mono: 'SF Mono', 'Consolas', 'Menlo', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", "Noto Sans Bengali", sans-serif;
+    padding: 20px;
+    line-height: 1.4;
+  }
+  .wrap{ max-width: 1400px; margin: 0 auto; }
+
+  /* ---------- Header ---------- */
+  header{
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap: wrap; gap: 12px;
+    padding-bottom: 18px; margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand{ display:flex; align-items:center; gap: 10px; }
+  .brand .dot{ width:10px; height:10px; border-radius:50%; background: var(--up); box-shadow: 0 0 8px var(--up); }
+  .brand h1{ font-size: 20px; font-weight: 700; letter-spacing: 0.3px; }
+  .brand h1 span{ color: var(--text-dim); font-weight: 400; }
+  .meta-info{ display:flex; gap: 18px; font-size: 12.5px; color: var(--text-dim); font-family: var(--mono); flex-wrap: wrap;}
+  .meta-info b{ color: var(--text); }
+  .status-pill{
+    display:inline-flex; align-items:center; gap:6px;
+    padding: 4px 10px; border-radius: 20px; background: var(--bg-card); border:1px solid var(--border);
+  }
+
+  /* ---------- Section titles ---------- */
+  .section-title{
+    display:flex; align-items:center; gap:10px;
+    font-size: 13px; text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--text-dim); margin: 28px 0 14px;
+  }
+  .section-title::after{ content:""; flex:1; height:1px; background: var(--border); }
+
+  /* ---------- Watchlist cards ---------- */
+  .watchlist-grid{
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px;
+  }
+  .card{
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px;
+  }
+  .card-top{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 10px; }
+  .sym{ font-size: 17px; font-weight: 700; font-family: var(--mono); }
+  .ltp-row{ text-align: right; }
+  .ltp{ font-size: 19px; font-weight: 700; font-family: var(--mono); }
+  .chg{ font-size: 12.5px; font-family: var(--mono); font-weight: 600; }
+  .chg.up{ color: var(--up); } .chg.down{ color: var(--down); } .chg.flat{ color: var(--text-dim); }
+
+  .signal-row{ display:flex; flex-wrap:wrap; gap:6px; margin: 10px 0 12px; }
+  .badge{
+    font-size: 11px; padding: 3px 9px; border-radius: 5px; font-weight: 600;
+    border: 1px solid transparent;
+  }
+  .badge.buy{ background: var(--up-bg); color: var(--up); border-color: rgba(47,214,127,0.3); }
+  .badge.sell{ background: var(--down-bg); color: var(--down); border-color: rgba(255,84,112,0.3); }
+  .badge.neutral{ background: rgba(124,135,152,0.12); color: var(--text-dim); }
+  .badge.info{ background: rgba(79,160,255,0.12); color: var(--accent); }
+
+  .chart-box{ height: 130px; margin: 8px 0 12px; }
+
+  .metric-grid{
+    display:grid; grid-template-columns: 1fr 1fr; gap: 8px 16px;
+    font-size: 12.5px; font-family: var(--mono);
+  }
+  .metric-grid .k{ color: var(--text-faint); }
+  .metric-grid .v{ color: var(--text); float:right; }
+
+  .range-bar{ position: relative; height: 5px; background: var(--border); border-radius: 3px; margin-top: 4px; }
+  .range-bar .fill{ position:absolute; top:-3px; width: 3px; height: 11px; background: var(--accent); border-radius: 2px; }
+
+  /* ---------- Market table ---------- */
+  .toolbar{ display:flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; align-items:center; }
+  .toolbar input, .toolbar select{
+    background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
+    padding: 8px 12px; border-radius: 6px; font-size: 13px; font-family: inherit;
+  }
+  .toolbar input{ min-width: 220px; }
+  .tabs{ display:flex; gap:6px; }
+  .tab-btn{
+    background: var(--bg-card); border: 1px solid var(--border); color: var(--text-dim);
+    padding: 7px 14px; border-radius: 6px; font-size: 12.5px; cursor:pointer; font-weight:600;
+  }
+  .tab-btn.active{ background: var(--accent); color: #06121f; border-color: var(--accent); }
+
+  table{ width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th{
+    text-align: left; color: var(--text-faint); font-weight: 600; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.6px; padding: 10px 12px;
+    border-bottom: 1px solid var(--border); cursor:pointer; user-select:none; white-space:nowrap;
+  }
+  thead th:hover{ color: var(--text-dim); }
+  tbody td{ padding: 9px 12px; border-bottom: 1px solid rgba(35,43,56,0.6); font-family: var(--mono); white-space:nowrap; }
+  tbody tr:hover{ background: rgba(255,255,255,0.02); }
+  td.num{ text-align:right; }
+  td.code{ font-family: var(--mono); font-weight:700; }
+
+  .table-scroll{ overflow-x:auto; background: var(--bg-panel); border:1px solid var(--border); border-radius: 10px; }
+
+  footer{ text-align:center; color: var(--text-faint); font-size: 12px; margin-top: 30px; padding: 20px 0 6px; }
+  .loading{ text-align:center; padding: 60px 0; color: var(--text-dim); font-family: var(--mono); }
+  .err{ background: var(--down-bg); border:1px solid rgba(255,84,112,0.3); color: var(--down); padding:12px 16px; border-radius:8px; font-size:13px; margin-bottom:16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <span class="dot"></span>
+      <h1>DSE Scanner <span>রিয়েল-টাইম DSE স্টক স্ক্যানার</span></h1>
+    </div>
+    <div class="meta-info">
+      <span class="status-pill" id="lastUpdated">⏱ লোড হচ্ছে...</span>
+    </div>
+  </header>
+
+  <div id="errBox"></div>
+  <div id="loadingBox" class="loading">📡 dsebd.org থেকে ডেটা লোড হচ্ছে...</div>
+
+  <div id="content" style="display:none;">
+
+    <div class="section-title">ওয়াচলিস্ট স্ক্যানার — RSI · MA ক্রসওভার · ব্রেকআউট · 52-সপ্তাহ রেঞ্জ</div>
+    <div class="watchlist-grid" id="watchlistGrid"></div>
+
+    <div class="section-title">সব শেয়ার — লাইভ প্রাইস র‍্যাঙ্কিং (৩৯৬টি)</div>
+    <div class="toolbar">
+      <input type="text" id="searchBox" placeholder="🔍 ট্রেডিং কোড খুঁজুন (যেমন: GP, ACI)">
+      <div class="tabs">
+        <button class="tab-btn active" data-sort="change_desc">🔺 টপ গেইনার্স</button>
+        <button class="tab-btn" data-sort="change_asc">🔻 টপ লুজার্স</button>
+        <button class="tab-btn" data-sort="volume_desc">📊 ভলিউম</button>
+        <button class="tab-btn" data-sort="value_desc">💰 ভ্যালু</button>
+      </div>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-key="code">কোড</th>
+            <th data-key="ltp" class="num">LTP</th>
+            <th data-key="change" class="num">চেঞ্জ</th>
+            <th data-key="changePct" class="num">চেঞ্জ%</th>
+            <th data-key="high" class="num">হাই</th>
+            <th data-key="low" class="num">লো</th>
+            <th data-key="volume" class="num">ভলিউম</th>
+            <th data-key="value" class="num">ভ্যালু (mn)</th>
+          </tr>
+        </thead>
+        <tbody id="marketTbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    dsebd.org থেকে স্ক্র্যাপ করা ডেটা · প্রতি ১৫ মিনিটে আপডেট হয় (ট্রেডিং আওয়ারে) · শুধু তথ্যের জন্য, বিনিয়োগ পরামর্শ নয়
+  </footer>
+</div>
+
+<script>
+// ==================== কনফিগারেশন ====================
+// GitHub Pages এ deploy করার পর এই base URL টা তোমার repo অনুযায়ী ঠিক আছে।
+// লোকালি টেস্ট করলে বা অন্য repo হলে এটা বদলাতে হবে।
+const DATA_BASE = "https://rrahul178.github.io/dse-scanner/data";
+const WATCHLIST = ["GP", "BEXIMCO", "SQURPHARMA", "ACI", "BATBC"];
+
+// ==================== হেল্পার ফাংশন ====================
+function num(v) {
+  if (v === undefined || v === null) return NaN;
+  const n = parseFloat(String(v).replace(/,/g, "").trim());
+  return isNaN(n) ? NaN : n;
+}
+
+async function fetchJson(path) {
+  const res = await fetch(`${DATA_BASE}/${path}?t=${Date.now()}`);
+  if (!res.ok) throw new Error(`${path} fetch ব্যর্থ (HTTP ${res.status})`);
+  return res.json();
+}
+
+// RSI(14) - Wilder's smoothing method
+function computeRSI(closes, period = 14) {
+  if (closes.length < period + 1) return null;
+  let gains = 0, losses = 0;
+  for (let i = 1; i <= period; i++) {
+    const diff = closes[i] - closes[i - 1];
+    if (diff >= 0) gains += diff; else losses -= diff;
+  }
+  let avgGain = gains / period, avgLoss = losses / period;
+  for (let i = period + 1; i < closes.length; i++) {
+    const diff = closes[i] - closes[i - 1];
+    const gain = diff > 0 ? diff : 0;
+    const loss = diff < 0 ? -diff : 0;
+    avgGain = (avgGain * (period - 1) + gain) / period;
+    avgLoss = (avgLoss * (period - 1) + loss) / period;
+  }
+  if (avgLoss === 0) return 100;
+  const rs = avgGain / avgLoss;
+  return 100 - (100 / (1 + rs));
+}
+
+function sma(arr, period) {
+  if (arr.length < period) return null;
+  const slice = arr.slice(arr.length - period);
+  return slice.reduce((a, b) => a + b, 0) / period;
+}
+
+// ==================== ওয়াচলিস্ট বিশ্লেষণ ====================
+function analyzeWatchlistStock(code, historyRaw, latestRow) {
+  // historyRaw ইতিমধ্যে chronological (পুরনো -> নতুন) order এ আছে scraper থেকে
+  const history = historyRaw
+    .map(r => ({
+      date: r["DATE"],
+      close: num(r["CLOSEP*"]),
+      high: num(r["HIGH"]),
+      low: num(r["LOW"]),
+      open: num(r["OPENP*"]),
+      volume: num(r["VOLUME"]),
+    }))
+    .filter(r => !isNaN(r.close));
+
+  if (history.length < 20) return null;
+
+  const closes = history.map(h => h.close);
+  const volumes = history.map(h => h.volume);
+
+  const rsi = computeRSI(closes, 14);
+  const ma20 = sma(closes, 20);
+  const ma50 = sma(closes, Math.min(50, closes.length - 1));
+  const prevMa20 = sma(closes.slice(0, -1), 20);
+  const prevMa50 = sma(closes.slice(0, -1), Math.min(50, closes.length - 2));
+
+  let maSignal = "neutral";
+  if (ma20 && ma50 && prevMa20 && prevMa50) {
+    if (prevMa20 <= prevMa50 && ma20 > ma50) maSignal = "golden"; // bullish crossover
+    else if (prevMa20 >= prevMa50 && ma20 < ma50) maSignal = "death"; // bearish crossover
+    else if (ma20 > ma50) maSignal = "bullish";
+    else maSignal = "bearish";
+  }
+
+  // 52-week (বা যতটুকু history আছে) high/low
+  const week52High = Math.max(...history.map(h => h.high));
+  const week52Low = Math.min(...history.map(h => h.low));
+  const ltp = num(latestRow ? latestRow["LTP*"] : closes[closes.length - 1]);
+  const pctFromLow = ((ltp - week52Low) / week52Low) * 100;
+  const pctFromHigh = ((week52High - ltp) / week52High) * 100;
+
+  // ব্রেকআউট: গত ২০ ট্রেডিং দিনের high/low এর তুলনায়
+  const recent20 = history.slice(-20);
+  const high20 = Math.max(...recent20.map(h => h.high));
+  const low20 = Math.min(...recent20.map(h => h.low));
+  let breakout = null;
+  if (ltp >= high20) breakout = "up";
+  else if (ltp <= low20) breakout = "down";
+
+  // ভলিউম স্পাইক: আজকের ভলিউম বনাম গত ২০ দিনের গড়
+  const avgVol20 = sma(volumes.slice(-21, -1), 20) || sma(volumes, Math.min(20, volumes.length));
+  const todayVol = num(latestRow ? latestRow["VOLUME"] : volumes[volumes.length - 1]);
+  const volRatio = avgVol20 ? todayVol / avgVol20 : null;
+
+  const changePct = latestRow ? num(latestRow["CHANGE"]) / (ltp - num(latestRow["CHANGE"])) * 100 : null;
+
+  return {
+    code, ltp, changePct, rsi, ma20, ma50, maSignal,
+    week52High, week52Low, pctFromLow, pctFromHigh,
+    breakout, volRatio, todayVol, avgVol20,
+    chartLabels: history.map(h => h.date),
+    chartData: closes,
+  };
+}
+
+function rsiLabel(rsi) {
+  if (rsi === null) return { text: "N/A", cls: "neutral" };
+  if (rsi >= 70) return { text: `RSI ${rsi.toFixed(0)} · ওভারবট`, cls: "sell" };
+  if (rsi <= 30) return { text: `RSI ${rsi.toFixed(0)} · ওভারসোল্ড`, cls: "buy" };
+  return { text: `RSI ${rsi.toFixed(0)} · নিউট্রাল`, cls: "neutral" };
+}
+
+function maLabel(signal) {
+  const map = {
+    golden: { text: "🌟 গোল্ডেন ক্রস (বুলিশ)", cls: "buy" },
+    death: { text: "☠️ ডেথ ক্রস (বেয়ারিশ)", cls: "sell" },
+    bullish: { text: "MA20 > MA50 বুলিশ", cls: "buy" },
+    bearish: { text: "MA20 < MA50 বেয়ারিশ", cls: "sell" },
+    neutral: { text: "MA ডেটা অপর্যাপ্ত", cls: "neutral" },
+  };
+  return map[signal] || map.neutral;
+}
+
+function renderWatchlistCard(a) {
+  const chg = a.changePct;
+  const chgCls = chg > 0 ? "up" : chg < 0 ? "down" : "flat";
+  const chgSign = chg > 0 ? "+" : "";
+  const rsiL = rsiLabel(a.rsi);
+  const maL = maLabel(a.maSignal);
+
+  const badges = [`<span class="badge ${rsiL.cls}">${rsiL.text}</span>`, `<span class="badge ${maL.cls}">${maL.text}</span>`];
+  if (a.breakout === "up") badges.push(`<span class="badge buy">⚡ ২০-দিনের হাই ব্রেকআউট</span>`);
+  if (a.breakout === "down") badges.push(`<span class="badge sell">⚡ ২০-দিনের লো ব্রেকডাউন</span>`);
+  if (a.volRatio && a.volRatio >= 2) badges.push(`<span class="badge info">📊 ভলিউম স্পাইক ${a.volRatio.toFixed(1)}x</span>`);
+
+  const rangePct = Math.min(100, Math.max(0, ((a.ltp - a.week52Low) / (a.week52High - a.week52Low)) * 100));
+
+  return `
+    <div class="card">
+      <div class="card-top">
+        <div class="sym">${a.code}</div>
+        <div class="ltp-row">
+          <div class="ltp">৳${a.ltp.toFixed(1)}</div>
+          <div class="chg ${chgCls}">${chgSign}${isNaN(chg) ? "—" : chg.toFixed(2) + "%"}</div>
+        </div>
+      </div>
+      <div class="signal-row">${badges.join("")}</div>
+      <div class="chart-box"><canvas id="chart-${a.code}"></canvas></div>
+      <div class="metric-grid">
+        <div><span class="k">52W High</span><span class="v">৳${a.week52High.toFixed(1)}</span></div>
+        <div><span class="k">52W Low</span><span class="v">৳${a.week52Low.toFixed(1)}</span></div>
+        <div><span class="k">লো থেকে দূরত্ব</span><span class="v">+${a.pctFromLow.toFixed(1)}%</span></div>
+        <div><span class="k">হাই থেকে দূরত্ব</span><span class="v">-${a.pctFromHigh.toFixed(1)}%</span></div>
+      </div>
+      <div class="range-bar"><div class="fill" style="left: calc(${rangePct}% - 1.5px)"></div></div>
+    </div>
+  `;
+}
+
+function drawChart(a) {
+  const ctx = document.getElementById(`chart-${a.code}`);
+  if (!ctx) return;
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: a.chartLabels,
+      datasets: [
+        {
+          data: a.chartData,
+          borderColor: "#4fa0ff",
+          borderWidth: 1.5,
+          pointRadius: 0,
+          tension: 0.15,
+          fill: false,
+        },
+        {
+          // 52-week low রেফারেন্স লাইন
+          data: a.chartLabels.map(() => a.week52Low),
+          borderColor: "#ff5470",
+          borderWidth: 1,
+          borderDash: [4, 4],
+          pointRadius: 0,
+          fill: false,
+        },
+      ],
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { enabled: false } },
+      scales: {
+        x: { display: false },
+        y: { display: false },
+      },
+      elements: { line: { borderJoinStyle: "round" } },
+    },
+  });
+}
+
+// ==================== মার্কেট টেবিল ====================
+let marketRows = [];
+let currentSort = "change_desc";
+
+function parseMarketRow(r) {
+  const ltp = num(r["LTP*"]);
+  const ycp = num(r["YCP*"]);
+  const change = num(r["CHANGE"]);
+  const changePct = ycp ? (change / ycp) * 100 : 0;
+  return {
+    code: r["TRADING CODE"],
+    ltp, change, changePct,
+    high: num(r["HIGH"]), low: num(r["LOW"]),
+    volume: num(r["VOLUME"]), value: num(r["VALUE (mn)"]),
+  };
+}
+
+function renderMarketTable() {
+  const q = document.getElementById("searchBox").value.trim().toUpperCase();
+  let rows = marketRows.filter(r => !q || r.code.includes(q));
+
+  const sorters = {
+    change_desc: (a, b) => b.changePct - a.changePct,
+    change_asc: (a, b) => a.changePct - b.changePct,
+    volume_desc: (a, b) => b.volume - a.volume,
+    value_desc: (a, b) => b.value - a.value,
+  };
+  rows = rows.slice().sort(sorters[currentSort] || sorters.change_desc);
+  rows = rows.slice(0, 60); // পারফরম্যান্সের জন্য টপ ৬০ দেখানো হচ্ছে
+
+  const tbody = document.getElementById("marketTbody");
+  tbody.innerHTML = rows.map(r => {
+    const cls = r.changePct > 0 ? "up" : r.changePct < 0 ? "down" : "flat";
+    return `
+      <tr>
+        <td class="code">${r.code}</td>
+        <td class="num">${r.ltp.toFixed(1)}</td>
+        <td class="num ${cls}">${r.change > 0 ? "+" : ""}${r.change.toFixed(2)}</td>
+        <td class="num ${cls}">${r.changePct > 0 ? "+" : ""}${r.changePct.toFixed(2)}%</td>
+        <td class="num">${r.high.toFixed(1)}</td>
+        <td class="num">${r.low.toFixed(1)}</td>
+        <td class="num">${r.volume.toLocaleString()}</td>
+        <td class="num">${r.value.toFixed(2)}</td>
+      </tr>
+    `;
+  }).join("");
+}
+
+// ==================== মেইন লোড ====================
+async function main() {
+  try {
+    const [latest, meta] = await Promise.all([
+      fetchJson("latest.json"),
+      fetchJson("meta.json").catch(() => null),
+    ]);
+
+    marketRows = latest.map(parseMarketRow).filter(r => r.code && !isNaN(r.ltp));
+
+    const latestByCode = {};
+    latest.forEach(r => { latestByCode[r["TRADING CODE"]] = r; });
+
+    const analyses = [];
+    for (const code of WATCHLIST) {
+      try {
+        const hist = await fetchJson(`historical/${code}.json`);
+        const a = analyzeWatchlistStock(code, hist, latestByCode[code]);
+        if (a) analyses.push(a);
+      } catch (e) {
+        console.error(`${code} history লোড ব্যর্থ:`, e);
+      }
+    }
+
+    document.getElementById("watchlistGrid").innerHTML = analyses.map(renderWatchlistCard).join("");
+    analyses.forEach(drawChart);
+
+    renderMarketTable();
+
+    if (meta && meta.lastScrapedAt) {
+      const d = new Date(meta.lastScrapedAt);
+      document.getElementById("lastUpdated").innerHTML = `⏱ সর্বশেষ আপডেট: <b>${d.toLocaleString("bn-BD", { dateStyle: "medium", timeStyle: "short" })}</b>`;
+    }
+
+    document.getElementById("loadingBox").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  } catch (err) {
+    console.error(err);
+    document.getElementById("loadingBox").style.display = "none";
+    document.getElementById("errBox").innerHTML = `<div class="err">⚠️ ডেটা লোড করতে সমস্যা হয়েছে: ${err.message}। GitHub Pages লিংক ঠিক আছে কিনা, বা scraper সফলভাবে রান হয়েছে কিনা চেক করো।</div>`;
+  }
+}
+
+document.getElementById("searchBox").addEventListener("input", renderMarketTable);
+document.querySelectorAll(".tab-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    currentSort = btn.dataset.sort;
+    renderMarketTable();
+  });
+});
+
+main();
+</script>
+</body>
+</html>
