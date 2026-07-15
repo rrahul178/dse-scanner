@@ -31,61 +31,60 @@
     "liquiditySweep": null
   },
   {
-    "code": "WATACHEM",
-    "buyScore": 95,
-    "rsi": 66.03676065078331,
+    "code": "ROBI",
+    "buyScore": 99,
+    "rsi": 62.75493298824761,
     "maSignal": "bullish",
     "breakout": null,
-    "volRatio": 1.7812783489728268,
+    "volRatio": 0.9482976651912347,
     "pattern": {
       "name": "বুলিশ এনগাল্ফিং",
       "type": "bullish"
     },
     "reasons": [
       "আপট্রেন্ডে আছে (MA20 > MA50)",
-      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 1.8x)",
+      "RSI 63 - সুস্থ momentum জোনে (ওভারবট নয়)",
       "বুলিশ এনগাল্ফিং ক্যান্ডেলস্টিক প্যাটার্ন (বুলিশ)",
-      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳142.5-146.3)"
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳32.3-32.7)"
     ],
     "sr": {
-      "resistance": 158,
-      "resistanceTouches": 1,
-      "support": 131.63333333333333,
-      "supportTouches": 3
+      "resistance": 33.25,
+      "resistanceTouches": 2,
+      "support": 32,
+      "supportTouches": 1
     },
     "orderBlock": {
       "type": "bullish",
-      "zoneLow": 142.5,
-      "zoneHigh": 146.3
+      "zoneLow": 32.3,
+      "zoneHigh": 32.7
     },
     "fvg": null,
     "liquiditySweep": null
   },
   {
-    "code": "SALVO",
-    "buyScore": 93,
-    "rsi": 59.23264423654909,
+    "code": "PRIMEBANK",
+    "buyScore": 95,
+    "rsi": 60.036149262811676,
     "maSignal": "bullish",
     "breakout": null,
-    "volRatio": 1.4425295804906848,
-    "pattern": null,
+    "volRatio": 1.5718642806225804,
+    "pattern": {
+      "name": "বুলিশ এনগাল্ফিং",
+      "type": "bullish"
+    },
     "reasons": [
       "আপট্রেন্ডে আছে (MA20 > MA50)",
-      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 1.4x)",
-      "RSI 59 - সুস্থ momentum জোনে (ওভারবট নয়)",
-      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳37.5-38.0)"
+      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 1.6x)",
+      "RSI 60 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "বুলিশ এনগাল্ফিং ক্যান্ডেলস্টিক প্যাটার্ন (বুলিশ)"
     ],
     "sr": {
-      "resistance": 39.06666666666667,
-      "resistanceTouches": 3,
-      "support": 37.15,
-      "supportTouches": 4
+      "resistance": 31.2,
+      "resistanceTouches": 1,
+      "support": 29.6,
+      "supportTouches": 2
     },
-    "orderBlock": {
-      "type": "bullish",
-      "zoneLow": 37.5,
-      "zoneHigh": 38
-    },
+    "orderBlock": null,
     "fvg": null,
     "liquiditySweep": null
   },
@@ -121,73 +120,126 @@
     "liquiditySweep": null
   },
   {
-    "code": "DOREENPWR",
-    "buyScore": 87,
-    "rsi": 61.8055752889632,
+    "code": "ARAMITCEM",
+    "buyScore": 89,
+    "rsi": 50.018688314127786,
     "maSignal": "bullish",
     "breakout": null,
-    "volRatio": 1.2073787185445153,
-    "pattern": null,
+    "volRatio": 0.8755295187501866,
+    "pattern": {
+      "name": "হ্যামার",
+      "type": "bullish"
+    },
     "reasons": [
       "আপট্রেন্ডে আছে (MA20 > MA50)",
-      "RSI 62 - সুস্থ momentum জোনে (ওভারবট নয়)",
-      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳30.6-31.3)"
+      "RSI 50 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "হ্যামার ক্যান্ডেলস্টিক প্যাটার্ন (বুলিশ)"
     ],
     "sr": {
-      "resistance": 33.6,
-      "resistanceTouches": 2,
-      "support": 28.633333333333336,
-      "supportTouches": 3
-    },
-    "orderBlock": {
-      "type": "bullish",
-      "zoneLow": 30.6,
-      "zoneHigh": 31.3
-    },
-    "fvg": null,
-    "liquiditySweep": null
-  },
-  {
-    "code": "RINGSHINE",
-    "buyScore": 79,
-    "rsi": 67.76028362346833,
-    "maSignal": "bullish",
-    "breakout": null,
-    "volRatio": 2.9155605470430226,
-    "pattern": null,
-    "reasons": [
-      "আপট্রেন্ডে আছে (MA20 > MA50)",
-      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 2.9x)"
-    ],
-    "sr": {
-      "resistance": 4.2,
+      "resistance": 12,
       "resistanceTouches": 1,
-      "support": 3.6,
-      "supportTouches": 3
+      "support": 11.4,
+      "supportTouches": 1
     },
     "orderBlock": null,
     "fvg": null,
     "liquiditySweep": null
   },
   {
-    "code": "RAKCERAMIC",
-    "buyScore": 79,
-    "rsi": 66.11144336139989,
+    "code": "SQURPHARMA",
+    "buyScore": 87,
+    "rsi": 59.80273748636217,
     "maSignal": "bullish",
     "breakout": null,
-    "volRatio": 0.915591985402996,
+    "volRatio": 0.7807947564764719,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "RSI 60 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳221.0-222.1)"
+    ],
+    "sr": {
+      "resistance": 228,
+      "resistanceTouches": 2,
+      "support": 218.1,
+      "supportTouches": 1
+    },
+    "orderBlock": {
+      "type": "bullish",
+      "zoneLow": 221,
+      "zoneHigh": 222.1
+    },
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "NAVANAPHAR",
+    "buyScore": 87,
+    "rsi": 59.04209374070751,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 0.7959911032269024,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "RSI 59 - সুস্থ momentum জোনে (ওভারবট নয়)",
+      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳71.0-72.4)"
+    ],
+    "sr": {
+      "resistance": 78,
+      "resistanceTouches": 1,
+      "support": 68.9,
+      "supportTouches": 1
+    },
+    "orderBlock": {
+      "type": "bullish",
+      "zoneLow": 71,
+      "zoneHigh": 72.4
+    },
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "PARAMOUNT",
+    "buyScore": 77,
+    "rsi": 54.37986291392358,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 0.796411149067223,
+    "pattern": null,
+    "reasons": [
+      "আপট্রেন্ডে আছে (MA20 > MA50)",
+      "RSI 54 - সুস্থ momentum জোনে (ওভারবট নয়)"
+    ],
+    "sr": {
+      "resistance": 67.7,
+      "resistanceTouches": 1,
+      "support": 61.6,
+      "supportTouches": 2
+    },
+    "orderBlock": null,
+    "fvg": null,
+    "liquiditySweep": null
+  },
+  {
+    "code": "LANKABAFIN",
+    "buyScore": 77,
+    "rsi": 59.60167566742996,
+    "maSignal": "bullish",
+    "breakout": null,
+    "volRatio": 0.7871063343893789,
     "pattern": {
-      "name": "বুলিশ এনগাল্ফিং",
-      "type": "bullish"
+      "name": "ডোজি",
+      "type": "neutral"
     },
     "reasons": [
       "আপট্রেন্ডে আছে (MA20 > MA50)",
-      "বুলিশ এনগাল্ফিং ক্যান্ডেলস্টিক প্যাটার্ন (বুলিশ)"
+      "RSI 60 - সুস্থ momentum জোনে (ওভারবট নয়)"
     ],
     "sr": {
-      "resistance": 31,
+      "resistance": 17.5,
       "resistanceTouches": 1,
-      "support": 28,
+      "support": 15.1,
       "supportTouches": 1
     },
     "orderBlock": null,
@@ -213,67 +265,6 @@
       "supportTouches": 2
     },
     "orderBlock": null,
-    "fvg": null,
-    "liquiditySweep": null
-  },
-  {
-    "code": "BSRMSTEEL",
-    "buyScore": 76,
-    "rsi": 84.80273455419733,
-    "maSignal": "bullish",
-    "breakout": null,
-    "volRatio": 3.4521887640894655,
-    "pattern": {
-      "name": "বুলিশ এনগাল্ফিং",
-      "type": "bullish"
-    },
-    "reasons": [
-      "আপট্রেন্ডে আছে (MA20 > MA50)",
-      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 3.5x)",
-      "বুলিশ এনগাল্ফিং ক্যান্ডেলস্টিক প্যাটার্ন (বুলিশ)",
-      "বুলিশ অর্ডার ব্লক জোনের উপরে (৳93.0-95.0)"
-    ],
-    "sr": {
-      "resistance": null,
-      "resistanceTouches": 0,
-      "support": 75.5,
-      "supportTouches": 1
-    },
-    "orderBlock": {
-      "type": "bullish",
-      "zoneLow": 93,
-      "zoneHigh": 95
-    },
-    "fvg": null,
-    "liquiditySweep": null
-  },
-  {
-    "code": "SILVAPHL",
-    "buyScore": 75,
-    "rsi": 68.31570495253179,
-    "maSignal": "bullish",
-    "breakout": null,
-    "volRatio": 1.4675366745836125,
-    "pattern": {
-      "name": "মর্নিং স্টার",
-      "type": "bullish"
-    },
-    "reasons": [
-      "আপট্রেন্ডে আছে (MA20 > MA50)",
-      "ভলিউম কনফার্মেশন (২০-দিনের গড়ের 1.5x)",
-      "মর্নিং স্টার ক্যান্ডেলস্টিক প্যাটার্ন (বুলিশ)"
-    ],
-    "sr": {
-      "resistance": 16.7,
-      "resistanceTouches": 1,
-      "support": 12.8,
-      "supportTouches": 1
-    },
-    "orderBlock": {
-      "type": "bearish",
-      "zoneLow": 15.7,
-      "zoneHigh": 16.2
-    },
     "fvg": null,
     "liquiditySweep": null
   }
