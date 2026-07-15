@@ -581,33 +581,39 @@ function saveCandidatePoolCache(pool) {
 }
 
 function loadFallbackCandidatePool(latestRows, prevWatchlistCodes) {
-  // ১) সবচেয়ে সাম্প্রতিক successful ক্যাশড পুল
+  // ১) সবচেয়ে সাম্প্রতিক successful লাইভ-সেশন রান থেকে ক্যাশড পুল (৩০টা, লিকুইডিটি-ভিত্তিক)
   const cached = readJson(LAST_POOL_FILE, null);
   if (Array.isArray(cached) && cached.length) {
     return cached.map((code) => ({ code }));
   }
-  // ২) আগের meta.json এর watchlist
+  // ২) latest.json থেকে সমানভাবে বিস্তৃত (evenly-spaced) sample - পুরো ৩৯৬টা জুড়ে
+  // কভারেজ দেয়। এটাকে "আগের watchlist" ফলব্যাকের আগে রাখা জরুরি, কারণ আগের
+  // watchlist-এ ঠিক TARGET_WATCHLIST_SIZE(১০)-টা কোড থাকে - সেটাকেই candidate pool
+  // ধরলে সবক'টাই ট্রিভিয়ালি ফাইনাল ওয়াচলিস্টে থেকে যায় এবং প্রতিটা no-fresh-session
+  // রানে ঠিক একই ১০টা শেয়ার self-lock হয়ে চিরস্থায়ী হয়ে যায় (আগে এই বাগটাই ছিল)।
+  if (latestRows && latestRows.length) {
+    const codes = latestRows.map((r) => r["TRADING CODE"]).filter(Boolean);
+    const step = Math.max(1, Math.floor(codes.length / CANDIDATE_POOL_SIZE));
+    // প্রতিদিন ভিন্ন সাবসেট পেতে day-of-year দিয়ে শুরুর অফসেট ঘোরানো হয় - নাহলে
+    // লাইভ স্ক্যান সফল না হওয়া পর্যন্ত প্রতিদিন হুবহু একই ৩০টা কোড আসত
+    const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
+    const offset = dayOfYear % step;
+    const sampled = [];
+    for (let i = offset; i < codes.length && sampled.length < CANDIDATE_POOL_SIZE; i += step) {
+      sampled.push({ code: codes[i] });
+    }
+    return sampled;
+  }
+  // ৩) latest.json-ই না থাকলে (স্ক্র্যাপ সম্পূর্ণ ব্যর্থ) আগের meta.json watchlist
   if (Array.isArray(prevWatchlistCodes) && prevWatchlistCodes.length) {
     return prevWatchlistCodes.map((code) => ({ code }));
   }
-  // ৩) আগে থেকে সেভ করা historical ফাইলগুলোর কোড
+  // ৪) একদম শেষ অবলম্বন - আগে থেকে সেভ করা historical ফাইলগুলোর কোড
   if (fs.existsSync(HIST_DIR)) {
     const codes = fs.readdirSync(HIST_DIR)
       .filter((f) => f.endsWith(".json"))
       .map((f) => f.replace(/\.json$/, ""));
     if (codes.length) return codes.map((code) => ({ code }));
-  }
-  // ৪) একদম প্রথমবার/সব ক্যাশ খালি হলে latest.json থেকে সমানভাবে বিস্তৃত (evenly-spaced)
-  // sample নেওয়া হয় - প্রথম ৩০টা কোড নিলে বর্ণানুক্রমিক পক্ষপাত হয়ে যেত (শুধু 0-9/A
-  // দিয়ে শুরু হওয়া কোম্পানি, B-Z বাদ পড়ে যেত), তাই পুরো ৩৯৬টা জুড়ে ছড়িয়ে নেওয়া হয়
-  if (latestRows && latestRows.length) {
-    const codes = latestRows.map((r) => r["TRADING CODE"]).filter(Boolean);
-    const step = Math.max(1, Math.floor(codes.length / CANDIDATE_POOL_SIZE));
-    const sampled = [];
-    for (let i = 0; i < codes.length && sampled.length < CANDIDATE_POOL_SIZE; i += step) {
-      sampled.push({ code: codes[i] });
-    }
-    return sampled;
   }
   return [];
 }
