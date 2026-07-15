@@ -525,7 +525,10 @@ function analyzeWatchlistStock(code, historyRaw, latestRow) {
   // 52-week (বা যতটুকু history আছে) high/low
   const week52High = Math.max(...history.map(h => h.high));
   const week52Low = Math.min(...history.map(h => h.low));
-  const ltp = num(latestRow ? latestRow["LTP*"] : closes[closes.length - 1]);
+  // লাইভ LTP থাকলে সেটা, কিন্তু প্রি-মার্কেটে LTP=0/অনুপস্থিত থাকলে গতকালের
+  // সর্বশেষ ক্লোজ প্রাইস ব্যবহার করা হয় - নাহলে দাম ও দূরত্ব% ভুলভাবে ০/-100% দেখাত
+  const liveLtp = latestRow ? num(latestRow["LTP*"]) : NaN;
+  const ltp = (liveLtp && liveLtp > 0) ? liveLtp : closes[closes.length - 1];
   const pctFromLow = ((ltp - week52Low) / week52Low) * 100;
   const pctFromHigh = ((week52High - ltp) / week52High) * 100;
 
@@ -537,11 +540,15 @@ function analyzeWatchlistStock(code, historyRaw, latestRow) {
   if (ltp >= high20) breakout = "up";
   else if (ltp <= low20) breakout = "down";
 
-  // ভলিউম স্পাইক: আজকের ভলিউম বনাম গত ২০ দিনের গড়
+  // ভলিউম স্পাইক: আজকের ভলিউম বনাম গত ২০ দিনের গড় (লাইভ ভলিউম 0/অনুপস্থিত হলে
+  // গতকালের সর্বশেষ historical ভলিউম দিয়ে ফলব্যাক - LTP-এর মতোই কারণ)
   const avgVol20 = sma(volumes.slice(-21, -1), 20) || sma(volumes, Math.min(20, volumes.length));
-  const todayVol = num(latestRow ? latestRow["VOLUME"] : volumes[volumes.length - 1]);
+  const liveVol = latestRow ? num(latestRow["VOLUME"]) : NaN;
+  const todayVol = (liveVol && liveVol > 0) ? liveVol : volumes[volumes.length - 1];
   const volRatio = avgVol20 ? todayVol / avgVol20 : null;
 
+  // changePct শুধু লাইভ সেশনে অর্থবহ; পুরনো/না-থাকা CHANGE ("--") থেকে NaN আসবে,
+  // সেক্ষেত্রে UI-তে এটা "-" হিসেবেই দেখানো হয় (নিচে renderWatchlistCard দ্রষ্টব্য)
   const changePct = latestRow ? num(latestRow["CHANGE"]) / (ltp - num(latestRow["CHANGE"])) * 100 : null;
 
   const pattern = detectCandlestickPattern(history.slice(-3));
