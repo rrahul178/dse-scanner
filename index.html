@@ -50,6 +50,13 @@
     padding: 4px 10px; border-radius: 20px; background: var(--bg-card); border:1px solid var(--border);
   }
 
+  /* ---------- No-fresh-session banner ---------- */
+  .no-fresh-banner{
+    background: rgba(230,180,60,0.10); border: 1px solid rgba(230,180,60,0.35);
+    color: #e6b43c; padding: 10px 14px; border-radius: 8px; font-size: 12.5px;
+    line-height: 1.6; margin-bottom: 16px;
+  }
+
   /* ---------- Section titles ---------- */
   .section-title{
     display:flex; align-items:center; gap:10px;
@@ -196,6 +203,8 @@
   <div id="loadingBox" class="loading">📡 dsebd.org থেকে ডেটা লোড হচ্ছে...</div>
 
   <div id="content" style="display:none;">
+
+    <div id="noFreshSessionBanner" class="no-fresh-banner" style="display:none;"></div>
 
     <div class="section-title">টপ ১০ ক্রয়যোগ্য শেয়ার (অটো) — RSI · MA ক্রসওভার · S/R · SMC (Order Block/FVG/Liquidity Sweep) · ক্যান্ডেলস্টিক</div>
     <div class="watchlist-strategy" id="watchlistStrategy"></div>
@@ -717,6 +726,10 @@ function renderMarketTable() {
   rows = rows.slice(0, 60); // পারফরম্যান্সের জন্য টপ ৬০ দেখানো হচ্ছে
 
   const tbody = document.getElementById("marketTbody");
+  if (!rows.length) {
+    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:20px; color:var(--text-dim);">আজকের লাইভ ট্রেড ডেটা এখনো আসেনি। ট্রেডিং আওয়ারে (সকাল ~১০টা - দুপুর ~২:৩০টা) আবার দেখুন।</td></tr>`;
+    return;
+  }
   tbody.innerHTML = rows.map(r => {
     const cls = r.changePct > 0 ? "up" : r.changePct < 0 ? "down" : "flat";
     return `
@@ -747,10 +760,22 @@ async function main() {
     const latestByCode = {};
     latest.forEach(r => { latestByCode[r["TRADING CODE"]] = r; });
 
+    // আজকের লাইভ সেশন এখনো শুরু না হলে (LTP/change সব 0) "সব শেয়ার" টেবিলে
+    // বিভ্রান্তিকর 0.0/NaN% না দেখিয়ে একটা নোট দেখানো হয় — টপ ১০ ওয়াচলিস্ট তখনও
+    // গতকালের historical ডেটা দিয়ে স্কোর করা থাকে, তাই সেটা খালি থাকে না।
+    const banner = document.getElementById("noFreshSessionBanner");
+    if (meta && meta.noFreshSession) {
+      marketRows = marketRows.filter(r => r.ltp > 0);
+      banner.style.display = "block";
+      banner.textContent = "⚠️ আজকের লাইভ ট্রেড সেশনের ডেটা এখনো আসেনি (বাজার খোলেনি বা dsebd.org আপডেট হয়নি) — নিচের টপ ১০ ওয়াচলিস্ট গতকাল পর্যন্ত সম্পন্ন সেশনের historical ডেটা অনুযায়ী দেখানো হচ্ছে। \"সব শেয়ার\" টেবিল ট্রেডিং শুরু হলে সয়ংক্রিয়ভাবে আপডেট হবে।";
+    } else {
+      banner.style.display = "none";
+    }
+
     // ওয়াচলিস্ট এখন meta.json থেকে আসে - scraper প্রতিবার স্ট্র্যাটেজি অনুযায়ী অটো বেছে দেয়
     const watchlistCodes = (meta && meta.watchlist && meta.watchlist.length) ? meta.watchlist : [];
     if (meta && meta.strategy) {
-      document.getElementById("watchlistStrategy").textContent = `স্ট্র্যাটেজি: ${meta.strategy}`;
+      document.getElementById("watchlistStrategy").textContent = `স্ট্র্যাটেজি: ${meta.strategy}${meta.noFreshSession ? " (গতকালের historical ডেটা ভিত্তিক)" : ""}`;
     }
 
     const analyses = [];
