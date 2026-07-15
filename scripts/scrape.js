@@ -83,19 +83,20 @@ async function fetchHtml(url, params = {}) {
   return cheerio.load(res.data);
 }
 
-// dsebd.org এর সব টেবিলের structure একইরকম:
-// প্রথম <tr> এর <th> গুলো header, তারপরের <tr> গুলোর <td> সেই header অনুযায়ী map হয়
-function parseTable($, selector, skipFirstRow = true) {
+// dsebd.org এর সব টেবিলের structure একইরকম, কিন্তু কিছু পেজে (যেমন historical
+// archive) header row (<th>) ডেটা রো গুলোর মতো একই <tbody>-তে থাকে না।
+// তাই header আর row খোঁজার selector আলাদা রাখা হচ্ছে - header যেকোনো <tr>
+// থেকে (thead/tbody নির্বিশেষে) প্রথমটা থেকে নেওয়া হয়, আর row নির্দিষ্ট
+// selector (যেমন শুধু tbody tr) থেকে।
+function parseTable($, tableSelector, rowSelector, skipFirstRow = true) {
   const headers = [];
-  $(selector)
+  $(`${tableSelector} tr`)
     .first()
     .find("th")
     .each((_, th) => headers.push($(th).text().trim()));
 
-  // কিছু পেজে header row আলাদাভাবে টেবিলের বাইরে থাকে, তাই fallback হিসেবে
-  // পুরো টেবিলের প্রথম row থেকেও চেষ্টা করা হচ্ছে
   const rows = [];
-  $(selector).each((index, el) => {
+  $(rowSelector).each((index, el) => {
     if (index === 0 && skipFirstRow && headers.length) return;
     const tds = $(el).find("td");
     if (!tds.length) return;
@@ -111,17 +112,17 @@ function parseTable($, selector, skipFirstRow = true) {
 // ---------- Scrapers ----------
 async function scrapeLatest() {
   const $ = await fetchHtml(URLS.LATEST);
-  return parseTable($, "table.table-bordered tr");
+  return parseTable($, "table.table-bordered", "table.table-bordered tr", true);
 }
 
 async function scrapeTop30() {
   const $ = await fetchHtml(URLS.TOP_30);
-  return parseTable($, "table.table-bordered tr");
+  return parseTable($, "table.table-bordered", "table.table-bordered tr", true);
 }
 
 async function scrapeDsex() {
   const $ = await fetchHtml(URLS.DSEX);
-  return parseTable($, "table.table-bordered tr");
+  return parseTable($, "table.table-bordered", "table.table-bordered tr", true);
 }
 
 async function scrapeHistorical(code, days = HIST_DAYS) {
@@ -138,7 +139,7 @@ async function scrapeHistorical(code, days = HIST_DAYS) {
     archive: "data",
   });
 
-  const rows = parseTable($, "table.table-bordered tbody tr", false);
+  const rows = parseTable($, "table.table-bordered", "table.table-bordered tbody tr", false);
   // পুরনো থেকে নতুন তারিখের ক্রমে সাজানো (RSI/MA calc এর জন্য সুবিধাজনক)
   return rows.reverse();
 }
