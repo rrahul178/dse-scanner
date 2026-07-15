@@ -13,6 +13,7 @@
 const axios = require("axios");
 const axiosRetry = require("axios-retry").default || require("axios-retry");
 const cheerio = require("cheerio");
+const https = require("https");
 const fs = require("fs");
 const path = require("path");
 
@@ -48,6 +49,11 @@ const client = axios.create({
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
   },
   timeout: 20000,
+  // dsebd.org এর SSL certificate chain অসম্পূর্ণ (intermediate certificate সার্ভ করে না),
+  // ফলে Node.js এ "unable to verify the first certificate" error আসে যদিও browser এ
+  // সমস্যা হয় না (browser নিজে থেকে missing cert fetch করে নেয়)। এটা শুধু dsebd.org
+  // এর জন্যই প্রযোজ্য - পাবলিক স্টক ডেটা read করার জন্য নিরাপদ।
+  httpsAgent: new https.Agent({ rejectUnauthorized: false }),
 });
 
 axiosRetry(client, {
