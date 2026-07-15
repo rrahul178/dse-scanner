@@ -806,9 +806,20 @@ async function main() {
 
     renderMarketTable();
 
-    if (meta && meta.lastScrapedAt) {
-      const d = new Date(meta.lastScrapedAt);
-      document.getElementById("lastUpdated").innerHTML = `⏱ সর্বশেষ আপডেট: <b>${d.toLocaleString("bn-BD", { dateStyle: "medium", timeStyle: "short" })}</b>`;
+    // lastScrapedAt শুধু তখনই আপডেট হয় যখন সত্যিকারের লাইভ সেশন ডেটা পাওয়া যায় -
+    // no-fresh-session (প্রি-মার্কেট) রানে এটা ইচ্ছাকৃতভাবে অপরিবর্তিত থাকে, তাই
+    // এটা দেখালে মনে হয় সবকিছু "থেমে" আছে। lastAttemptedAt প্রতি রানেই আপডেট হয়,
+    // তাই এটাকেই প্রধান টাইমস্ট্যাম্প হিসেবে দেখানো হচ্ছে; lastScrapedAt আলাদাভাবে দেখানো হয়।
+    const attemptedAt = meta && (meta.lastAttemptedAt || meta.lastScrapedAt);
+    if (attemptedAt) {
+      const d = new Date(attemptedAt);
+      const timeStr = d.toLocaleString("bn-BD", { dateStyle: "medium", timeStyle: "short" });
+      let html = `⏱ সর্বশেষ চেক করা হয়েছে: <b>${timeStr}</b>`;
+      if (meta.noFreshSession && meta.lastScrapedAt) {
+        const ls = new Date(meta.lastScrapedAt);
+        html += ` &nbsp;·&nbsp; সর্বশেষ লাইভ ডেটা: <b>${ls.toLocaleString("bn-BD", { dateStyle: "medium", timeStyle: "short" })}</b>`;
+      }
+      document.getElementById("lastUpdated").innerHTML = html;
     }
 
     document.getElementById("loadingBox").style.display = "none";
