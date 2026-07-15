@@ -597,9 +597,17 @@ function loadFallbackCandidatePool(latestRows, prevWatchlistCodes) {
       .map((f) => f.replace(/\.json$/, ""));
     if (codes.length) return codes.map((code) => ({ code }));
   }
-  // ৪) একদম প্রথমবার/সব ক্যাশ খালি হলে latest.json এর প্রথম N কোড (মূল্য অনুযায়ী ফিল্টার ছাড়াই)
+  // ৪) একদম প্রথমবার/সব ক্যাশ খালি হলে latest.json থেকে সমানভাবে বিস্তৃত (evenly-spaced)
+  // sample নেওয়া হয় - প্রথম ৩০টা কোড নিলে বর্ণানুক্রমিক পক্ষপাত হয়ে যেত (শুধু 0-9/A
+  // দিয়ে শুরু হওয়া কোম্পানি, B-Z বাদ পড়ে যেত), তাই পুরো ৩৯৬টা জুড়ে ছড়িয়ে নেওয়া হয়
   if (latestRows && latestRows.length) {
-    return latestRows.slice(0, CANDIDATE_POOL_SIZE).map((r) => ({ code: r["TRADING CODE"] })).filter((r) => r.code);
+    const codes = latestRows.map((r) => r["TRADING CODE"]).filter(Boolean);
+    const step = Math.max(1, Math.floor(codes.length / CANDIDATE_POOL_SIZE));
+    const sampled = [];
+    for (let i = 0; i < codes.length && sampled.length < CANDIDATE_POOL_SIZE; i += step) {
+      sampled.push({ code: codes[i] });
+    }
+    return sampled;
   }
   return [];
 }
