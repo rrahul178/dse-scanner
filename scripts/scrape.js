@@ -27,14 +27,22 @@ const URLS = {
   HISTORICAL: `${DSE_BASE_URL}/day_end_archive.php`,
 };
 
-// এখানে যেসব শেয়ারের historical OHLC (RSI/MA calc এর জন্য) লাগবে, সেই তালিকা।
-// পুরো ~৪০০+ শেয়ারের historical প্রতি ১৫ মিনিটে টানলে dsebd.org block করে দিতে পারে,
-// তাই দুই ধাপে scan করা হচ্ছে:
-//   ধাপ ১: latest.json (সব শেয়ারের আজকের price/volume/change) - সস্তা, ১ request
-//   ধাপ ২: শুধু WATCHLIST এর শেয়ারের জন্য historical OHLC (RSI/MA/ATR calc)
-// চাইলে এই লিস্ট বড় করতে পারো, বা latest.json থেকে top gainers/losers অটো বাছাই
-// করে dynamically watchlist বানাতে পারো (পরের ধাপে করা যাবে)।
-const WATCHLIST = ["GP", "BEXIMCO", "SQURPHARMA", "ACI", "BATBC"];
+// ---------- ওয়াচলিস্ট: সম্পূর্ণ স্বয়ংক্রিয় (কোনো নির্দিষ্ট শেয়ার হার্ডকোড করা নেই) ----------
+// প্রতিবার স্ক্র্যাপে পুরো মার্কেট (৩৯৬টি শেয়ার) দুই ধাপে স্ক্যান হয়ে "ক্রয়যোগ্য"
+// টপ ১০ শেয়ার বের করা হয় ট্রেডিং স্ট্র্যাটেজি (RSI + MA ক্রসওভার + ব্রেকআউট +
+// ভলিউম কনফার্মেশন + ক্যান্ডেলস্টিক প্যাটার্ন) অনুযায়ী:
+//   ধাপ ১ (প্রি-ফিল্টার): latest.json (আজকের সব শেয়ারের price/volume/change) থেকে
+//     শুধু আজ পজিটিভ + পর্যাপ্ত লিকুইডিটি আছে এমন শেয়ারদের মধ্যে থেকে prelim স্কোর
+//     দিয়ে টপ CANDIDATE_POOL_SIZE বাছাই - এতে dsebd.org-এ পুরো ৩৯৬টার historical
+//     না টেনে অল্প কয়েকটার জন্যই request যায় (bot-block এড়াতে)।
+//   ধাপ ২ (স্ট্র্যাটেজি স্কোরিং): শুধু ওই candidate pool-এর জন্য historical OHLC
+//     টেনে RSI/MA/breakout/volume-ratio/candlestick pattern হিসাব করে composite
+//     buyScore বানানো হয়, সবচেয়ে বেশি স্কোরের TARGET_WATCHLIST_SIZE-টা চূড়ান্ত
+//     ওয়াচলিস্ট হিসেবে data/meta.json + data/watchlist.json এ সেভ হয়।
+const CANDIDATE_POOL_SIZE = 30; // ধাপ ১ থেকে ধাপ ২ তে যাবে এমন candidate সংখ্যা
+const TARGET_WATCHLIST_SIZE = 10; // চূড়ান্ত অটো-ওয়াচলিস্ট সাইজ ("টপ টেন ক্রয়যোগ্য")
+const MIN_VALUE_MN = 1; // অন্তত এই ট্রেড ভ্যালু (mn টাকা) না থাকলে illiquid ধরে বাদ
+const MIN_BUY_SCORE = 40; // এর কম স্কোরের শেয়ার ওয়াচলিস্টে রাখা হবে না, prelim candidate কম পড়লেও
 
 const HIST_DAYS = 120; // RSI(14), MA(50) ইত্যাদির জন্য যথেষ্ট history
 
@@ -109,6 +117,348 @@ function parseTable($, tableSelector, rowSelector, skipFirstRow = true) {
   return rows;
 }
 
+// ---------- সংখ্যা পার্স ----------
+function toNum(v) {
+  if (v === undefined || v === null) return NaN;
+  const n = parseFloat(String(v).replace(/,/g, "").trim());
+  return isNaN(n) ? NaN : n;
+}
+
+// ---------- টেকনিক্যাল ইন্ডিকেটর (index.html-এর ক্লায়েন্ট-সাইড লজিকের সাথে মিলিয়ে) ----------
+// RSI(14) - Wilder's smoothing method
+function computeRSI(closes, period = 14) {
+  if (closes.length < period + 1) return null;
+  let gains = 0, losses = 0;
+  for (let i = 1; i <= period; i++) {
+    const diff = closes[i] - closes[i - 1];
+    if (diff >= 0) gains += diff; else losses -= diff;
+  }
+  let avgGain = gains / period, avgLoss = losses / period;
+  for (let i = period + 1; i < closes.length; i++) {
+    const diff = closes[i] - closes[i - 1];
+    const gain = diff > 0 ? diff : 0;
+    const loss = diff < 0 ? -diff : 0;
+    avgGain = (avgGain * (period - 1) + gain) / period;
+    avgLoss = (avgLoss * (period - 1) + loss) / period;
+  }
+  if (avgLoss === 0) return 100;
+  const rs = avgGain / avgLoss;
+  return 100 - (100 / (1 + rs));
+}
+
+function sma(arr, period) {
+  if (arr.length < period) return null;
+  const slice = arr.slice(arr.length - period);
+  return slice.reduce((a, b) => a + b, 0) / period;
+}
+
+// ---------- Candlestick pattern detection (শেষ ১-৩টা ক্যান্ডেল থেকে) ----------
+// candles: {open, high, low, close} অ্যারে, পুরনো -> নতুন ক্রমে, শেষেরটাই আজকের ক্যান্ডেল
+function detectCandlestickPattern(candles) {
+  const n = candles.length;
+  if (n < 1) return null;
+  const c0 = candles[n - 1];
+  const body = (c) => Math.abs(c.close - c.open);
+  const range = (c) => Math.max(c.high - c.low, 0.0001);
+  const isBull = (c) => c.close > c.open;
+  const isBear = (c) => c.close < c.open;
+  const upperWick = (c) => c.high - Math.max(c.open, c.close);
+  const lowerWick = (c) => Math.min(c.open, c.close) - c.low;
+
+  if (n >= 2) {
+    const c1 = candles[n - 2];
+    // বুলিশ এনগাল্ফিং: আগের দিন বেয়ারিশ, আজ তার শরীরকে পুরোপুরি গ্রাস করা বুলিশ ক্যান্ডেল
+    if (isBear(c1) && isBull(c0) && c0.open <= c1.close && c0.close >= c1.open && body(c0) > body(c1)) {
+      return { name: "বুলিশ এনগাল্ফিং", type: "bullish" };
+    }
+    // বেয়ারিশ এনগাল্ফিং
+    if (isBull(c1) && isBear(c0) && c0.open >= c1.close && c0.close <= c1.open && body(c0) > body(c1)) {
+      return { name: "বেয়ারিশ এনগাল্ফিং", type: "bearish" };
+    }
+  }
+
+  if (n >= 3) {
+    const c1 = candles[n - 2], c2 = candles[n - 3];
+    // মর্নিং স্টার: বড় বেয়ারিশ -> ছোট শরীরের ক্যান্ডেল -> বড় বুলিশ (রিভার্সাল)
+    if (isBear(c2) && body(c2) / range(c2) > 0.4 && body(c1) / range(c1) < 0.3 &&
+        isBull(c0) && c0.close > (c2.open + c2.close) / 2) {
+      return { name: "মর্নিং স্টার", type: "bullish" };
+    }
+    // ইভিনিং স্টার: বড় বুলিশ -> ছোট শরীরের ক্যান্ডেল -> বড় বেয়ারিশ (রিভার্সাল)
+    if (isBull(c2) && body(c2) / range(c2) > 0.4 && body(c1) / range(c1) < 0.3 &&
+        isBear(c0) && c0.close < (c2.open + c2.close) / 2) {
+      return { name: "ইভিনিং স্টার", type: "bearish" };
+    }
+  }
+
+  const bodyRatio = body(c0) / range(c0);
+  // হ্যামার: ছোট শরীর, লম্বা নিচের উইক (কমপক্ষে ২x শরীর), সামান্য উপরের উইক
+  if (lowerWick(c0) >= 2 * body(c0) && upperWick(c0) <= body(c0) * 0.5 && bodyRatio < 0.35) {
+    return { name: "হ্যামার", type: "bullish" };
+  }
+  // শুটিং স্টার: ছোট শরীর, লম্বা উপরের উইক, সামান্য নিচের উইক
+  if (upperWick(c0) >= 2 * body(c0) && lowerWick(c0) <= body(c0) * 0.5 && bodyRatio < 0.35) {
+    return { name: "শুটিং স্টার", type: "bearish" };
+  }
+  // মারুবোজু: প্রায় শূন্য উইক সহ শক্তিশালী ট্রেন্ড ক্যান্ডেল
+  if (upperWick(c0) < range(c0) * 0.05 && lowerWick(c0) < range(c0) * 0.05 && bodyRatio > 0.85) {
+    return { name: isBull(c0) ? "বুলিশ মারুবোজু" : "বেয়ারিশ মারুবোজু", type: isBull(c0) ? "bullish" : "bearish" };
+  }
+  // ডোজি: শরীর প্রায় শূন্য (রেঞ্জের তুলনায়)
+  if (bodyRatio < 0.1) {
+    return { name: "ডোজি", type: "neutral" };
+  }
+  return null;
+}
+
+// ---------- ধাপ ১: prelim candidate বাছাই (শুধু আজকের latest.json ডেটা থেকে) ----------
+function parseLatestRow(r) {
+  const ltp = toNum(r["LTP*"]);
+  const high = toNum(r["HIGH"]);
+  const low = toNum(r["LOW"]);
+  const ycp = toNum(r["YCP*"]);
+  const change = toNum(r["CHANGE"]);
+  const changePct = ycp ? (change / ycp) * 100 : 0;
+  return {
+    code: r["TRADING CODE"],
+    ltp, high, low, changePct,
+    value: toNum(r["VALUE (mn)"]),
+    volume: toNum(r["VOLUME"]),
+  };
+}
+
+function preliminaryScore(row) {
+  if (isNaN(row.ltp) || isNaN(row.high) || isNaN(row.low) || row.high === row.low) return -Infinity;
+  const dayPos = (row.ltp - row.low) / (row.high - row.low); // দিনের হাই-এর কতটা কাছে বন্ধ হয়েছে (০-১)
+  let score = 0;
+  score += row.changePct * 2; // আজকের পজিটিভ মোমেন্টাম
+  score += dayPos * 20; // দিনের হাই এর কাছাকাছি বন্ধ = ক্রেতার চাপ বেশি
+  score += Math.min(row.value, 50) * 0.5; // লিকুইডিটি (৫০mn পর্যন্ত ক্যাপ করা, অতিরিক্ত ভ্যালু যেন হাইলি ট্রেডেড কয়েকটা শেয়ার পুরো লিস্ট দখল না করে)
+  return score;
+}
+
+function selectCandidatePool(latestRows) {
+  return latestRows
+    .map(parseLatestRow)
+    .filter((r) => r.code && r.value >= MIN_VALUE_MN && r.changePct > 0)
+    .map((r) => ({ ...r, prelimScore: preliminaryScore(r) }))
+    .sort((a, b) => b.prelimScore - a.prelimScore)
+    .slice(0, CANDIDATE_POOL_SIZE);
+}
+
+// ---------- ধাপ ২: historical ডেটা থেকে স্ট্র্যাটেজি ইন্ডিকেটর + কম্পোজিট বাই-স্কোর ----------
+function computeStrategyIndicators(histRaw) {
+  const rows = histRaw
+    .map((r) => ({
+      date: r["DATE"],
+      open: toNum(r["OPENP*"]), high: toNum(r["HIGH"]), low: toNum(r["LOW"]), close: toNum(r["CLOSEP*"]),
+      volume: toNum(r["VOLUME"]),
+    }))
+    .filter((r) => !isNaN(r.close) && r.close > 0 && r.high > 0 && r.low > 0);
+
+  if (rows.length < 20) return null;
+
+  const closes = rows.map((r) => r.close);
+  const volumes = rows.map((r) => r.volume);
+
+  const rsi = computeRSI(closes, 14);
+  const ma20 = sma(closes, 20);
+  const ma50 = sma(closes, Math.min(50, closes.length - 1));
+  const prevMa20 = sma(closes.slice(0, -1), 20);
+  const prevMa50 = sma(closes.slice(0, -1), Math.min(50, closes.length - 2));
+
+  let maSignal = "neutral";
+  if (ma20 && ma50 && prevMa20 && prevMa50) {
+    if (prevMa20 <= prevMa50 && ma20 > ma50) maSignal = "golden";
+    else if (prevMa20 >= prevMa50 && ma20 < ma50) maSignal = "death";
+    else if (ma20 > ma50) maSignal = "bullish";
+    else maSignal = "bearish";
+  }
+
+  const recent20 = rows.slice(-20);
+  const high20 = Math.max(...recent20.map((r) => r.high));
+  const low20 = Math.min(...recent20.map((r) => r.low));
+  const ltp = closes[closes.length - 1];
+  let breakout = null;
+  if (ltp >= high20) breakout = "up";
+  else if (ltp <= low20) breakout = "down";
+
+  const avgVol20 = sma(volumes.slice(-21, -1), 20) || sma(volumes, Math.min(20, volumes.length));
+  const todayVol = volumes[volumes.length - 1];
+  const volRatio = avgVol20 ? todayVol / avgVol20 : null;
+
+  const pattern = detectCandlestickPattern(rows.slice(-3));
+  const sr = computeSupportResistance(rows, ltp);
+  const orderBlock = detectOrderBlock(rows);
+  const fvg = detectFVG(rows);
+  const liquiditySweep = detectLiquiditySweep(rows);
+
+  return { rsi, ma20, ma50, maSignal, breakout, volRatio, pattern, sr, orderBlock, fvg, liquiditySweep };
+}
+
+// কম্পোজিট "ক্রয়যোগ্যতা" স্কোর (০-১০০) - RSI + MA ক্রসওভার + ব্রেকআউট + ভলিউম + ক্যান্ডেলস্টিক
+function computeBuyScore(ind) {
+  let score = 50;
+  if (ind.rsi != null) {
+    if (ind.rsi >= 70) score -= 20; // ওভারবট - রিস্কি
+    else if (ind.rsi > 65) score += 5;
+    else if (ind.rsi >= 40) score += 15; // সুস্থ momentum জোন
+    else if (ind.rsi >= 30) score += 5;
+    else score -= 5; // গভীর ওভারসোল্ড - reversal অনিশ্চিত
+  }
+  if (ind.maSignal === "golden") score += 25;
+  else if (ind.maSignal === "bullish") score += 12;
+  else if (ind.maSignal === "death") score -= 25;
+  else if (ind.maSignal === "bearish") score -= 12;
+
+  if (ind.breakout === "up") score += 15;
+  else if (ind.breakout === "down") score -= 15;
+
+  if (ind.volRatio != null) {
+    if (ind.volRatio >= 2) score += 12;
+    else if (ind.volRatio >= 1.3) score += 6;
+    else if (ind.volRatio < 0.5) score -= 8;
+  }
+
+  if (ind.pattern) {
+    if (ind.pattern.type === "bullish") score += 12;
+    else if (ind.pattern.type === "bearish") score -= 12;
+  }
+
+  if (ind.orderBlock) {
+    if (ind.orderBlock.type === "bullish") score += 10;
+    else if (ind.orderBlock.type === "bearish") score -= 10;
+  }
+  if (ind.fvg) {
+    if (ind.fvg.type === "bullish") score += 8;
+    else if (ind.fvg.type === "bearish") score -= 8;
+  }
+  if (ind.liquiditySweep) {
+    if (ind.liquiditySweep.type === "bullish") score += 10;
+    else if (ind.liquiditySweep.type === "bearish") score -= 10;
+  }
+
+  return Math.max(0, Math.min(100, Math.round(score)));
+}
+
+function buildReasons(ind) {
+  const reasons = [];
+  if (ind.maSignal === "golden") reasons.push("গোল্ডেন ক্রস - MA20 এইমাত্র MA50 কে ক্রস করেছে (নতুন আপট্রেন্ড)");
+  else if (ind.maSignal === "bullish") reasons.push("আপট্রেন্ডে আছে (MA20 > MA50)");
+  if (ind.breakout === "up") reasons.push("২০-দিনের হাই ব্রেকআউট");
+  if (ind.volRatio && ind.volRatio >= 1.3) reasons.push(`ভলিউম কনফার্মেশন (২০-দিনের গড়ের ${ind.volRatio.toFixed(1)}x)`);
+  if (ind.rsi != null && ind.rsi >= 40 && ind.rsi < 65) reasons.push(`RSI ${ind.rsi.toFixed(0)} - সুস্থ momentum জোনে (ওভারবট নয়)`);
+  if (ind.pattern && ind.pattern.type === "bullish") reasons.push(`${ind.pattern.name} ক্যান্ডেলস্টিক প্যাটার্ন (বুলিশ)`);
+  if (ind.orderBlock && ind.orderBlock.type === "bullish") reasons.push(`বুলিশ অর্ডার ব্লক জোনের উপরে (৳${ind.orderBlock.zoneLow.toFixed(1)}-${ind.orderBlock.zoneHigh.toFixed(1)})`);
+  if (ind.fvg && ind.fvg.type === "bullish") reasons.push(`বুলিশ Fair Value Gap (৳${ind.fvg.bottom.toFixed(1)}-${ind.fvg.top.toFixed(1)})`);
+  if (ind.liquiditySweep && ind.liquiditySweep.type === "bullish") reasons.push(`লিকুইডিটি সুইপ - স্টপ-হান্টের পর রিভার্সাল (৳${ind.liquiditySweep.level.toFixed(1)}-এর নিচে)`);
+  return reasons;
+}
+
+// পুরনো ওয়াচলিস্টে থাকলেও নতুনটায় নেই এমন historical ফাইল মুছে রিপো ছোট রাখা
+function cleanupHistoricalDir(keepCodes) {
+  const keep = new Set(keepCodes);
+  if (!fs.existsSync(HIST_DIR)) return;
+  for (const file of fs.readdirSync(HIST_DIR)) {
+    const code = file.replace(/\.json$/, "");
+    if (!keep.has(code)) {
+      fs.unlinkSync(path.join(HIST_DIR, file));
+    }
+  }
+}
+
+// ---------- Support & Resistance (swing high/low ক্লাস্টারিং) ----------
+// fractal পদ্ধতি: একটা ক্যান্ডেলের high/low যদি দুই পাশের `lookback`টা ক্যান্ডেলের
+// চেয়ে বেশি/কম হয়, সেটা swing high/low ধরা হচ্ছে
+function findSwingPoints(rows, lookback = 5) {
+  const swingHighs = [], swingLows = [];
+  for (let i = lookback; i < rows.length - lookback; i++) {
+    const windowSlice = rows.slice(i - lookback, i + lookback + 1);
+    if (windowSlice.every((r) => r.high <= rows[i].high)) swingHighs.push(rows[i].high);
+    if (windowSlice.every((r) => r.low >= rows[i].low)) swingLows.push(rows[i].low);
+  }
+  return { swingHighs, swingLows };
+}
+
+// কাছাকাছি লেভেলগুলো ক্লাস্টার করে "কতবার টাচ হয়েছে" সহ শক্তিশালী জোন বের করা
+function clusterLevels(levels, tolerancePct = 0.015) {
+  const sorted = [...levels].sort((a, b) => a - b);
+  const clusters = [];
+  for (const lvl of sorted) {
+    const last = clusters[clusters.length - 1];
+    if (last && Math.abs(lvl - last.avg) / last.avg <= tolerancePct) {
+      last.values.push(lvl);
+      last.avg = last.values.reduce((a, b) => a + b, 0) / last.values.length;
+    } else {
+      clusters.push({ avg: lvl, values: [lvl] });
+    }
+  }
+  return clusters.map((c) => ({ level: c.avg, touches: c.values.length }));
+}
+
+function computeSupportResistance(rows, ltp) {
+  const { swingHighs, swingLows } = findSwingPoints(rows, 5);
+  const resistances = clusterLevels(swingHighs).filter((c) => c.level > ltp).sort((a, b) => a.level - b.level);
+  const supports = clusterLevels(swingLows).filter((c) => c.level < ltp).sort((a, b) => b.level - a.level);
+  return {
+    resistance: resistances[0] ? resistances[0].level : null,
+    resistanceTouches: resistances[0] ? resistances[0].touches : 0,
+    support: supports[0] ? supports[0].level : null,
+    supportTouches: supports[0] ? supports[0].touches : 0,
+  };
+}
+
+// ---------- Smart Money Concept (SMC) - সরলীকৃত, দৈনিক ক্যান্ডেলভিত্তিক approximation ----------
+// (আসল SMC সাধারণত ইন্ট্রাডে/লোয়ার টাইমফ্রেমে করা হয় - এখানে dsebd.org থেকে
+// শুধু দৈনিক OHLC পাওয়া যায় বলে সুইং-লেভেলে adaption করা হয়েছে)
+
+// অর্ডার ব্লক: শেষ বিপরীত-রঙের ক্যান্ডেল যার পরে একটা শক্তিশালী ইমপালসিভ মুভ এসে
+// তার high/low ব্রেক করেছে - সেই ক্যান্ডেলের রেঞ্জটাই অর্ডার ব্লক জোন
+function detectOrderBlock(rows) {
+  const n = rows.length;
+  if (n < 10) return null;
+  const recent = rows.slice(-10);
+  for (let i = recent.length - 1; i >= 1; i--) {
+    const ob = recent[i - 1];
+    const move = recent[i];
+    const moveBody = Math.abs(move.close - move.open);
+    const moveRange = Math.max(move.high - move.low, 0.0001);
+    const isImpulsive = moveBody / moveRange > 0.55;
+    if (ob.close < ob.open && move.close > move.open && isImpulsive && move.close > ob.high) {
+      return { type: "bullish", zoneLow: ob.low, zoneHigh: ob.high };
+    }
+    if (ob.close > ob.open && move.close < move.open && isImpulsive && move.close < ob.low) {
+      return { type: "bearish", zoneLow: ob.low, zoneHigh: ob.high };
+    }
+  }
+  return null;
+}
+
+// Fair Value Gap (FVG): ৩-ক্যান্ডেল ইম্ব্যালেন্স, ১ম ক্যান্ডেলের high আর ৩য়
+// ক্যান্ডেলের low এর মাঝে ফাঁকা জায়গা (বুলিশ), বা উল্টো (বেয়ারিশ)
+function detectFVG(rows) {
+  const n = rows.length;
+  if (n < 3) return null;
+  const c1 = rows[n - 3], c3 = rows[n - 1];
+  if (c1.high < c3.low) return { type: "bullish", top: c3.low, bottom: c1.high };
+  if (c1.low > c3.high) return { type: "bearish", top: c1.low, bottom: c3.high };
+  return null;
+}
+
+// লিকুইডিটি সুইপ: গত ~২১ দিনের লো/হাই এর সামান্য নিচে/উপরে wick করে আবার তার
+// ভেতরে ফিরে ক্লোজ করা (স্টপ-হান্ট এর পর রিভার্সাল সিগন্যাল)
+function detectLiquiditySweep(rows) {
+  const n = rows.length;
+  if (n < 22) return null;
+  const lookback = rows.slice(-22, -1);
+  const priorLow = Math.min(...lookback.map((r) => r.low));
+  const priorHigh = Math.max(...lookback.map((r) => r.high));
+  const today = rows[n - 1];
+  if (today.low < priorLow && today.close > priorLow) return { type: "bullish", level: priorLow };
+  if (today.high > priorHigh && today.close < priorHigh) return { type: "bearish", level: priorHigh };
+  return null;
+}
+
 // ---------- Scrapers ----------
 async function scrapeLatest() {
   const $ = await fetchHtml(URLS.LATEST);
@@ -173,21 +523,65 @@ async function main() {
     console.error("✗ dsex.json স্ক্র্যাপ ব্যর্থ:", err.message);
   }
 
-  for (const code of WATCHLIST) {
-    try {
-      const hist = await scrapeHistorical(code);
-      writeJson(path.join(HIST_DIR, `${code}.json`), hist);
-    } catch (err) {
-      console.error(`✗ ${code} historical স্ক্র্যাপ ব্যর্থ:`, err.message);
+  // ---------- ধাপ ১: latest.json থেকে prelim candidate pool বাছাই ----------
+  let finalWatchlist = [];
+  if (results.latest && results.latest.length) {
+    const pool = selectCandidatePool(results.latest);
+    console.log(`🔎 ধাপ ১ সম্পন্ন: ${pool.length}টা candidate পাওয়া গেছে (prelim স্কোর অনুযায়ী) → এখন historical/স্ট্র্যাটেজি স্কোরিং শুরু\n`);
+
+    // ---------- ধাপ ২: candidate pool এর জন্য historical + composite buy-score ----------
+    const scored = [];
+    for (const cand of pool) {
+      try {
+        const hist = await scrapeHistorical(cand.code);
+        const ind = computeStrategyIndicators(hist);
+        if (ind) {
+          const buyScore = computeBuyScore(ind);
+          scored.push({ ...cand, ...ind, buyScore, reasons: buildReasons(ind), _hist: hist });
+          console.log(`  ✔ ${cand.code}: buyScore=${buyScore}, RSI=${ind.rsi ? ind.rsi.toFixed(0) : "N/A"}, MA=${ind.maSignal}, breakout=${ind.breakout || "-"}`);
+        }
+      } catch (err) {
+        console.error(`✗ ${cand.code} historical/স্কোরিং ব্যর্থ:`, err.message);
+      }
+      // dsebd.org কে একসাথে অনেক রিকোয়েস্টে চাপ না দিতে সামান্য delay
+      await new Promise((r) => setTimeout(r, 1500));
     }
-    // dsebd.org কে একসাথে অনেক রিকোয়েস্টে চাপ না দিতে সামান্য delay
-    await new Promise((r) => setTimeout(r, 1500));
+
+    finalWatchlist = scored
+      .filter((s) => s.buyScore >= MIN_BUY_SCORE)
+      .sort((a, b) => b.buyScore - a.buyScore)
+      .slice(0, TARGET_WATCHLIST_SIZE);
+
+    if (finalWatchlist.length < TARGET_WATCHLIST_SIZE) {
+      // MIN_BUY_SCORE পার করা যথেষ্ট শেয়ার না পেলে, সেরা যা আছে তা দিয়েই পূরণ করা
+      const rest = scored
+        .filter((s) => !finalWatchlist.includes(s))
+        .sort((a, b) => b.buyScore - a.buyScore);
+      finalWatchlist = finalWatchlist.concat(rest).slice(0, TARGET_WATCHLIST_SIZE);
+    }
+
+    // ---------- চূড়ান্ত ওয়াচলিস্টের historical ফাইল সেভ + রিপো পরিষ্কার ----------
+    cleanupHistoricalDir(finalWatchlist.map((s) => s.code));
+    for (const s of finalWatchlist) {
+      writeJson(path.join(HIST_DIR, `${s.code}.json`), s._hist);
+    }
+
+    writeJson(path.join(OUTPUT_DIR, "watchlist.json"), finalWatchlist.map((s) => ({
+      code: s.code, buyScore: s.buyScore, rsi: s.rsi, maSignal: s.maSignal,
+      breakout: s.breakout, volRatio: s.volRatio, pattern: s.pattern, reasons: s.reasons,
+      sr: s.sr, orderBlock: s.orderBlock, fvg: s.fvg, liquiditySweep: s.liquiditySweep,
+    })));
+
+    console.log(`\n🏆 চূড়ান্ত অটো-ওয়াচলিস্ট (টপ ${finalWatchlist.length} ক্রয়যোগ্য): ${finalWatchlist.map((s) => `${s.code}(${s.buyScore})`).join(", ")}\n`);
+  } else {
+    console.error("✗ latest.json খালি/ব্যর্থ - ওয়াচলিস্ট auto-select করা গেল না, আগের historical ফাইল অপরিবর্তিত থাকবে");
   }
 
-  // meta info - frontend এ "last updated" দেখানোর জন্য
+  // meta info - frontend এ "last updated" ও ডাইনামিক ওয়াচলিস্ট কোড দেখানোর জন্য
   writeJson(path.join(OUTPUT_DIR, "meta.json"), {
     lastScrapedAt: new Date().toISOString(),
-    watchlist: WATCHLIST,
+    watchlist: finalWatchlist.map((s) => s.code),
+    strategy: "auto: RSI + MA ক্রসওভার + ২০-দিনের ব্রেকআউট + সাপোর্ট/রেজিস্ট্যান্স + Smart Money Concept (Order Block/FVG/Liquidity Sweep) + ক্যান্ডেলস্টিক প্যাটার্ন + ভলিউম কনফার্মেশন",
   });
 
   console.log("\n✅ স্ক্র্যাপ সম্পন্ন\n");
