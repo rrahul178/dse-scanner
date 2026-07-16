@@ -2,8 +2,7 @@
   {
     "code": "TECHNODRUG",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0
     },
@@ -14,7 +13,7 @@
   {
     "code": "SAPORTL",
     "rank": 2,
-    "rankChange": 6,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -25,7 +24,7 @@
   {
     "code": "AGNISYSL",
     "rank": 3,
-    "rankChange": 6,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 35.12184951109817,
     "mfi": 73.91397836254633,
@@ -34,7 +33,7 @@
   {
     "code": "SQURPHARMA",
     "rank": 4,
-    "rankChange": -3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.6
     },
@@ -56,8 +55,7 @@
   {
     "code": "SILCOPHL",
     "rank": 6,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -68,8 +66,7 @@
   {
     "code": "SONALILIFE",
     "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.9
     },
@@ -80,7 +77,7 @@
   {
     "code": "ROBI",
     "rank": 8,
-    "rankChange": -4,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -91,8 +88,7 @@
   {
     "code": "SEAPEARL",
     "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
@@ -103,8 +99,7 @@
   {
     "code": "AMANFEED",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 26.890890590757646,
     "mfi": 72.6452528010849,
