@@ -31,8 +31,6 @@
     line-height: 1.4;
   }
   .wrap{ max-width: 1400px; margin: 0 auto; }
-
-  /* ---------- Header ---------- */
   header{
     display:flex; justify-content:space-between; align-items:center;
     flex-wrap: wrap; gap: 12px;
@@ -49,23 +47,17 @@
     display:inline-flex; align-items:center; gap:6px;
     padding: 4px 10px; border-radius: 20px; background: var(--bg-card); border:1px solid var(--border);
   }
-
-  /* ---------- No-fresh-session banner ---------- */
   .no-fresh-banner{
     background: rgba(230,180,60,0.10); border: 1px solid rgba(230,180,60,0.35);
     color: #e6b43c; padding: 10px 14px; border-radius: 8px; font-size: 12.5px;
     line-height: 1.6; margin-bottom: 16px;
   }
-
-  /* ---------- Section titles ---------- */
   .section-title{
     display:flex; align-items:center; gap:10px;
     font-size: 13px; text-transform: uppercase; letter-spacing: 1.2px;
     color: var(--text-dim); margin: 28px 0 14px;
   }
   .section-title::after{ content:""; flex:1; height:1px; background: var(--border); }
-
-  /* ---------- Watchlist cards ---------- */
   .watchlist-grid{
     display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px;
   }
@@ -78,7 +70,6 @@
   .ltp{ font-size: 19px; font-weight: 700; font-family: var(--mono); }
   .chg{ font-size: 12.5px; font-family: var(--mono); font-weight: 600; }
   .chg.up{ color: var(--up); } .chg.down{ color: var(--down); } .chg.flat{ color: var(--text-dim); }
-
   .signal-row{ display:flex; flex-wrap:wrap; gap:6px; margin: 10px 0 12px; }
   .badge{
     font-size: 11px; padding: 3px 9px; border-radius: 5px; font-weight: 600;
@@ -88,21 +79,16 @@
   .badge.sell{ background: var(--down-bg); color: var(--down); border-color: rgba(255,84,112,0.3); }
   .badge.neutral{ background: rgba(124,135,152,0.12); color: var(--text-dim); }
   .badge.info{ background: rgba(79,160,255,0.12); color: var(--accent); }
-
   .chart-box{ height: 130px; margin: 8px 0 12px; }
-
   .metric-grid{
     display:grid; grid-template-columns: 1fr 1fr; gap: 8px 16px;
     font-size: 12.5px; font-family: var(--mono);
   }
   .metric-grid .k{ color: var(--text-faint); }
   .metric-grid .v{ color: var(--text); float:right; }
-
   .range-bar{ position: relative; height: 5px; background: var(--border); border-radius: 3px; margin-top: 4px; }
   .range-bar .fill{ position:absolute; top:-3px; width: 3px; height: 11px; background: var(--accent); border-radius: 2px; }
-
   .watchlist-strategy{ font-size: 12px; color: var(--text-faint); margin: -8px 0 14px; }
-
   .score-row{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px; }
   .score-label{ font-size: 11.5px; color: var(--text-dim); text-transform:uppercase; letter-spacing:0.5px; }
   .score-num{ font-size: 14px; font-weight:700; font-family: var(--mono); }
@@ -110,13 +96,10 @@
   .score-bar{ height:6px; background:var(--border); border-radius:4px; overflow:hidden; margin-bottom:10px; }
   .score-fill{ height:100%; border-radius:4px; }
   .score-fill.up{ background: var(--up); } .score-fill.flat{ background: var(--amber); } .score-fill.down{ background: var(--down); }
-
   .reasons{ list-style:none; margin: 0 0 12px; padding:0; display:flex; flex-direction:column; gap:4px; }
   .reasons li{ font-size:12px; color: var(--text-dim); padding-left:14px; position:relative; }
   .reasons li::before{ content:"✓"; position:absolute; left:0; color: var(--up); font-weight:700; }
   .reasons-empty{ font-size:12px; color: var(--text-faint); margin-bottom:12px; font-style:italic; }
-
-  /* ---------- Market table ---------- */
   .toolbar{ display:flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; align-items:center; }
   .toolbar input, .toolbar select{
     background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
@@ -129,7 +112,6 @@
     padding: 7px 14px; border-radius: 6px; font-size: 12.5px; cursor:pointer; font-weight:600;
   }
   .tab-btn.active{ background: var(--accent); color: #06121f; border-color: var(--accent); }
-
   table{ width: 100%; border-collapse: collapse; font-size: 13px; }
   thead th{
     text-align: left; color: var(--text-faint); font-weight: 600; font-size: 11px;
@@ -141,54 +123,43 @@
   tbody tr:hover{ background: rgba(255,255,255,0.02); }
   td.num{ text-align:right; }
   td.code{ font-family: var(--mono); font-weight:700; }
-
   .table-scroll{ overflow-x:auto; background: var(--bg-panel); border:1px solid var(--border); border-radius: 10px; }
-
   footer{ text-align:center; color: var(--text-faint); font-size: 12px; margin-top: 30px; padding: 20px 0 6px; }
   .credit{ margin-top: 6px; font-size: 11.5px; color: var(--text-faint); opacity: 0.85; }
   .loading{ text-align:center; padding: 60px 0; color: var(--text-dim); font-family: var(--mono); }
   .err{ background: var(--down-bg); border:1px solid rgba(255,84,112,0.3); color: var(--down); padding:12px 16px; border-radius:8px; font-size:13px; margin-bottom:16px; }
-
-  /* ---------- Mobile-friendly ---------- */
   @media (max-width: 720px){
     body{ padding: 12px; }
     header{ padding-bottom: 14px; margin-bottom: 16px; gap: 10px; }
     .brand h1{ font-size: 16px; }
     .brand h1 span{ display:block; font-size: 12px; margin-top:2px; }
     .meta-info{ font-size: 11px; gap: 10px; width:100%; }
-
     .section-title{ font-size: 11.5px; margin: 20px 0 10px; }
     .watchlist-strategy{ font-size: 11px; margin: -4px 0 12px; }
-
     .watchlist-grid{ grid-template-columns: 1fr; gap: 12px; }
     .card{ padding: 14px; }
     .sym{ font-size: 15px; }
     .ltp{ font-size: 17px; }
     .metric-grid{ font-size: 11.5px; }
-
     .toolbar{ flex-direction: column; align-items: stretch; }
     .toolbar input{ min-width: 0; width: 100%; }
     .tabs{ overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; }
     .tab-btn{ flex: 0 0 auto; padding: 9px 13px; font-size: 12px; }
-
     table{ font-size: 12px; }
     thead th{ padding: 8px 8px; font-size: 10px; }
     tbody td{ padding: 8px 8px; }
-    /* ছোট স্ক্রিনে High/Low কলাম লুকিয়ে জরুরি তথ্যগুলোতে (কোড/LTP/চেঞ্জ/ভলিউম) ফোকাস */
     th:nth-child(5), td:nth-child(5),
     th:nth-child(6), td:nth-child(6){ display:none; }
   }
-
   @media (max-width: 420px){
     .brand{ gap: 8px; }
     .status-pill{ font-size: 11px; padding: 3px 8px; }
-    th:nth-child(8), td:nth-child(8){ display:none; } /* ভ্যালু কলামও লুকানো, একদম ছোট স্ক্রিনে */
+    th:nth-child(8), td:nth-child(8){ display:none; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
-
   <header>
     <div class="brand">
       <span class="dot"></span>
@@ -203,7 +174,6 @@
   <div id="loadingBox" class="loading">📡 dsebd.org থেকে ডেটা লোড হচ্ছে...</div>
 
   <div id="content" style="display:none;">
-
     <div id="noFreshSessionBanner" class="no-fresh-banner" style="display:none;"></div>
 
     <div class="section-title">টপ ১০ ক্রয়যোগ্য শেয়ার (অটো) — RSI · MA ক্রসওভার · S/R · SMC (Order Block/FVG/Liquidity Sweep) · ক্যান্ডেলস্টিক</div>
@@ -246,16 +216,8 @@
 </div>
 
 <script>
-// ==================== কনফিগারেশন ====================
-// GitHub Pages এ deploy করার পর এই base URL টা তোমার repo অনুযায়ী ঠিক আছে।
-// লোকালি টেস্ট করলে বা অন্য repo হলে এটা বদলাতে হবে।
 const DATA_BASE = "https://rrahul178.github.io/dse-scanner/data";
-// ওয়াচলিস্ট এখন সম্পূর্ণ অটোমেটিক - কোনো নির্দিষ্ট শেয়ার এখানে হার্ডকোড করা নেই।
-// scraper প্রতিবার পুরো মার্কেট স্ক্যান করে ট্রেডিং স্ট্র্যাটেজি (RSI/MA/ব্রেকআউট/
-// ভলিউম/ক্যান্ডেলস্টিক) অনুযায়ী টপ ১০ "ক্রয়যোগ্য" শেয়ার বেছে data/meta.json এর
-// watchlist ফিল্ডে লেখে - main() এ ওখান থেকেই কোড লিস্ট আসে।
 
-// ==================== হেল্পার ফাংশন ====================
 function num(v) {
   if (v === undefined || v === null) return NaN;
   const n = parseFloat(String(v).replace(/,/g, "").trim());
@@ -268,7 +230,6 @@ async function fetchJson(path) {
   return res.json();
 }
 
-// RSI(14) - Wilder's smoothing method
 function computeRSI(closes, period = 14) {
   if (closes.length < period + 1) return null;
   let gains = 0, losses = 0;
@@ -295,8 +256,6 @@ function sma(arr, period) {
   return slice.reduce((a, b) => a + b, 0) / period;
 }
 
-// ==================== Candlestick Pattern Detection ====================
-// candles: {open, high, low, close} অ্যারে, পুরনো -> নতুন ক্রমে, শেষেরটাই আজকের ক্যান্ডেল
 function detectCandlestickPattern(candles) {
   const n = candles.length;
   if (n < 1) return null;
@@ -317,7 +276,6 @@ function detectCandlestickPattern(candles) {
       return { name: "বেয়ারিশ এনগাল্ফিং", type: "bearish" };
     }
   }
-
   if (n >= 3) {
     const c1 = candles[n - 2], c2 = candles[n - 3];
     if (isBear(c2) && body(c2) / range(c2) > 0.4 && body(c1) / range(c1) < 0.3 &&
@@ -329,7 +287,6 @@ function detectCandlestickPattern(candles) {
       return { name: "ইভিনিং স্টার", type: "bearish" };
     }
   }
-
   const bodyRatio = body(c0) / range(c0);
   if (lowerWick(c0) >= 2 * body(c0) && upperWick(c0) <= body(c0) * 0.5 && bodyRatio < 0.35) {
     return { name: "হ্যামার", type: "bullish" };
@@ -340,15 +297,10 @@ function detectCandlestickPattern(candles) {
   if (upperWick(c0) < range(c0) * 0.05 && lowerWick(c0) < range(c0) * 0.05 && bodyRatio > 0.85) {
     return { name: isBull(c0) ? "বুলিশ মারুবোজু" : "বেয়ারিশ মারুবোজু", type: isBull(c0) ? "bullish" : "bearish" };
   }
-  if (bodyRatio < 0.1) {
-    return { name: "ডোজি", type: "neutral" };
-  }
+  if (bodyRatio < 0.1) return { name: "ডোজি", type: "neutral" };
   return null;
 }
 
-// ==================== কম্পোজিট "ক্রয়যোগ্যতা" স্কোর (০-১০০) ====================
-// scraper (server-side) যে ফর্মুলায় টপ ১০ বেছেছে, ঠিক সেই একই ফর্মুলা - স্বচ্ছতার
-// জন্য প্রতিটা কার্ডে কেন এই শেয়ারটা "ক্রয়যোগ্য" তালিকায় এসেছে তা দেখানো হয়।
 function computeBuyScore(ind) {
   let score = 50;
   if (ind.rsi != null) {
@@ -362,21 +314,17 @@ function computeBuyScore(ind) {
   else if (ind.maSignal === "bullish") score += 12;
   else if (ind.maSignal === "death") score -= 25;
   else if (ind.maSignal === "bearish") score -= 12;
-
   if (ind.breakout === "up") score += 15;
   else if (ind.breakout === "down") score -= 15;
-
   if (ind.volRatio != null) {
     if (ind.volRatio >= 2) score += 12;
     else if (ind.volRatio >= 1.3) score += 6;
     else if (ind.volRatio < 0.5) score -= 8;
   }
-
   if (ind.pattern) {
     if (ind.pattern.type === "bullish") score += 12;
     else if (ind.pattern.type === "bearish") score -= 12;
   }
-
   if (ind.orderBlock) {
     if (ind.orderBlock.type === "bullish") score += 10;
     else if (ind.orderBlock.type === "bearish") score -= 10;
@@ -389,7 +337,6 @@ function computeBuyScore(ind) {
     if (ind.liquiditySweep.type === "bullish") score += 10;
     else if (ind.liquiditySweep.type === "bearish") score -= 10;
   }
-
   return Math.max(0, Math.min(100, Math.round(score)));
 }
 
@@ -407,7 +354,6 @@ function buildReasons(ind) {
   return reasons;
 }
 
-// ==================== Support & Resistance ====================
 function findSwingPoints(rows, lookback = 5) {
   const swingHighs = [], swingLows = [];
   for (let i = lookback; i < rows.length - lookback; i++) {
@@ -445,7 +391,6 @@ function computeSupportResistance(rows, ltp) {
   };
 }
 
-// ==================== Smart Money Concept (SMC) - সরলীকৃত দৈনিক-ক্যান্ডেল ভার্সন ====================
 function detectOrderBlock(rows) {
   const n = rows.length;
   if (n < 10) return null;
@@ -487,9 +432,7 @@ function detectLiquiditySweep(rows) {
   return null;
 }
 
-// ==================== ওয়াচলিস্ট বিশ্লেষণ ====================
 function analyzeWatchlistStock(code, historyRaw, latestRow) {
-  // historyRaw ইতিমধ্যে chronological (পুরনো -> নতুন) order এ আছে scraper থেকে
   const history = historyRaw
     .map(r => ({
       date: r["DATE"],
@@ -499,8 +442,6 @@ function analyzeWatchlistStock(code, historyRaw, latestRow) {
       open: num(r["OPENP*"]),
       volume: num(r["VOLUME"]),
     }))
-    // dsebd.org ট্রেডিং-বন্ধ (suspended) দিনে কখনো কখনো 0 বা খালি মান দেয় -
-    // এগুলো আসল প্রাইস না, তাই 52-week high/low ও চার্ট থেকে বাদ দেওয়া হচ্ছে
     .filter(r => !isNaN(r.close) && r.close > 0 && r.high > 0 && r.low > 0);
 
   if (history.length < 20) return null;
@@ -516,23 +457,19 @@ function analyzeWatchlistStock(code, historyRaw, latestRow) {
 
   let maSignal = "neutral";
   if (ma20 && ma50 && prevMa20 && prevMa50) {
-    if (prevMa20 <= prevMa50 && ma20 > ma50) maSignal = "golden"; // bullish crossover
-    else if (prevMa20 >= prevMa50 && ma20 < ma50) maSignal = "death"; // bearish crossover
+    if (prevMa20 <= prevMa50 && ma20 > ma50) maSignal = "golden";
+    else if (prevMa20 >= prevMa50 && ma20 < ma50) maSignal = "death";
     else if (ma20 > ma50) maSignal = "bullish";
     else maSignal = "bearish";
   }
 
-  // 52-week (বা যতটুকু history আছে) high/low
   const week52High = Math.max(...history.map(h => h.high));
   const week52Low = Math.min(...history.map(h => h.low));
-  // লাইভ LTP থাকলে সেটা, কিন্তু প্রি-মার্কেটে LTP=0/অনুপস্থিত থাকলে গতকালের
-  // সর্বশেষ ক্লোজ প্রাইস ব্যবহার করা হয় - নাহলে দাম ও দূরত্ব% ভুলভাবে ০/-100% দেখাত
   const liveLtp = latestRow ? num(latestRow["LTP*"]) : NaN;
   const ltp = (liveLtp && liveLtp > 0) ? liveLtp : closes[closes.length - 1];
   const pctFromLow = ((ltp - week52Low) / week52Low) * 100;
   const pctFromHigh = ((week52High - ltp) / week52High) * 100;
 
-  // ব্রেকআউট: গত ২০ ট্রেডিং দিনের high/low এর তুলনায়
   const recent20 = history.slice(-20);
   const high20 = Math.max(...recent20.map(h => h.high));
   const low20 = Math.min(...recent20.map(h => h.low));
@@ -540,15 +477,11 @@ function analyzeWatchlistStock(code, historyRaw, latestRow) {
   if (ltp >= high20) breakout = "up";
   else if (ltp <= low20) breakout = "down";
 
-  // ভলিউম স্পাইক: আজকের ভলিউম বনাম গত ২০ দিনের গড় (লাইভ ভলিউম 0/অনুপস্থিত হলে
-  // গতকালের সর্বশেষ historical ভলিউম দিয়ে ফলব্যাক - LTP-এর মতোই কারণ)
   const avgVol20 = sma(volumes.slice(-21, -1), 20) || sma(volumes, Math.min(20, volumes.length));
   const liveVol = latestRow ? num(latestRow["VOLUME"]) : NaN;
   const todayVol = (liveVol && liveVol > 0) ? liveVol : volumes[volumes.length - 1];
   const volRatio = avgVol20 ? todayVol / avgVol20 : null;
 
-  // changePct শুধু লাইভ সেশনে অর্থবহ; পুরনো/না-থাকা CHANGE ("--") থেকে NaN আসবে,
-  // সেক্ষেত্রে UI-তে এটা "-" হিসেবেই দেখানো হয় (নিচে renderWatchlistCard দ্রষ্টব্য)
   const changePct = latestRow ? num(latestRow["CHANGE"]) / (ltp - num(latestRow["CHANGE"])) * 100 : null;
 
   const pattern = detectCandlestickPattern(history.slice(-3));
@@ -615,6 +548,10 @@ function renderWatchlistCard(a) {
     const cls = a.liquiditySweep.type === "bullish" ? "buy" : "sell";
     badges.push(`<span class="badge ${cls}">💧 লিকুইডিটি সুইপ (${a.liquiditySweep.type === "bullish" ? "বুলিশ" : "বেয়ারিশ"})</span>`);
   }
+  if (a.rank) badges.push(`<span class="badge info">#${a.rank}${a.rankChange ? ` (${a.rankChange > 0 ? "↑" : "↓"}${Math.abs(a.rankChange)})` : ""} ${a.status === "new" ? "NEW" : ""}</span>`);
+  if (a.adx != null) badges.push(`<span class="badge info">ADX ${a.adx.toFixed(0)}</span>`);
+  if (a.mfi != null) badges.push(`<span class="badge info">MFI ${a.mfi.toFixed(0)}</span>`);
+  if (a.obvTrend === "rising") badges.push(`<span class="badge buy">OBV Rising</span>`);
 
   const rangePct = Math.min(100, Math.max(0, ((a.ltp - a.week52Low) / (a.week52High - a.week52Low)) * 100));
 
@@ -641,6 +578,8 @@ function renderWatchlistCard(a) {
       <div class="signal-row">${badges.join("")}</div>
       <div class="chart-box"><canvas id="chart-${a.code}"></canvas></div>
       <div class="metric-grid">
+        <div><span class="k">Rank</span><span class="v">${a.rank ? `#${a.rank}` : "—"}</span></div>
+        <div><span class="k">Risk/Reward</span><span class="v">${a.riskReward && a.riskReward.ratio ? `${a.riskReward.ratio}:1` : "—"}</span></div>
         <div><span class="k">52W High</span><span class="v">৳${a.week52High.toFixed(1)}</span></div>
         <div><span class="k">52W Low</span><span class="v">৳${a.week52Low.toFixed(1)}</span></div>
         <div><span class="k">রেজিস্ট্যান্স</span><span class="v">${a.sr && a.sr.resistance ? `৳${a.sr.resistance.toFixed(1)} (${a.sr.resistanceTouches}x)` : "—"}</span></div>
@@ -657,8 +596,6 @@ function drawChart(a, retriesLeft = 12) {
   const ctx = document.getElementById(`chart-${a.code}`);
   if (!ctx) return;
   if (typeof Chart === "undefined") {
-    // Chart.js লোড হতে দেরি হচ্ছে বা ব্যর্থ হয়েছে - একটু পর আবার চেষ্টা করি,
-    // কিন্তু এর জন্য বাকি dashboard (কার্ড/টেবিল) আটকে থাকবে না। সর্বোচ্চ কয়েকবার চেষ্টার পর থেমে যাবে।
     if (retriesLeft <= 0) {
       ctx.parentElement.innerHTML = '<div style="color:var(--text-faint); font-size:12px; text-align:center; padding-top:50px;">চার্ট লোড করা যায়নি</div>';
       return;
@@ -671,38 +608,19 @@ function drawChart(a, retriesLeft = 12) {
     data: {
       labels: a.chartLabels,
       datasets: [
-        {
-          data: a.chartData,
-          borderColor: "#4fa0ff",
-          borderWidth: 1.5,
-          pointRadius: 0,
-          tension: 0.15,
-          fill: false,
-        },
-        {
-          // 52-week low রেফারেন্স লাইন
-          data: a.chartLabels.map(() => a.week52Low),
-          borderColor: "#ff5470",
-          borderWidth: 1,
-          borderDash: [4, 4],
-          pointRadius: 0,
-          fill: false,
-        },
+        { data: a.chartData, borderColor: "#4fa0ff", borderWidth: 1.5, pointRadius: 0, tension: 0.15, fill: false },
+        { data: a.chartLabels.map(() => a.week52Low), borderColor: "#ff5470", borderWidth: 1, borderDash: [4, 4], pointRadius: 0, fill: false },
       ],
     },
     options: {
       responsive: true, maintainAspectRatio: false,
       plugins: { legend: { display: false }, tooltip: { enabled: false } },
-      scales: {
-        x: { display: false },
-        y: { display: false },
-      },
+      scales: { x: { display: false }, y: { display: false } },
       elements: { line: { borderJoinStyle: "round" } },
     },
   });
 }
 
-// ==================== মার্কেট টেবিল ====================
 let marketRows = [];
 let currentSort = "change_desc";
 
@@ -730,7 +648,7 @@ function renderMarketTable() {
     value_desc: (a, b) => b.value - a.value,
   };
   rows = rows.slice().sort(sorters[currentSort] || sorters.change_desc);
-  rows = rows.slice(0, 60); // পারফরম্যান্সের জন্য টপ ৬০ দেখানো হচ্ছে
+  rows = rows.slice(0, 60);
 
   const tbody = document.getElementById("marketTbody");
   if (!rows.length) {
@@ -754,22 +672,20 @@ function renderMarketTable() {
   }).join("");
 }
 
-// ==================== মেইন লোড ====================
 async function main() {
   try {
-    const [latest, meta] = await Promise.all([
+    const [latest, meta, v2Watchlist] = await Promise.all([
       fetchJson("latest.json"),
       fetchJson("meta.json").catch(() => null),
+      fetchJson("watchlist.json").catch(() => []),
     ]);
+    const v2ByCode = Object.fromEntries(v2Watchlist.map(stock => [stock.code, stock]));
 
     marketRows = latest.map(parseMarketRow).filter(r => r.code && !isNaN(r.ltp));
 
     const latestByCode = {};
     latest.forEach(r => { latestByCode[r["TRADING CODE"]] = r; });
 
-    // আজকের লাইভ সেশন এখনো শুরু না হলে (LTP/change সব 0) "সব শেয়ার" টেবিলে
-    // বিভ্রান্তিকর 0.0/NaN% না দেখিয়ে একটা নোট দেখানো হয় — টপ ১০ ওয়াচলিস্ট তখনও
-    // গতকালের historical ডেটা দিয়ে স্কোর করা থাকে, তাই সেটা খালি থাকে না।
     const banner = document.getElementById("noFreshSessionBanner");
     if (meta && meta.noFreshSession) {
       marketRows = marketRows.filter(r => r.ltp > 0);
@@ -779,7 +695,6 @@ async function main() {
       banner.style.display = "none";
     }
 
-    // ওয়াচলিস্ট এখন meta.json থেকে আসে - scraper প্রতিবার স্ট্র্যাটেজি অনুযায়ী অটো বেছে দেয়
     const watchlistCodes = (meta && meta.watchlist && meta.watchlist.length) ? meta.watchlist : [];
     if (meta && meta.strategy) {
       document.getElementById("watchlistStrategy").textContent = `স্ট্র্যাটেজি: ${meta.strategy}${meta.noFreshSession ? " (গতকালের historical ডেটা ভিত্তিক)" : ""}`;
@@ -790,7 +705,7 @@ async function main() {
       try {
         const hist = await fetchJson(`historical/${code}.json`);
         const a = analyzeWatchlistStock(code, hist, latestByCode[code]);
-        if (a) analyses.push(a);
+        if (a) analyses.push({ ...a, ...(v2ByCode[code] || {}) });
       } catch (e) {
         console.error(`${code} history লোড ব্যর্থ:`, e);
       }
@@ -806,10 +721,6 @@ async function main() {
 
     renderMarketTable();
 
-    // lastScrapedAt শুধু তখনই আপডেট হয় যখন সত্যিকারের লাইভ সেশন ডেটা পাওয়া যায় -
-    // no-fresh-session (প্রি-মার্কেট) রানে এটা ইচ্ছাকৃতভাবে অপরিবর্তিত থাকে, তাই
-    // এটা দেখালে মনে হয় সবকিছু "থেমে" আছে। lastAttemptedAt প্রতি রানেই আপডেট হয়,
-    // তাই এটাকেই প্রধান টাইমস্ট্যাম্প হিসেবে দেখানো হচ্ছে; lastScrapedAt আলাদাভাবে দেখানো হয়।
     const attemptedAt = meta && (meta.lastAttemptedAt || meta.lastScrapedAt);
     if (attemptedAt) {
       const d = new Date(attemptedAt);
