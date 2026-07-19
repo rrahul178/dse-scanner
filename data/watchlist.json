@@ -1,112 +1,112 @@
 [
   {
-    "code": "TECHNODRUG",
-    "rank": 1,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 18.421139430884075,
-    "mfi": 70.71429407283514,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SAPORTL",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 16.285378430346515,
-    "mfi": 56.590281318012174,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "AGNISYSL",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 35.12184855050345,
-    "mfi": 73.91397836254633,
-    "obvTrend": "rising"
-  },
-  {
     "code": "UNITEDINS",
+    "rank": 1,
+    "rankChange": 3,
+    "riskReward": null,
+    "adx": 33.712255649234386,
+    "mfi": 82.43158144411818,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SILCOPHL",
+    "rank": 2,
+    "rankChange": 4,
+    "riskReward": null,
+    "adx": 45.900257941247595,
+    "mfi": 70.68988108447118,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SONALIPAPR",
+    "rank": 3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 4.4
+    },
+    "adx": 25.826792349958797,
+    "mfi": 76.05218776114353,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "AL-HAJTEX",
     "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.6
+      "ratio": 2.8
     },
-    "adx": 31.605084561562656,
-    "mfi": 71.57490563008282,
-    "obvTrend": "flat"
+    "adx": 19.604576285541246,
+    "mfi": 78.68692865363668,
+    "obvTrend": "rising"
   },
   {
-    "code": "SALVO",
+    "code": "GENEXIL",
     "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.4
     },
-    "adx": 23.10551201362797,
-    "mfi": 70.5111311056493,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "SILCOPHL",
-    "rank": 6,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 44.92491488466781,
-    "mfi": 65.11195066244673,
+    "adx": 51.451983841486545,
+    "mfi": 76.91903030610497,
     "obvTrend": "rising"
   },
   {
-    "code": "NAVANAPHAR",
-    "rank": 7,
-    "rankChange": -2,
+    "code": "ROBI",
+    "rank": 6,
+    "rankChange": 4,
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 0.9
     },
-    "adx": 35.90193458357367,
-    "mfi": 77.51467014634707,
+    "adx": 34.38007880137758,
+    "mfi": 53.225588553734866,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BSRMLTD",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 48.01954098428157,
+    "mfi": 77.03345505399865,
     "obvTrend": "rising"
   },
   {
     "code": "SONALILIFE",
     "rank": 8,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.9
-    },
-    "adx": 18.60320942922993,
-    "mfi": 46.03511764814504,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SEAPEARL",
-    "rank": 9,
     "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 28.487568069250194,
-    "mfi": 67.46258168683153,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ROBI",
-    "rank": 10,
-    "rankChange": -2,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 34.70776377843402,
-    "mfi": 62.17505793004678,
+    "adx": 17.812048121979483,
+    "mfi": 43.45115969070857,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "MEGHNAINS",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 47.80524373115133,
+    "mfi": 70.5336105632374,
     "obvTrend": "rising"
+  },
+  {
+    "code": "ITC",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 62.606560963935564,
+    "mfi": 78.69311659855842,
+    "obvTrend": "falling"
   }
 ]
