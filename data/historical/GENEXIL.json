@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "GENEXIL",
-    "LTP*": "22.4",
-    "HIGH": "22.6",
-    "LOW": "22.2",
-    "OPENP*": "22.2",
-    "CLOSEP*": "22.4",
-    "YCP": "22.1",
-    "TRADE": "317",
-    "VALUE (mn)": "6.938",
-    "VOLUME": "309045"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "GENEXIL",
-    "LTP*": "22.9",
-    "HIGH": "23.3",
-    "LOW": "22.5",
-    "OPENP*": "22.5",
-    "CLOSEP*": "22.9",
-    "YCP": "22.4",
-    "TRADE": "551",
-    "VALUE (mn)": "13.341",
-    "VOLUME": "581189"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "GENEXIL",

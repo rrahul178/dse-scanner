@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "MEGHNAINS",
-    "LTP*": "23.4",
-    "HIGH": "23.4",
-    "LOW": "21.5",
-    "OPENP*": "21.8",
-    "CLOSEP*": "23.4",
-    "YCP": "21.3",
-    "TRADE": "1346",
-    "VALUE (mn)": "37.048",
-    "VOLUME": "1625946"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "MEGHNAINS",
-    "LTP*": "24.3",
-    "HIGH": "24.6",
-    "LOW": "23.1",
-    "OPENP*": "24",
-    "CLOSEP*": "24.3",
-    "YCP": "23.4",
-    "TRADE": "1023",
-    "VALUE (mn)": "23.148",
-    "VOLUME": "965972"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "MEGHNAINS",

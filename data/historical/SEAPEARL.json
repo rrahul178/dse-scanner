@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "SEAPEARL",
-    "LTP*": "53.8",
-    "HIGH": "55.2",
-    "LOW": "53.7",
-    "OPENP*": "54.5",
-    "CLOSEP*": "53.8",
-    "YCP": "54.2",
-    "TRADE": "2007",
-    "VALUE (mn)": "137.43",
-    "VOLUME": "2532567"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "SEAPEARL",
-    "LTP*": "53.8",
-    "HIGH": "54.1",
-    "LOW": "53.4",
-    "OPENP*": "53.5",
-    "CLOSEP*": "53.8",
-    "YCP": "53.8",
-    "TRADE": "1158",
-    "VALUE (mn)": "68.276",
-    "VOLUME": "1271580"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "SEAPEARL",

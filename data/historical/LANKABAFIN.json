@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "LANKABAFIN",
-    "LTP*": "14.8",
-    "HIGH": "14.9",
-    "LOW": "14",
-    "OPENP*": "14",
-    "CLOSEP*": "14.8",
-    "YCP": "14.3",
-    "TRADE": "768",
-    "VALUE (mn)": "23.459",
-    "VOLUME": "1592551"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "LANKABAFIN",
-    "LTP*": "15.2",
-    "HIGH": "15.4",
-    "LOW": "14.5",
-    "OPENP*": "14.8",
-    "CLOSEP*": "15.2",
-    "YCP": "14.8",
-    "TRADE": "990",
-    "VALUE (mn)": "29.718",
-    "VOLUME": "1996868"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "LANKABAFIN",

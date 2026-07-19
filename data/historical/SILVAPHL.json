@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "SILVAPHL",
-    "LTP*": "11",
-    "HIGH": "11.1",
-    "LOW": "10.8",
-    "OPENP*": "10.8",
-    "CLOSEP*": "11",
-    "YCP": "10.7",
-    "TRADE": "298",
-    "VALUE (mn)": "7.044",
-    "VOLUME": "641731"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "SILVAPHL",
-    "LTP*": "11.2",
-    "HIGH": "11.5",
-    "LOW": "10.8",
-    "OPENP*": "11",
-    "CLOSEP*": "11.2",
-    "YCP": "11",
-    "TRADE": "456",
-    "VALUE (mn)": "8.172",
-    "VOLUME": "732970"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "SILVAPHL",

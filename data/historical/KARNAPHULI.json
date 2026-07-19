@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "KARNAPHULI",
-    "LTP*": "26.2",
-    "HIGH": "26.2",
-    "LOW": "25.3",
-    "OPENP*": "25.4",
-    "CLOSEP*": "26",
-    "YCP": "25.3",
-    "TRADE": "493",
-    "VALUE (mn)": "12.944",
-    "VOLUME": "502905"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "KARNAPHULI",
-    "LTP*": "25.8",
-    "HIGH": "26.1",
-    "LOW": "25.7",
-    "OPENP*": "26.1",
-    "CLOSEP*": "25.8",
-    "YCP": "26",
-    "TRADE": "248",
-    "VALUE (mn)": "7.268",
-    "VOLUME": "281417"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "KARNAPHULI",

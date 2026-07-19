@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "DUTCHBANGL",
-    "LTP*": "39.4",
-    "HIGH": "40.1",
-    "LOW": "39",
-    "OPENP*": "39.6",
-    "CLOSEP*": "39.2",
-    "YCP": "39.6",
-    "TRADE": "208",
-    "VALUE (mn)": "2.53",
-    "VOLUME": "64095"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "DUTCHBANGL",
-    "LTP*": "40",
-    "HIGH": "40.1",
-    "LOW": "39.1",
-    "OPENP*": "39.2",
-    "CLOSEP*": "40",
-    "YCP": "39.2",
-    "TRADE": "291",
-    "VALUE (mn)": "8.091",
-    "VOLUME": "203129"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "DUTCHBANGL",

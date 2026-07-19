@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "NAVANAPHAR",
-    "LTP*": "50.8",
-    "HIGH": "51.5",
-    "LOW": "50.2",
-    "OPENP*": "50.5",
-    "CLOSEP*": "50.8",
-    "YCP": "50.3",
-    "TRADE": "730",
-    "VALUE (mn)": "22.337",
-    "VOLUME": "440426"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "NAVANAPHAR",
-    "LTP*": "51.8",
-    "HIGH": "52",
-    "LOW": "50.8",
-    "OPENP*": "50.8",
-    "CLOSEP*": "51.8",
-    "YCP": "50.8",
-    "TRADE": "898",
-    "VALUE (mn)": "21.233",
-    "VOLUME": "412043"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "NAVANAPHAR",

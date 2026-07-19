@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "AGNISYSL",
-    "LTP*": "27.4",
-    "HIGH": "27.8",
-    "LOW": "26.8",
-    "OPENP*": "27.3",
-    "CLOSEP*": "27.4",
-    "YCP": "27.1",
-    "TRADE": "2916",
-    "VALUE (mn)": "160.32",
-    "VOLUME": "5898400"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "AGNISYSL",
-    "LTP*": "26.9",
-    "HIGH": "27.6",
-    "LOW": "26.7",
-    "OPENP*": "27.5",
-    "CLOSEP*": "26.9",
-    "YCP": "27.4",
-    "TRADE": "2936",
-    "VALUE (mn)": "154.107",
-    "VOLUME": "5711360"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "AGNISYSL",

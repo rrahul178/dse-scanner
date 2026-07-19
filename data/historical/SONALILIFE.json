@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "SONALILIFE",
-    "LTP*": "49.7",
-    "HIGH": "50.5",
-    "LOW": "47.5",
-    "OPENP*": "47.5",
-    "CLOSEP*": "49.7",
-    "YCP": "48.5",
-    "TRADE": "255",
-    "VALUE (mn)": "6.321",
-    "VOLUME": "127626"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "SONALILIFE",
-    "LTP*": "50.9",
-    "HIGH": "51.3",
-    "LOW": "46.5",
-    "OPENP*": "46.5",
-    "CLOSEP*": "49.7",
-    "YCP": "49.7",
-    "TRADE": "213",
-    "VALUE (mn)": "8.675",
-    "VOLUME": "175011"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "SONALILIFE",

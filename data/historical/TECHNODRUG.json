@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "TECHNODRUG",
-    "LTP*": "29.2",
-    "HIGH": "29.5",
-    "LOW": "28.1",
-    "OPENP*": "28.1",
-    "CLOSEP*": "29.2",
-    "YCP": "28.1",
-    "TRADE": "1642",
-    "VALUE (mn)": "58.477",
-    "VOLUME": "2016198"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "TECHNODRUG",
-    "LTP*": "29",
-    "HIGH": "29.4",
-    "LOW": "28.8",
-    "OPENP*": "29.4",
-    "CLOSEP*": "29",
-    "YCP": "29.2",
-    "TRADE": "740",
-    "VALUE (mn)": "23.428",
-    "VOLUME": "806055"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "TECHNODRUG",

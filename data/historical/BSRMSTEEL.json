@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "BSRMSTEEL",
-    "LTP*": "56",
-    "HIGH": "56",
-    "LOW": "54.5",
-    "OPENP*": "55",
-    "CLOSEP*": "55.9",
-    "YCP": "55.8",
-    "TRADE": "213",
-    "VALUE (mn)": "5.205",
-    "VOLUME": "93360"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "BSRMSTEEL",
-    "LTP*": "56.4",
-    "HIGH": "56.6",
-    "LOW": "55.4",
-    "OPENP*": "55.5",
-    "CLOSEP*": "56.3",
-    "YCP": "55.9",
-    "TRADE": "262",
-    "VALUE (mn)": "3.851",
-    "VOLUME": "68680"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "BSRMSTEEL",

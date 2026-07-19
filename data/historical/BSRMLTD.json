@@ -1,33 +1,5 @@
 [
   {
-    "#": "250",
-    "DATE": "2025-07-02",
-    "TRADING CODE": "BSRMLTD",
-    "LTP*": "76.5",
-    "HIGH": "77",
-    "LOW": "75",
-    "OPENP*": "75",
-    "CLOSEP*": "76.5",
-    "YCP": "75.6",
-    "TRADE": "148",
-    "VALUE (mn)": "2.715",
-    "VOLUME": "35689"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-03",
-    "TRADING CODE": "BSRMLTD",
-    "LTP*": "78",
-    "HIGH": "78.3",
-    "LOW": "76.3",
-    "OPENP*": "76.5",
-    "CLOSEP*": "78",
-    "YCP": "76.5",
-    "TRADE": "363",
-    "VALUE (mn)": "5.014",
-    "VOLUME": "64444"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-07",
     "TRADING CODE": "BSRMLTD",

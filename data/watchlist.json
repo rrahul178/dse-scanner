@@ -6,7 +6,7 @@
     "riskReward": {
       "ratio": 0
     },
-    "adx": 18.421139867498763,
+    "adx": 18.421139430884075,
     "mfi": 70.71429407283514,
     "obvTrend": "rising"
   },
@@ -17,7 +17,7 @@
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 16.28537981191594,
+    "adx": 16.285378430346515,
     "mfi": 56.590281318012174,
     "obvTrend": "rising"
   },
@@ -26,31 +26,33 @@
     "rank": 3,
     "rankChange": 0,
     "riskReward": null,
-    "adx": 35.12184951109817,
+    "adx": 35.12184855050345,
     "mfi": 73.91397836254633,
     "obvTrend": "rising"
   },
   {
-    "code": "SQURPHARMA",
+    "code": "UNITEDINS",
     "rank": 4,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 1.6
+      "ratio": 0.6
     },
-    "adx": 28.975971281122234,
-    "mfi": 49.38467470304733,
-    "obvTrend": "rising"
+    "adx": 31.605084561562656,
+    "mfi": 71.57490563008282,
+    "obvTrend": "flat"
   },
   {
-    "code": "NAVANAPHAR",
+    "code": "SALVO",
     "rank": 5,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 0.3
     },
-    "adx": 35.90193597955869,
-    "mfi": 77.51467014634707,
-    "obvTrend": "rising"
+    "adx": 23.10551201362797,
+    "mfi": 70.5111311056493,
+    "obvTrend": "flat"
   },
   {
     "code": "SILCOPHL",
@@ -59,30 +61,30 @@
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 44.92491830051769,
+    "adx": 44.92491488466781,
     "mfi": 65.11195066244673,
     "obvTrend": "rising"
   },
   {
-    "code": "SONALILIFE",
+    "code": "NAVANAPHAR",
     "rank": 7,
-    "rankChange": 0,
+    "rankChange": -2,
     "riskReward": {
-      "ratio": 0.9
+      "ratio": 0.5
     },
-    "adx": 18.60320858950138,
-    "mfi": 46.03511764814504,
+    "adx": 35.90193458357367,
+    "mfi": 77.51467014634707,
     "obvTrend": "rising"
   },
   {
-    "code": "ROBI",
+    "code": "SONALILIFE",
     "rank": 8,
-    "rankChange": 0,
+    "rankChange": -1,
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.9
     },
-    "adx": 34.70776353669415,
-    "mfi": 62.17505793004678,
+    "adx": 18.60320942922993,
+    "mfi": 46.03511764814504,
     "obvTrend": "rising"
   },
   {
@@ -92,17 +94,19 @@
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 28.487570286481695,
+    "adx": 28.487568069250194,
     "mfi": 67.46258168683153,
     "obvTrend": "rising"
   },
   {
-    "code": "AMANFEED",
+    "code": "ROBI",
     "rank": 10,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 26.890890590757646,
-    "mfi": 72.6452528010849,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 34.70776377843402,
+    "mfi": 62.17505793004678,
     "obvTrend": "rising"
   }
 ]
