@@ -1277,8 +1277,20 @@ async function main() {
     document.getElementById("warnBanner").innerHTML = `<i class="fas fa-info-circle"></i> ডেমো ডেটা — রিয়েল ডেটা দেখতে GitHub Actions scraper চালান। ফান্ডামেন্টাল ডেটা সিমুলেটেড।`;
   }
 
-  /* ফান্ডামেন্টাল ডেটা (সবসময় ডেমো — রিয়েল API নেই) */
-  fundDataMap = generateDemoFundamental(marketRows);
+   /* ফান্ডামেন্টাল ডেটা লোড */
+  try {
+    const fundRaw = await fetchJson("fundamental.json");
+    fundDataMap = {};
+    fundRaw.forEach(f => { fundDataMap[f.code] = f; });
+    /* যেসব শেয়ারের ফান্ডামেন্টাল ডেটা নেই, তাদের ডেমো দিই */
+    const demoFund = generateDemoFundamental(
+      marketRows.filter(r => !fundDataMap[r.code])
+    );
+    Object.assign(fundDataMap, demoFund);
+  } catch (e) {
+    console.warn("fundamental.json লোড ব্যর্থ, সব ডেমো:", e);
+    fundDataMap = generateDemoFundamental(marketRows);
+  }
 
   /* সব শেয়ার বিশ্লেষণ */
   for (const code of Object.keys(allChartData)) {
