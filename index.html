@@ -3,755 +3,1336 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DSE Scanner — লাইভ স্ক্যানার</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js';document.head.appendChild(s);"></script>
+<title>DSE Scanner Pro — ফান্ডামেন্টাল + টেকনিক্যাল অ্যানালাইসিস</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-  :root{
-    --bg: #0a0e14;
-    --bg-panel: #10161f;
-    --bg-card: #151b26;
-    --border: #232b38;
-    --text: #e6ecf5;
-    --text-dim: #7c8798;
-    --text-faint: #4d5666;
-    --up: #2fd67f;
-    --up-bg: rgba(47,214,127,0.1);
-    --down: #ff5470;
-    --down-bg: rgba(255,84,112,0.1);
-    --accent: #4fa0ff;
-    --amber: #ffb84f;
-    --mono: 'SF Mono', 'Consolas', 'Menlo', monospace;
-  }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  body{
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, "Segoe UI", "Noto Sans Bengali", sans-serif;
-    padding: 20px;
-    line-height: 1.4;
-  }
-  .wrap{ max-width: 1400px; margin: 0 auto; }
-  header{
-    display:flex; justify-content:space-between; align-items:center;
-    flex-wrap: wrap; gap: 12px;
-    padding-bottom: 18px; margin-bottom: 20px;
-    border-bottom: 1px solid var(--border);
-  }
-  .brand{ display:flex; align-items:center; gap: 10px; }
-  .brand .dot{ width:10px; height:10px; border-radius:50%; background: var(--up); box-shadow: 0 0 8px var(--up); }
-  .brand h1{ font-size: 20px; font-weight: 700; letter-spacing: 0.3px; }
-  .brand h1 span{ color: var(--text-dim); font-weight: 400; }
-  .meta-info{ display:flex; gap: 18px; font-size: 12.5px; color: var(--text-dim); font-family: var(--mono); flex-wrap: wrap;}
-  .meta-info b{ color: var(--text); }
-  .status-pill{
-    display:inline-flex; align-items:center; gap:6px;
-    padding: 4px 10px; border-radius: 20px; background: var(--bg-card); border:1px solid var(--border);
-  }
-  .no-fresh-banner{
-    background: rgba(230,180,60,0.10); border: 1px solid rgba(230,180,60,0.35);
-    color: #e6b43c; padding: 10px 14px; border-radius: 8px; font-size: 12.5px;
-    line-height: 1.6; margin-bottom: 16px;
-  }
-  .section-title{
-    display:flex; align-items:center; gap:10px;
-    font-size: 13px; text-transform: uppercase; letter-spacing: 1.2px;
-    color: var(--text-dim); margin: 28px 0 14px;
-  }
-  .section-title::after{ content:""; flex:1; height:1px; background: var(--border); }
-  .watchlist-grid{
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px;
-  }
-  .card{
-    background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px;
-  }
-  .card-top{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 10px; }
-  .sym{ font-size: 17px; font-weight: 700; font-family: var(--mono); }
-  .ltp-row{ text-align: right; }
-  .ltp{ font-size: 19px; font-weight: 700; font-family: var(--mono); }
-  .chg{ font-size: 12.5px; font-family: var(--mono); font-weight: 600; }
-  .chg.up{ color: var(--up); } .chg.down{ color: var(--down); } .chg.flat{ color: var(--text-dim); }
-  .signal-row{ display:flex; flex-wrap:wrap; gap:6px; margin: 10px 0 12px; }
-  .badge{
-    font-size: 11px; padding: 3px 9px; border-radius: 5px; font-weight: 600;
-    border: 1px solid transparent;
-  }
-  .badge.buy{ background: var(--up-bg); color: var(--up); border-color: rgba(47,214,127,0.3); }
-  .badge.sell{ background: var(--down-bg); color: var(--down); border-color: rgba(255,84,112,0.3); }
-  .badge.neutral{ background: rgba(124,135,152,0.12); color: var(--text-dim); }
-  .badge.info{ background: rgba(79,160,255,0.12); color: var(--accent); }
-  .chart-box{ height: 130px; margin: 8px 0 12px; }
-  .metric-grid{
-    display:grid; grid-template-columns: 1fr 1fr; gap: 8px 16px;
-    font-size: 12.5px; font-family: var(--mono);
-  }
-  .metric-grid .k{ color: var(--text-faint); }
-  .metric-grid .v{ color: var(--text); float:right; }
-  .range-bar{ position: relative; height: 5px; background: var(--border); border-radius: 3px; margin-top: 4px; }
-  .range-bar .fill{ position:absolute; top:-3px; width: 3px; height: 11px; background: var(--accent); border-radius: 2px; }
-  .watchlist-strategy{ font-size: 12px; color: var(--text-faint); margin: -8px 0 14px; }
-  .score-row{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px; }
-  .score-label{ font-size: 11.5px; color: var(--text-dim); text-transform:uppercase; letter-spacing:0.5px; }
-  .score-num{ font-size: 14px; font-weight:700; font-family: var(--mono); }
-  .score-num.up{ color: var(--up); } .score-num.flat{ color: var(--amber); } .score-num.down{ color: var(--down); }
-  .score-bar{ height:6px; background:var(--border); border-radius:4px; overflow:hidden; margin-bottom:10px; }
-  .score-fill{ height:100%; border-radius:4px; }
-  .score-fill.up{ background: var(--up); } .score-fill.flat{ background: var(--amber); } .score-fill.down{ background: var(--down); }
-  .reasons{ list-style:none; margin: 0 0 12px; padding:0; display:flex; flex-direction:column; gap:4px; }
-  .reasons li{ font-size:12px; color: var(--text-dim); padding-left:14px; position:relative; }
-  .reasons li::before{ content:"✓"; position:absolute; left:0; color: var(--up); font-weight:700; }
-  .reasons-empty{ font-size:12px; color: var(--text-faint); margin-bottom:12px; font-style:italic; }
-  .toolbar{ display:flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; align-items:center; }
-  .toolbar input, .toolbar select{
-    background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
-    padding: 8px 12px; border-radius: 6px; font-size: 13px; font-family: inherit;
-  }
-  .toolbar input{ min-width: 220px; }
-  .tabs{ display:flex; gap:6px; }
-  .tab-btn{
-    background: var(--bg-card); border: 1px solid var(--border); color: var(--text-dim);
-    padding: 7px 14px; border-radius: 6px; font-size: 12.5px; cursor:pointer; font-weight:600;
-  }
-  .tab-btn.active{ background: var(--accent); color: #06121f; border-color: var(--accent); }
-  table{ width: 100%; border-collapse: collapse; font-size: 13px; }
-  thead th{
-    text-align: left; color: var(--text-faint); font-weight: 600; font-size: 11px;
-    text-transform: uppercase; letter-spacing: 0.6px; padding: 10px 12px;
-    border-bottom: 1px solid var(--border); cursor:pointer; user-select:none; white-space:nowrap;
-  }
-  thead th:hover{ color: var(--text-dim); }
-  tbody td{ padding: 9px 12px; border-bottom: 1px solid rgba(35,43,56,0.6); font-family: var(--mono); white-space:nowrap; }
-  tbody tr:hover{ background: rgba(255,255,255,0.02); }
-  td.num{ text-align:right; }
-  td.code{ font-family: var(--mono); font-weight:700; }
-  .table-scroll{ overflow-x:auto; background: var(--bg-panel); border:1px solid var(--border); border-radius: 10px; }
-  footer{ text-align:center; color: var(--text-faint); font-size: 12px; margin-top: 30px; padding: 20px 0 6px; }
-  .credit{ margin-top: 6px; font-size: 11.5px; color: var(--text-faint); opacity: 0.85; }
-  .loading{ text-align:center; padding: 60px 0; color: var(--text-dim); font-family: var(--mono); }
-  .err{ background: var(--down-bg); border:1px solid rgba(255,84,112,0.3); color: var(--down); padding:12px 16px; border-radius:8px; font-size:13px; margin-bottom:16px; }
-  @media (max-width: 720px){
-    body{ padding: 12px; }
-    header{ padding-bottom: 14px; margin-bottom: 16px; gap: 10px; }
-    .brand h1{ font-size: 16px; }
-    .brand h1 span{ display:block; font-size: 12px; margin-top:2px; }
-    .meta-info{ font-size: 11px; gap: 10px; width:100%; }
-    .section-title{ font-size: 11.5px; margin: 20px 0 10px; }
-    .watchlist-strategy{ font-size: 11px; margin: -4px 0 12px; }
-    .watchlist-grid{ grid-template-columns: 1fr; gap: 12px; }
-    .card{ padding: 14px; }
-    .sym{ font-size: 15px; }
-    .ltp{ font-size: 17px; }
-    .metric-grid{ font-size: 11.5px; }
-    .toolbar{ flex-direction: column; align-items: stretch; }
-    .toolbar input{ min-width: 0; width: 100%; }
-    .tabs{ overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; }
-    .tab-btn{ flex: 0 0 auto; padding: 9px 13px; font-size: 12px; }
-    table{ font-size: 12px; }
-    thead th{ padding: 8px 8px; font-size: 10px; }
-    tbody td{ padding: 8px 8px; }
-    th:nth-child(5), td:nth-child(5),
-    th:nth-child(6), td:nth-child(6){ display:none; }
-  }
-  @media (max-width: 420px){
-    .brand{ gap: 8px; }
-    .status-pill{ font-size: 11px; padding: 3px 8px; }
-    th:nth-child(8), td:nth-child(8){ display:none; }
-  }
+:root{
+  --bg:#060a0e;--bg-panel:#0c1219;--bg-card:#111822;--bg-card-hover:#161e2a;
+  --border:#1c2736;--border-light:#253345;
+  --text:#e2eaf4;--text-muted:#6b7f96;--text-faint:#3a4d63;
+  --up:#00e676;--up-dim:rgba(0,230,118,0.10);--up-glow:rgba(0,230,118,0.25);
+  --down:#ff4466;--down-dim:rgba(255,68,102,0.10);--down-glow:rgba(255,68,102,0.25);
+  --accent:#38bdf8;--accent-dim:rgba(56,189,248,0.10);
+  --amber:#ffb020;--amber-dim:rgba(255,176,32,0.10);
+  --purple:#a78bfa;--purple-dim:rgba(167,139,250,0.10);
+  --mono:'JetBrains Mono','SF Mono','Consolas',monospace;
+  --sans:'Space Grotesk','Segoe UI','Noto Sans Bengali',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.45;overflow-x:hidden;}
+.bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(rgba(56,189,248,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,0.025) 1px,transparent 1px);
+  background-size:60px 60px;}
+.bg-glow-1{position:fixed;top:-20%;left:-10%;width:50vw;height:50vw;
+  background:radial-gradient(circle,rgba(0,230,118,0.035) 0%,transparent 65%);pointer-events:none;z-index:0;animation:gd 20s ease-in-out infinite alternate;}
+.bg-glow-2{position:fixed;bottom:-15%;right:-10%;width:45vw;height:45vw;
+  background:radial-gradient(circle,rgba(56,189,248,0.025) 0%,transparent 65%);pointer-events:none;z-index:0;animation:gd 25s ease-in-out infinite alternate-reverse;}
+@keyframes gd{0%{transform:translate(0,0)}100%{transform:translate(40px,-30px)}}
+.scanline{position:fixed;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--up),transparent);
+  opacity:0.12;z-index:999;pointer-events:none;animation:sm 6s linear infinite;}
+@keyframes sm{0%{top:-2px;opacity:0}5%{opacity:0.12}95%{opacity:0.12}100%{top:100vh;opacity:0}}
+.wrap{position:relative;z-index:1;max-width:1460px;margin:0 auto;padding:20px;}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
+  padding-bottom:18px;margin-bottom:20px;border-bottom:1px solid var(--border);}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-icon{width:40px;height:40px;border-radius:10px;background:var(--up-dim);border:1px solid rgba(0,230,118,0.2);
+  display:flex;align-items:center;justify-content:center;}
+.brand-icon i{color:var(--up);font-size:1rem;}
+.brand h1{font-size:1.2rem;font-weight:700;letter-spacing:-0.02em;}
+.brand h1 span{display:block;font-size:0.68rem;color:var(--text-muted);font-weight:400;margin-top:1px;}
+.header-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.status-pill{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:20px;
+  background:var(--bg-card);border:1px solid var(--border);font-size:0.72rem;color:var(--text-muted);font-family:var(--mono);}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--up);box-shadow:0 0 8px var(--up);animation:lp 2s ease infinite;}
+@keyframes lp{0%,100%{opacity:1}50%{opacity:0.4}}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:8px;
+  font-size:0.75rem;font-weight:600;border:none;cursor:pointer;transition:all 0.2s;font-family:var(--sans);}
+.btn-primary{background:var(--up);color:#060a0e;}
+.btn-primary:hover{box-shadow:0 4px 20px var(--up-glow);transform:translateY(-1px);}
+.btn-ghost{background:transparent;color:var(--text-muted);border:1px solid var(--border);}
+.btn-ghost:hover{border-color:var(--text-faint);color:var(--text);}
+
+/* ওভারভিউ */
+.overview-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:22px;}
+.ov-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:12px 14px;position:relative;overflow:hidden;transition:border-color 0.2s;}
+.ov-card:hover{border-color:var(--border-light);}
+.ov-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.ov-card.g::before{background:var(--up);}.ov-card.r::before{background:var(--down);}
+.ov-card.a::before{background:var(--accent);}.ov-card.w::before{background:var(--amber);}.ov-card.p::before{background:var(--purple);}
+.ov-label{font-size:0.64rem;text-transform:uppercase;letter-spacing:0.8px;color:var(--text-faint);font-weight:600;}
+.ov-value{font-size:1.25rem;font-weight:700;font-family:var(--mono);margin-top:3px;line-height:1;}
+.ov-sub{font-size:0.68rem;color:var(--text-muted);margin-top:3px;font-family:var(--mono);}
+.up-c{color:var(--up);}.down-c{color:var(--down);}.accent-c{color:var(--accent);}.amber-c{color:var(--amber);}.purple-c{color:var(--purple);}
+
+/* সেকশন */
+.sec-title{display:flex;align-items:center;gap:10px;font-size:0.75rem;text-transform:uppercase;
+  letter-spacing:1.2px;color:var(--text-muted);margin:26px 0 12px;font-weight:600;}
+.sec-title::after{content:'';flex:1;height:1px;background:var(--border);}
+.sec-title i{font-size:0.82rem;color:var(--accent);}
+
+/* হিটম্যাপ */
+.heatmap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:3px;margin-bottom:6px;}
+.hm-cell{padding:8px 6px;border-radius:5px;text-align:center;cursor:pointer;transition:all 0.15s;border:1px solid transparent;}
+.hm-cell:hover{border-color:rgba(255,255,255,0.15);transform:scale(1.03);z-index:2;}
+.hm-code{font-size:0.68rem;font-weight:700;font-family:var(--mono);opacity:0.9;}
+.hm-pct{font-size:0.78rem;font-weight:700;font-family:var(--mono);margin-top:1px;}
+
+/* ওয়াচলিস্ট কার্ড */
+.wl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(370px,1fr));gap:12px;}
+.card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:16px;transition:all 0.25s;cursor:pointer;}
+.card:hover{border-color:var(--border-light);background:var(--bg-card-hover);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,0.3);}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;}
+.card-top-left{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.sym{font-size:1rem;font-weight:700;font-family:var(--mono);}
+.sector-pill{font-size:0.58rem;padding:2px 7px;border-radius:4px;background:var(--accent-dim);color:var(--accent);font-weight:600;}
+.rec-badge{font-size:0.58rem;padding:2px 8px;border-radius:4px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;}
+.rec-strong-buy{background:var(--up-dim);color:var(--up);border:1px solid rgba(0,230,118,0.3);}
+.rec-buy{background:rgba(0,230,118,0.06);color:var(--up);}
+.rec-hold{background:var(--amber-dim);color:var(--amber);}
+.rec-sell{background:var(--down-dim);color:var(--down);}
+.rec-strong-sell{background:var(--down-dim);color:var(--down);border:1px solid rgba(255,68,102,0.3);}
+.ltp-r{text-align:right;}
+.ltp{font-size:1.15rem;font-weight:700;font-family:var(--mono);}
+.chg{font-size:0.72rem;font-family:var(--mono);font-weight:600;}
+.chg.up{color:var(--up);}.chg.down{color:var(--down);}.chg.flat{color:var(--text-muted);}
+
+/* ডুয়াল স্কোর বার */
+.dual-scores{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.ds-item{position:relative;}
+.ds-label{font-size:0.6rem;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.5px;display:flex;justify-content:space-between;}
+.ds-label span:last-child{font-weight:700;font-family:var(--mono);}
+.ds-bar{height:4px;background:var(--border);border-radius:2px;overflow:hidden;margin-top:3px;}
+.ds-fill{height:100%;border-radius:2px;transition:width 0.6s ease;}
+.ds-fill.up{background:var(--up);}.ds-fill.flat{background:var(--amber);}.ds-fill.down{background:var(--down);}
+.composite-row{display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:var(--bg-panel);border-radius:6px;margin-bottom:8px;}
+.comp-label{font-size:0.65rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;}
+.comp-value{font-size:0.95rem;font-weight:700;font-family:var(--mono);}
+
+/* ফান্ডামেন্টাল সামারি রো */
+.fund-summary{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px;}
+.fs-item{font-size:0.62rem;padding:2px 7px;border-radius:4px;background:rgba(255,255,255,0.04);border:1px solid var(--border);font-family:var(--mono);color:var(--text-muted);white-space:nowrap;}
+.fs-item b{color:var(--text);font-weight:600;}
+
+/* সিগন্যাল ব্যাজ */
+.signal-row{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0 10px;}
+.badge{font-size:0.6rem;padding:2px 7px;border-radius:4px;font-weight:600;border:1px solid transparent;white-space:nowrap;}
+.badge.buy{background:var(--up-dim);color:var(--up);border-color:rgba(0,230,118,0.2);}
+.badge.sell{background:var(--down-dim);color:var(--down);border-color:rgba(255,68,102,0.2);}
+.badge.neutral{background:rgba(107,127,150,0.08);color:var(--text-muted);}
+.badge.info{background:var(--accent-dim);color:var(--accent);}
+.badge.warn{background:var(--amber-dim);color:var(--amber);}
+.badge.purple{background:var(--purple-dim);color:var(--purple);}
+
+.chart-box{height:100px;margin:2px 0 8px;}
+.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;font-size:0.68rem;font-family:var(--mono);}
+.metric-grid .k{color:var(--text-faint);}.metric-grid .v{color:var(--text);text-align:right;}
+.range-bar{position:relative;height:4px;background:var(--border);border-radius:2px;margin-top:3px;}
+.range-bar .fill{position:absolute;top:-3px;width:3px;height:10px;background:var(--accent);border-radius:2px;}
+.reasons{list-style:none;margin:0 0 8px;padding:0;display:flex;flex-direction:column;gap:2px;}
+.reasons li{font-size:0.66rem;color:var(--text-muted);padding-left:13px;position:relative;}
+.reasons li::before{content:'\2713';position:absolute;left:0;color:var(--up);font-weight:700;font-size:0.65rem;}
+.reasons-empty{font-size:0.66rem;color:var(--text-faint);margin-bottom:8px;font-style:italic;}
+
+/* টেবিল */
+.toolbar{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;align-items:center;}
+.toolbar input,.toolbar select{background:var(--bg-card);border:1px solid var(--border);color:var(--text);
+  padding:7px 10px;border-radius:7px;font-size:0.75rem;font-family:var(--sans);outline:none;transition:border-color 0.2s;}
+.toolbar input:focus,.toolbar select:focus{border-color:var(--accent);}
+.toolbar input{min-width:180px;}
+.toolbar input.sm{min-width:80px;width:90px;}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;}
+.tab-btn{background:var(--bg-card);border:1px solid var(--border);color:var(--text-muted);
+  padding:6px 11px;border-radius:6px;font-size:0.68rem;cursor:pointer;font-weight:600;transition:all 0.2s;font-family:var(--sans);white-space:nowrap;}
+.tab-btn:hover{border-color:var(--text-faint);}
+.tab-btn.active{background:var(--accent);color:#060a0e;border-color:var(--accent);}
+.table-scroll{overflow-x:auto;background:var(--bg-panel);border:1px solid var(--border);border-radius:10px;}
+table{width:100%;border-collapse:collapse;font-size:0.72rem;}
+thead th{text-align:left;color:var(--text-faint);font-weight:600;font-size:0.6rem;
+  text-transform:uppercase;letter-spacing:0.5px;padding:9px 8px;
+  border-bottom:1px solid var(--border);cursor:pointer;user-select:none;white-space:nowrap;}
+thead th:hover{color:var(--text-muted);}
+tbody td{padding:7px 8px;border-bottom:1px solid rgba(28,39,54,0.5);font-family:var(--mono);white-space:nowrap;}
+tbody tr{transition:background 0.15s;cursor:pointer;}
+tbody tr:hover{background:rgba(255,255,255,0.02);}
+td.num{text-align:right;}td.code{font-weight:700;}
+
+/* ফান্ডামেন্টাল স্ক্রিনার */
+.screener-bar{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;align-items:center;padding:12px;background:var(--bg-panel);border:1px solid var(--border);border-radius:10px;}
+.screener-bar label{font-size:0.62rem;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.5px;font-weight:600;}
+.screener-group{display:flex;flex-direction:column;gap:2px;}
+.screener-group input,.screener-group select{background:var(--bg-card);border:1px solid var(--border);color:var(--text);
+  padding:5px 8px;border-radius:5px;font-size:0.7rem;font-family:var(--mono);outline:none;width:100%;}
+.screener-group input:focus,.screener-group select:focus{border-color:var(--accent);}
+
+/* মোডাল */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);backdrop-filter:blur(8px);
+  z-index:500;display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity 0.25s;}
+.modal-overlay.active{opacity:1;pointer-events:all;}
+.modal-box{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;
+  width:94%;max-width:860px;max-height:92vh;overflow-y:auto;padding:24px;
+  transform:translateY(20px) scale(0.97);transition:transform 0.3s;}
+.modal-overlay.active .modal-box{transform:translateY(0) scale(1);}
+.modal-close{background:none;border:none;color:var(--text-faint);cursor:pointer;font-size:1.1rem;padding:4px;transition:color 0.2s;}
+.modal-close:hover{color:var(--text);}
+.modal-charts{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:16px;}
+.modal-chart-box{height:200px;background:var(--bg-panel);border-radius:8px;padding:10px;border:1px solid var(--border);}
+.modal-chart-box.small{height:140px;}
+.modal-chart-box.rsi-box{height:100px;}
+.modal-metrics{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:16px;}
+.modal-metric{background:var(--bg-panel);border:1px solid var(--border);border-radius:8px;padding:9px 11px;}
+.modal-metric .mm-label{font-size:0.6rem;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.5px;}
+.modal-metric .mm-value{font-size:0.95rem;font-weight:700;font-family:var(--mono);margin-top:1px;}
+
+/* স্কোর ব্রেকডাউন টেবিল */
+.score-table{width:100%;border-collapse:collapse;font-size:0.7rem;margin-bottom:16px;}
+.score-table th{text-align:left;color:var(--text-faint);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.5px;
+  padding:6px 8px;border-bottom:1px solid var(--border);font-weight:600;}
+.score-table td{padding:5px 8px;border-bottom:1px solid rgba(28,39,54,0.4);font-family:var(--mono);}
+.score-table .st-bar{width:60px;height:4px;background:var(--border);border-radius:2px;display:inline-block;vertical-align:middle;margin-left:6px;}
+.score-table .st-fill{height:100%;border-radius:2px;}
+
+.verdict-box{padding:14px 16px;border-radius:10px;margin-bottom:16px;text-align:center;}
+.verdict-box h3{font-size:1.1rem;font-weight:700;margin-bottom:4px;}
+.verdict-box p{font-size:0.78rem;color:var(--text-muted);}
+
+.prediction-box{background:var(--bg-panel);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:14px;}
+.prediction-box h4{font-size:0.75rem;color:var(--accent);margin-bottom:6px;font-weight:600;}
+.pred-row{display:flex;justify-content:space-between;padding:3px 0;font-size:0.72rem;font-family:var(--mono);}
+.pred-row .pk{color:var(--text-muted);}.pred-row .pv{font-weight:600;}
+
+/* টোস্ট */
+.toast-box{position:fixed;top:20px;right:20px;z-index:600;display:flex;flex-direction:column;gap:8px;}
+.toast{padding:10px 16px;border-radius:8px;font-size:0.78rem;font-weight:500;display:flex;align-items:center;gap:8px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.4);animation:ti 0.3s ease,to 0.3s ease 2.5s forwards;}
+.toast-ok{background:#0a2018;border:1px solid #1a4030;color:var(--up);}
+.toast-err{background:#200a0e;border:1px solid #401a22;color:var(--down);}
+.toast-info{background:#0a1520;border:1px solid #1a3040;color:var(--accent);}
+@keyframes ti{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes to{to{opacity:0;transform:translateX(40px)}}
+.warn-banner{background:var(--amber-dim);border:1px solid rgba(255,176,32,0.3);color:var(--amber);
+  padding:10px 14px;border-radius:8px;font-size:0.75rem;line-height:1.6;margin-bottom:14px;}
+.err-banner{background:var(--down-dim);border:1px solid rgba(255,68,102,0.3);color:var(--down);
+  padding:12px 16px;border-radius:8px;font-size:0.78rem;margin-bottom:14px;}
+.loading{text-align:center;padding:60px 0;color:var(--text-muted);font-family:var(--mono);}
+.loading i{font-size:1.5rem;animation:spin 1s linear infinite;display:block;margin-bottom:12px;}
+@keyframes spin{to{transform:rotate(360deg)}}
+footer{text-align:center;color:var(--text-faint);font-size:0.68rem;margin-top:30px;padding:20px 0 6px;}
+.credit{margin-top:5px;font-size:0.65rem;color:var(--text-faint);opacity:0.8;}
+.view-toggle{display:flex;gap:4px;margin-bottom:12px;}
+.view-btn{padding:6px 14px;border-radius:6px;font-size:0.7rem;font-weight:600;cursor:pointer;border:1px solid var(--border);
+  background:var(--bg-card);color:var(--text-muted);transition:all 0.2s;font-family:var(--sans);}
+.view-btn.active{background:var(--purple);color:#060a0e;border-color:var(--purple);}
+
+@media(max-width:768px){
+  body{padding:0;}.wrap{padding:12px;}
+  header{padding-bottom:12px;margin-bottom:14px;gap:8px;}
+  .brand h1{font-size:1rem;}.brand h1 span{font-size:0.6rem;}
+  .header-right{width:100%;justify-content:space-between;}
+  .overview-bar{grid-template-columns:repeat(2,1fr);gap:6px;}
+  .ov-value{font-size:1rem;}
+  .heatmap-grid{grid-template-columns:repeat(auto-fill,minmax(80px,1fr));}
+  .wl-grid{grid-template-columns:1fr;gap:10px;}
+  .card{padding:12px;}
+  .sym{font-size:0.9rem;}.ltp{font-size:1rem;}
+  .toolbar{flex-direction:column;align-items:stretch;}
+  .toolbar input{min-width:0;width:100%;}
+  .tabs{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px;}
+  table{font-size:0.65rem;}thead th,tbody td{padding:6px 5px;}
+  .screener-bar{flex-direction:column;align-items:stretch;}
+  .screener-group{flex-direction:row;align-items:center;gap:6px;}
+  .screener-group label{min-width:60px;}
+  .screener-group input,.screener-group select{width:auto;flex:1;}
+  .modal-box{padding:16px;width:96%;}
+  .modal-metrics{grid-template-columns:repeat(2,1fr);}
+  th:nth-child(6),td:nth-child(6),th:nth-child(7),td:nth-child(7),
+  th:nth-child(12),td:nth-child(12),th:nth-child(13),td:nth-child(13){display:none;}
+}
+@media(max-width:420px){
+  .ov-card{padding:8px 10px;}.ov-value{font-size:0.9rem;}
+  th:nth-child(10),td:nth-child(10),th:nth-child(11),td:nth-child(11){display:none;}
+  .hm-cell{padding:6px 3px;}.hm-code{font-size:0.6rem;}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+  .scanline{display:none;}
+}
 </style>
 </head>
 <body>
+
+<div class="bg-grid"></div><div class="bg-glow-1"></div><div class="bg-glow-2"></div><div class="scanline"></div>
+<div class="toast-box" id="toastBox"></div>
+
+<div class="modal-overlay" id="detailModal"><div class="modal-box" id="modalContent"></div></div>
+
 <div class="wrap">
   <header>
     <div class="brand">
-      <span class="dot"></span>
-      <h1>DSE Scanner <span>রিয়েল-টাইম DSE স্টক স্ক্যানার</span></h1>
+      <div class="brand-icon"><i class="fas fa-satellite-dish"></i></div>
+      <h1>DSE Scanner Pro <span>ফান্ডামেন্টাল + টেকনিক্যাল অ্যানালাইসিস ও প্রেডিকশন</span></h1>
     </div>
-    <div class="meta-info">
-      <span class="status-pill" id="lastUpdated">⏱ লোড হচ্ছে...</span>
+    <div class="header-right">
+      <span class="status-pill" id="lastUpdated"><span class="live-dot"></span> লোড হচ্ছে...</span>
+      <button class="btn btn-ghost" onclick="exportCSV()"><i class="fas fa-download"></i> CSV</button>
     </div>
   </header>
 
   <div id="errBox"></div>
-  <div id="loadingBox" class="loading">📡 dsebd.org থেকে ডেটা লোড হচ্ছে...</div>
+  <div id="loadingBox" class="loading"><i class="fas fa-satellite-dish"></i>ডেটা লোড হচ্ছে...</div>
 
   <div id="content" style="display:none;">
-    <div id="noFreshSessionBanner" class="no-fresh-banner" style="display:none;"></div>
+    <div id="warnBanner" class="warn-banner" style="display:none;"></div>
+    <div class="overview-bar" id="overviewBar"></div>
 
-    <div class="section-title">টপ ১০ ক্রয়যোগ্য শেয়ার (অটো) — RSI · MA ক্রসওভার · S/R · SMC (Order Block/FVG/Liquidity Sweep) · ক্যান্ডেলস্টিক</div>
-    <div class="watchlist-strategy" id="watchlistStrategy"></div>
-    <div class="watchlist-grid" id="watchlistGrid"></div>
+    <div class="sec-title"><i class="fas fa-th"></i> মার্কেট হিটম্যাপ</div>
+    <div class="heatmap-grid" id="heatmapGrid"></div>
 
-    <div class="section-title">সব শেয়ার — লাইভ প্রাইস র‍্যাঙ্কিং (৩৯৬টি)</div>
-    <div class="toolbar">
-      <input type="text" id="searchBox" placeholder="🔍 ট্রেডিং কোড খুঁজুন (যেমন: GP, ACI)">
-      <div class="tabs">
-        <button class="tab-btn active" data-sort="change_desc">🔺 টপ গেইনার্স</button>
-        <button class="tab-btn" data-sort="change_asc">🔻 টপ লুজার্স</button>
-        <button class="tab-btn" data-sort="volume_desc">📊 ভলিউম</button>
-        <button class="tab-btn" data-sort="value_desc">💰 ভ্যালু</button>
-      </div>
+    <div class="sec-title"><i class="fas fa-crosshairs"></i> ক্রয়যোগ্য শেয়ার — ফান্ডামেন্টাল + টেকনিক্যাল কম্পোজিট র‍্যাঙ্কিং</div>
+    <div class="wl-grid" id="watchlistGrid"></div>
+
+    <div class="sec-title"><i class="fas fa-list-ol"></i> সব শেয়ার — কম্পোজিট র‍্যাঙ্কিং</div>
+
+    <!-- ভিউ টগল -->
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="table" onclick="setView('table',this)"><i class="fas fa-table"></i> টেবিল</button>
+      <button class="view-btn" data-view="screener" onclick="setView('screener',this)"><i class="fas fa-filter"></i> ফান্ডামেন্টাল স্ক্রিনার</button>
     </div>
-    <div class="table-scroll">
-      <table>
-        <thead>
-          <tr>
-            <th data-key="code">কোড</th>
-            <th data-key="ltp" class="num">LTP</th>
-            <th data-key="change" class="num">চেঞ্জ</th>
-            <th data-key="changePct" class="num">চেঞ্জ%</th>
-            <th data-key="high" class="num">হাই</th>
-            <th data-key="low" class="num">লো</th>
-            <th data-key="volume" class="num">ভলিউম</th>
-            <th data-key="value" class="num">ভ্যালু (mn)</th>
-          </tr>
-        </thead>
+
+    <!-- সাধারণ টেবিল ভিউ -->
+    <div id="tableView">
+      <div class="toolbar">
+        <input type="text" id="searchBox" placeholder="কোড খুঁজুন (GP, ACI...)">
+        <div class="tabs">
+          <button class="tab-btn active" data-sort="composite_desc">কম্পোজিট</button>
+          <button class="tab-btn" data-sort="change_desc">গেইনার্স</button>
+          <button class="tab-btn" data-sort="change_asc">লুজার্স</button>
+          <button class="tab-btn" data-sort="fund_desc">ফান্ডামেন্টাল</button>
+          <button class="tab-btn" data-sort="pe_asc">P/E কম</button>
+          <button class="tab-btn" data-sort="dy_desc">ডিভিডেন্ড</button>
+          <button class="tab-btn" data-sort="volume_desc">ভলিউম</button>
+        </div>
+      </div>
+      <div class="table-scroll"><table>
+        <thead><tr>
+          <th>কোড</th><th class="num">LTP</th><th class="num">চেঞ্জ%</th>
+          <th>সেক্টর</th><th class="num">P/E</th><th class="num">P/B</th><th class="num">ROE%</th><th class="num">ডিভি%</th>
+          <th class="num">টেকনি.</th><th class="num">ফান্ডা.</th><th class="num">কম্পোজিট</th><th>রিকমেন্ড</th>
+        </tr></thead>
         <tbody id="marketTbody"></tbody>
-      </table>
+      </table></div>
+    </div>
+
+    <!-- ফান্ডামেন্টাল স্ক্রিনার ভিউ -->
+    <div id="screenerView" style="display:none;">
+      <div class="screener-bar">
+        <div class="screener-group"><label>P/E সর্বোচ্চ</label><input type="number" id="scrPE" value="20" step="1" class="sm"></div>
+        <div class="screener-group"><label>P/B সর্বোচ্চ</label><input type="number" id="scrPB" value="2.5" step="0.1" class="sm"></div>
+        <div class="screener-group"><label>নূনতম ডিভিডেন্ড%</label><input type="number" id="scrDY" value="3" step="0.5" class="sm"></div>
+        <div class="screener-group"><label>নূনতম ROE%</label><input type="number" id="scrROE" value="10" step="1" class="sm"></div>
+        <div class="screener-group"><label>নূনতম NPM%</label><input type="number" id="scrNPM" value="5" step="1" class="sm"></div>
+        <div class="screener-group"><label>সেক্টর</label>
+          <select id="scrSector"><option value="">সব সেক্টর</option></select>
+        </div>
+        <div class="screener-group"><label>নূনতম ফান্ডা. স্কোর</label><input type="number" id="scrMinScore" value="40" step="5" class="sm"></div>
+        <button class="btn btn-primary" onclick="runScreener()" style="align-self:flex-end;margin-top:auto;"><i class="fas fa-search"></i> স্ক্রিন</button>
+      </div>
+      <div class="table-scroll"><table>
+        <thead><tr>
+          <th>কোড</th><th class="num">LTP</th><th class="num">চেঞ্জ%</th>
+          <th>সেক্টর</th><th class="num">P/E</th><th class="num">P/B</th><th class="num">EPS</th><th class="num">ROE%</th>
+          <th class="num">ডিভি%</th><th class="num">D/E</th><th class="num">NPM%</th>
+          <th class="num">ফান্ডা.</th><th class="num">কম্পোজিট</th><th>ক্লাস</th><th>রিকমেন্ড</th>
+        </tr></thead>
+        <tbody id="screenerTbody"></tbody>
+      </table></div>
     </div>
   </div>
 
   <footer>
-    dsebd.org থেকে স্ক্র্যাপ করা ডেটা · প্রতি ১৫ মিনিটে আপডেট হয় (ট্রেডিং আওয়ারে) · শুধু তথ্যের জন্য, বিনিয়োগ পরামর্শ নয়
+    dsebd.org থেকে স্ক্র্যাপ করা ডেটা · ফান্ডামেন্টাল ডেটা ডেমো ভিত্তিক · শুধু তথ্যের জন্য, বিনিয়োগ পরামর্শ নয়
     <div class="credit">Made by: Rahul Acharjee, IT Officer, President Abdul Hamid Medical College, Google Certified AI Educator</div>
   </footer>
 </div>
 
 <script>
+/* ============================================================
+   কনফিগারেশন ও ইউটিলিটি
+   ============================================================ */
 const DATA_BASE = "https://rrahul178.github.io/dse-scanner/data";
+const NUM = v => { const n = parseFloat(String(v ?? "").replace(/,/g, "").trim()); return isNaN(n) ? NaN : n; };
+const CLAMP = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+const ESC = s => { const d = document.createElement("div"); d.textContent = s; return d.innerHTML; };
 
-function num(v) {
-  if (v === undefined || v === null) return NaN;
-  const n = parseFloat(String(v).replace(/,/g, "").trim());
-  return isNaN(n) ? NaN : n;
+let marketRows = [], watchlistAnalyses = [], techScoreMap = {}, fundScoreMap = {}, compScoreMap = {}, fundDataMap = {};
+let allChartData = {}, currentSort = "composite_desc", currentView = "table";
+
+/* ============================================================
+   সেক্টর ডেটা
+   ============================================================ */
+const SECTORS = {
+  "Banking": ["BRACBANK","CITYBANK","DBH","IBBL","IDLC","ISLAMIBANK","MTB","NBL","NCCBANK","PRIMEBANK","TMIBL","TRUSTBANK"],
+  "Pharma": ["ACI","EGL","PHARMAID","SQURPHARMA"],
+  "Telecom": ["GP","ROBI"],
+  "FMCG": ["MARICO","RECKITTB","UNILEVER"],
+  "Energy": ["DESCO","ENERGYXP","JAMUNAOIL","PBTL","TITASGAS","UFC"],
+  "Textile & I.T.": ["BAIRAL","BEXIMCO","GAIL","LAFSUR","ORIONINFU","STYLECRFT","WALTON"],
+  "Engineering": ["HRC","RAMPETRO"],
+  "Financial": ["DFML","EHAB","FASFIN","MIRAKHL","PURABID"],
+  "Food & Misc": ["KAYANEE","SALAMCRST","SANDHAN","TONNER","UPTH","WATA","ZAIMAN"],
+};
+const CODE_SECTOR = {};
+Object.entries(SECTORS).forEach(([sec, codes]) => codes.forEach(c => CODE_SECTOR[c] = sec));
+
+/* সেক্টর গড় P/E (ডেমো) */
+const SECTOR_AVG_PE = { "Banking":12,"Pharma":22,"Telecom":15,"FMCG":35,"Energy":14,"Textile & I.T.":18,"Engineering":10,"Financial":16,"Food & Misc":13 };
+
+/* ============================================================
+   ডেমো ফান্ডামেন্টাল ডেটা জেনারেটর
+   ============================================================ */
+function generateDemoFundamental(stocks) {
+  const fund = {};
+  stocks.forEach(s => {
+    const sector = CODE_SECTOR[s.code] || "Misc";
+    const basePE = SECTOR_AVG_PE[sector] || 15;
+    const peVariation = 0.5 + Math.random() * 1.2;
+    const pe = parseFloat((basePE * peVariation).toFixed(1));
+    const bookValue = parseFloat((s.base * (0.3 + Math.random() * 0.5)).toFixed(1));
+    const pb = parseFloat((s.ltp / Math.max(bookValue, 0.01)).toFixed(2));
+    const eps = parseFloat((s.ltp / Math.max(pe, 0.01)).toFixed(2));
+    const epsGrowth = parseFloat((-5 + Math.random() * 35).toFixed(1));
+    const roe = parseFloat((5 + Math.random() * 30).toFixed(1));
+    const roa = parseFloat((2 + Math.random() * 12).toFixed(1));
+    const dividendYield = parseFloat((Math.random() * 12).toFixed(1));
+    const dps = parseFloat((s.ltp * dividendYield / 100).toFixed(2));
+    const netProfitMargin = parseFloat((3 + Math.random() * 25).toFixed(1));
+    const revenueGrowth = parseFloat((-3 + Math.random() * 25).toFixed(1));
+    const debtToEquity = parseFloat((Math.random() * 2.5).toFixed(2));
+    const currentRatio = parseFloat((0.5 + Math.random() * 2.5).toFixed(1));
+    const marketCap = parseFloat((s.ltp * (1e7 + Math.random() * 5e8) / 1e7).toFixed(0));
+    const nav = bookValue;
+
+    /* বার্ষিক ট্রেন্ড ডেটা */
+    const y4eps = [Math.max(1, eps * (0.6 + Math.random() * 0.4)), Math.max(1, eps * (0.7 + Math.random() * 0.4)),
+                  Math.max(1, eps * (0.85 + Math.random() * 0.3)), eps];
+    const y4rev = y4eps.map(e => parseFloat((e * (5 + Math.random() * 20) / Math.max(roe / 100, 0.05)).toFixed(0)));
+    const y4profit = y4eps.map(e => parseFloat((e * (5e5 + Math.random() * 5e6) / 1e6).toFixed(1)));
+
+    fund[s.code] = {
+      sector, pe, pb, eps, epsGrowth, roe, roa, dividendYield, dps,
+      netProfitMargin, revenueGrowth, debtToEquity, currentRatio,
+      marketCap, nav, bookValue,
+      yearlyEPS: y4eps, yearlyRevenue: y4rev, yearlyProfit: y4profit
+    };
+  });
+  return fund;
 }
 
-async function fetchJson(path) {
-  const res = await fetch(`${DATA_BASE}/${path}?t=${Date.now()}`);
-  if (!res.ok) throw new Error(`${path} fetch ব্যর্থ (HTTP ${res.status})`);
-  return res.json();
+/* ============================================================
+   ডেমো প্রাইস ডেটা জেনারেটর
+   ============================================================ */
+function generateDemoData() {
+  const stocks = [
+    {code:"GP",base:320},{code:"ACI",base:1850},{code:"BAIRAL",base:45},{code:"BEXIMCO",base:14},
+    {code:"BRACBANK",base:68},{code:"CITYBANK",base:42},{code:"DBH",base:110},{code:"DESCO",base:255},
+    {code:"DFML",base:120},{code:"EGL",base:38},{code:"EHAB",base:28},{code:"ENERGYXP",base:52},
+    {code:"FASFIN",base:78},{code:"GAIL",base:95},{code:"HRC",base:18},{code:"IBBL",base:82},
+    {code:"IDLC",base:145},{code:"ISLAMIBANK",base:35},{code:"JAMUNAOIL",base:165},{code:"KAYANEE",base:22},
+    {code:"LAFSUR",base:58},{code:"MARICO",base:210},{code:"MIRAKHL",base:75},{code:"MTB",base:155},
+    {code:"NBL",base:48},{code:"NCCBANK",base:32},{code:"ORIONINFU",base:88},{code:"PBTL",base:125},
+    {code:"PHARMAID",base:155},{code:"PRIMEBANK",base:38},{code:"PURABID",base:95},{code:"RAMPETRO",base:42},
+    {code:"RECKITTB",base:450},{code:"ROBI",base:265},{code:"SALAMCRST",base:18},{code:"SANDHAN",base:22},
+    {code:"SINGERBD",base:145},{code:"SQURPHARMA",base:680},{code:"STYLECRFT",base:35},
+    {code:"TITASGAS",base:115},{code:"TMIBL",base:55},{code:"TONNER",base:8},{code:"TRUSTBANK",base:28},
+    {code:"UFC",base:135},{code:"UNILEVER",base:4200},{code:"UPTH",base:62},{code:"WALTON",base:380},
+    {code:"WATA",base:48},{code:"ZAIMAN",base:12}
+  ];
+  const rows = [], histData = {};
+  stocks.forEach(s => {
+    const days = 60 + Math.floor(Math.random() * 20);
+    const closes = [], highs = [], lows = [], volumes = [], labels = [];
+    let price = s.base * (0.85 + Math.random() * 0.3);
+    for (let i = 0; i < days; i++) {
+      const d = new Date(); d.setDate(d.getDate() - (days - i));
+      labels.push(d.toISOString().slice(0, 10));
+      const vol = Math.floor(50000 + Math.random() * 500000);
+      price = Math.max(s.base * 0.5, price + (Math.random() - 0.48) * s.base * 0.03);
+      const h = price * (1 + Math.random() * 0.02), l = price * (1 - Math.random() * 0.02);
+      closes.push(price); highs.push(h); lows.push(l); volumes.push(vol);
+    }
+    const ltp = closes[closes.length - 1], ycp = closes[closes.length - 2] || ltp;
+    const chg = ltp - ycp, chgPct = ycp > 0 ? (chg / ycp) * 100 : 0;
+    rows.push({ code: s.code, base: s.base, ltp, change: chg, changePct: chgPct,
+      high: highs[highs.length - 1], low: lows[lows.length - 1],
+      volume: volumes[volumes.length - 1], value: (ltp * volumes[volumes.length - 1]) / 1e6 });
+    histData[s.code] = { labels, closes, highs, lows, volumes };
+  });
+  return { rows, histData, watchlistCodes: stocks.slice(0, 12).map(s => s.code) };
 }
 
-function computeRSI(closes, period = 14) {
-  if (closes.length < period + 1) return null;
-  let gains = 0, losses = 0;
-  for (let i = 1; i <= period; i++) {
-    const diff = closes[i] - closes[i - 1];
-    if (diff >= 0) gains += diff; else losses -= diff;
+/* ============================================================
+   টেকনিক্যাল ইন্ডিকেটর
+   ============================================================ */
+function computeRSI(closes, p = 14) {
+  if (closes.length < p + 1) return null;
+  let g = 0, l = 0;
+  for (let i = 1; i <= p; i++) { const d = closes[i] - closes[i - 1]; if (d >= 0) g += d; else l -= d; }
+  let ag = g / p, al = l / p;
+  for (let i = p + 1; i < closes.length; i++) {
+    const d = closes[i] - closes[i - 1];
+    ag = (ag * (p - 1) + (d > 0 ? d : 0)) / p; al = (al * (p - 1) + (d < 0 ? -d : 0)) / p;
   }
-  let avgGain = gains / period, avgLoss = losses / period;
-  for (let i = period + 1; i < closes.length; i++) {
-    const diff = closes[i] - closes[i - 1];
-    const gain = diff > 0 ? diff : 0;
-    const loss = diff < 0 ? -diff : 0;
-    avgGain = (avgGain * (period - 1) + gain) / period;
-    avgLoss = (avgLoss * (period - 1) + loss) / period;
-  }
-  if (avgLoss === 0) return 100;
-  const rs = avgGain / avgLoss;
-  return 100 - (100 / (1 + rs));
+  return al === 0 ? 100 : 100 - 100 / (1 + ag / al);
+}
+function sma(arr, p) { return arr.length < p ? null : arr.slice(-p).reduce((a, b) => a + b, 0) / p; }
+function ema(arr, p) {
+  if (arr.length < p) return null;
+  const k = 2 / (p + 1); let v = arr.slice(0, p).reduce((a, b) => a + b, 0) / p;
+  for (let i = p; i < arr.length; i++) v = arr[i] * k + v * (1 - k); return v;
+}
+function bollingerBands(closes, p = 20, m = 2) {
+  if (closes.length < p) return null;
+  const sl = closes.slice(-p), avg = sl.reduce((a, b) => a + b, 0) / p;
+  const std = Math.sqrt(sl.reduce((a, v) => a + (v - avg) ** 2, 0) / p);
+  return { upper: avg + m * std, middle: avg, lower: avg - m * std, std };
+}
+function linearRegression(values) {
+  const n = values.length; if (n < 2) return null;
+  let sx = 0, sy = 0, sxy = 0, sx2 = 0;
+  for (let i = 0; i < n; i++) { sx += i; sy += values[i]; sxy += i * values[i]; sx2 += i * i; }
+  const den = n * sx2 - sx * sx; if (Math.abs(den) < 1e-10) return null;
+  const slope = (n * sxy - sx * sy) / den, intercept = (sy - slope * sx) / n;
+  const ym = sy / n; let ssT = 0, ssR = 0;
+  for (let i = 0; i < n; i++) { ssT += (values[i] - ym) ** 2; ssR += (values[i] - (intercept + slope * i)) ** 2; }
+  return { slope, intercept, r2: ssT > 0 ? 1 - ssR / ssT : 0 };
+}
+function predictNext(values, days = 5) {
+  const reg = linearRegression(values); if (!reg) return null;
+  const n = values.length, last = values[n - 1], preds = [];
+  for (let d = 1; d <= days; d++) preds.push(CLAMP(reg.intercept + reg.slope * (n - 1 + d), last * 0.9, last * 1.1));
+  return { predictions: preds, pctChange: ((preds[preds.length - 1] - last) / last) * 100, slope: reg.slope, r2: reg.r2, trend: reg.slope > 0 ? "up" : reg.slope < 0 ? "down" : "flat" };
 }
 
-function sma(arr, period) {
-  if (arr.length < period) return null;
-  const slice = arr.slice(arr.length - period);
-  return slice.reduce((a, b) => a + b, 0) / period;
-}
-
-function detectCandlestickPattern(candles) {
-  const n = candles.length;
-  if (n < 1) return null;
-  const c0 = candles[n - 1];
-  const body = (c) => Math.abs(c.close - c.open);
-  const range = (c) => Math.max(c.high - c.low, 0.0001);
-  const isBull = (c) => c.close > c.open;
-  const isBear = (c) => c.close < c.open;
-  const upperWick = (c) => c.high - Math.max(c.open, c.close);
-  const lowerWick = (c) => Math.min(c.open, c.close) - c.low;
-
+/* SMC ও ক্যান্ডেলস্টিক */
+function detectCandlestick(candles) {
+  const n = candles.length; if (n < 1) return null;
+  const c0 = candles[n - 1], body = c => Math.abs(c.close - c.open), range = c => Math.max(c.high - c.low, 0.0001);
+  const bull = c => c.close > c.open, bear = c => c.close < c.open;
+  const uW = c => c.high - Math.max(c.open, c.close), lW = c => Math.min(c.open, c.close) - c.low;
   if (n >= 2) {
     const c1 = candles[n - 2];
-    if (isBear(c1) && isBull(c0) && c0.open <= c1.close && c0.close >= c1.open && body(c0) > body(c1)) {
-      return { name: "বুলিশ এনগাল্ফিং", type: "bullish" };
-    }
-    if (isBull(c1) && isBear(c0) && c0.open >= c1.close && c0.close <= c1.open && body(c0) > body(c1)) {
-      return { name: "বেয়ারিশ এনগাল্ফিং", type: "bearish" };
-    }
+    if (bear(c1) && bull(c0) && c0.open <= c1.close && c0.close >= c1.open && body(c0) > body(c1)) return { name: "বুলিশ এনগাল্ফিং", type: "bullish" };
+    if (bull(c1) && bear(c0) && c0.open >= c1.close && c0.close <= c1.open && body(c0) > body(c1)) return { name: "বেয়ারিশ এনগাল্ফিং", type: "bearish" };
   }
   if (n >= 3) {
     const c1 = candles[n - 2], c2 = candles[n - 3];
-    if (isBear(c2) && body(c2) / range(c2) > 0.4 && body(c1) / range(c1) < 0.3 &&
-        isBull(c0) && c0.close > (c2.open + c2.close) / 2) {
-      return { name: "মর্নিং স্টার", type: "bullish" };
-    }
-    if (isBull(c2) && body(c2) / range(c2) > 0.4 && body(c1) / range(c1) < 0.3 &&
-        isBear(c0) && c0.close < (c2.open + c2.close) / 2) {
-      return { name: "ইভিনিং স্টার", type: "bearish" };
-    }
+    if (bear(c2) && body(c2) / range(c2) > 0.4 && body(c1) / range(c1) < 0.3 && bull(c0) && c0.close > (c2.open + c2.close) / 2) return { name: "মর্নিং স্টার", type: "bullish" };
   }
-  const bodyRatio = body(c0) / range(c0);
-  if (lowerWick(c0) >= 2 * body(c0) && upperWick(c0) <= body(c0) * 0.5 && bodyRatio < 0.35) {
-    return { name: "হ্যামার", type: "bullish" };
-  }
-  if (upperWick(c0) >= 2 * body(c0) && lowerWick(c0) <= body(c0) * 0.5 && bodyRatio < 0.35) {
-    return { name: "শুটিং স্টার", type: "bearish" };
-  }
-  if (upperWick(c0) < range(c0) * 0.05 && lowerWick(c0) < range(c0) * 0.05 && bodyRatio > 0.85) {
-    return { name: isBull(c0) ? "বুলিশ মারুবোজু" : "বেয়ারিশ মারুবোজু", type: isBull(c0) ? "bullish" : "bearish" };
-  }
-  if (bodyRatio < 0.1) return { name: "ডোজি", type: "neutral" };
+  const br = body(c0) / range(c0);
+  if (lW(c0) >= 2 * body(c0) && uW(c0) <= body(c0) * 0.5 && br < 0.35) return { name: "হ্যামার", type: "bullish" };
+  if (uW(c0) >= 2 * body(c0) && lW(c0) <= body(c0) * 0.5 && br < 0.35) return { name: "শুটিং স্টার", type: "bearish" };
+  if (br < 0.1) return { name: "ডোজি", type: "neutral" };
   return null;
 }
-
-function computeBuyScore(ind) {
-  let score = 50;
-  if (ind.rsi != null) {
-    if (ind.rsi >= 70) score -= 20;
-    else if (ind.rsi > 65) score += 5;
-    else if (ind.rsi >= 40) score += 15;
-    else if (ind.rsi >= 30) score += 5;
-    else score -= 5;
+function findSwingPoints(rows, lb = 5) {
+  const sh = [], sl = [];
+  for (let i = lb; i < rows.length - lb; i++) {
+    const w = rows.slice(i - lb, i + lb + 1);
+    if (w.every(r => r.high <= rows[i].high)) sh.push(rows[i].high);
+    if (w.every(r => r.low >= rows[i].low)) sl.push(rows[i].low);
   }
-  if (ind.maSignal === "golden") score += 25;
-  else if (ind.maSignal === "bullish") score += 12;
-  else if (ind.maSignal === "death") score -= 25;
-  else if (ind.maSignal === "bearish") score -= 12;
-  if (ind.breakout === "up") score += 15;
-  else if (ind.breakout === "down") score -= 15;
-  if (ind.volRatio != null) {
-    if (ind.volRatio >= 2) score += 12;
-    else if (ind.volRatio >= 1.3) score += 6;
-    else if (ind.volRatio < 0.5) score -= 8;
-  }
-  if (ind.pattern) {
-    if (ind.pattern.type === "bullish") score += 12;
-    else if (ind.pattern.type === "bearish") score -= 12;
-  }
-  if (ind.orderBlock) {
-    if (ind.orderBlock.type === "bullish") score += 10;
-    else if (ind.orderBlock.type === "bearish") score -= 10;
-  }
-  if (ind.fvg) {
-    if (ind.fvg.type === "bullish") score += 8;
-    else if (ind.fvg.type === "bearish") score -= 8;
-  }
-  if (ind.liquiditySweep) {
-    if (ind.liquiditySweep.type === "bullish") score += 10;
-    else if (ind.liquiditySweep.type === "bearish") score -= 10;
-  }
-  return Math.max(0, Math.min(100, Math.round(score)));
+  return { sh, sl };
 }
-
-function buildReasons(ind) {
-  const reasons = [];
-  if (ind.maSignal === "golden") reasons.push("🌟 গোল্ডেন ক্রস - নতুন আপট্রেন্ড শুরু");
-  else if (ind.maSignal === "bullish") reasons.push("আপট্রেন্ডে আছে (MA20 > MA50)");
-  if (ind.breakout === "up") reasons.push("২০-দিনের হাই ব্রেকআউট");
-  if (ind.volRatio && ind.volRatio >= 1.3) reasons.push(`ভলিউম কনফার্মেশন (${ind.volRatio.toFixed(1)}x গড়)`);
-  if (ind.rsi != null && ind.rsi >= 40 && ind.rsi < 65) reasons.push(`RSI ${ind.rsi.toFixed(0)} সুস্থ জোনে`);
-  if (ind.pattern && ind.pattern.type === "bullish") reasons.push(`${ind.pattern.name} প্যাটার্ন`);
-  if (ind.orderBlock && ind.orderBlock.type === "bullish") reasons.push(`বুলিশ অর্ডার ব্লক জোনের উপরে`);
-  if (ind.fvg && ind.fvg.type === "bullish") reasons.push(`বুলিশ Fair Value Gap`);
-  if (ind.liquiditySweep && ind.liquiditySweep.type === "bullish") reasons.push(`লিকুইডিটি সুইপ - স্টপ-হান্টের পর রিভার্সাল`);
-  return reasons;
-}
-
-function findSwingPoints(rows, lookback = 5) {
-  const swingHighs = [], swingLows = [];
-  for (let i = lookback; i < rows.length - lookback; i++) {
-    const windowSlice = rows.slice(i - lookback, i + lookback + 1);
-    if (windowSlice.every(r => r.high <= rows[i].high)) swingHighs.push(rows[i].high);
-    if (windowSlice.every(r => r.low >= rows[i].low)) swingLows.push(rows[i].low);
+function clusterLevels(levels, tol = 0.015) {
+  const s = [...levels].sort((a, b) => a - b), cl = [];
+  for (const l of s) {
+    const last = cl[cl.length - 1];
+    if (last && Math.abs(l - last.avg) / Math.max(last.avg, 0.01) <= tol) { last.values.push(l); last.avg = last.values.reduce((a, b) => a + b, 0) / last.values.length; }
+    else cl.push({ avg: l, values: [l] });
   }
-  return { swingHighs, swingLows };
+  return cl.map(c => ({ level: c.avg, touches: c.values.length }));
 }
-
-function clusterLevels(levels, tolerancePct = 0.015) {
-  const sorted = [...levels].sort((a, b) => a - b);
-  const clusters = [];
-  for (const lvl of sorted) {
-    const last = clusters[clusters.length - 1];
-    if (last && Math.abs(lvl - last.avg) / last.avg <= tolerancePct) {
-      last.values.push(lvl);
-      last.avg = last.values.reduce((a, b) => a + b, 0) / last.values.length;
-    } else {
-      clusters.push({ avg: lvl, values: [lvl] });
-    }
-  }
-  return clusters.map(c => ({ level: c.avg, touches: c.values.length }));
+function computeSR(rows, ltp) {
+  const { sh, sl } = findSwingPoints(rows, 5);
+  const res = clusterLevels(sh).filter(c => c.level > ltp).sort((a, b) => a.level - b.level);
+  const sup = clusterLevels(sl).filter(c => c.level < ltp).sort((a, b) => b.level - a.level);
+  return { resistance: res[0]?.level ?? null, resTouches: res[0]?.touches ?? 0, support: sup[0]?.level ?? null, supTouches: sup[0]?.touches ?? 0 };
 }
-
-function computeSupportResistance(rows, ltp) {
-  const { swingHighs, swingLows } = findSwingPoints(rows, 5);
-  const resistances = clusterLevels(swingHighs).filter(c => c.level > ltp).sort((a, b) => a.level - b.level);
-  const supports = clusterLevels(swingLows).filter(c => c.level < ltp).sort((a, b) => b.level - a.level);
-  return {
-    resistance: resistances[0] ? resistances[0].level : null,
-    resistanceTouches: resistances[0] ? resistances[0].touches : 0,
-    support: supports[0] ? supports[0].level : null,
-    supportTouches: supports[0] ? supports[0].touches : 0,
-  };
-}
-
 function detectOrderBlock(rows) {
-  const n = rows.length;
-  if (n < 10) return null;
-  const recent = rows.slice(-10);
-  for (let i = recent.length - 1; i >= 1; i--) {
-    const ob = recent[i - 1];
-    const move = recent[i];
-    const moveBody = Math.abs(move.close - move.open);
-    const moveRange = Math.max(move.high - move.low, 0.0001);
-    const isImpulsive = moveBody / moveRange > 0.55;
-    if (ob.close < ob.open && move.close > move.open && isImpulsive && move.close > ob.high) {
-      return { type: "bullish", zoneLow: ob.low, zoneHigh: ob.high };
+  if (rows.length < 10) return null; const r = rows.slice(-10);
+  for (let i = r.length - 1; i >= 1; i--) {
+    const ob = r[i - 1], mv = r[i], mb = Math.abs(mv.close - mv.open), mr = Math.max(mv.high - mv.low, 0.0001);
+    if (mb / mr > 0.55) {
+      if (ob.close < ob.open && mv.close > mv.open && mv.close > ob.high) return { type: "bullish", zoneLow: ob.low, zoneHigh: ob.high };
+      if (ob.close > ob.open && mv.close < mv.open && mv.close < ob.low) return { type: "bearish", zoneLow: ob.low, zoneHigh: ob.high };
     }
-    if (ob.close > ob.open && move.close < move.open && isImpulsive && move.close < ob.low) {
-      return { type: "bearish", zoneLow: ob.low, zoneHigh: ob.high };
-    }
-  }
-  return null;
+  } return null;
 }
-
 function detectFVG(rows) {
-  const n = rows.length;
-  if (n < 3) return null;
-  const c1 = rows[n - 3], c3 = rows[n - 1];
+  if (rows.length < 3) return null; const c1 = rows[rows.length - 3], c3 = rows[rows.length - 1];
   if (c1.high < c3.low) return { type: "bullish", top: c3.low, bottom: c1.high };
   if (c1.low > c3.high) return { type: "bearish", top: c1.low, bottom: c3.high };
   return null;
 }
-
-function detectLiquiditySweep(rows) {
-  const n = rows.length;
-  if (n < 22) return null;
-  const lookback = rows.slice(-22, -1);
-  const priorLow = Math.min(...lookback.map(r => r.low));
-  const priorHigh = Math.max(...lookback.map(r => r.high));
-  const today = rows[n - 1];
-  if (today.low < priorLow && today.close > priorLow) return { type: "bullish", level: priorLow };
-  if (today.high > priorHigh && today.close < priorHigh) return { type: "bearish", level: priorHigh };
+function detectLiqSweep(rows) {
+  if (rows.length < 22) return null; const lb = rows.slice(-22, -1);
+  const pL = Math.min(...lb.map(r => r.low)), pH = Math.max(...lb.map(r => r.high)), t = rows[rows.length - 1];
+  if (t.low < pL && t.close > pL) return { type: "bullish", level: pL };
+  if (t.high > pH && t.close < pH) return { type: "bearish", level: pH };
   return null;
 }
 
-function analyzeWatchlistStock(code, historyRaw, latestRow) {
-  const history = historyRaw
-    .map(r => ({
-      date: r["DATE"],
-      close: num(r["CLOSEP*"]),
-      high: num(r["HIGH"]),
-      low: num(r["LOW"]),
-      open: num(r["OPENP*"]),
-      volume: num(r["VOLUME"]),
-    }))
-    .filter(r => !isNaN(r.close) && r.close > 0 && r.high > 0 && r.low > 0);
+/* ============================================================
+   ফান্ডামেন্টাল স্কোরিং ইঞ্জিন
+   ============================================================ */
+function scorePE(pe) { if (pe <= 0) return 0; if (pe < 8) return 15; if (pe < 12) return 13; if (pe < 16) return 10; if (pe < 22) return 6; if (pe < 30) return 3; return 0; }
+function scorePB(pb) { if (pb <= 0) return 0; if (pb < 0.8) return 10; if (pb < 1.2) return 8; if (pb < 2) return 5; if (pb < 3.5) return 2; return 0; }
+function scoreEPSGrowth(g) { if (g > 25) return 15; if (g > 15) return 12; if (g > 10) return 8; if (g > 5) return 5; if (g > 0) return 2; return 0; }
+function scoreROE(r) { if (r > 25) return 15; if (r > 20) return 12; if (r > 15) return 8; if (r > 10) return 5; return 2; }
+function scoreDivYield(dy) { if (dy > 10) return 10; if (dy > 6) return 8; if (dy > 4) return 6; if (dy > 2) return 3; return 0; }
+function scoreNPM(n) { if (n > 25) return 10; if (n > 15) return 8; if (n > 10) return 5; if (n > 5) return 2; return 0; }
+function scoreDE(de) { if (de < 0.2) return 10; if (de < 0.5) return 8; if (de < 1) return 5; if (de < 2) return 2; return 0; }
+function scoreRevGrowth(g) { if (g > 20) return 10; if (g > 12) return 8; if (g > 5) return 5; if (g > 0) return 2; return 0; }
+function scoreCR(cr) { if (cr > 2.5) return 5; if (cr > 1.5) return 4; if (cr > 1) return 2; return 0; }
 
-  if (history.length < 20) return null;
+function computeFundamentalScore(f) {
+  if (!f) return { total: 0, breakdown: [] };
+  const bd = [
+    { name: "P/E রেশিও", value: f.pe, max: 15, score: scorePE(f.pe), desc: f.pe < 12 ? "আন্ডারভ্যালুড" : f.pe < 22 ? "মাঝারি" : "ওভারভ্যালুড" },
+    { name: "P/B রেশিও", value: f.pb, max: 10, score: scorePB(f.pb), desc: f.pb < 1.2 ? "সস্তা" : f.pb < 2 ? "ঠিক আছে" : "বেশি" },
+    { name: "EPS গ্রোথ", value: f.epsGrowth + "%", max: 15, score: scoreEPSGrowth(f.epsGrowth), desc: f.epsGrowth > 15 ? "শক্তিশালী" : f.epsGrowth > 0 ? "ধীরে" : "নেতিবাচক" },
+    { name: "ROE", value: f.roe + "%", max: 15, score: scoreROE(f.roe), desc: f.roe > 20 ? "চমৎকার" : f.roe > 10 ? "ভালো" : "দুর্বল" },
+    { name: "ডিভিডেন্ড ইল্ড", value: f.dividendYield + "%", max: 10, score: scoreDivYield(f.dividendYield), desc: f.dividendYield > 6 ? "আকর্ষণীয়" : f.dividendYield > 3 ? "মোটামুটি" : "কম" },
+    { name: "নেট প্রফিট মার্জিন", value: f.netProfitMargin + "%", max: 10, score: scoreNPM(f.netProfitMargin), desc: f.netProfitMargin > 15 ? "শক্তিশালী" : f.netProfitMargin > 8 ? "ঠিক" : "দুর্বল" },
+    { name: "ডেট/ইক্যুইটি", value: f.debtToEquity, max: 10, score: scoreDE(f.debtToEquity), desc: f.debtToEquity < 0.5 ? "নিরাপদ" : f.debtToEquity < 1 ? "গ্রহণযোগ্য" : "ঝুঁকিপূর্ণ" },
+    { name: "রেভিনিউ গ্রোথ", value: f.revenueGrowth + "%", max: 10, score: scoreRevGrowth(f.revenueGrowth), desc: f.revenueGrowth > 12 ? "দ্রুত বৃদ্ধি" : f.revenueGrowth > 0 ? "ধীরে" : "হ্রাস" },
+    { name: "কারেন্ট রেশিও", value: f.currentRatio, max: 5, score: scoreCR(f.currentRatio), desc: f.currentRatio > 1.5 ? "সুস্থ" : f.currentRatio > 1 ? "মাঝারি" : "দুর্বল" },
+  ];
+  const total = bd.reduce((s, b) => s + b.score, 0);
+  return { total: CLAMP(total, 0, 100), breakdown: bd };
+}
 
-  const closes = history.map(h => h.close);
-  const volumes = history.map(h => h.volume);
+/* স্টক ক্লাসিফিকেশন */
+function classifyStock(f) {
+  if (!f) return { label: "ডেটা নেই", cls: "neutral" };
+  const tags = [];
+  if (f.pe < 15 && f.pb < 1.5 && f.dividendYield > 4) tags.push("Value");
+  if (f.epsGrowth > 15 && f.revenueGrowth > 12) tags.push("Growth");
+  if (f.roe > 20 && f.netProfitMargin > 15 && f.debtToEquity < 0.5) tags.push("Quality");
+  if (!tags.length) tags.push("Speculative");
+  const cls = tags.includes("Quality") ? "buy" : tags.includes("Value") ? "warn" : tags.includes("Growth") ? "info" : "neutral";
+  return { label: tags.join(" + "), cls };
+}
 
-  const rsi = computeRSI(closes, 14);
-  const ma20 = sma(closes, 20);
-  const ma50 = sma(closes, Math.min(50, closes.length - 1));
-  const prevMa20 = sma(closes.slice(0, -1), 20);
-  const prevMa50 = sma(closes.slice(0, -1), Math.min(50, closes.length - 2));
+/* ভ্যালুয়েশন ভার্ডিক্ট */
+function valuationVerdict(f) {
+  if (!f) return { label: "N/A", cls: "neutral", desc: "" };
+  const secAvg = SECTOR_AVG_PE[f.sector] || 15;
+  const ratio = f.pe / secAvg;
+  if (ratio < 0.75) return { label: "আন্ডারভ্যালুড", cls: "up-c", desc: `P/E ${f.pe} সেক্টর গড় ${secAvg}-এর ${Math.round((1 - ratio) * 100)}% নিচে` };
+  if (ratio < 1.15) return { label: "ফেয়ারলি ভ্যালুড", cls: "amber-c", desc: `P/E ${f.pe} সেক্টর গড় ${secAvg}-এর কাছাকাছি` };
+  return { label: "ওভারভ্যালুড", cls: "down-c", desc: `P/E ${f.pe} সেক্টর গড় ${secAvg}-এর ${Math.round((ratio - 1) * 100)}% উপরে` };
+}
 
+/* রিকমেন্ডেশন */
+function getRecommendation(compScore) {
+  if (compScore >= 75) return { label: "Strong Buy", cls: "rec-strong-buy" };
+  if (compScore >= 60) return { label: "Buy", cls: "rec-buy" };
+  if (compScore >= 45) return { label: "Hold", cls: "rec-hold" };
+  if (compScore >= 30) return { label: "Sell", cls: "rec-sell" };
+  return { label: "Strong Sell", cls: "rec-strong-sell" };
+}
+
+/* ============================================================
+   টেকনিক্যাল স্কোরিং
+   ============================================================ */
+function computeTechScore(ind) {
+  let s = 50;
+  if (ind.rsi != null) { if (ind.rsi >= 70) s -= 20; else if (ind.rsi > 65) s += 3; else if (ind.rsi >= 40) s += 15; else if (ind.rsi >= 30) s += 5; else s -= 5; }
+  if (ind.maSignal === "golden") s += 25; else if (ind.maSignal === "bullish") s += 12; else if (ind.maSignal === "death") s -= 25; else if (ind.maSignal === "bearish") s -= 12;
+  if (ind.breakout === "up") s += 15; else if (ind.breakout === "down") s -= 15;
+  if (ind.volRatio != null) { if (ind.volRatio >= 2) s += 12; else if (ind.volRatio >= 1.3) s += 6; else if (ind.volRatio < 0.5) s -= 8; }
+  if (ind.pattern) { if (ind.pattern.type === "bullish") s += 12; else if (ind.pattern.type === "bearish") s -= 12; }
+  if (ind.orderBlock) { if (ind.orderBlock.type === "bullish") s += 10; else s -= 10; }
+  if (ind.fvg) { if (ind.fvg.type === "bullish") s += 8; else s -= 8; }
+  if (ind.liqSweep) { if (ind.liqSweep.type === "bullish") s += 10; else s -= 10; }
+  if (ind.bbPosition === "near_lower") s += 8; else if (ind.bbPosition === "near_upper") s -= 8;
+  if (ind.prediction?.trend === "up" && ind.prediction.r2 > 0.3) s += 8; else if (ind.prediction?.trend === "down" && ind.prediction.r2 > 0.3) s -= 8;
+  return CLAMP(Math.round(s), 0, 100);
+}
+
+function buildTechReasons(ind) {
+  const r = [];
+  if (ind.maSignal === "golden") r.push("গোল্ডেন ক্রস");
+  else if (ind.maSignal === "bullish") r.push("আপট্রেন্ডে (MA20>MA50)");
+  if (ind.breakout === "up") r.push("২০-দিনের হাই ব্রেকআউট");
+  if (ind.volRatio >= 1.3) r.push(`ভলিউম ${ind.volRatio.toFixed(1)}x`);
+  if (ind.rsi >= 40 && ind.rsi < 65) r.push(`RSI ${ind.rsi.toFixed(0)} সুস্থ`);
+  if (ind.pattern?.type === "bullish") r.push(ind.pattern.name);
+  if (ind.bbPosition === "near_lower") r.push("BB নিচে - বাউন্স");
+  if (ind.prediction?.trend === "up" && ind.prediction.r2 > 0.3) r.push(`প্রেডিকশন +${ind.prediction.pctChange.toFixed(1)}%`);
+  return r;
+}
+
+function buildFundReasons(f) {
+  if (!f) return [];
+  const r = [];
+  if (f.pe < 12) r.push(`P/E ${f.pe} কম - আন্ডারভ্যালুড`);
+  if (f.pb < 1.2) r.push(`P/B ${f.pb} - বুক ভ্যালুর নিচে`);
+  if (f.epsGrowth > 15) r.push(`EPS গ্রোথ ${f.epsGrowth}%`);
+  if (f.roe > 20) r.push(`ROE ${f.roe}% চমৎকার`);
+  if (f.dividendYield > 6) r.push(`ডিভিডেন্ড ${f.dividendYield}% আকর্ষণীয়`);
+  if (f.netProfitMargin > 15) r.push(`NPM ${f.netProfitMargin}% শক্তিশালী`);
+  if (f.debtToEquity < 0.5) r.push(`D/E ${f.debtToEquity} নিরাপদ`);
+  if (f.revenueGrowth > 12) r.push(`রেভিনিউ গ্রোথ ${f.revenueGrowth}%`);
+  return r;
+}
+
+/* ============================================================
+   সম্পূর্ণ স্টক বিশ্লেষণ
+   ============================================================ */
+function analyzeStock(code, chartData, latestRow, fund) {
+  const { labels, closes, highs, lows, volumes } = chartData;
+  if (closes.length < 20) return null;
+
+  const rsi = computeRSI(closes);
+  const ma20 = sma(closes, 20), ma50 = sma(closes, Math.min(50, closes.length - 1));
+  const pMa20 = sma(closes.slice(0, -1), 20), pMa50 = sma(closes.slice(0, -1), Math.min(50, closes.length - 2));
   let maSignal = "neutral";
-  if (ma20 && ma50 && prevMa20 && prevMa50) {
-    if (prevMa20 <= prevMa50 && ma20 > ma50) maSignal = "golden";
-    else if (prevMa20 >= prevMa50 && ma20 < ma50) maSignal = "death";
-    else if (ma20 > ma50) maSignal = "bullish";
-    else maSignal = "bearish";
+  if (ma20 && ma50 && pMa20 && pMa50) {
+    if (pMa20 <= pMa50 && ma20 > ma50) maSignal = "golden";
+    else if (pMa20 >= pMa50 && ma20 < ma50) maSignal = "death";
+    else if (ma20 > ma50) maSignal = "bullish"; else maSignal = "bearish";
   }
+  const w52H = Math.max(...highs), w52L = Math.min(...lows);
+  const liveLtp = latestRow?.ltp, ltp = (liveLtp && liveLtp > 0) ? liveLtp : closes[closes.length - 1];
+  const pctFromLow = ((ltp - w52L) / w52L) * 100, pctFromHigh = ((w52H - ltp) / w52H) * 100;
+  const r20 = closes.slice(-20), h20 = Math.max(...r20), l20 = Math.min(...r20);
+  let breakout = null; if (ltp >= h20) breakout = "up"; else if (ltp <= l20) breakout = "down";
+  const avgVol = sma(volumes.slice(-21, -1), 20) || sma(volumes, Math.min(20, volumes.length));
+  const todayVol = (liveLtp && latestRow?.volume > 0) ? latestRow.volume : volumes[volumes.length - 1];
+  const volRatio = avgVol ? todayVol / avgVol : null;
+  const bb = bollingerBands(closes);
+  let bbPosition = "middle";
+  if (bb) { const rng = bb.upper - bb.lower; if (rng > 0) { const pos = (ltp - bb.lower) / rng; if (pos < 0.2) bbPosition = "near_lower"; else if (pos > 0.8) bbPosition = "near_upper"; } }
+  const prediction = predictNext(closes, 5);
+  const candles = closes.map((c, i) => ({ open: c * (1 + (Math.random() - 0.5) * 0.005), close: c, high: highs[i], low: lows[i] }));
+  const pattern = detectCandlestick(candles);
+  const sr = computeSR(candles, ltp);
+  const orderBlock = detectOrderBlock(candles);
+  const fvg = detectFVG(candles);
+  const liqSweep = detectLiqSweep(candles);
+  const changePct = latestRow?.changePct ?? 0;
 
-  const week52High = Math.max(...history.map(h => h.high));
-  const week52Low = Math.min(...history.map(h => h.low));
-  const liveLtp = latestRow ? num(latestRow["LTP*"]) : NaN;
-  const ltp = (liveLtp && liveLtp > 0) ? liveLtp : closes[closes.length - 1];
-  const pctFromLow = ((ltp - week52Low) / week52Low) * 100;
-  const pctFromHigh = ((week52High - ltp) / week52High) * 100;
+  const techInd = { rsi, maSignal, breakout, volRatio, pattern, orderBlock, fvg, liqSweep, bbPosition, prediction };
+  const techScore = computeTechScore(techInd);
+  const techReasons = buildTechReasons(techInd);
 
-  const recent20 = history.slice(-20);
-  const high20 = Math.max(...recent20.map(h => h.high));
-  const low20 = Math.min(...recent20.map(h => h.low));
-  let breakout = null;
-  if (ltp >= high20) breakout = "up";
-  else if (ltp <= low20) breakout = "down";
+  const fundScoreResult = computeFundamentalScore(fund);
+  const fundScore = fundScoreResult.total;
+  const fundReasons = buildFundReasons(fund);
+  const stockClass = classifyStock(fund);
+  const verdict = valuationVerdict(fund);
 
-  const avgVol20 = sma(volumes.slice(-21, -1), 20) || sma(volumes, Math.min(20, volumes.length));
-  const liveVol = latestRow ? num(latestRow["VOLUME"]) : NaN;
-  const todayVol = (liveVol && liveVol > 0) ? liveVol : volumes[volumes.length - 1];
-  const volRatio = avgVol20 ? todayVol / avgVol20 : null;
-
-  const changePct = latestRow ? num(latestRow["CHANGE"]) / (ltp - num(latestRow["CHANGE"])) * 100 : null;
-
-  const pattern = detectCandlestickPattern(history.slice(-3));
-  const sr = computeSupportResistance(history, ltp);
-  const orderBlock = detectOrderBlock(history);
-  const fvg = detectFVG(history);
-  const liquiditySweep = detectLiquiditySweep(history);
-  const indForScore = { rsi, maSignal, breakout, volRatio, pattern, orderBlock, fvg, liquiditySweep };
-  const buyScore = computeBuyScore(indForScore);
-  const reasons = buildReasons(indForScore);
+  /* কম্পোজিট: টেকনিক্যাল ৪০% + ফান্ডামেন্টাল ৬০% (BD মার্কেট ফান্ডামেন্টাল-ড্রিভেন) */
+  const compositeScore = Math.round(techScore * 0.4 + fundScore * 0.6);
+  const rec = getRecommendation(compositeScore);
 
   return {
-    code, ltp, changePct, rsi, ma20, ma50, maSignal,
-    week52High, week52Low, pctFromLow, pctFromHigh,
-    breakout, volRatio, todayVol, avgVol20,
-    pattern, sr, orderBlock, fvg, liquiditySweep, buyScore, reasons,
-    chartLabels: history.map(h => h.date),
-    chartData: closes,
+    code, ltp, changePct, rsi, ma20, ma50, maSignal, w52H, w52L, pctFromLow, pctFromHigh,
+    breakout, volRatio, bb, bbPosition, prediction, pattern, sr, orderBlock, fvg, liqSweep,
+    techScore, techReasons, fundScore, fundScoreBreakdown: fundScoreResult.breakdown, fundReasons,
+    fund, stockClass, verdict, compositeScore, rec, labels, closes, highs, lows, volumes
   };
 }
 
-function rsiLabel(rsi) {
-  if (rsi === null) return { text: "N/A", cls: "neutral" };
-  if (rsi >= 70) return { text: `RSI ${rsi.toFixed(0)} · ওভারবট`, cls: "sell" };
-  if (rsi <= 30) return { text: `RSI ${rsi.toFixed(0)} · ওভারসোল্ড`, cls: "buy" };
-  return { text: `RSI ${rsi.toFixed(0)} · নিউট্রাল`, cls: "neutral" };
-}
+/* ============================================================
+   রেন্ডার: ওভারভিউ
+   ============================================================ */
+function renderOverview() {
+  const total = marketRows.length;
+  const gainers = marketRows.filter(r => r.changePct > 0).length;
+  const losers = marketRows.filter(r => r.changePct < 0).length;
+  const avgChg = total > 0 ? marketRows.reduce((s, r) => s + r.changePct, 0) / total : 0;
+  const avgPE = Object.values(fundDataMap).length > 0 ? Object.values(fundDataMap).reduce((s, f) => s + f.pe, 0) / Object.values(fundDataMap).length : 0;
+  const avgROE = Object.values(fundDataMap).length > 0 ? Object.values(fundDataMap).reduce((s, f) => s + f.roe, 0) / Object.values(fundDataMap).length : 0;
+  const undervalued = Object.values(fundDataMap).filter(f => f.pe < (SECTOR_AVG_PE[f.sector] || 15) * 0.8).length;
 
-function maLabel(signal) {
-  const map = {
-    golden: { text: "🌟 গোল্ডেন ক্রস (বুলিশ)", cls: "buy" },
-    death: { text: "☠️ ডেথ ক্রস (বেয়ারিশ)", cls: "sell" },
-    bullish: { text: "MA20 > MA50 বুলিশ", cls: "buy" },
-    bearish: { text: "MA20 < MA50 বেয়ারিশ", cls: "sell" },
-    neutral: { text: "MA ডেটা অপর্যাপ্ত", cls: "neutral" },
-  };
-  return map[signal] || map.neutral;
-}
-
-function renderWatchlistCard(a) {
-  const chg = a.changePct;
-  const chgCls = chg > 0 ? "up" : chg < 0 ? "down" : "flat";
-  const chgSign = chg > 0 ? "+" : "";
-  const rsiL = rsiLabel(a.rsi);
-  const maL = maLabel(a.maSignal);
-
-  const badges = [`<span class="badge ${rsiL.cls}">${rsiL.text}</span>`, `<span class="badge ${maL.cls}">${maL.text}</span>`];
-  if (a.breakout === "up") badges.push(`<span class="badge buy">⚡ ২০-দিনের হাই ব্রেকআউট</span>`);
-  if (a.breakout === "down") badges.push(`<span class="badge sell">⚡ ২০-দিনের লো ব্রেকডাউন</span>`);
-  if (a.volRatio && a.volRatio >= 2) badges.push(`<span class="badge info">📊 ভলিউম স্পাইক ${a.volRatio.toFixed(1)}x</span>`);
-  if (a.pattern) {
-    const pCls = a.pattern.type === "bullish" ? "buy" : a.pattern.type === "bearish" ? "sell" : "neutral";
-    badges.push(`<span class="badge ${pCls}">🕯️ ${a.pattern.name}</span>`);
-  }
-  if (a.orderBlock) {
-    const cls = a.orderBlock.type === "bullish" ? "buy" : "sell";
-    badges.push(`<span class="badge ${cls}">🏦 ${a.orderBlock.type === "bullish" ? "বুলিশ" : "বেয়ারিশ"} অর্ডার ব্লক</span>`);
-  }
-  if (a.fvg) {
-    const cls = a.fvg.type === "bullish" ? "buy" : "sell";
-    badges.push(`<span class="badge ${cls}">📐 FVG (${a.fvg.type === "bullish" ? "বুলিশ" : "বেয়ারিশ"})</span>`);
-  }
-  if (a.liquiditySweep) {
-    const cls = a.liquiditySweep.type === "bullish" ? "buy" : "sell";
-    badges.push(`<span class="badge ${cls}">💧 লিকুইডিটি সুইপ (${a.liquiditySweep.type === "bullish" ? "বুলিশ" : "বেয়ারিশ"})</span>`);
-  }
-  if (a.rank) badges.push(`<span class="badge info">#${a.rank}${a.rankChange ? ` (${a.rankChange > 0 ? "↑" : "↓"}${Math.abs(a.rankChange)})` : ""} ${a.status === "new" ? "NEW" : ""}</span>`);
-  if (a.adx != null) badges.push(`<span class="badge info">ADX ${a.adx.toFixed(0)}</span>`);
-  if (a.mfi != null) badges.push(`<span class="badge info">MFI ${a.mfi.toFixed(0)}</span>`);
-  if (a.obvTrend === "rising") badges.push(`<span class="badge buy">OBV Rising</span>`);
-
-  const rangePct = Math.min(100, Math.max(0, ((a.ltp - a.week52Low) / (a.week52High - a.week52Low)) * 100));
-
-  const scoreCls = a.buyScore >= 65 ? "up" : a.buyScore >= 45 ? "flat" : "down";
-  const reasonsHtml = a.reasons && a.reasons.length
-    ? `<ul class="reasons">${a.reasons.map(r => `<li>${r}</li>`).join("")}</ul>`
-    : `<div class="reasons-empty">এই মুহূর্তে স্পষ্ট বাই-সিগন্যাল নেই</div>`;
-
-  return `
-    <div class="card">
-      <div class="card-top">
-        <div class="sym">${a.code}</div>
-        <div class="ltp-row">
-          <div class="ltp">৳${a.ltp.toFixed(1)}</div>
-          <div class="chg ${chgCls}">${chgSign}${isNaN(chg) ? "—" : chg.toFixed(2) + "%"}</div>
-        </div>
-      </div>
-      <div class="score-row">
-        <div class="score-label">ক্রয়যোগ্যতা স্কোর</div>
-        <div class="score-num ${scoreCls}">${a.buyScore}/100</div>
-      </div>
-      <div class="score-bar"><div class="score-fill ${scoreCls}" style="width:${a.buyScore}%"></div></div>
-      ${reasonsHtml}
-      <div class="signal-row">${badges.join("")}</div>
-      <div class="chart-box"><canvas id="chart-${a.code}"></canvas></div>
-      <div class="metric-grid">
-        <div><span class="k">Rank</span><span class="v">${a.rank ? `#${a.rank}` : "—"}</span></div>
-        <div><span class="k">Risk/Reward</span><span class="v">${a.riskReward && a.riskReward.ratio ? `${a.riskReward.ratio}:1` : "—"}</span></div>
-        <div><span class="k">52W High</span><span class="v">৳${a.week52High.toFixed(1)}</span></div>
-        <div><span class="k">52W Low</span><span class="v">৳${a.week52Low.toFixed(1)}</span></div>
-        <div><span class="k">রেজিস্ট্যান্স</span><span class="v">${a.sr && a.sr.resistance ? `৳${a.sr.resistance.toFixed(1)} (${a.sr.resistanceTouches}x)` : "—"}</span></div>
-        <div><span class="k">সাপোর্ট</span><span class="v">${a.sr && a.sr.support ? `৳${a.sr.support.toFixed(1)} (${a.sr.supportTouches}x)` : "—"}</span></div>
-        <div><span class="k">লো থেকে দূরত্ব</span><span class="v">+${a.pctFromLow.toFixed(1)}%</span></div>
-        <div><span class="k">হাই থেকে দূরত্ব</span><span class="v">-${a.pctFromHigh.toFixed(1)}%</span></div>
-      </div>
-      <div class="range-bar"><div class="fill" style="left: calc(${rangePct}% - 1.5px)"></div></div>
-    </div>
+  document.getElementById("overviewBar").innerHTML = `
+    <div class="ov-card a"><div class="ov-label">মোট শেয়ার</div><div class="ov-value">${total}</div><div class="ov-sub">গেইনার ${gainers} · লুজার ${losers}</div></div>
+    <div class="ov-card ${avgChg >= 0 ? 'g' : 'r'}"><div class="ov-label">গড় পরিবর্তন</div><div class="ov-value ${avgChg >= 0 ? 'up-c' : 'down-c'}">${avgChg >= 0 ? '+' : ''}${avgChg.toFixed(2)}%</div></div>
+    <div class="ov-card w"><div class="ov-label">গড় P/E</div><div class="ov-value">${avgPE.toFixed(1)}</div><div class="ov-sub">সব শেয়ারের গড়</div></div>
+    <div class="ov-card g"><div class="ov-label">গড় ROE</div><div class="ov-value up-c">${avgROE.toFixed(1)}%</div><div class="ov-sub">রিটার্ন অন ইক্যুইটি</div></div>
+    <div class="ov-card p"><div class="ov-label">আন্ডারভ্যালুড</div><div class="ov-value purple-c">${undervalued}</div><div class="ov-sub">সেক্টর গড়ের নিচে</div></div>
   `;
 }
 
-function drawChart(a, retriesLeft = 12) {
-  const ctx = document.getElementById(`chart-${a.code}`);
-  if (!ctx) return;
-  if (typeof Chart === "undefined") {
-    if (retriesLeft <= 0) {
-      ctx.parentElement.innerHTML = '<div style="color:var(--text-faint); font-size:12px; text-align:center; padding-top:50px;">চার্ট লোড করা যায়নি</div>';
-      return;
-    }
-    setTimeout(() => drawChart(a, retriesLeft - 1), 400);
-    return;
-  }
-  new Chart(ctx, {
-    type: "line",
-    data: {
-      labels: a.chartLabels,
-      datasets: [
-        { data: a.chartData, borderColor: "#4fa0ff", borderWidth: 1.5, pointRadius: 0, tension: 0.15, fill: false },
-        { data: a.chartLabels.map(() => a.week52Low), borderColor: "#ff5470", borderWidth: 1, borderDash: [4, 4], pointRadius: 0, fill: false },
-      ],
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { enabled: false } },
-      scales: { x: { display: false }, y: { display: false } },
-      elements: { line: { borderJoinStyle: "round" } },
-    },
-  });
+/* ============================================================
+   রেন্ডার: হিটম্যাপ
+   ============================================================ */
+function heatColor(pct) {
+  if (pct > 5) return "rgba(0,230,118,0.55)"; if (pct > 2) return "rgba(0,230,118,0.35)";
+  if (pct > 0) return "rgba(0,230,118,0.18)"; if (pct === 0) return "rgba(107,127,150,0.12)";
+  if (pct > -2) return "rgba(255,68,102,0.18)"; if (pct > -5) return "rgba(255,68,102,0.35)";
+  return "rgba(255,68,102,0.55)";
 }
-
-let marketRows = [];
-let currentSort = "change_desc";
-
-function parseMarketRow(r) {
-  const ltp = num(r["LTP*"]);
-  const ycp = num(r["YCP*"]);
-  const change = num(r["CHANGE"]);
-  const changePct = ycp ? (change / ycp) * 100 : 0;
-  return {
-    code: r["TRADING CODE"],
-    ltp, change, changePct,
-    high: num(r["HIGH"]), low: num(r["LOW"]),
-    volume: num(r["VOLUME"]), value: num(r["VALUE (mn)"]),
-  };
-}
-
-function renderMarketTable() {
-  const q = document.getElementById("searchBox").value.trim().toUpperCase();
-  let rows = marketRows.filter(r => !q || r.code.includes(q));
-
-  const sorters = {
-    change_desc: (a, b) => b.changePct - a.changePct,
-    change_asc: (a, b) => a.changePct - b.changePct,
-    volume_desc: (a, b) => b.volume - a.volume,
-    value_desc: (a, b) => b.value - a.value,
-  };
-  rows = rows.slice().sort(sorters[currentSort] || sorters.change_desc);
-  rows = rows.slice(0, 60);
-
-  const tbody = document.getElementById("marketTbody");
-  if (!rows.length) {
-    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:20px; color:var(--text-dim);">আজকের লাইভ ট্রেড ডেটা এখনো আসেনি। ট্রেডিং আওয়ারে (সকাল ~১০টা - দুপুর ~২:৩০টা) আবার দেখুন।</td></tr>`;
-    return;
-  }
-  tbody.innerHTML = rows.map(r => {
-    const cls = r.changePct > 0 ? "up" : r.changePct < 0 ? "down" : "flat";
-    return `
-      <tr>
-        <td class="code">${r.code}</td>
-        <td class="num">${r.ltp.toFixed(1)}</td>
-        <td class="num ${cls}">${r.change > 0 ? "+" : ""}${r.change.toFixed(2)}</td>
-        <td class="num ${cls}">${r.changePct > 0 ? "+" : ""}${r.changePct.toFixed(2)}%</td>
-        <td class="num">${r.high.toFixed(1)}</td>
-        <td class="num">${r.low.toFixed(1)}</td>
-        <td class="num">${r.volume.toLocaleString()}</td>
-        <td class="num">${r.value.toFixed(2)}</td>
-      </tr>
-    `;
+function renderHeatmap() {
+  document.getElementById("heatmapGrid").innerHTML = [...marketRows].sort((a, b) => b.changePct - a.changePct).map(r => {
+    const tc = r.changePct > 0 ? "var(--up)" : r.changePct < 0 ? "var(--down)" : "var(--text-muted)";
+    return `<div class="hm-cell" style="background:${heatColor(r.changePct)}" onclick="openDetail('${r.code}')">
+      <div class="hm-code">${ESC(r.code)}</div><div class="hm-pct" style="color:${tc}">${r.changePct > 0 ? '+' : ''}${r.changePct.toFixed(2)}%</div></div>`;
   }).join("");
 }
 
-async function main() {
-  try {
-    const [latest, meta, v2Watchlist] = await Promise.all([
-      fetchJson("latest.json"),
-      fetchJson("meta.json").catch(() => null),
-      fetchJson("watchlist.json").catch(() => []),
-    ]);
-    const v2ByCode = Object.fromEntries(v2Watchlist.map(stock => [stock.code, stock]));
+/* ============================================================
+   রেন্ডার: ওয়াচলিস্ট কার্ড
+   ============================================================ */
+function scCls(s) { return s >= 65 ? "up" : s >= 45 ? "flat" : "down"; }
 
-    marketRows = latest.map(parseMarketRow).filter(r => r.code && !isNaN(r.ltp));
+function renderWatchlistCard(a) {
+  const chgCls = a.changePct > 0 ? "up" : a.changePct < 0 ? "down" : "flat";
+  const sign = a.changePct > 0 ? "+" : "";
+  const tc = scCls(a.techScore), fc = scCls(a.fundScore), cc = scCls(a.compositeScore);
+  const f = a.fund;
 
-    const latestByCode = {};
-    latest.forEach(r => { latestByCode[r["TRADING CODE"]] = r; });
+  const fundItems = [];
+  if (f) {
+    fundItems.push(`<span class="fs-item">P/E <b>${f.pe}</b></span>`);
+    fundItems.push(`<span class="fs-item">P/B <b>${f.pb}</b></span>`);
+    fundItems.push(`<span class="fs-item">ROE <b>${f.roe}%</b></span>`);
+    fundItems.push(`<span class="fs-item">ডিভি <b>${f.dividendYield}%</b></span>`);
+    fundItems.push(`<span class="fs-item">D/E <b>${f.debtToEquity}</b></span>`);
+  }
 
-    const banner = document.getElementById("noFreshSessionBanner");
-    if (meta && meta.noFreshSession) {
-      marketRows = marketRows.filter(r => r.ltp > 0);
-      banner.style.display = "block";
-      banner.textContent = "⚠️ আজকের লাইভ ট্রেড সেশনের ডেটা এখনো আসেনি (বাজার খোলেনি বা dsebd.org আপডেট হয়নি) — নিচের টপ ১০ ওয়াচলিস্ট গতকাল পর্যন্ত সম্পন্ন সেশনের historical ডেটা অনুযায়ী দেখানো হচ্ছে। \"সব শেয়ার\" টেবিল ট্রেডিং শুরু হলে সয়ংক্রিয়ভাবে আপডেট হবে।";
-    } else {
-      banner.style.display = "none";
+  const badges = [];
+  if (a.maSignal === "golden") badges.push(`<span class="badge buy">গোল্ডেন ক্রস</span>`);
+  else if (a.maSignal === "bullish") badges.push(`<span class="badge buy">MA20>MA50</span>`);
+  if (a.pattern) badges.push(`<span class="badge ${a.pattern.type === 'bullish' ? 'buy' : a.pattern.type === 'bearish' ? 'sell' : 'neutral'}">${a.pattern.name}</span>`);
+  if (a.prediction?.trend === "up") badges.push(`<span class="badge warn">প্রেডিক্ট +${a.prediction.pctChange.toFixed(1)}%</span>`);
+  if (a.stockClass.label !== "Speculative") badges.push(`<span class="badge purple">${a.stockClass.label}</span>`);
+  if (f && f.pe < (SECTOR_AVG_PE[f.sector] || 15) * 0.8) badges.push(`<span class="badge buy">আন্ডারভ্যালুড</span>`);
+
+  const allReasons = [...a.techReasons.map(r => `[T] ${r}`), ...a.fundReasons.map(r => `[F] ${r}`)];
+  const reasonsHtml = allReasons.length
+    ? `<ul class="reasons">${allReasons.slice(0, 5).map(r => `<li>${r}</li>`).join("")}</ul>`
+    : `<div class="reasons-empty">স্পষ্ট সিগন্যাল নেই</div>`;
+
+  const rangePct = CLAMP(((a.ltp - a.w52L) / Math.max(a.w52H - a.w52L, 0.01)) * 100, 0, 100);
+
+  return `<div class="card" onclick="openDetail('${a.code}')">
+    <div class="card-top">
+      <div class="card-top-left">
+        <span class="sym">${ESC(a.code)}</span>
+        ${a.fund ? `<span class="sector-pill">${a.fund.sector}</span>` : ''}
+        <span class="rec-badge ${a.rec.cls}">${a.rec.label}</span>
+      </div>
+      <div class="ltp-r"><div class="ltp">৳${a.ltp.toFixed(1)}</div><div class="chg ${chgCls}">${sign}${a.changePct.toFixed(2)}%</div></div>
+    </div>
+    <div class="dual-scores">
+      <div class="ds-item"><div class="ds-label"><span>টেকনিক্যাল</span><span class="${tc === 'up' ? 'up-c' : tc === 'flat' ? 'amber-c' : 'down-c'}">${a.techScore}</span></div><div class="ds-bar"><div class="ds-fill ${tc}" style="width:${a.techScore}%"></div></div></div>
+      <div class="ds-item"><div class="ds-label"><span>ফান্ডামেন্টাল</span><span class="${fc === 'up' ? 'up-c' : fc === 'flat' ? 'amber-c' : 'down-c'}">${a.fundScore}</span></div><div class="ds-bar"><div class="ds-fill ${fc}" style="width:${a.fundScore}%"></div></div></div>
+    </div>
+    <div class="composite-row"><span class="comp-label">কম্পোজিট স্কোর</span><span class="comp-value ${cc === 'up' ? 'up-c' : cc === 'flat' ? 'amber-c' : 'down-c'}">${a.compositeScore}/100</span></div>
+    ${reasonsHtml}
+    <div class="fund-summary">${fundItems.join("")}</div>
+    <div class="signal-row">${badges.join("")}</div>
+    <div class="chart-box"><canvas id="wc-${a.code}"></canvas></div>
+    <div class="metric-grid">
+      <div><span class="k">৫২W হাই</span><span class="v">৳${a.w52H.toFixed(1)}</span></div>
+      <div><span class="k">৫২W লো</span><span class="v">৳${a.w52L.toFixed(1)}</span></div>
+      <div><span class="k">ভ্যালুয়েশন</span><span class="v ${a.verdict.cls}">${a.verdict.label}</span></div>
+      <div><span class="k">ক্লাস</span><span class="v purple-c">${a.stockClass.label}</span></div>
+    </div>
+    <div class="range-bar"><div class="fill" style="left:calc(${rangePct}% - 1.5px)"></div></div>
+  </div>`;
+}
+
+function drawWatchlistChart(a) {
+  const ctx = document.getElementById(`wc-${a.code}`);
+  if (!ctx || typeof Chart === "undefined") return;
+  const datasets = [{ data: a.closes, borderColor: "#38bdf8", borderWidth: 1.2, pointRadius: 0, tension: 0.2, fill: false }];
+  if (a.prediction && a.prediction.r2 > 0.1) {
+    const predFull = a.closes.map(() => null);
+    predFull[predFull.length - 1] = a.closes[a.closes.length - 1];
+    a.prediction.predictions.forEach(p => predFull.push(p));
+    datasets.push({ data: predFull, borderColor: "rgba(255,176,32,0.7)", borderWidth: 1.2, borderDash: [4, 3], pointRadius: 0, tension: 0.2, fill: false });
+  }
+  new Chart(ctx, { type: "line", data: { labels: a.labels, datasets },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { enabled: false } },
+      scales: { x: { display: false }, y: { display: false } } } });
+}
+
+/* ============================================================
+   রেন্ডার: মার্কেট টেবিল
+   ============================================================ */
+function renderMarketTable() {
+  const q = document.getElementById("searchBox").value.trim().toUpperCase();
+  let rows = marketRows.filter(r => !q || r.code.includes(q));
+  const sorters = {
+    composite_desc: (a, b) => (compScoreMap[b.code] || 0) - (compScoreMap[a.code] || 0),
+    change_desc: (a, b) => b.changePct - a.changePct,
+    change_asc: (a, b) => a.changePct - b.changePct,
+    fund_desc: (a, b) => (fundScoreMap[b.code] || 0) - (fundScoreMap[a.code] || 0),
+    pe_asc: (a, b) => (fundDataMap[a.code]?.pe ?? 999) - (fundDataMap[b.code]?.pe ?? 999),
+    dy_desc: (a, b) => (fundDataMap[b.code]?.dividendYield ?? 0) - (fundDataMap[a.code]?.dividendYield ?? 0),
+    volume_desc: (a, b) => (b.volume || 0) - (a.volume || 0),
+  };
+  rows = rows.slice().sort(sorters[currentSort] || sorters.composite_desc);
+
+  const tbody = document.getElementById("marketTbody");
+  if (!rows.length) { tbody.innerHTML = `<tr><td colspan="12" style="text-align:center;padding:24px;color:var(--text-muted);">কোনো ডেটা নেই</td></tr>`; return; }
+
+  tbody.innerHTML = rows.map(r => {
+    const cls = r.changePct > 0 ? "up-c" : r.changePct < 0 ? "down-c" : "";
+    const sign = r.changePct > 0 ? "+" : "";
+    const ts = techScoreMap[r.code], fs = fundScoreMap[r.code], cs = compScoreMap[r.code];
+    const f = fundDataMap[r.code];
+    const rec = getRecommendation(cs ?? 0);
+    const tsc = scCls(ts ?? 50), fsc = scCls(fs ?? 50), csc = scCls(cs ?? 50);
+    return `<tr onclick="openDetail('${r.code}')">
+      <td class="code">${ESC(r.code)}</td>
+      <td class="num">${r.ltp.toFixed(1)}</td>
+      <td class="num ${cls}">${sign}${r.changePct.toFixed(2)}%</td>
+      <td style="font-size:0.62rem;color:var(--text-faint);">${f?.sector || '—'}</td>
+      <td class="num">${f?.pe?.toFixed(1) || '—'}</td>
+      <td class="num">${f?.pb?.toFixed(1) || '—'}</td>
+      <td class="num">${f?.roe?.toFixed(1) || '—'}</td>
+      <td class="num">${f?.dividendYield?.toFixed(1) || '—'}</td>
+      <td class="num ${tsc === 'up' ? 'up-c' : tsc === 'flat' ? 'amber-c' : 'down-c'}" style="font-weight:700">${ts ?? '—'}</td>
+      <td class="num ${fsc === 'up' ? 'up-c' : fsc === 'flat' ? 'amber-c' : 'down-c'}" style="font-weight:700">${fs ?? '—'}</td>
+      <td class="num ${csc === 'up' ? 'up-c' : csc === 'flat' ? 'amber-c' : 'down-c'}" style="font-weight:700">${cs ?? '—'}</td>
+      <td><span class="rec-badge ${rec.cls}" style="font-size:0.55rem;">${rec.label}</span></td>
+    </tr>`;
+  }).join("");
+}
+
+/* ============================================================
+   রেন্ডার: ফান্ডামেন্টাল স্ক্রিনার
+   ============================================================ */
+function populateScreenerSectors() {
+  const sel = document.getElementById("scrSector");
+  sel.innerHTML = `<option value="">সব সেক্টর</option>` + Object.keys(SECTORS).map(s => `<option value="${s}">${s}</option>`).join("");
+}
+
+function runScreener() {
+  const maxPE = parseFloat(document.getElementById("scrPE").value) || 999;
+  const maxPB = parseFloat(document.getElementById("scrPB").value) || 999;
+  const minDY = parseFloat(document.getElementById("scrDY").value) || 0;
+  const minROE = parseFloat(document.getElementById("scrROE").value) || 0;
+  const minNPM = parseFloat(document.getElementById("scrNPM").value) || 0;
+  const sector = document.getElementById("scrSector").value;
+  const minScore = parseFloat(document.getElementById("scrMinScore").value) || 0;
+
+  let rows = marketRows.filter(r => {
+    const f = fundDataMap[r.code]; if (!f) return false;
+    if (f.pe > maxPE) return false;
+    if (f.pb > maxPB) return false;
+    if (f.dividendYield < minDY) return false;
+    if (f.roe < minROE) return false;
+    if (f.netProfitMargin < minNPM) return false;
+    if (sector && f.sector !== sector) return false;
+    if ((fundScoreMap[r.code] || 0) < minScore) return false;
+    return true;
+  });
+  rows.sort((a, b) => (compScoreMap[b.code] || 0) - (compScoreMap[a.code] || 0));
+
+  const tbody = document.getElementById("screenerTbody");
+  if (!rows.length) { tbody.innerHTML = `<tr><td colspan="15" style="text-align:center;padding:24px;color:var(--text-muted);">কোনো শেয়ার ক্রাইটেরিয়া মেলেনি। ফিল্টার শিথিল করুন।</td></tr>`; return; }
+
+  tbody.innerHTML = rows.map(r => {
+    const f = fundDataMap[r.code];
+    const cls = r.changePct > 0 ? "up-c" : r.changePct < 0 ? "down-c" : "";
+    const cs = compScoreMap[r.code] || 0, fs = fundScoreMap[r.code] || 0;
+    const csc = scCls(cs), fsc = scCls(fs);
+    const stockCls = classifyStock(f);
+    const rec = getRecommendation(cs);
+    return `<tr onclick="openDetail('${r.code}')">
+      <td class="code">${ESC(r.code)}</td><td class="num">${r.ltp.toFixed(1)}</td>
+      <td class="num ${cls}">${r.changePct > 0 ? '+' : ''}${r.changePct.toFixed(2)}%</td>
+      <td style="font-size:0.62rem;color:var(--text-faint);">${f.sector}</td>
+      <td class="num">${f.pe.toFixed(1)}</td><td class="num">${f.pb.toFixed(1)}</td>
+      <td class="num">${f.eps.toFixed(2)}</td><td class="num">${f.roe.toFixed(1)}</td>
+      <td class="num">${f.dividendYield.toFixed(1)}</td><td class="num">${f.debtToEquity.toFixed(2)}</td>
+      <td class="num">${f.netProfitMargin.toFixed(1)}</td>
+      <td class="num ${fsc === 'up' ? 'up-c' : fsc === 'flat' ? 'amber-c' : 'down-c'}" style="font-weight:700">${fs}</td>
+      <td class="num ${csc === 'up' ? 'up-c' : csc === 'flat' ? 'amber-c' : 'down-c'}" style="font-weight:700">${cs}</td>
+      <td><span class="badge ${stockCls.cls}" style="font-size:0.55rem;">${stockCls.label}</span></td>
+      <td><span class="rec-badge ${rec.cls}" style="font-size:0.55rem;">${rec.label}</span></td>
+    </tr>`;
+  }).join("");
+
+  toast(`${rows.length}টি শেয়ার ক্রাইটেরিয়ায় মিলেছে`, "ok");
+}
+
+/* ============================================================
+   ভিউ টগল
+   ============================================================ */
+function setView(view, btn) {
+  currentView = view;
+  document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tableView').style.display = view === 'table' ? '' : 'none';
+  document.getElementById('screenerView').style.display = view === 'screener' ? '' : 'none';
+  if (view === 'screener') runScreener();
+}
+
+/* ============================================================
+   ডিটেইল মোডাল
+   ============================================================ */
+function openDetail(code) {
+  const cd = allChartData[code], f = fundDataMap[code];
+  if (!cd) return;
+  const mr = marketRows.find(r => r.code === code);
+  const a = analyzeStock(code, cd, mr, f);
+  if (!a) return;
+
+  const modal = document.getElementById("detailModal"), mc = document.getElementById("modalContent");
+  const chgCls = a.changePct > 0 ? "up-c" : a.changePct < 0 ? "down-c" : "";
+  const sign = a.changePct > 0 ? "+" : "";
+  const cc = scCls(a.compositeScore);
+  const tc = scCls(a.techScore), fc = scCls(a.fundScore);
+
+  /* ফান্ডামেন্টাল স্কোর ব্রেকডাউন টেবিল */
+  const scoreRows = a.fundScoreBreakdown.map(b => {
+    const scc = b.score >= b.max * 0.7 ? "up" : b.score >= b.max * 0.4 ? "flat" : "down";
+    return `<tr><td>${b.name}</td><td style="text-align:right;">${b.value}</td><td style="text-align:right;font-size:0.6rem;color:var(--text-faint);">${b.desc}</td>
+      <td style="text-align:right;font-weight:700;" class="${scc === 'up' ? 'up-c' : scc === 'flat' ? 'amber-c' : 'down-c'}">${b.score}/${b.max}</td>
+      <td><span class="st-bar"><span class="st-fill ds-fill ${scc}" style="width:${(b.score / b.max) * 100}%"></span></span></td></tr>`;
+  }).join("");
+
+  /* প্রেডিকশন */
+  const predHtml = a.prediction ? `<div class="prediction-box"><h4><i class="fas fa-chart-line"></i> লিনিয়ার রিগ্রেশন প্রেডিকশন</h4>
+    <div class="pred-row"><span class="pk">ট্রেন্ড</span><span class="pv ${a.prediction.trend === 'up' ? 'up-c' : 'down-c'}">${a.prediction.trend === 'up' ? 'আপট্রেন্ড' : 'ডাউনট্রেন্ড'}</span></div>
+    <div class="pred-row"><span class="pk">পরিবর্তন</span><span class="pv ${a.prediction.pctChange >= 0 ? 'up-c' : 'down-c'}">${sign}${a.prediction.pctChange.toFixed(2)}%</span></div>
+    <div class="pred-row"><span class="pk">R² ফিটনেস</span><span class="pv">${a.prediction.r2.toFixed(3)}</span></div>
+    <div class="pred-row"><span class="pk">পরবর্তী দিন</span><span class="pv">৳${a.prediction.predictions[0]?.toFixed(2) ?? '—'}</span></div>
+    <div class="pred-row"><span class="pk">৫ দিন পরে</span><span class="pv">৳${a.prediction.predictions[4]?.toFixed(2) ?? '—'}</span></div></div>` : '';
+
+  /* ভ্যালুয়েশন ভার্ডিক্ট */
+  const vCls = a.verdict.cls === 'up-c' ? 'up-dim' : a.verdict.cls === 'amber-c' ? 'amber-dim' : 'down-dim';
+  const vBorder = a.verdict.cls === 'up-c' ? 'rgba(0,230,118,0.3)' : a.verdict.cls === 'amber-c' ? 'rgba(255,176,32,0.3)' : 'rgba(255,68,102,0.3)';
+  const vColor = a.verdict.cls === 'up-c' ? 'var(--up)' : a.verdict.cls === 'amber-c' ? 'var(--amber)' : 'var(--down)';
+
+  mc.innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+          <span style="font-size:1.3rem;font-weight:700;font-family:var(--mono);">${ESC(code)}</span>
+          ${a.fund ? `<span class="sector-pill">${a.fund.sector}</span>` : ''}
+          <span class="rec-badge ${a.rec.cls}">${a.rec.label}</span>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:12px;margin-top:4px;">
+          <span style="font-size:1.7rem;font-weight:700;font-family:var(--mono);">৳${a.ltp.toFixed(2)}</span>
+          <span class="chg ${chgCls}" style="font-size:0.95rem;">${sign}${a.changePct.toFixed(2)}%</span>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeDetail()"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- কম্পোজিট স্কোর -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px;">
+      <div style="text-align:center;padding:10px;background:var(--bg-panel);border-radius:8px;border:1px solid var(--border);">
+        <div style="font-size:0.6rem;color:var(--text-faint);text-transform:uppercase;">টেকনিক্যাল (৪০%)</div>
+        <div class="${tc === 'up' ? 'up-c' : tc === 'flat' ? 'amber-c' : 'down-c'}" style="font-size:1.3rem;font-weight:700;font-family:var(--mono);">${a.techScore}</div>
+      </div>
+      <div style="text-align:center;padding:10px;background:var(--bg-panel);border-radius:8px;border:1px solid var(--border);">
+        <div style="font-size:0.6rem;color:var(--text-faint);text-transform:uppercase;">ফান্ডামেন্টাল (৬০%)</div>
+        <div class="${fc === 'up' ? 'up-c' : fc === 'flat' ? 'amber-c' : 'down-c'}" style="font-size:1.3rem;font-weight:700;font-family:var(--mono);">${a.fundScore}</div>
+      </div>
+      <div style="text-align:center;padding:10px;background:var(--bg-panel);border-radius:8px;border:1px solid var(--accent);border-color:rgba(56,189,248,0.3);">
+        <div style="font-size:0.6rem;color:var(--accent);text-transform:uppercase;">কম্পোজিট</div>
+        <div class="${cc === 'up' ? 'up-c' : cc === 'flat' ? 'amber-c' : 'down-c'}" style="font-size:1.5rem;font-weight:700;font-family:var(--mono);">${a.compositeScore}</div>
+      </div>
+    </div>
+
+    <!-- ভ্যালুয়েশন ভার্ডিক্ট -->
+    <div class="verdict-box" style="background:var(--${vCls.replace('-c','')});border:1px solid ${vBorder};">
+      <h3 style="color:${vColor};">${a.verdict.label}</h3>
+      <p>${a.verdict.desc} · ক্লাস: <b class="purple-c">${a.stockClass.label}</b></p>
+    </div>
+
+    ${predHtml}
+
+    <!-- চার্ট -->
+    <div class="modal-charts">
+      <div class="modal-chart-box"><canvas id="mc-price"></canvas></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div class="modal-chart-box small"><canvas id="mc-rsi"></canvas></div>
+        <div class="modal-chart-box small"><canvas id="mc-eps"></canvas></div>
+      </div>
+    </div>
+
+    <!-- ফান্ডামেন্টাল মেট্রিক্স -->
+    ${a.fund ? `<div style="margin-bottom:16px;">
+      <div style="font-size:0.75rem;font-weight:600;color:var(--purple);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;"><i class="fas fa-building-columns"></i> ফান্ডামেন্টাল মেট্রিক্স</div>
+      <div class="modal-metrics">
+        <div class="modal-metric"><div class="mm-label">P/E রেশিও</div><div class="mm-value">${a.fund.pe}</div></div>
+        <div class="modal-metric"><div class="mm-label">P/B রেশিও</div><div class="mm-value">${a.fund.pb}</div></div>
+        <div class="modal-metric"><div class="mm-label">EPS (TTM)</div><div class="mm-value">৳${a.fund.eps}</div></div>
+        <div class="modal-metric"><div class="mm-label">EPS গ্রোথ</div><div class="mm-value ${a.fund.epsGrowth > 0 ? 'up-c' : 'down-c'}">${a.fund.epsGrowth > 0 ? '+' : ''}${a.fund.epsGrowth}%</div></div>
+        <div class="modal-metric"><div class="mm-label">ROE</div><div class="mm-value up-c">${a.fund.roe}%</div></div>
+        <div class="modal-metric"><div class="mm-label">ROA</div><div class="mm-value">${a.fund.roa}%</div></div>
+        <div class="modal-metric"><div class="mm-label">ডিভিডেন্ড ইল্ড</div><div class="mm-value amber-c">${a.fund.dividendYield}%</div></div>
+        <div class="modal-metric"><div class="mm-label">DPS</div><div class="mm-value">৳${a.fund.dps}</div></div>
+        <div class="modal-metric"><div class="mm-label">নেট প্রফিট মার্জিন</div><div class="mm-value">${a.fund.netProfitMargin}%</div></div>
+        <div class="modal-metric"><div class="mm-label">রেভিনিউ গ্রোথ</div><div class="mm-value ${a.fund.revenueGrowth > 0 ? 'up-c' : 'down-c'}">${a.fund.revenueGrowth > 0 ? '+' : ''}${a.fund.revenueGrowth}%</div></div>
+        <div class="modal-metric"><div class="mm-label">ডেট/ইক্যুইটি</div><div class="mm-value ${a.fund.debtToEquity < 0.5 ? 'up-c' : a.fund.debtToEquity < 1 ? 'amber-c' : 'down-c'}">${a.fund.debtToEquity}</div></div>
+        <div class="modal-metric"><div class="mm-label">কারেন্ট রেশিও</div><div class="mm-value">${a.fund.currentRatio}</div></div>
+        <div class="modal-metric"><div class="mm-label">মার্কেট ক্যাপ</div><div class="mm-value">${a.fund.marketCap} Cr</div></div>
+        <div class="modal-metric"><div class="mm-label">NAV</div><div class="mm-value">৳${a.fund.nav}</div></div>
+        <div class="modal-metric"><div class="mm-label">বুক ভ্যালু</div><div class="mm-value">৳${a.fund.bookValue}</div></div>
+      </div>
+    </div>` : ''}
+
+    <!-- ফান্ডামেন্টাল স্কোর ব্রেকডাউন -->
+    <div style="margin-bottom:16px;">
+      <div style="font-size:0.75rem;font-weight:600;color:var(--amber);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;"><i class="fas fa-clipboard-list"></i> ফান্ডামেন্টাল স্কোর ব্রেকডাউন (মোট: ${a.fundScore}/100)</div>
+      <div class="table-scroll" style="background:var(--bg-card);"><table class="score-table">
+        <thead><tr><th>ক্রাইটেরিয়া</th><th style="text-align:right;">মান</th><th style="text-align:right;">মূল্যায়ন</th><th style="text-align:right;">স্কোর</th><th>বার</th></tr></thead>
+        <tbody>${scoreRows}</tbody>
+      </table></div>
+    </div>
+
+    <!-- টেকনিক্যাল মেট্রিক্স -->
+    <div style="margin-bottom:16px;">
+      <div style="font-size:0.75rem;font-weight:600;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;"><i class="fas fa-chart-line"></i> টেকনিক্যাল মেট্রিক্স</div>
+      <div class="modal-metrics">
+        <div class="modal-metric"><div class="mm-label">RSI (14)</div><div class="mm-value ${a.rsi >= 70 ? 'down-c' : a.rsi <= 30 ? 'up-c' : ''}">${a.rsi?.toFixed(1) ?? 'N/A'}</div></div>
+        <div class="modal-metric"><div class="mm-label">MA20</div><div class="mm-value">৳${a.ma20?.toFixed(2) ?? 'N/A'}</div></div>
+        <div class="modal-metric"><div class="mm-label">MA50</div><div class="mm-value">৳${a.ma50?.toFixed(2) ?? 'N/A'}</div></div>
+        <div class="modal-metric"><div class="mm-label">MA সিগন্যাল</div><div class="mm-value">${a.maSignal}</div></div>
+        <div class="modal-metric"><div class="mm-label">BB আপার</div><div class="mm-value">৳${a.bb?.upper?.toFixed(2) ?? 'N/A'}</div></div>
+        <div class="modal-metric"><div class="mm-label">BB লোয়ার</div><div class="mm-value">৳${a.bb?.lower?.toFixed(2) ?? 'N/A'}</div></div>
+        <div class="modal-metric"><div class="mm-label">ভলিউম রেশিও</div><div class="mm-value">${a.volRatio?.toFixed(2) ?? 'N/A'}x</div></div>
+        <div class="modal-metric"><div class="mm-label">রেজিস্ট্যান্স</div><div class="mm-value">${a.sr.resistance ? '৳' + a.sr.resistance.toFixed(1) : 'N/A'}</div></div>
+        <div class="modal-metric"><div class="mm-label">সাপোর্ট</div><div class="mm-value">${a.sr.support ? '৳' + a.sr.support.toFixed(1) : 'N/A'}</div></div>
+        <div class="modal-metric"><div class="mm-label">৫২W হাই</div><div class="mm-value">৳${a.w52H.toFixed(1)}</div></div>
+        <div class="modal-metric"><div class="mm-label">৫২W লো</div><div class="mm-value">৳${a.w52L.toFixed(1)}</div></div>
+        <div class="modal-metric"><div class="mm-label">ব্রেকআউট</div><div class="mm-value">${a.breakout || 'N/A'}</div></div>
+      </div>
+    </div>
+
+    <!-- সিগন্যাল -->
+    <div class="signal-row" style="margin-bottom:12px;">
+      ${a.pattern ? `<span class="badge ${a.pattern.type === 'bullish' ? 'buy' : 'sell'}">${a.pattern.name}</span>` : ''}
+      ${a.orderBlock ? `<span class="badge ${a.orderBlock.type === 'bullish' ? 'buy' : 'sell'}">অর্ডার ব্লক</span>` : ''}
+      ${a.fvg ? `<span class="badge ${a.fvg.type === 'bullish' ? 'buy' : 'sell'}">FVG</span>` : ''}
+      ${a.liqSweep ? `<span class="badge ${a.liqSweep.type === 'bullish' ? 'buy' : 'sell'}">লিকুইডিটি সুইপ</span>` : ''}
+      ${a.breakout ? `<span class="badge ${a.breakout === 'up' ? 'buy' : 'sell'}">${a.breakout === 'up' ? 'ব্রেকআউট' : 'ব্রেকডাউন'}</span>` : ''}
+      <span class="badge purple">${a.stockClass.label}</span>
+    </div>
+    ${a.techReasons.length || a.fundReasons.length ? `<ul class="reasons">${[...a.techReasons, ...a.fundReasons].map(r => `<li>${r}</li>`).join("")}</ul>` : ''}
+  `;
+
+  modal.classList.add("active");
+  requestAnimationFrame(() => drawDetailCharts(a));
+}
+
+function drawDetailCharts(a) {
+  if (typeof Chart === "undefined") return;
+
+  /* প্রাইস চার্ট */
+  const pCtx = document.getElementById("mc-price");
+  if (pCtx) {
+    const ma20L = a.labels.map((_, i) => i < 19 ? null : sma(a.closes.slice(0, i + 1), 20));
+    const ma50L = a.labels.map((_, i) => i < 49 ? null : sma(a.closes.slice(0, i + 1), 50));
+    const bbU = a.labels.map((_, i) => i < 19 ? null : bollingerBands(a.closes.slice(0, i + 1))?.upper);
+    const bbL = a.labels.map((_, i) => i < 19 ? null : bollingerBands(a.closes.slice(0, i + 1))?.lower);
+    const ds = [
+      { label: "Price", data: a.closes, borderColor: "#38bdf8", borderWidth: 1.5, pointRadius: 0, tension: 0.15, fill: false },
+      { label: "MA20", data: ma20L, borderColor: "rgba(0,230,118,0.6)", borderWidth: 1, pointRadius: 0, borderDash: [3, 2], fill: false },
+      { label: "MA50", data: ma50L, borderColor: "rgba(255,176,32,0.6)", borderWidth: 1, pointRadius: 0, borderDash: [5, 3], fill: false },
+      { label: "BB+", data: bbU, borderColor: "rgba(167,139,250,0.3)", borderWidth: 1, pointRadius: 0, fill: false },
+      { label: "BB-", data: bbL, borderColor: "rgba(167,139,250,0.3)", borderWidth: 1, pointRadius: 0, fill: "-1", backgroundColor: "rgba(167,139,250,0.04)" },
+    ];
+    if (a.prediction && a.prediction.r2 > 0.1) {
+      const pf = a.closes.map(() => null); pf[pf.length - 1] = a.closes[a.closes.length - 1];
+      a.prediction.predictions.forEach(p => pf.push(p));
+      ds.push({ label: "Prediction", data: pf, borderColor: "rgba(255,176,32,0.8)", borderWidth: 2, borderDash: [6, 3], pointRadius: 2, pointBackgroundColor: "rgba(255,176,32,0.9)", tension: 0.2, fill: false });
     }
+    const pLabels = [...a.labels];
+    if (a.prediction) for (let i = 0; i < (a.prediction.predictions?.length || 0); i++) { const d = new Date(a.labels[a.labels.length - 1]); d.setDate(d.getDate() + i + 1); pLabels.push(d.toISOString().slice(0, 10)); }
+    new Chart(pCtx, { type: "line", data: { labels: pLabels, datasets: ds },
+      options: { responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: true, labels: { color: "#6b7f96", font: { size: 9, family: "var(--mono)" }, boxWidth: 10, padding: 6 } },
+          tooltip: { backgroundColor: "#111822", borderColor: "#1c2736", borderWidth: 1, titleColor: "#e2eaf4", bodyColor: "#6b7f96", cornerRadius: 6 } },
+        scales: { x: { ticks: { color: "#3a4d63", font: { size: 8, family: "var(--mono)" }, maxTicksLimit: 8 }, grid: { color: "rgba(28,39,54,0.5)" } },
+          y: { ticks: { color: "#3a4d63", font: { size: 8, family: "var(--mono)" } }, grid: { color: "rgba(28,39,54,0.5)" } } },
+        interaction: { mode: "index", intersect: false } } });
+  }
 
-    const watchlistCodes = (meta && meta.watchlist && meta.watchlist.length) ? meta.watchlist : [];
-    if (meta && meta.strategy) {
-      document.getElementById("watchlistStrategy").textContent = `স্ট্র্যাটেজি: ${meta.strategy}${meta.noFreshSession ? " (গতকালের historical ডেটা ভিত্তিক)" : ""}`;
-    }
+  /* RSI চার্ট */
+  const rCtx = document.getElementById("mc-rsi");
+  if (rCtx) {
+    const rsiD = a.closes.map((_, i) => i < 14 ? null : computeRSI(a.closes.slice(0, i + 1)));
+    new Chart(rCtx, { type: "line", data: { labels: a.labels, datasets: [
+      { label: "RSI", data: rsiD, borderColor: "#a78bfa", borderWidth: 1.5, pointRadius: 0, tension: 0.2, fill: false },
+      { data: a.labels.map(() => 70), borderColor: "rgba(255,68,102,0.3)", borderWidth: 1, borderDash: [4, 4], pointRadius: 0, fill: false },
+      { data: a.labels.map(() => 30), borderColor: "rgba(0,230,118,0.3)", borderWidth: 1, borderDash: [4, 4], pointRadius: 0, fill: false },
+    ] }, options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { x: { display: false }, y: { min: 0, max: 100, ticks: { color: "#3a4d63", font: { size: 8 }, stepSize: 30 }, grid: { color: "rgba(28,39,54,0.5)" } } } } });
+  }
 
-    const analyses = [];
-    for (const code of watchlistCodes) {
-      try {
-        const hist = await fetchJson(`historical/${code}.json`);
-        const a = analyzeWatchlistStock(code, hist, latestByCode[code]);
-        if (a) analyses.push({ ...a, ...(v2ByCode[code] || {}) });
-      } catch (e) {
-        console.error(`${code} history লোড ব্যর্থ:`, e);
-      }
-    }
-
-    analyses.sort((a, b) => b.buyScore - a.buyScore);
-    document.getElementById("watchlistGrid").innerHTML = analyses.length
-      ? analyses.map(renderWatchlistCard).join("")
-      : `<div class="loading" style="padding:24px 0;">এই মুহূর্তে স্ট্র্যাটেজি অনুযায়ী কোনো ক্রয়যোগ্য শেয়ার পাওয়া যায়নি। একটু পর আবার দেখুন (প্রতি ১৫ মিনিটে আপডেট হয়)।</div>`;
-    analyses.forEach(a => {
-      try { drawChart(a); } catch (e) { console.error(`${a.code} চার্ট আঁকতে সমস্যা:`, e); }
-    });
-
-    renderMarketTable();
-
-    const attemptedAt = meta && (meta.lastAttemptedAt || meta.lastScrapedAt);
-    if (attemptedAt) {
-      const d = new Date(attemptedAt);
-      const timeStr = d.toLocaleString("bn-BD", { dateStyle: "medium", timeStyle: "short" });
-      let html = `⏱ সর্বশেষ চেক করা হয়েছে: <b>${timeStr}</b>`;
-      if (meta.noFreshSession && meta.lastScrapedAt) {
-        const ls = new Date(meta.lastScrapedAt);
-        html += ` &nbsp;·&nbsp; সর্বশেষ লাইভ ডেটা: <b>${ls.toLocaleString("bn-BD", { dateStyle: "medium", timeStyle: "short" })}</b>`;
-      }
-      document.getElementById("lastUpdated").innerHTML = html;
-    }
-
-    document.getElementById("loadingBox").style.display = "none";
-    document.getElementById("content").style.display = "block";
-  } catch (err) {
-    console.error(err);
-    document.getElementById("loadingBox").style.display = "none";
-    document.getElementById("errBox").innerHTML = `<div class="err">⚠️ ডেটা লোড করতে সমস্যা হয়েছে: ${err.message}। GitHub Pages লিংক ঠিক আছে কিনা, বা scraper সফলভাবে রান হয়েছে কিনা চেক করো।</div>`;
+  /* EPS ট্রেন্ড বার চার্ট */
+  const eCtx = document.getElementById("mc-eps");
+  if (eCtx && a.fund) {
+    const years = ["Y-3", "Y-2", "Y-1", "TTM"];
+    new Chart(eCtx, { type: "bar", data: { labels: years, datasets: [
+      { label: "EPS", data: a.fund.yearlyEPS, backgroundColor: "rgba(0,230,118,0.3)", borderColor: "var(--up)", borderWidth: 1, borderRadius: 4, barThickness: 20 },
+      { label: "Revenue(Cr)", data: a.fund.yearlyRevenue, backgroundColor: "rgba(56,189,248,0.3)", borderColor: "var(--accent)", borderWidth: 1, borderRadius: 4, barThickness: 20 },
+    ] }, options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: true, labels: { color: "#6b7f96", font: { size: 8, family: "var(--mono)" }, boxWidth: 8 } } },
+      scales: { x: { ticks: { color: "#3a4d63", font: { size: 8 } }, grid: { display: false } },
+        y: { ticks: { color: "#3a4d63", font: { size: 8 } }, grid: { color: "rgba(28,39,54,0.5)" } } } } });
   }
 }
 
+function closeDetail() { document.getElementById("detailModal").classList.remove("active"); }
+
+/* ============================================================
+   CSV এক্সপোর্ট
+   ============================================================ */
+function exportCSV() {
+  if (!marketRows.length) { toast("ডেটা নেই", "err"); return; }
+  const h = ["Code","LTP","Change%","Sector","P/E","P/B","EPS","ROE%","DivYield%","NPM%","D/E","TechScore","FundScore","Composite","Recommendation"];
+  const rows = marketRows.map(r => {
+    const f = fundDataMap[r.code]; const cs = compScoreMap[r.code] || 0;
+    return [r.code, r.ltp.toFixed(2), r.changePct.toFixed(2), f?.sector || '', f?.pe || '', f?.pb || '', f?.eps || '',
+      f?.roe || '', f?.dividendYield || '', f?.netProfitMargin || '', f?.debtToEquity || '',
+      techScoreMap[r.code] || '', fundScoreMap[r.code] || '', cs, getRecommendation(cs).label];
+  });
+  const csv = [h.join(","), ...rows.map(r => r.join(","))].join("\n");
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+  a.download = `dse_fundamental_${new Date().toISOString().slice(0, 10)}.csv`; a.click();
+  toast("CSV ডাউনলোড হচ্ছে", "ok");
+}
+
+/* ============================================================
+   টোস্ট
+   ============================================================ */
+function toast(msg, type = "ok") {
+  const t = document.createElement("div"); t.className = `toast toast-${type}`;
+  t.innerHTML = `<i class="fas ${type === 'ok' ? 'fa-check-circle' : type === 'err' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i> ${msg}`;
+  document.getElementById("toastBox").appendChild(t); setTimeout(() => t.remove(), 3000);
+}
+
+/* ============================================================
+   মেইন লোজিক
+   ============================================================ */
+async function fetchJson(path) {
+  const res = await fetch(`${DATA_BASE}/${path}?t=${Date.now()}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+async function main() {
+  let useDemo = false;
+  try {
+    const [latest, meta] = await Promise.all([fetchJson("latest.json"), fetchJson("meta.json").catch(() => null)]);
+    marketRows = latest.map(r => {
+      const ltp = NUM(r["LTP*"]), ycp = NUM(r["YCP*"]), change = NUM(r["CHANGE"]);
+      return { code: r["TRADING CODE"], ltp, change, changePct: ycp ? (change / ycp) * 100 : 0,
+        high: NUM(r["HIGH"]), low: NUM(r["LOW"]), volume: NUM(r["VOLUME"]), value: NUM(r["VALUE (mn)"]) };
+    }).filter(r => r.code && !isNaN(r.ltp) && r.ltp > 0);
+
+    const latestByCode = {}; latest.forEach(r => { latestByCode[r["TRADING CODE"]] = r; });
+    const watchlistCodes = meta?.watchlist?.length ? meta.watchlist : marketRows.slice(0, 12).map(r => r.code);
+
+    for (const code of watchlistCodes.slice(0, 12)) {
+      try {
+        const hist = await fetchJson(`historical/${code}.json`);
+        const parsed = hist.map(r => ({ close: NUM(r["CLOSEP*"]), high: NUM(r["HIGH"]), low: NUM(r["LOW"]), open: NUM(r["OPENP*"]), volume: NUM(r["VOLUME"]) })).filter(r => !isNaN(r.close) && r.close > 0);
+        if (parsed.length >= 20) {
+          allChartData[code] = { labels: hist.filter((_, i) => parsed[i]?.close > 0).map(r => r["DATE"]),
+            closes: parsed.map(r => r.close), highs: parsed.map(r => r.high), lows: parsed.map(r => r.low), volumes: parsed.map(r => r.volume) };
+        }
+      } catch (e) { /* চুপ করে স্কিপ */ }
+    }
+
+    if (meta?.noFreshSession) {
+      const b = document.getElementById("warnBanner"); b.style.display = "block";
+      b.innerHTML = `<i class="fas fa-exclamation-triangle"></i> আজকের লাইভ ডেটা নেই — historical ডেটা দেখাচ্ছে।`;
+    }
+    if (meta?.lastAttemptedAt) {
+      document.getElementById("lastUpdated").innerHTML = `<span class="live-dot"></span> ${new Date(meta.lastAttemptedAt).toLocaleString("bn-BD", { dateStyle: "medium", timeStyle: "short" })}`;
+    }
+  } catch (err) {
+    console.warn("API failed, using demo:", err); useDemo = true;
+  }
+
+  /* ডেমো ফলব্যাক */
+  if (useDemo || !marketRows.length) {
+    if (!useDemo) toast("API থেকে ডেটা আনা যায়নি, ডেমো মোড", "info");
+    const demo = generateDemoData();
+    marketRows = demo.rows;
+    allChartData = demo.histData;
+    document.getElementById("lastUpdated").innerHTML = `<span class="live-dot" style="background:var(--amber);box-shadow:0 0 8px var(--amber);"></span> ডেমো মোড`;
+    document.getElementById("warnBanner").style.display = "block";
+    document.getElementById("warnBanner").innerHTML = `<i class="fas fa-info-circle"></i> ডেমো ডেটা — রিয়েল ডেটা দেখতে GitHub Actions scraper চালান। ফান্ডামেন্টাল ডেটা সিমুলেটেড।`;
+  }
+
+  /* ফান্ডামেন্টাল ডেটা (সবসময় ডেমো — রিয়েল API নেই) */
+  fundDataMap = generateDemoFundamental(marketRows);
+
+  /* সব শেয়ার বিশ্লেষণ */
+  for (const code of Object.keys(allChartData)) {
+    const a = analyzeStock(code, allChartData[code], marketRows.find(r => r.code === code), fundDataMap[code]);
+    if (a) {
+      watchlistAnalyses.push(a);
+      techScoreMap[code] = a.techScore;
+      fundScoreMap[code] = a.fundScore;
+      compScoreMap[code] = a.compositeScore;
+    }
+  }
+  /* যেসব শেয়ারের হিস্টোরিক্যাল ডেটা নেই, তাদের ফান্ডামেন্টাল স্কোর দিই */
+  marketRows.forEach(r => {
+    if (compScoreMap[r.code] == null) {
+      const fs = computeFundamentalScore(fundDataMap[r.code]).total;
+      fundScoreMap[r.code] = fs;
+      compScoreMap[r.code] = Math.round(50 * 0.4 + fs * 0.6);
+      techScoreMap[r.code] = 50;
+    }
+  });
+
+  /* রেন্ডার */
+  watchlistAnalyses.sort((a, b) => b.compositeScore - a.compositeScore);
+  populateScreenerSectors();
+  renderOverview();
+  renderHeatmap();
+  document.getElementById("watchlistGrid").innerHTML = watchlistAnalyses.length
+    ? watchlistAnalyses.map(renderWatchlistCard).join("")
+    : `<div class="loading" style="padding:24px;">কোনো বিশ্লেষণ ডেটা নেই</div>`;
+  watchlistAnalyses.forEach(a => drawWatchlistChart(a));
+  renderMarketTable();
+
+  document.getElementById("loadingBox").style.display = "none";
+  document.getElementById("content").style.display = "block";
+  if (!useDemo) toast("ডেটা লোড সম্পন্ন", "ok");
+}
+
+/* ============================================================
+   ইভেন্ট লিসেনার
+   ============================================================ */
 document.getElementById("searchBox").addEventListener("input", renderMarketTable);
 document.querySelectorAll(".tab-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    currentSort = btn.dataset.sort;
-    renderMarketTable();
+    btn.classList.add("active"); currentSort = btn.dataset.sort; renderMarketTable();
   });
 });
-
+document.getElementById("detailModal").addEventListener("click", e => { if (e.target === document.getElementById("detailModal")) closeDetail(); });
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeDetail();
+  if ((e.ctrlKey || e.metaKey) && e.key === "k") { e.preventDefault(); document.getElementById("searchBox").focus(); }
+});
+function waitForChart() { if (typeof Chart !== "undefined") return; setTimeout(waitForChart, 300); }
+waitForChart();
 main();
 </script>
 </body>
