@@ -1,51 +1,17 @@
 [
   {
-    "code": "UNITEDINS",
-    "rank": 1,
-    "rankChange": 3,
-    "riskReward": null,
-    "adx": 33.712255649234386,
-    "mfi": 82.43158144411818,
-    "obvTrend": "rising"
-  },
-  {
     "code": "SILCOPHL",
-    "rank": 2,
-    "rankChange": 4,
+    "rank": 1,
+    "rankChange": 1,
     "riskReward": null,
     "adx": 45.900257941247595,
     "mfi": 70.68988108447118,
     "obvTrend": "rising"
   },
   {
-    "code": "SONALIPAPR",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 4.4
-    },
-    "adx": 25.826792349958797,
-    "mfi": 76.05218776114353,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "AL-HAJTEX",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 2.8
-    },
-    "adx": 19.604576285541246,
-    "mfi": 78.68692865363668,
-    "obvTrend": "rising"
-  },
-  {
     "code": "GENEXIL",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rank": 2,
+    "rankChange": 3,
     "riskReward": {
       "ratio": 0.4
     },
@@ -54,9 +20,33 @@
     "obvTrend": "rising"
   },
   {
+    "code": "CITYGENINS",
+    "rank": 3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0
+    },
+    "adx": 56.92716977172993,
+    "mfi": 28.95564691692435,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SAIHAMCOT",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.9
+    },
+    "adx": 33.76033344618921,
+    "mfi": 62.86456020970004,
+    "obvTrend": "falling"
+  },
+  {
     "code": "ROBI",
-    "rank": 6,
-    "rankChange": 4,
+    "rank": 5,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.9
     },
@@ -65,48 +55,59 @@
     "obvTrend": "rising"
   },
   {
-    "code": "BSRMLTD",
-    "rank": 7,
+    "code": "MIDLANDBNK",
+    "rank": 6,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 3
     },
-    "adx": 48.01954098428157,
-    "mfi": 77.03345505399865,
+    "adx": 36.48289607329139,
+    "mfi": 74.01669425295458,
     "obvTrend": "rising"
   },
   {
-    "code": "SONALILIFE",
-    "rank": 8,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 17.812048121979483,
-    "mfi": 43.45115969070857,
-    "obvTrend": "flat"
-  },
-  {
     "code": "MEGHNAINS",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rank": 7,
+    "rankChange": 2,
     "riskReward": null,
     "adx": 47.80524373115133,
     "mfi": 70.5336105632374,
     "obvTrend": "rising"
   },
   {
-    "code": "ITC",
-    "rank": 10,
+    "code": "SQURPHARMA",
+    "rank": 8,
     "rankChange": null,
     "status": "new",
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 28.438505384678987,
+    "mfi": 41.05648149630663,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ITC",
+    "rank": 9,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.3
     },
     "adx": 62.606560963935564,
     "mfi": 78.69311659855842,
     "obvTrend": "falling"
+  },
+  {
+    "code": "CITYBANK",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 15.725380179622794,
+    "mfi": 62.25756031208516,
+    "obvTrend": "flat"
   }
 ]
