@@ -1,31 +1,32 @@
 [
   {
-    "code": "SILCOPHL",
+    "code": "SAIHAMCOT",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 2.2
     },
-    "adx": 45.74350907342025,
-    "mfi": 67.5557226658662,
-    "obvTrend": "rising"
+    "adx": 35.01307019784837,
+    "mfi": 63.333020895832995,
+    "obvTrend": "falling"
   },
   {
-    "code": "CITYGENINS",
+    "code": "DSHGARME",
     "rank": 2,
-    "rankChange": 1,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0
     },
-    "adx": 55.43535133685998,
-    "mfi": 24.858743170503203,
-    "obvTrend": "falling"
+    "adx": 47.24404210126979,
+    "mfi": 67.4458750364544,
+    "obvTrend": "rising"
   },
   {
     "code": "MIRAKHTER",
     "rank": 3,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.5
     },
@@ -34,22 +35,21 @@
     "obvTrend": "rising"
   },
   {
-    "code": "SEAPEARL",
+    "code": "CVOPRL",
     "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.1
     },
-    "adx": 28.197084500337063,
-    "mfi": 59.30441734080131,
+    "adx": 27.985837245936434,
+    "mfi": 64.82317005402142,
     "obvTrend": "rising"
   },
   {
     "code": "DUTCHBANGL",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 52.42994901219124,
     "mfi": 66.46719907176774,
@@ -58,8 +58,7 @@
   {
     "code": "LANKABAFIN",
     "rank": 6,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -70,44 +69,46 @@
   {
     "code": "MLDYEING",
     "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 55.744559959661096,
     "mfi": 86.15631402342326,
     "obvTrend": "rising"
   },
   {
-    "code": "IPDC",
+    "code": "IDLC",
     "rank": 8,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 3.1
+      "ratio": 0.2
     },
-    "adx": 47.48246801824306,
-    "mfi": 63.482802469247645,
+    "adx": 43.225512604040546,
+    "mfi": 71.86526306708667,
     "obvTrend": "flat"
   },
   {
-    "code": "CITYBANK",
+    "code": "ETL",
     "rank": 9,
-    "rankChange": 1,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 1.3
     },
-    "adx": 15.075892052011818,
-    "mfi": 53.969204198960924,
-    "obvTrend": "rising"
+    "adx": 57.07939776203977,
+    "mfi": 58.30795107287634,
+    "obvTrend": "falling"
   },
   {
-    "code": "AGNISYSL",
+    "code": "NPOLYMER",
     "rank": 10,
     "rankChange": null,
     "status": "new",
-    "riskReward": null,
-    "adx": 38.96121822790837,
-    "mfi": 72.88996720004612,
-    "obvTrend": "rising"
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 36.95600151940509,
+    "mfi": 67.18968475343124,
+    "obvTrend": "flat"
   }
 ]
