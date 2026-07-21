@@ -1,114 +1,112 @@
 [
   {
-    "code": "SAIHAMCOT",
+    "code": "MIRAKHTER",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 2,
     "riskReward": {
-      "ratio": 2.2
+      "ratio": 1.7
     },
-    "adx": 35.01307019784837,
-    "mfi": 63.333020895832995,
+    "adx": 17.744221687977902,
+    "mfi": 69.57999359464446,
     "obvTrend": "falling"
   },
   {
-    "code": "DSHGARME",
+    "code": "SAIHAMCOT",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": -1,
     "riskReward": {
-      "ratio": 0
+      "ratio": 6
     },
-    "adx": 47.24404210126979,
-    "mfi": 67.4458750364544,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "MIRAKHTER",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 1.5
-    },
-    "adx": 16.55418065783154,
-    "mfi": 65.79631901233756,
-    "obvTrend": "rising"
+    "adx": 36.693544792436526,
+    "mfi": 64.45557578660839,
+    "obvTrend": "falling"
   },
   {
     "code": "CVOPRL",
+    "rank": 3,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0
+    },
+    "adx": 28.808495569901613,
+    "mfi": 63.597244256624464,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "NPOLYMER",
     "rank": 4,
+    "rankChange": 6,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 38.18213138799975,
+    "mfi": 78.50066731643682,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ROBI",
+    "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.4
     },
-    "adx": 27.985837245936434,
-    "mfi": 64.82317005402142,
+    "adx": 34.07327444413093,
+    "mfi": 54.27470516121042,
     "obvTrend": "rising"
   },
   {
-    "code": "DUTCHBANGL",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 52.42994901219124,
-    "mfi": 66.46719907176774,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "LANKABAFIN",
+    "code": "TECHNODRUG",
     "rank": 6,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 31.53746259165731,
-    "mfi": 76.65704450781038,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "MLDYEING",
-    "rank": 7,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": null,
-    "adx": 55.744559959661096,
-    "mfi": 86.15631402342326,
+    "adx": 25.7218473626342,
+    "mfi": 73.33840375777628,
     "obvTrend": "rising"
   },
   {
-    "code": "IDLC",
-    "rank": 8,
+    "code": "ITC",
+    "rank": 7,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 43.225512604040546,
-    "mfi": 71.86526306708667,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "ETL",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 1.3
-    },
-    "adx": 57.07939776203977,
-    "mfi": 58.30795107287634,
+    "adx": 62.51292769613076,
+    "mfi": 72.20486935643295,
     "obvTrend": "falling"
   },
   {
-    "code": "NPOLYMER",
+    "code": "DBH",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 31.82180756980377,
+    "mfi": 79.83504329615421,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "QUEENSOUTH",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 53.53992219178378,
+    "mfi": 65.65158259188608,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "IPDC",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 2.7
     },
-    "adx": 36.95600151940509,
-    "mfi": 67.18968475343124,
+    "adx": 46.92989132271913,
+    "mfi": 60.96737506144252,
     "obvTrend": "flat"
   }
 ]
