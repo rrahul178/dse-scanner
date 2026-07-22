@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-07-21T09:13:31.778Z",
-  "lastScrapedAt": "2026-07-21T09:13:31.778Z",
+  "lastAttemptedAt": "2026-07-22T06:29:20.059Z",
+  "lastScrapedAt": "2026-07-22T06:29:20.059Z",
   "candidateCount": 40,
   "watchlist": [
-    "MIRAKHTER",
     "SAIHAMCOT",
-    "CVOPRL",
-    "NPOLYMER",
-    "ROBI",
+    "QUASEMIND",
+    "SALVO",
+    "SONALILIFE",
+    "VFSTDL",
+    "FUWANGCER",
+    "SILCOPHL",
     "TECHNODRUG",
     "ITC",
-    "DBH",
-    "QUEENSOUTH",
-    "IPDC"
+    "DBH"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
