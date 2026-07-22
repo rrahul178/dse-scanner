@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-07-22T06:29:20.059Z",
-  "lastScrapedAt": "2026-07-22T06:29:20.059Z",
+  "lastAttemptedAt": "2026-07-22T09:12:39.783Z",
+  "lastScrapedAt": "2026-07-22T09:12:39.783Z",
   "candidateCount": 40,
   "watchlist": [
-    "SAIHAMCOT",
     "QUASEMIND",
-    "SALVO",
-    "SONALILIFE",
-    "VFSTDL",
+    "MONOSPOOL",
     "FUWANGCER",
-    "SILCOPHL",
+    "CITYBANK",
+    "ROBI",
+    "SQURPHARMA",
+    "SALVO",
+    "SAIHAMCOT",
     "TECHNODRUG",
-    "ITC",
-    "DBH"
+    "AGNISYSL"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
