@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-07-23T06:31:36.634Z",
-  "lastScrapedAt": "2026-07-23T06:31:36.634Z",
+  "lastAttemptedAt": "2026-07-23T09:13:23.599Z",
+  "lastScrapedAt": "2026-07-23T09:13:23.599Z",
   "candidateCount": 40,
   "watchlist": [
-    "SONARGAON",
-    "MONOSPOOL",
-    "CITYBANK",
-    "SQURPHARMA",
-    "FUWANGCER",
-    "ROBI",
-    "SAIHAMCOT",
-    "SALVO",
     "TECHNODRUG",
-    "AGNISYSL"
+    "SQURPHARMA",
+    "AGNISYSL",
+    "ROBI",
+    "FUWANGCER",
+    "AMANFEED",
+    "CITYBANK",
+    "ACIFORMULA",
+    "ITC",
+    "LANKABAFIN"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
