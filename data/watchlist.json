@@ -1,112 +1,108 @@
 [
   {
-    "code": "QUASEMIND",
+    "code": "SONARGAON",
     "rank": 1,
-    "rankChange": 1,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0
+      "ratio": 0.2
     },
-    "adx": 31.359426902215993,
-    "mfi": 55.018074147009095,
+    "adx": 40.036322874492235,
+    "mfi": 39.93002744843933,
     "obvTrend": "flat"
   },
   {
     "code": "MONOSPOOL",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 30.601847527920217,
+    "adx": 30.601845763599673,
     "mfi": 57.329649958167764,
     "obvTrend": "rising"
   },
   {
-    "code": "FUWANGCER",
-    "rank": 3,
-    "rankChange": 3,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 34.897499079386684,
-    "mfi": 55.42939539327108,
-    "obvTrend": "rising"
-  },
-  {
     "code": "CITYBANK",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rank": 3,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 16.351455082736408,
+    "adx": 16.351455116787694,
     "mfi": 53.09921984518489,
     "obvTrend": "rising"
   },
   {
-    "code": "ROBI",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 34.070929383435264,
-    "mfi": 60.07030368900271,
-    "obvTrend": "rising"
-  },
-  {
     "code": "SQURPHARMA",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
+    "rank": 4,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 3.3
     },
-    "adx": 23.89043308048531,
+    "adx": 23.89043249427207,
     "mfi": 60.92876094518035,
     "obvTrend": "rising"
   },
   {
-    "code": "SALVO",
-    "rank": 7,
-    "rankChange": -4,
+    "code": "FUWANGCER",
+    "rank": 5,
+    "rankChange": -2,
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.1
     },
-    "adx": 25.641934166991973,
-    "mfi": 80.77508871409205,
+    "adx": 34.89749967403849,
+    "mfi": 55.42939539327108,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ROBI",
+    "rank": 6,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 34.07092967669475,
+    "mfi": 60.07030368900271,
     "obvTrend": "rising"
   },
   {
     "code": "SAIHAMCOT",
-    "rank": 8,
-    "rankChange": -7,
+    "rank": 7,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 38.60262223121229,
+    "adx": 38.60262190327324,
     "mfi": 73.20159900551478,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SALVO",
+    "rank": 8,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 25.641933043377986,
+    "mfi": 80.77508871409205,
     "obvTrend": "rising"
   },
   {
     "code": "TECHNODRUG",
     "rank": 9,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": null,
-    "adx": 27.753044315346184,
+    "adx": 27.753043743708954,
     "mfi": 64.11297437636215,
     "obvTrend": "rising"
   },
   {
     "code": "AGNISYSL",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
-    "adx": 41.36539547057724,
+    "adx": 41.36539494381035,
     "mfi": 73.128568910458,
     "obvTrend": "rising"
   }

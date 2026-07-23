@@ -1,19 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-07",
-    "TRADING CODE": "MONOSPOOL",
-    "LTP*": "82",
-    "HIGH": "82.6",
-    "LOW": "81.1",
-    "OPENP*": "81.4",
-    "CLOSEP*": "81.9",
-    "YCP": "81.5",
-    "TRADE": "234",
-    "VALUE (mn)": "3.274",
-    "VOLUME": "40056"
-  },
-  {
     "#": "251",
     "DATE": "2025-07-08",
     "TRADING CODE": "MONOSPOOL",
