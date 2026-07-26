@@ -1,47 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-08",
-    "TRADING CODE": "ETL",
-    "LTP*": "9",
-    "HIGH": "9.2",
-    "LOW": "8.9",
-    "OPENP*": "9.1",
-    "CLOSEP*": "9",
-    "YCP": "9.2",
-    "TRADE": "376",
-    "VALUE (mn)": "11.613",
-    "VOLUME": "1288397"
-  },
-  {
-    "#": "251",
-    "DATE": "2025-07-09",
-    "TRADING CODE": "ETL",
-    "LTP*": "9",
-    "HIGH": "9.1",
-    "LOW": "8.9",
-    "OPENP*": "9",
-    "CLOSEP*": "9",
-    "YCP": "9",
-    "TRADE": "455",
-    "VALUE (mn)": "11.207",
-    "VOLUME": "1245147"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-10",
-    "TRADING CODE": "ETL",
-    "LTP*": "9",
-    "HIGH": "9.2",
-    "LOW": "8.9",
-    "OPENP*": "9",
-    "CLOSEP*": "9",
-    "YCP": "9",
-    "TRADE": "402",
-    "VALUE (mn)": "10.564",
-    "VOLUME": "1168356"
-  },
-  {
     "#": "249",
     "DATE": "2025-07-13",
     "TRADING CODE": "ETL",

@@ -1,47 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-08",
-    "TRADING CODE": "CAPITECGBF",
-    "LTP*": "7.2",
-    "HIGH": "7.4",
-    "LOW": "7.1",
-    "OPENP*": "7.4",
-    "CLOSEP*": "7.2",
-    "YCP": "7.4",
-    "TRADE": "341",
-    "VALUE (mn)": "11.045",
-    "VOLUME": "1525502"
-  },
-  {
-    "#": "251",
-    "DATE": "2025-07-09",
-    "TRADING CODE": "CAPITECGBF",
-    "LTP*": "7.3",
-    "HIGH": "7.4",
-    "LOW": "7.2",
-    "OPENP*": "7.2",
-    "CLOSEP*": "7.3",
-    "YCP": "7.2",
-    "TRADE": "311",
-    "VALUE (mn)": "11.961",
-    "VOLUME": "1639992"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-10",
-    "TRADING CODE": "CAPITECGBF",
-    "LTP*": "7.4",
-    "HIGH": "7.6",
-    "LOW": "7.3",
-    "OPENP*": "7.4",
-    "CLOSEP*": "7.4",
-    "YCP": "7.3",
-    "TRADE": "375",
-    "VALUE (mn)": "10.868",
-    "VOLUME": "1461254"
-  },
-  {
     "#": "249",
     "DATE": "2025-07-13",
     "TRADING CODE": "CAPITECGBF",

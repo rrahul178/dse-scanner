@@ -1,47 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-08",
-    "TRADING CODE": "MONOSPOOL",
-    "LTP*": "86",
-    "HIGH": "86.5",
-    "LOW": "81.8",
-    "OPENP*": "82.3",
-    "CLOSEP*": "86",
-    "YCP": "81.9",
-    "TRADE": "1239",
-    "VALUE (mn)": "21.525",
-    "VOLUME": "254075"
-  },
-  {
-    "#": "251",
-    "DATE": "2025-07-09",
-    "TRADING CODE": "MONOSPOOL",
-    "LTP*": "85.6",
-    "HIGH": "87.5",
-    "LOW": "84.7",
-    "OPENP*": "86.8",
-    "CLOSEP*": "85.6",
-    "YCP": "86",
-    "TRADE": "640",
-    "VALUE (mn)": "11.896",
-    "VOLUME": "138744"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-10",
-    "TRADING CODE": "MONOSPOOL",
-    "LTP*": "90.9",
-    "HIGH": "93",
-    "LOW": "85.4",
-    "OPENP*": "85.9",
-    "CLOSEP*": "90.9",
-    "YCP": "85.6",
-    "TRADE": "1526",
-    "VALUE (mn)": "30.084",
-    "VOLUME": "337360"
-  },
-  {
     "#": "249",
     "DATE": "2025-07-13",
     "TRADING CODE": "MONOSPOOL",

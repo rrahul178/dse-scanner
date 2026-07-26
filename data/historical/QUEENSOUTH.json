@@ -1,47 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-08",
-    "TRADING CODE": "QUEENSOUTH",
-    "LTP*": "11.9",
-    "HIGH": "12",
-    "LOW": "11.6",
-    "OPENP*": "12",
-    "CLOSEP*": "11.9",
-    "YCP": "12.1",
-    "TRADE": "265",
-    "VALUE (mn)": "8.619",
-    "VOLUME": "726819"
-  },
-  {
-    "#": "251",
-    "DATE": "2025-07-09",
-    "TRADING CODE": "QUEENSOUTH",
-    "LTP*": "12.1",
-    "HIGH": "12.2",
-    "LOW": "11.7",
-    "OPENP*": "12.1",
-    "CLOSEP*": "12.1",
-    "YCP": "11.9",
-    "TRADE": "319",
-    "VALUE (mn)": "12.731",
-    "VOLUME": "1059588"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-10",
-    "TRADING CODE": "QUEENSOUTH",
-    "LTP*": "12.3",
-    "HIGH": "12.5",
-    "LOW": "12.1",
-    "OPENP*": "12.2",
-    "CLOSEP*": "12.3",
-    "YCP": "12.1",
-    "TRADE": "354",
-    "VALUE (mn)": "10.91",
-    "VOLUME": "885755"
-  },
-  {
     "#": "249",
     "DATE": "2025-07-13",
     "TRADING CODE": "QUEENSOUTH",

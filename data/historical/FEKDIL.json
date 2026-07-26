@@ -1,47 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-08",
-    "TRADING CODE": "FEKDIL",
-    "LTP*": "15.8",
-    "HIGH": "16",
-    "LOW": "15.5",
-    "OPENP*": "16",
-    "CLOSEP*": "15.8",
-    "YCP": "16.1",
-    "TRADE": "729",
-    "VALUE (mn)": "25.831",
-    "VOLUME": "1641661"
-  },
-  {
-    "#": "251",
-    "DATE": "2025-07-09",
-    "TRADING CODE": "FEKDIL",
-    "LTP*": "15.8",
-    "HIGH": "15.9",
-    "LOW": "15.7",
-    "OPENP*": "15.8",
-    "CLOSEP*": "15.8",
-    "YCP": "15.8",
-    "TRADE": "619",
-    "VALUE (mn)": "28.465",
-    "VOLUME": "1801899"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-10",
-    "TRADING CODE": "FEKDIL",
-    "LTP*": "15.7",
-    "HIGH": "16",
-    "LOW": "15.7",
-    "OPENP*": "15.9",
-    "CLOSEP*": "15.7",
-    "YCP": "15.8",
-    "TRADE": "536",
-    "VALUE (mn)": "20.266",
-    "VOLUME": "1284172"
-  },
-  {
     "#": "249",
     "DATE": "2025-07-13",
     "TRADING CODE": "FEKDIL",

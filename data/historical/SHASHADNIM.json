@@ -1,47 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-08",
-    "TRADING CODE": "SHASHADNIM",
-    "LTP*": "17.8",
-    "HIGH": "18.3",
-    "LOW": "17.5",
-    "OPENP*": "18.3",
-    "CLOSEP*": "17.8",
-    "YCP": "18.4",
-    "TRADE": "322",
-    "VALUE (mn)": "8.346",
-    "VOLUME": "469390"
-  },
-  {
-    "#": "251",
-    "DATE": "2025-07-09",
-    "TRADING CODE": "SHASHADNIM",
-    "LTP*": "17.9",
-    "HIGH": "18.1",
-    "LOW": "17.7",
-    "OPENP*": "17.7",
-    "CLOSEP*": "17.9",
-    "YCP": "17.8",
-    "TRADE": "197",
-    "VALUE (mn)": "3.349",
-    "VOLUME": "187292"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-10",
-    "TRADING CODE": "SHASHADNIM",
-    "LTP*": "17.7",
-    "HIGH": "18.2",
-    "LOW": "17.6",
-    "OPENP*": "17.8",
-    "CLOSEP*": "17.7",
-    "YCP": "17.9",
-    "TRADE": "227",
-    "VALUE (mn)": "5.574",
-    "VOLUME": "312631"
-  },
-  {
     "#": "249",
     "DATE": "2025-07-13",
     "TRADING CODE": "SHASHADNIM",

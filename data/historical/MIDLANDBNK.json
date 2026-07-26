@@ -1,47 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-08",
-    "TRADING CODE": "MIDLANDBNK",
-    "LTP*": "28.9",
-    "HIGH": "29.4",
-    "LOW": "28.4",
-    "OPENP*": "29",
-    "CLOSEP*": "28.9",
-    "YCP": "29.2",
-    "TRADE": "1272",
-    "VALUE (mn)": "150.131",
-    "VOLUME": "5189964"
-  },
-  {
-    "#": "251",
-    "DATE": "2025-07-09",
-    "TRADING CODE": "MIDLANDBNK",
-    "LTP*": "28.3",
-    "HIGH": "29.2",
-    "LOW": "28",
-    "OPENP*": "29",
-    "CLOSEP*": "28.3",
-    "YCP": "28.9",
-    "TRADE": "1111",
-    "VALUE (mn)": "137.254",
-    "VOLUME": "4797023"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-10",
-    "TRADING CODE": "MIDLANDBNK",
-    "LTP*": "26.4",
-    "HIGH": "28.3",
-    "LOW": "25.9",
-    "OPENP*": "28",
-    "CLOSEP*": "26.4",
-    "YCP": "28.3",
-    "TRADE": "2465",
-    "VALUE (mn)": "123.143",
-    "VOLUME": "4570757"
-  },
-  {
     "#": "249",
     "DATE": "2025-07-13",
     "TRADING CODE": "MIDLANDBNK",
