@@ -1,113 +1,117 @@
 [
   {
-    "code": "TECHNODRUG",
+    "code": "BNICL",
     "rank": 1,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 28.987009825516367,
-    "mfi": 57.924862591389996,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SQURPHARMA",
-    "rank": 2,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 4.7
+      "ratio": 0.6
     },
-    "adx": 22.42082128622471,
-    "mfi": 53.13685745243859,
-    "obvTrend": "rising"
+    "adx": 22.253250751553043,
+    "mfi": 49.51748656239224,
+    "obvTrend": "flat"
   },
   {
-    "code": "SONARGAON",
+    "code": "BDTHAI",
+    "rank": 2,
+    "rankChange": 5,
+    "riskReward": {
+      "ratio": 2.1
+    },
+    "adx": 23.1396128983817,
+    "mfi": 38.599270911543904,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SAPORTL",
     "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0
     },
-    "adx": 38.73654765988396,
-    "mfi": 50.15619642436148,
-    "obvTrend": "flat"
+    "adx": 13.676367319816803,
+    "mfi": 69.06243665149331,
+    "obvTrend": "rising"
   },
   {
-    "code": "ROBI",
+    "code": "KARNAPHULI",
     "rank": 4,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 1.2
+      "ratio": 0.3
     },
-    "adx": 33.21743663015217,
-    "mfi": 56.46381926077908,
+    "adx": 53.70318629022666,
+    "mfi": 80.64887332083329,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "TECHNODRUG",
+    "rank": 5,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 29.347728761361253,
+    "mfi": 56.60019917761775,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SQURPHARMA",
+    "rank": 6,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 21.50401260144258,
+    "mfi": 45.680182889363415,
     "obvTrend": "rising"
   },
   {
     "code": "FUWANGCER",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 35.357915881382475,
-    "mfi": 55.77299317850763,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "CITYBANK",
-    "rank": 6,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 17.492152443932177,
-    "mfi": 61.05332027741351,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "BDTHAI",
     "rank": 7,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 1
+    },
+    "adx": 34.86255486838423,
+    "mfi": 49.27556322563361,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SONARGAON",
+    "rank": 8,
+    "rankChange": -5,
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 37.52961402922244,
+    "mfi": 59.43602641317514,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "PEOPLESINS",
+    "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.2
     },
-    "adx": 23.949304624679566,
-    "mfi": 31.283609448879915,
+    "adx": 27.120085846110474,
+    "mfi": 44.296241252920396,
     "obvTrend": "falling"
   },
   {
-    "code": "ITC",
-    "rank": 8,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 63.66434012032714,
-    "mfi": 67.88969904342008,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "LANKABAFIN",
-    "rank": 9,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 37.06222107863264,
-    "mfi": 72.76295089193866,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "MONOSPOOL",
+    "code": "DUTCHBANGL",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.1
     },
-    "adx": 30.648533120199318,
-    "mfi": 58.19180043057636,
-    "obvTrend": "falling"
+    "adx": 49.683952049830864,
+    "mfi": 68.33932216217161,
+    "obvTrend": "rising"
   }
 ]
