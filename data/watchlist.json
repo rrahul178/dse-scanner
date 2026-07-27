@@ -1,113 +1,112 @@
 [
   {
-    "code": "BDTHAI",
+    "code": "PEOPLESINS",
     "rank": 1,
-    "rankChange": 1,
+    "rankChange": 5,
     "riskReward": {
-      "ratio": 2.1
+      "ratio": 56
     },
-    "adx": 23.1396128983817,
-    "mfi": 38.599270911543904,
-    "obvTrend": "falling"
+    "adx": 26.136914710678933,
+    "mfi": 49.014970854683625,
+    "obvTrend": "flat"
   },
   {
     "code": "BNICL",
     "rank": 2,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
-      "ratio": 0.6
+      "ratio": 0.1
     },
-    "adx": 22.253250751553043,
-    "mfi": 49.51748656239224,
-    "obvTrend": "flat"
+    "adx": 21.657287611641006,
+    "mfi": 63.92252238902681,
+    "obvTrend": "rising"
   },
   {
-    "code": "SIPLC",
+    "code": "SAIHAMCOT",
     "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.4
     },
-    "adx": 15.65705932418277,
-    "mfi": 59.788964102550985,
-    "obvTrend": "flat"
+    "adx": 39.53492112615603,
+    "mfi": 59.70900589618157,
+    "obvTrend": "rising"
   },
   {
     "code": "SAPORTL",
     "rank": 4,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
-      "ratio": 0
+      "ratio": 2.2
     },
-    "adx": 13.676367319816803,
-    "mfi": 69.06243665149331,
+    "adx": 13.057106848314481,
+    "mfi": 75.45863606948976,
     "obvTrend": "rising"
   },
   {
-    "code": "DESHBANDHU",
+    "code": "DOMINAGE",
     "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.9
+      "ratio": 0.6
     },
-    "adx": 27.604059550924216,
-    "mfi": 52.24347042821683,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "PEOPLESINS",
-    "rank": 6,
-    "rankChange": 3,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 27.120085846110474,
-    "mfi": 44.296241252920396,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "TECHNODRUG",
-    "rank": 7,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 29.347728761361253,
-    "mfi": 56.60019917761775,
-    "obvTrend": "rising"
+    "adx": 31.304441924938864,
+    "mfi": 61.98375480824406,
+    "obvTrend": "flat"
   },
   {
     "code": "SQURPHARMA",
-    "rank": 8,
-    "rankChange": -2,
+    "rank": 6,
+    "rankChange": 2,
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.2
     },
-    "adx": 21.50401260144258,
-    "mfi": 45.680182889363415,
+    "adx": 21.190196293855873,
+    "mfi": 43.474263577370266,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "FARCHEM",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 51.96927781308955,
+    "mfi": 85.37288817340588,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SIPLC",
+    "rank": 8,
+    "rankChange": -5,
+    "riskReward": null,
+    "adx": 15.406685766438429,
+    "mfi": 67.03993375810873,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "LANKABAFIN",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 36.49050414639219,
+    "mfi": 76.63231750960405,
     "obvTrend": "rising"
   },
   {
     "code": "FUWANGCER",
-    "rank": 9,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 1
-    },
-    "adx": 34.86255486838423,
-    "mfi": 49.27556322563361,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "MLDYEING",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 63.3663849469857,
-    "mfi": 81.49393448931662,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 34.86077791669679,
+    "mfi": 55.094558919331796,
     "obvTrend": "rising"
   }
 ]
