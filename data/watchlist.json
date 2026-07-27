@@ -1,20 +1,8 @@
 [
   {
-    "code": "BNICL",
-    "rank": 1,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 22.253250751553043,
-    "mfi": 49.51748656239224,
-    "obvTrend": "flat"
-  },
-  {
     "code": "BDTHAI",
-    "rank": 2,
-    "rankChange": 5,
+    "rank": 1,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 2.1
     },
@@ -23,10 +11,32 @@
     "obvTrend": "falling"
   },
   {
-    "code": "SAPORTL",
+    "code": "BNICL",
+    "rank": 2,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 22.253250751553043,
+    "mfi": 49.51748656239224,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SIPLC",
     "rank": 3,
     "rankChange": null,
     "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 15.65705932418277,
+    "mfi": 59.788964102550985,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SAPORTL",
+    "rank": 4,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0
     },
@@ -35,21 +45,32 @@
     "obvTrend": "rising"
   },
   {
-    "code": "KARNAPHULI",
-    "rank": 4,
+    "code": "DESHBANDHU",
+    "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.9
     },
-    "adx": 53.70318629022666,
-    "mfi": 80.64887332083329,
+    "adx": 27.604059550924216,
+    "mfi": 52.24347042821683,
     "obvTrend": "rising"
   },
   {
+    "code": "PEOPLESINS",
+    "rank": 6,
+    "rankChange": 3,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 27.120085846110474,
+    "mfi": 44.296241252920396,
+    "obvTrend": "falling"
+  },
+  {
     "code": "TECHNODRUG",
-    "rank": 5,
-    "rankChange": -4,
+    "rank": 7,
+    "rankChange": -2,
     "riskReward": {
       "ratio": 0.1
     },
@@ -59,8 +80,8 @@
   },
   {
     "code": "SQURPHARMA",
-    "rank": 6,
-    "rankChange": -4,
+    "rank": 8,
+    "rankChange": -2,
     "riskReward": {
       "ratio": 0.4
     },
@@ -70,7 +91,7 @@
   },
   {
     "code": "FUWANGCER",
-    "rank": 7,
+    "rank": 9,
     "rankChange": -2,
     "riskReward": {
       "ratio": 1
@@ -80,38 +101,13 @@
     "obvTrend": "rising"
   },
   {
-    "code": "SONARGAON",
-    "rank": 8,
-    "rankChange": -5,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 37.52961402922244,
-    "mfi": 59.43602641317514,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "PEOPLESINS",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 27.120085846110474,
-    "mfi": 44.296241252920396,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "DUTCHBANGL",
+    "code": "MLDYEING",
     "rank": 10,
     "rankChange": null,
     "status": "new",
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 49.683952049830864,
-    "mfi": 68.33932216217161,
+    "riskReward": null,
+    "adx": 63.3663849469857,
+    "mfi": 81.49393448931662,
     "obvTrend": "rising"
   }
 ]
