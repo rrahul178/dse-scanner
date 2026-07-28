@@ -2,7 +2,7 @@
   {
     "code": "PEOPLESINS",
     "rank": 1,
-    "rankChange": 5,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 56
     },
@@ -11,21 +11,9 @@
     "obvTrend": "flat"
   },
   {
-    "code": "BNICL",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 21.657287611641006,
-    "mfi": 63.92252238902681,
-    "obvTrend": "rising"
-  },
-  {
     "code": "SAIHAMCOT",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
+    "rank": 2,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.4
     },
@@ -35,8 +23,8 @@
   },
   {
     "code": "SAPORTL",
-    "rank": 4,
-    "rankChange": 0,
+    "rank": 3,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 2.2
     },
@@ -46,9 +34,8 @@
   },
   {
     "code": "DOMINAGE",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rank": 4,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.6
     },
@@ -58,8 +45,8 @@
   },
   {
     "code": "SQURPHARMA",
-    "rank": 6,
-    "rankChange": 2,
+    "rank": 5,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -69,44 +56,58 @@
   },
   {
     "code": "FARCHEM",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rank": 6,
+    "rankChange": 1,
     "riskReward": null,
     "adx": 51.96927781308955,
     "mfi": 85.37288817340588,
     "obvTrend": "rising"
   },
   {
-    "code": "SIPLC",
-    "rank": 8,
-    "rankChange": -5,
-    "riskReward": null,
-    "adx": 15.406685766438429,
-    "mfi": 67.03993375810873,
+    "code": "FUWANGCER",
+    "rank": 7,
+    "rankChange": 3,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 34.86077791669679,
+    "mfi": 55.094558919331796,
     "obvTrend": "rising"
   },
   {
-    "code": "LANKABAFIN",
+    "code": "RUNNERAUTO",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 11.294725573569009,
+    "mfi": 51.68564433041107,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "CITYBANK",
     "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.3
     },
-    "adx": 36.49050414639219,
-    "mfi": 76.63231750960405,
+    "adx": 19.992649164773407,
+    "mfi": 65.5087006587182,
     "obvTrend": "rising"
   },
   {
-    "code": "FUWANGCER",
+    "code": "VFSTDL",
     "rank": 10,
-    "rankChange": -1,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 34.86077791669679,
-    "mfi": 55.094558919331796,
+    "adx": 20.796893784547553,
+    "mfi": 52.93004781532169,
     "obvTrend": "rising"
   }
 ]
