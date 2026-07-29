@@ -2,111 +2,115 @@
   {
     "code": "DOMINAGE",
     "rank": 1,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": null,
-    "adx": 30.3676044915987,
+    "adx": 30.367605517107886,
     "mfi": 71.17689393743531,
     "obvTrend": "rising"
   },
   {
     "code": "TECHNODRUG",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0
     },
-    "adx": 29.90111098968408,
+    "adx": 29.901110754506355,
     "mfi": 59.116650002601716,
     "obvTrend": "rising"
   },
   {
-    "code": "BDTHAI",
+    "code": "SHEPHERD",
     "rank": 3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 17.779506824743727,
+    "mfi": 46.25829079354319,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "VFSTDL",
+    "rank": 4,
+    "rankChange": 2,
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 21.149565224190095,
+    "mfi": 55.765807761499374,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SIMTEX",
+    "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 1
     },
-    "adx": 22.520656530976094,
-    "mfi": 47.24383896684268,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "PEOPLESINS",
-    "rank": 4,
-    "rankChange": -3,
-    "riskReward": {
-      "ratio": 8.5
-    },
-    "adx": 25.72822938377328,
-    "mfi": 58.44021630886876,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SQURPHARMA",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 20.979327334586294,
-    "mfi": 40.62464223465385,
+    "adx": 27.57829156428744,
+    "mfi": 47.819735968733234,
     "obvTrend": "falling"
   },
   {
-    "code": "VFSTDL",
+    "code": "ASIATICLAB",
     "rank": 6,
-    "rankChange": 4,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 21.149565270068557,
-    "mfi": 55.765807761499374,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "EXIM1STMF",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 40.81487346487876,
-    "mfi": 94.9202849478885,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "LANKABAFIN",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 36.55510177920945,
-    "mfi": 81.02079582668236,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "BDTHAIFOOD",
-    "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 3.6
+      "ratio": 1.4
     },
-    "adx": 19.282851850899743,
-    "mfi": 58.1213087010882,
+    "adx": 21.76539835961364,
+    "mfi": 19.85516879395057,
     "obvTrend": "flat"
   },
   {
     "code": "ACMEPL",
+    "rank": 7,
+    "rankChange": 3,
+    "riskReward": {
+      "ratio": 3.4
+    },
+    "adx": 12.196121242967903,
+    "mfi": 33.85825260024977,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "FUWANGCER",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 34.85912846069795,
+    "mfi": 59.93234869963871,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SONARGAON",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 35.47644588914914,
+    "mfi": 62.40054609683352,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BSC",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 3.4
+      "ratio": 0.4
     },
-    "adx": 12.196120543695638,
-    "mfi": 33.85825260024977,
+    "adx": 37.2324788521398,
+    "mfi": 61.007862664912786,
     "obvTrend": "falling"
   }
 ]
