@@ -1,111 +1,114 @@
 [
   {
-    "code": "BSC",
+    "code": "PEOPLESINS",
     "rank": 1,
-    "rankChange": 9,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 2.6
     },
-    "adx": 36.35388122397664,
-    "mfi": 57.68780501115442,
-    "obvTrend": "falling"
+    "adx": 25.55889217196182,
+    "mfi": 60.90388794312769,
+    "obvTrend": "rising"
   },
   {
-    "code": "ASIATICLAB",
+    "code": "ICICL",
     "rank": 2,
-    "rankChange": 4,
-    "riskReward": {
-      "ratio": 1.4
-    },
-    "adx": 20.464784015747934,
-    "mfi": 31.4508385013078,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "QUEENSOUTH",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 55.0185884303127,
-    "mfi": 57.41061377330914,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "DOMINAGE",
-    "rank": 4,
-    "rankChange": -3,
-    "riskReward": null,
-    "adx": 30.283014221595696,
-    "mfi": 74.24757007437813,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "SAPORTL",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 12.589213845065652,
-    "mfi": 76.57321753786121,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "FUWANGCER",
-    "rank": 6,
-    "rankChange": 2,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 35.392786944792064,
-    "mfi": 67.27324567306476,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SHEPHERD",
-    "rank": 7,
-    "rankChange": -4,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 19.823079600545743,
-    "mfi": 66.19544510075244,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SIMTEX",
-    "rank": 8,
-    "rankChange": -3,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 27.233422386186557,
-    "mfi": 58.3005468245747,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "ACMEPL",
-    "rank": 9,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 13.2010768799732,
-    "mfi": 55.06858370016405,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "IPDC",
-    "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 33.10894785352961,
-    "mfi": 49.44113968080964,
+    "adx": 22.17345133383333,
+    "mfi": 63.32126630575444,
     "obvTrend": "rising"
+  },
+  {
+    "code": "QUEENSOUTH",
+    "rank": 3,
+    "rankChange": 0,
+    "riskReward": null,
+    "adx": 55.01858683522845,
+    "mfi": 57.41061377330914,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "FEDERALINS",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 21.71871487696477,
+    "mfi": 65.5270060217425,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "DOMINAGE",
+    "rank": 5,
+    "rankChange": -1,
+    "riskReward": null,
+    "adx": 30.283014379279244,
+    "mfi": 74.24757007437813,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SAPORTL",
+    "rank": 6,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0
+    },
+    "adx": 12.589213712495262,
+    "mfi": 76.57321753786121,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "FARCHEM",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 54.30789518395335,
+    "mfi": 76.19367222524475,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "FUWANGCER",
+    "rank": 8,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 35.3927864706033,
+    "mfi": 67.27324567306476,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "DUTCHBANGL",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 45.741257257581026,
+    "mfi": 71.6930831492043,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "EIL",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.8
+    },
+    "adx": 23.25416710212823,
+    "mfi": 49.9948523969581,
+    "obvTrend": "falling"
   }
 ]
