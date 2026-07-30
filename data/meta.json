@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-07-30T06:28:44.863Z",
-  "lastScrapedAt": "2026-07-30T06:28:44.863Z",
+  "lastAttemptedAt": "2026-07-30T09:17:12.460Z",
+  "lastScrapedAt": "2026-07-30T09:17:12.460Z",
   "candidateCount": 40,
   "watchlist": [
+    "BXPHARMA",
     "PEOPLESINS",
-    "ICICL",
-    "QUEENSOUTH",
     "FEDERALINS",
+    "SAIHAMCOT",
+    "BSRMSTEEL",
+    "QUEENSOUTH",
+    "MEGHNAINS",
+    "SAIHAMTEX",
     "DOMINAGE",
-    "SAPORTL",
-    "FARCHEM",
-    "FUWANGCER",
-    "DUTCHBANGL",
-    "EIL"
+    "ITC"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false

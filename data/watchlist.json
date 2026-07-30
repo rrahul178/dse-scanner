@@ -1,114 +1,114 @@
 [
   {
-    "code": "PEOPLESINS",
+    "code": "BXPHARMA",
     "rank": 1,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 2.6
+      "ratio": 0.3
     },
-    "adx": 25.55889217196182,
-    "mfi": 60.90388794312769,
-    "obvTrend": "rising"
+    "adx": 31.295997074588833,
+    "mfi": 62.22747935813261,
+    "obvTrend": "falling"
   },
   {
-    "code": "ICICL",
+    "code": "PEOPLESINS",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": -1,
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.6
     },
-    "adx": 22.17345133383333,
-    "mfi": 63.32126630575444,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "QUEENSOUTH",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 55.01858683522845,
-    "mfi": 57.41061377330914,
+    "adx": 25.639905167679277,
+    "mfi": 62.260927218949185,
     "obvTrend": "rising"
   },
   {
     "code": "FEDERALINS",
+    "rank": 3,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 21.305418533379587,
+    "mfi": 62.35185707692234,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SAIHAMCOT",
     "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.6
+      "ratio": 0.1
     },
-    "adx": 21.71871487696477,
-    "mfi": 65.5270060217425,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "DOMINAGE",
-    "rank": 5,
-    "rankChange": -1,
-    "riskReward": null,
-    "adx": 30.283014379279244,
-    "mfi": 74.24757007437813,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "SAPORTL",
-    "rank": 6,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 12.589213712495262,
-    "mfi": 76.57321753786121,
+    "adx": 43.49123964071528,
+    "mfi": 67.83897243228704,
     "obvTrend": "rising"
   },
   {
-    "code": "FARCHEM",
+    "code": "BSRMSTEEL",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 26.911279232910797,
+    "mfi": 77.14046028894273,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "QUEENSOUTH",
+    "rank": 6,
+    "rankChange": -3,
+    "riskReward": null,
+    "adx": 54.85099755639862,
+    "mfi": 55.79283562861168,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "MEGHNAINS",
     "rank": 7,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 1.7
     },
-    "adx": 54.30789518395335,
-    "mfi": 76.19367222524475,
-    "obvTrend": "rising"
+    "adx": 33.929211981220924,
+    "mfi": 54.8109902573835,
+    "obvTrend": "falling"
   },
   {
-    "code": "FUWANGCER",
+    "code": "SAIHAMTEX",
     "rank": 8,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 35.3927864706033,
-    "mfi": 67.27324567306476,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "DUTCHBANGL",
-    "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.1
     },
-    "adx": 45.741257257581026,
-    "mfi": 71.6930831492043,
+    "adx": 29.0288286650212,
+    "mfi": 82.80687996359458,
     "obvTrend": "rising"
   },
   {
-    "code": "EIL",
+    "code": "DOMINAGE",
+    "rank": 9,
+    "rankChange": -4,
+    "riskReward": null,
+    "adx": 29.981072397313167,
+    "mfi": 71.53703786426482,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ITC",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 1.8
+      "ratio": 0.5
     },
-    "adx": 23.25416710212823,
-    "mfi": 49.9948523969581,
-    "obvTrend": "falling"
+    "adx": 63.853207784878805,
+    "mfi": 54.18916836675008,
+    "obvTrend": "rising"
   }
 ]
