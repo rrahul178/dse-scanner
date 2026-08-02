@@ -1,47 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-15",
-    "TRADING CODE": "RUNNERAUTO",
-    "LTP*": "28.1",
-    "HIGH": "28.4",
-    "LOW": "27.5",
-    "OPENP*": "27.6",
-    "CLOSEP*": "28.1",
-    "YCP": "27.5",
-    "TRADE": "356",
-    "VALUE (mn)": "8.585",
-    "VOLUME": "307532"
-  },
-  {
-    "#": "251",
-    "DATE": "2025-07-16",
-    "TRADING CODE": "RUNNERAUTO",
-    "LTP*": "29.8",
-    "HIGH": "30",
-    "LOW": "28.2",
-    "OPENP*": "28.4",
-    "CLOSEP*": "29.8",
-    "YCP": "28.1",
-    "TRADE": "1036",
-    "VALUE (mn)": "30.449",
-    "VOLUME": "1042458"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-17",
-    "TRADING CODE": "RUNNERAUTO",
-    "LTP*": "28.9",
-    "HIGH": "29.9",
-    "LOW": "28.8",
-    "OPENP*": "29.5",
-    "CLOSEP*": "28.9",
-    "YCP": "29.8",
-    "TRADE": "424",
-    "VALUE (mn)": "10.077",
-    "VOLUME": "344450"
-  },
-  {
     "#": "249",
     "DATE": "2025-07-20",
     "TRADING CODE": "RUNNERAUTO",

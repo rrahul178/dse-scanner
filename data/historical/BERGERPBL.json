@@ -1,47 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-07-15",
-    "TRADING CODE": "BERGERPBL",
-    "LTP*": "1511.5",
-    "HIGH": "1519.8",
-    "LOW": "1510",
-    "OPENP*": "1517.2",
-    "CLOSEP*": "1511.5",
-    "YCP": "1517.6",
-    "TRADE": "633",
-    "VALUE (mn)": "9.219",
-    "VOLUME": "6089"
-  },
-  {
-    "#": "251",
-    "DATE": "2025-07-16",
-    "TRADING CODE": "BERGERPBL",
-    "LTP*": "1508.7",
-    "HIGH": "1514",
-    "LOW": "1507.1",
-    "OPENP*": "1513",
-    "CLOSEP*": "1508.7",
-    "YCP": "1511.5",
-    "TRADE": "561",
-    "VALUE (mn)": "8.367",
-    "VOLUME": "5544"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-17",
-    "TRADING CODE": "BERGERPBL",
-    "LTP*": "1524.3",
-    "HIGH": "1525.1",
-    "LOW": "1505",
-    "OPENP*": "1514",
-    "CLOSEP*": "1524.3",
-    "YCP": "1508.7",
-    "TRADE": "615",
-    "VALUE (mn)": "10.925",
-    "VOLUME": "7214"
-  },
-  {
     "#": "249",
     "DATE": "2025-07-20",
     "TRADING CODE": "BERGERPBL",

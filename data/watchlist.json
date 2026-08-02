@@ -1,114 +1,115 @@
 [
   {
-    "code": "BXPHARMA",
+    "code": "ASIAPACINS",
     "rank": 1,
     "rankChange": null,
     "status": "new",
     "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 25.509646114912407,
+    "mfi": 41.65357350895537,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "LEGACYFOOT",
+    "rank": 2,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
       "ratio": 0.3
     },
-    "adx": 31.295997074588833,
-    "mfi": 62.22747935813261,
-    "obvTrend": "falling"
+    "adx": 19.85078715123867,
+    "mfi": 64.85409692308878,
+    "obvTrend": "rising"
   },
   {
     "code": "PEOPLESINS",
-    "rank": 2,
+    "rank": 3,
     "rankChange": -1,
     "riskReward": {
       "ratio": 0.6
     },
-    "adx": 25.639905167679277,
+    "adx": 25.63990733422147,
     "mfi": 62.260927218949185,
     "obvTrend": "rising"
   },
   {
-    "code": "FEDERALINS",
-    "rank": 3,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 21.305418533379587,
-    "mfi": 62.35185707692234,
-    "obvTrend": "flat"
-  },
-  {
     "code": "SAIHAMCOT",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 43.49123964071528,
+    "adx": 43.491237352382036,
     "mfi": 67.83897243228704,
     "obvTrend": "rising"
   },
   {
     "code": "BSRMSTEEL",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 26.911279232910797,
+    "adx": 26.911278348206558,
     "mfi": 77.14046028894273,
     "obvTrend": "rising"
   },
   {
-    "code": "QUEENSOUTH",
+    "code": "COPPERTECH",
     "rank": 6,
-    "rankChange": -3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 11.399308228573776,
+    "mfi": 57.1739437019277,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "QUEENSOUTH",
+    "rank": 7,
+    "rankChange": -1,
     "riskReward": null,
-    "adx": 54.85099755639862,
+    "adx": 54.85099515471741,
     "mfi": 55.79283562861168,
     "obvTrend": "rising"
   },
   {
-    "code": "MEGHNAINS",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 1.7
-    },
-    "adx": 33.929211981220924,
-    "mfi": 54.8109902573835,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SAIHAMTEX",
+    "code": "BPPL",
     "rank": 8,
     "rankChange": null,
     "status": "new",
     "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 29.04929096044169,
+    "mfi": 59.53305224238519,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SAIHAMTEX",
+    "rank": 9,
+    "rankChange": -1,
+    "riskReward": {
       "ratio": 0.1
     },
-    "adx": 29.0288286650212,
+    "adx": 29.02882904007159,
     "mfi": 82.80687996359458,
     "obvTrend": "rising"
   },
   {
-    "code": "DOMINAGE",
-    "rank": 9,
-    "rankChange": -4,
-    "riskReward": null,
-    "adx": 29.981072397313167,
-    "mfi": 71.53703786426482,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ITC",
+    "code": "ACMEPL",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 0.6
     },
-    "adx": 63.853207784878805,
-    "mfi": 54.18916836675008,
+    "adx": 14.134244634360702,
+    "mfi": 63.84289049815655,
     "obvTrend": "rising"
   }
 ]
