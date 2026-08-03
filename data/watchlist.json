@@ -1,112 +1,116 @@
 [
   {
-    "code": "BXPHARMA",
+    "code": "SPCL",
     "rank": 1,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.7
     },
-    "adx": 31.295996189672795,
-    "mfi": 62.22747935813261,
-    "obvTrend": "falling"
+    "adx": 20.741160521432544,
+    "mfi": 59.633405674446365,
+    "obvTrend": "flat"
   },
   {
-    "code": "HAKKANIPUL",
+    "code": "ACIFORMULA",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 3,
     "riskReward": {
-      "ratio": 0.8
+      "ratio": 0.4
     },
-    "adx": 16.874806881598065,
-    "mfi": 30.01200333042327,
-    "obvTrend": "flat"
+    "adx": 44.917610408950274,
+    "mfi": 78.25820080615776,
+    "obvTrend": "falling"
   },
   {
     "code": "BBS",
     "rank": 3,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 20.564147557100693,
-    "mfi": 61.297580563546475,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "BDTHAIFOOD",
-    "rank": 4,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 3.9
-    },
-    "adx": 18.736732554716394,
-    "mfi": 66.6357006714924,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ACIFORMULA",
-    "rank": 5,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 45.5486430438428,
-    "mfi": 74.912650108204,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ITC",
-    "rank": 6,
     "rankChange": 0,
     "riskReward": {
-      "ratio": 1.2
+      "ratio": 0.2
     },
-    "adx": 62.139566125274754,
-    "mfi": 53.37475854172643,
+    "adx": 21.930910409410274,
+    "mfi": 71.30106370442869,
     "obvTrend": "rising"
   },
   {
-    "code": "UNITEDFIN",
-    "rank": 7,
+    "code": "DOMINAGE",
+    "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 43.13096565546895,
-    "mfi": 78.59033592942481,
+    "adx": 28.81314799169498,
+    "mfi": 69.44054482071374,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "EGEN",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 18.24679664186874,
+    "mfi": 45.72187731608673,
     "obvTrend": "rising"
+  },
+  {
+    "code": "ICBSONALI1",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 44.1707510645558,
+    "mfi": 77.12464729896527,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BXPHARMA",
+    "rank": 7,
+    "rankChange": -6,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 29.44975854018199,
+    "mfi": 54.05329101585389,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "GENEXIL",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.1
+    },
+    "adx": 38.704008488265494,
+    "mfi": 56.3680595323605,
+    "obvTrend": "flat"
   },
   {
     "code": "SAPORTL",
-    "rank": 8,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 1
-    },
-    "adx": 13.866568176334026,
-    "mfi": 77.18093867860341,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "QUEENSOUTH",
     "rank": 9,
     "rankChange": -1,
-    "riskReward": null,
-    "adx": 55.46593242587331,
-    "mfi": 62.01038189571692,
+    "riskReward": {
+      "ratio": 0.9
+    },
+    "adx": 15.112090070502203,
+    "mfi": 77.10875716805896,
     "obvTrend": "rising"
   },
   {
-    "code": "SAIHAMCOT",
+    "code": "BBSCABLES",
     "rank": 10,
-    "rankChange": -1,
-    "riskReward": null,
-    "adx": 44.27543921846807,
-    "mfi": 73.3017050656656,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.1
+    },
+    "adx": 14.590331739648757,
+    "mfi": 58.57072976326285,
     "obvTrend": "rising"
   }
 ]
