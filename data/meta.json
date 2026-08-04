@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-08-03T10:56:18.287Z",
-  "lastScrapedAt": "2026-08-03T10:56:18.287Z",
+  "lastAttemptedAt": "2026-08-04T06:28:43.895Z",
+  "lastScrapedAt": "2026-08-04T06:28:43.895Z",
   "candidateCount": 40,
   "watchlist": [
-    "SPCL",
-    "ACIFORMULA",
+    "CENTRALINS",
     "BBS",
-    "DOMINAGE",
-    "EGEN",
+    "MHSML",
     "ICBSONALI1",
     "BXPHARMA",
     "GENEXIL",
     "SAPORTL",
-    "BBSCABLES"
+    "SONALIANSH",
+    "SONALILIFE",
+    "NPOLYMER"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false

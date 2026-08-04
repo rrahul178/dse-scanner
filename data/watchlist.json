@@ -1,31 +1,20 @@
 [
   {
-    "code": "SPCL",
+    "code": "CENTRALINS",
     "rank": 1,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.7
+      "ratio": 0.2
     },
-    "adx": 20.741160521432544,
-    "mfi": 59.633405674446365,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "ACIFORMULA",
-    "rank": 2,
-    "rankChange": 3,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 44.917610408950274,
-    "mfi": 78.25820080615776,
-    "obvTrend": "falling"
+    "adx": 21.19240814763307,
+    "mfi": 54.78648638732859,
+    "obvTrend": "rising"
   },
   {
     "code": "BBS",
-    "rank": 3,
-    "rankChange": 0,
+    "rank": 2,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -34,34 +23,21 @@
     "obvTrend": "rising"
   },
   {
-    "code": "DOMINAGE",
-    "rank": 4,
+    "code": "MHSML",
+    "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.6
     },
-    "adx": 28.81314799169498,
-    "mfi": 69.44054482071374,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "EGEN",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.8
-    },
-    "adx": 18.24679664186874,
-    "mfi": 45.72187731608673,
+    "adx": 12.768694060450642,
+    "mfi": 60.24855031377524,
     "obvTrend": "rising"
   },
   {
     "code": "ICBSONALI1",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
+    "rank": 4,
+    "rankChange": 2,
     "riskReward": null,
     "adx": 44.1707510645558,
     "mfi": 77.12464729896527,
@@ -69,8 +45,8 @@
   },
   {
     "code": "BXPHARMA",
-    "rank": 7,
-    "rankChange": -6,
+    "rank": 5,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.2
     },
@@ -80,9 +56,8 @@
   },
   {
     "code": "GENEXIL",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rank": 6,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 1.1
     },
@@ -92,8 +67,8 @@
   },
   {
     "code": "SAPORTL",
-    "rank": 9,
-    "rankChange": -1,
+    "rank": 7,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.9
     },
@@ -102,15 +77,39 @@
     "obvTrend": "rising"
   },
   {
-    "code": "BBSCABLES",
+    "code": "SONALIANSH",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.7
+    },
+    "adx": 28.953870498237254,
+    "mfi": 29.34139674116446,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SONALILIFE",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 13.936459226532254,
+    "mfi": 62.07025535619079,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "NPOLYMER",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 1.1
+      "ratio": 0.4
     },
-    "adx": 14.590331739648757,
-    "mfi": 58.57072976326285,
+    "adx": 35.35922970738206,
+    "mfi": 77.60449050667634,
     "obvTrend": "rising"
   }
 ]
