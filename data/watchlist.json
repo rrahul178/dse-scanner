@@ -2,112 +2,104 @@
   {
     "code": "DOREENPWR",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
-    "adx": 28.31627989169524,
+    "adx": 28.316280356872767,
     "mfi": 73.54365270480224,
     "obvTrend": "rising"
   },
   {
     "code": "PEOPLESINS",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 26.822204527246438,
+    "adx": 26.822204455879824,
     "mfi": 74.1356550033874,
     "obvTrend": "rising"
   },
   {
     "code": "BPPL",
     "rank": 3,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
-    "adx": 29.64935204339019,
+    "adx": 29.64935187386659,
     "mfi": 67.61425992029586,
     "obvTrend": "rising"
   },
   {
     "code": "DOMINAGE",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0
     },
-    "adx": 27.98899577784375,
+    "adx": 27.988995023242214,
     "mfi": 66.83953669898165,
     "obvTrend": "flat"
   },
   {
     "code": "CENTRALINS",
     "rank": 5,
-    "rankChange": -4,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 23.097693970518968,
+    "adx": 23.097693641054775,
     "mfi": 72.21692696805871,
     "obvTrend": "rising"
   },
   {
     "code": "BXPHARMA",
     "rank": 6,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 27.735395008511954,
+    "adx": 27.735394417675565,
     "mfi": 46.20762410727269,
     "obvTrend": "falling"
   },
   {
     "code": "DSSL",
     "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
-    "adx": 52.352467412336864,
+    "adx": 52.352467869511294,
     "mfi": 62.18778063205573,
     "obvTrend": "rising"
   },
   {
     "code": "IBP",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 52.97370464820302,
+    "adx": 52.97370361643352,
     "mfi": 69.41610031108947,
     "obvTrend": "rising"
   },
   {
     "code": "EHL",
     "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.8
     },
-    "adx": 24.248600390131116,
+    "adx": 24.248599868600962,
     "mfi": 46.76701487916519,
     "obvTrend": "flat"
   },
   {
     "code": "SAIHAMTEX",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
-    "adx": 37.50194760783569,
+    "adx": 37.50194936793475,
     "mfi": 78.68571638276997,
     "obvTrend": "rising"
   }
