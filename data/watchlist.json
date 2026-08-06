@@ -4,103 +4,112 @@
     "rank": 1,
     "rankChange": 0,
     "riskReward": null,
-    "adx": 28.316280356872767,
+    "adx": 28.316280287013804,
     "mfi": 73.54365270480224,
     "obvTrend": "rising"
   },
   {
-    "code": "PEOPLESINS",
+    "code": "DHAKAINS",
     "rank": 2,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 16.65588725821976,
+    "mfi": 63.07077674936829,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SPCL",
+    "rank": 3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 20.920328844186173,
+    "mfi": 52.192674018592015,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "EIL",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 3
+    },
+    "adx": 22.276784554419525,
+    "mfi": 56.42196178730169,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SANDHANINS",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 31.259472250811683,
+    "mfi": 47.56170953015258,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "PEOPLESINS",
+    "rank": 6,
+    "rankChange": -4,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 26.822204455879824,
+    "adx": 26.822203576464034,
     "mfi": 74.1356550033874,
     "obvTrend": "rising"
   },
   {
-    "code": "BPPL",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 29.64935187386659,
-    "mfi": 67.61425992029586,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "DOMINAGE",
-    "rank": 4,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 27.988995023242214,
-    "mfi": 66.83953669898165,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "CENTRALINS",
-    "rank": 5,
-    "rankChange": 0,
+    "code": "FEDERALINS",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 23.097693641054775,
-    "mfi": 72.21692696805871,
+    "adx": 19.754373179801608,
+    "mfi": 59.74128100840224,
     "obvTrend": "rising"
   },
   {
-    "code": "BXPHARMA",
-    "rank": 6,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 27.735394417675565,
-    "mfi": 46.20762410727269,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "DSSL",
-    "rank": 7,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 52.352467869511294,
-    "mfi": 62.18778063205573,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "IBP",
+    "code": "EASTERNINS",
     "rank": 8,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.1
     },
-    "adx": 52.97370361643352,
-    "mfi": 69.41610031108947,
+    "adx": 15.208056028253893,
+    "mfi": 73.29693352523206,
     "obvTrend": "rising"
   },
   {
-    "code": "EHL",
+    "code": "ISLAMIINS",
     "rank": 9,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 1.8
+      "ratio": 0.4
     },
-    "adx": 24.248599868600962,
-    "mfi": 46.76701487916519,
-    "obvTrend": "flat"
+    "adx": 34.808881192427506,
+    "mfi": 54.367351540912836,
+    "obvTrend": "rising"
   },
   {
-    "code": "SAIHAMTEX",
+    "code": "BPPL",
     "rank": 10,
-    "rankChange": 0,
+    "rankChange": -7,
     "riskReward": null,
-    "adx": 37.50194936793475,
-    "mfi": 78.68571638276997,
+    "adx": 29.649351630338465,
+    "mfi": 67.61425992029586,
     "obvTrend": "rising"
   }
 ]
