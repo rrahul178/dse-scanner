@@ -1,115 +1,116 @@
 [
   {
-    "code": "DOREENPWR",
+    "code": "MONNOFABR",
     "rank": 1,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 28.316280287013804,
-    "mfi": 73.54365270480224,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.8
+    },
+    "adx": 23.397113645072373,
+    "mfi": 78.41328108493792,
     "obvTrend": "rising"
   },
   {
-    "code": "DHAKAINS",
+    "code": "DOMINAGE",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 16.65588725821976,
-    "mfi": 63.07077674936829,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SPCL",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 20.920328844186173,
-    "mfi": 52.192674018592015,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "EIL",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 3
-    },
-    "adx": 22.276784554419525,
-    "mfi": 56.42196178730169,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SANDHANINS",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 31.259472250811683,
-    "mfi": 47.56170953015258,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "PEOPLESINS",
-    "rank": 6,
-    "rankChange": -4,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 26.822203576464034,
-    "mfi": 74.1356550033874,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "FEDERALINS",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 19.754373179801608,
-    "mfi": 59.74128100840224,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "EASTERNINS",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 15.208056028253893,
-    "mfi": 73.29693352523206,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ISLAMIINS",
-    "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 34.808881192427506,
-    "mfi": 54.367351540912836,
-    "obvTrend": "rising"
+    "adx": 27.480555182876678,
+    "mfi": 71.38886719375435,
+    "obvTrend": "flat"
   },
   {
     "code": "BPPL",
-    "rank": 10,
-    "rankChange": -7,
+    "rank": 3,
+    "rankChange": 7,
     "riskReward": null,
-    "adx": 29.649351630338465,
-    "mfi": 67.61425992029586,
+    "adx": 30.854720327012462,
+    "mfi": 77.05346228974457,
     "obvTrend": "rising"
+  },
+  {
+    "code": "EIL",
+    "rank": 4,
+    "rankChange": 0,
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 23.133077988274117,
+    "mfi": 70.21501910442672,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BATBC",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 3.6
+    },
+    "adx": 45.68931185514923,
+    "mfi": 73.59156696531649,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "GLOBALINS",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 29.659901719441955,
+    "mfi": 53.86263914525,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "AMANFEED",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 34.62626049342711,
+    "mfi": 64.72590325660613,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "PUBALIBANK",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 23.859449451176427,
+    "mfi": 48.61486764319912,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SAPORTL",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 18.364120411054156,
+    "mfi": 68.76451133349971,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "QUEENSOUTH",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 58.24632596553834,
+    "mfi": 66.07668928969426,
+    "obvTrend": "falling"
   }
 ]
