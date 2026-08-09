@@ -22,21 +22,9 @@
     "obvTrend": "flat"
   },
   {
-    "code": "EIL",
+    "code": "CAPMBDBLMF",
     "rank": 3,
     "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.8
-    },
-    "adx": 23.13307616295074,
-    "mfi": 70.21501910442672,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "CAPMBDBLMF",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
     "riskReward": {
       "ratio": 0.2
     },
@@ -45,20 +33,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "AMANFEED",
-    "rank": 5,
-    "rankChange": 2,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 34.62626039708497,
-    "mfi": 64.72590325660613,
-    "obvTrend": "falling"
-  },
-  {
     "code": "SAPORTL",
-    "rank": 6,
-    "rankChange": 3,
+    "rank": 4,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.8
     },
@@ -67,44 +44,64 @@
     "obvTrend": "rising"
   },
   {
-    "code": "QUEENSOUTH",
-    "rank": 7,
-    "rankChange": 3,
-    "riskReward": null,
-    "adx": 58.246328617299135,
-    "mfi": 66.07668928969426,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "MATINSPINN",
-    "rank": 8,
+    "code": "DSSL",
+    "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.5
     },
-    "adx": 52.69203594415434,
-    "mfi": 66.80261026704605,
-    "obvTrend": "flat"
+    "adx": 50.95468829008725,
+    "mfi": 62.32011192685942,
+    "obvTrend": "rising"
   },
   {
     "code": "FUWANGCER",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rank": 6,
+    "rankChange": 3,
     "riskReward": null,
     "adx": 36.89607953760669,
     "mfi": 68.48133171476702,
     "obvTrend": "rising"
   },
   {
+    "code": "QUEENSOUTH",
+    "rank": 7,
+    "rankChange": 0,
+    "riskReward": null,
+    "adx": 58.246328617299135,
+    "mfi": 66.07668928969426,
+    "obvTrend": "falling"
+  },
+  {
     "code": "NITOLINS",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rank": 8,
+    "rankChange": 2,
     "riskReward": null,
     "adx": 22.503229618991636,
     "mfi": 77.39908219209275,
     "obvTrend": "rising"
+  },
+  {
+    "code": "SONARGAON",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 36.903867073925944,
+    "mfi": 81.19439249301655,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SONALIPAPR",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 15.738640933259003,
+    "mfi": 49.12082044038954,
+    "obvTrend": "flat"
   }
 ]
