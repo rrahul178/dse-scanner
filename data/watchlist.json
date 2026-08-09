@@ -22,30 +22,9 @@
     "obvTrend": "flat"
   },
   {
-    "code": "BPPL",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 30.854719822233204,
-    "mfi": 77.05346228974457,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "CAPMBDBLMF",
-    "rank": 4,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 26.061953838849664,
-    "mfi": 83.18023726033964,
-    "obvTrend": "rising"
-  },
-  {
     "code": "SAPORTL",
-    "rank": 5,
-    "rankChange": -1,
+    "rank": 3,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.8
     },
@@ -54,9 +33,18 @@
     "obvTrend": "rising"
   },
   {
+    "code": "FUWANGCER",
+    "rank": 4,
+    "rankChange": 3,
+    "riskReward": null,
+    "adx": 36.89607953760669,
+    "mfi": 68.48133171476702,
+    "obvTrend": "rising"
+  },
+  {
     "code": "DSSL",
-    "rank": 6,
-    "rankChange": -1,
+    "rank": 5,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.5
     },
@@ -65,18 +53,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "FUWANGCER",
-    "rank": 7,
-    "rankChange": -1,
-    "riskReward": null,
-    "adx": 36.89607953760669,
-    "mfi": 68.48133171476702,
-    "obvTrend": "rising"
-  },
-  {
     "code": "QUEENSOUTH",
-    "rank": 8,
-    "rankChange": -1,
+    "rank": 6,
+    "rankChange": 2,
     "riskReward": null,
     "adx": 58.246328617299135,
     "mfi": 66.07668928969426,
@@ -84,8 +63,8 @@
   },
   {
     "code": "NITOLINS",
-    "rank": 9,
-    "rankChange": -1,
+    "rank": 7,
+    "rankChange": 2,
     "riskReward": null,
     "adx": 22.503229618991636,
     "mfi": 77.39908219209275,
@@ -93,11 +72,35 @@
   },
   {
     "code": "SONARGAON",
-    "rank": 10,
-    "rankChange": -1,
+    "rank": 8,
+    "rankChange": 2,
     "riskReward": null,
     "adx": 36.903867073925944,
     "mfi": 81.19439249301655,
     "obvTrend": "rising"
+  },
+  {
+    "code": "CITYBANK",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 24.308569913442653,
+    "mfi": 45.13406410281391,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "ITC",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 55.96505301115378,
+    "mfi": 53.143848747505636,
+    "obvTrend": "falling"
   }
 ]

@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-08-09T07:05:50.276Z",
-  "lastScrapedAt": "2026-08-09T07:05:50.276Z",
+  "lastAttemptedAt": "2026-08-09T08:03:16.208Z",
+  "lastScrapedAt": "2026-08-09T08:03:16.208Z",
   "candidateCount": 40,
   "watchlist": [
     "MONNOFABR",
     "DOMINAGE",
-    "BPPL",
-    "CAPMBDBLMF",
     "SAPORTL",
-    "DSSL",
     "FUWANGCER",
+    "DSSL",
     "QUEENSOUTH",
     "NITOLINS",
-    "SONARGAON"
+    "SONARGAON",
+    "CITYBANK",
+    "ITC"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
