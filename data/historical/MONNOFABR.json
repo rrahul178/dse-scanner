@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "MONNOFABR",
-    "LTP*": "14.1",
-    "HIGH": "14.4",
-    "LOW": "14",
-    "OPENP*": "14.2",
-    "CLOSEP*": "14.1",
-    "YCP": "14.2",
-    "TRADE": "351",
-    "VALUE (mn)": "8.355",
-    "VOLUME": "589757"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "MONNOFABR",
-    "LTP*": "14.1",
-    "HIGH": "14.4",
-    "LOW": "14",
-    "OPENP*": "14.1",
-    "CLOSEP*": "14.1",
-    "YCP": "14.1",
-    "TRADE": "424",
-    "VALUE (mn)": "13.306",
-    "VOLUME": "942836"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "MONNOFABR",
-    "LTP*": "14",
-    "HIGH": "14.3",
-    "LOW": "14",
-    "OPENP*": "14.2",
-    "CLOSEP*": "14",
-    "YCP": "14.1",
-    "TRADE": "344",
-    "VALUE (mn)": "10.232",
-    "VOLUME": "725273"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "MONNOFABR",

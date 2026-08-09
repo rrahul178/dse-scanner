@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "SAIHAMCOT",
-    "LTP*": "13.9",
-    "HIGH": "14",
-    "LOW": "13.7",
-    "OPENP*": "13.8",
-    "CLOSEP*": "13.9",
-    "YCP": "13.9",
-    "TRADE": "390",
-    "VALUE (mn)": "21.77",
-    "VOLUME": "1569233"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "SAIHAMCOT",
-    "LTP*": "13.7",
-    "HIGH": "14.1",
-    "LOW": "13.7",
-    "OPENP*": "13.8",
-    "CLOSEP*": "13.7",
-    "YCP": "13.9",
-    "TRADE": "410",
-    "VALUE (mn)": "12.537",
-    "VOLUME": "906293"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "SAIHAMCOT",
-    "LTP*": "13.6",
-    "HIGH": "14",
-    "LOW": "13.5",
-    "OPENP*": "13.9",
-    "CLOSEP*": "13.6",
-    "YCP": "13.7",
-    "TRADE": "560",
-    "VALUE (mn)": "17.603",
-    "VOLUME": "1286523"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "SAIHAMCOT",

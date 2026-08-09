@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "SUNLIFEINS",
-    "LTP*": "58.1",
-    "HIGH": "59.4",
-    "LOW": "57.8",
-    "OPENP*": "58.9",
-    "CLOSEP*": "58.1",
-    "YCP": "59",
-    "TRADE": "553",
-    "VALUE (mn)": "15.504",
-    "VOLUME": "265699"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "SUNLIFEINS",
-    "LTP*": "57.2",
-    "HIGH": "58.7",
-    "LOW": "56.5",
-    "OPENP*": "58.1",
-    "CLOSEP*": "57.2",
-    "YCP": "58.1",
-    "TRADE": "524",
-    "VALUE (mn)": "14.965",
-    "VOLUME": "259959"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "SUNLIFEINS",
-    "LTP*": "59.7",
-    "HIGH": "60.9",
-    "LOW": "56.5",
-    "OPENP*": "56.5",
-    "CLOSEP*": "59.7",
-    "YCP": "57.2",
-    "TRADE": "1536",
-    "VALUE (mn)": "58.488",
-    "VOLUME": "976978"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "SUNLIFEINS",

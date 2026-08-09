@@ -2,115 +2,109 @@
   {
     "code": "MONNOFABR",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.8
     },
-    "adx": 23.397113645072373,
+    "adx": 23.397116777830266,
     "mfi": 78.41328108493792,
     "obvTrend": "rising"
   },
   {
     "code": "DOMINAGE",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 27.480555182876678,
+    "adx": 27.480552958872266,
     "mfi": 71.38886719375435,
     "obvTrend": "flat"
   },
   {
-    "code": "BPPL",
-    "rank": 3,
-    "rankChange": 7,
-    "riskReward": null,
-    "adx": 30.854720327012462,
-    "mfi": 77.05346228974457,
-    "obvTrend": "rising"
-  },
-  {
     "code": "EIL",
-    "rank": 4,
-    "rankChange": 0,
+    "rank": 3,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.8
     },
-    "adx": 23.133077988274117,
+    "adx": 23.13307616295074,
     "mfi": 70.21501910442672,
     "obvTrend": "rising"
   },
   {
-    "code": "BATBC",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 3.6
-    },
-    "adx": 45.68931185514923,
-    "mfi": 73.59156696531649,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "GLOBALINS",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 29.659901719441955,
-    "mfi": 53.86263914525,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "AMANFEED",
-    "rank": 7,
+    "code": "CAPMBDBLMF",
+    "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 34.62626049342711,
+    "adx": 26.061953838849664,
+    "mfi": 83.18023726033964,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "AMANFEED",
+    "rank": 5,
+    "rankChange": 2,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 34.62626039708497,
     "mfi": 64.72590325660613,
     "obvTrend": "falling"
   },
   {
-    "code": "PUBALIBANK",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 23.859449451176427,
-    "mfi": 48.61486764319912,
-    "obvTrend": "flat"
-  },
-  {
     "code": "SAPORTL",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rank": 6,
+    "rankChange": 3,
     "riskReward": {
       "ratio": 0.8
     },
-    "adx": 18.364120411054156,
+    "adx": 18.364120328975982,
     "mfi": 68.76451133349971,
     "obvTrend": "rising"
   },
   {
     "code": "QUEENSOUTH",
+    "rank": 7,
+    "rankChange": 3,
+    "riskReward": null,
+    "adx": 58.246328617299135,
+    "mfi": 66.07668928969426,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "MATINSPINN",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 52.69203594415434,
+    "mfi": 66.80261026704605,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "FUWANGCER",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 36.89607953760669,
+    "mfi": 68.48133171476702,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "NITOLINS",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": null,
-    "adx": 58.24632596553834,
-    "mfi": 66.07668928969426,
-    "obvTrend": "falling"
+    "adx": 22.503229618991636,
+    "mfi": 77.39908219209275,
+    "obvTrend": "rising"
   }
 ]

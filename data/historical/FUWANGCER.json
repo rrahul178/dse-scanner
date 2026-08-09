@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "FUWANGCER",
-    "LTP*": "13.9",
-    "HIGH": "14.2",
-    "LOW": "13.4",
-    "OPENP*": "13.5",
-    "CLOSEP*": "13.9",
-    "YCP": "13.5",
-    "TRADE": "1812",
-    "VALUE (mn)": "61.736",
-    "VOLUME": "4430779"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "FUWANGCER",
-    "LTP*": "13.9",
-    "HIGH": "14",
-    "LOW": "13.7",
-    "OPENP*": "14",
-    "CLOSEP*": "13.9",
-    "YCP": "13.9",
-    "TRADE": "648",
-    "VALUE (mn)": "19.376",
-    "VOLUME": "1397141"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "FUWANGCER",
-    "LTP*": "13.6",
-    "HIGH": "14",
-    "LOW": "13.6",
-    "OPENP*": "14",
-    "CLOSEP*": "13.6",
-    "YCP": "13.9",
-    "TRADE": "836",
-    "VALUE (mn)": "31.766",
-    "VOLUME": "2312742"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "FUWANGCER",

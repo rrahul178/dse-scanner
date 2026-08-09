@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "CITYBANK",
-    "LTP*": "22.5",
-    "HIGH": "22.8",
-    "LOW": "21.6",
-    "OPENP*": "21.8",
-    "CLOSEP*": "22.5",
-    "YCP": "21.7",
-    "TRADE": "2270",
-    "VALUE (mn)": "207.999",
-    "VOLUME": "9317198"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "CITYBANK",
-    "LTP*": "23.2",
-    "HIGH": "23.7",
-    "LOW": "22.6",
-    "OPENP*": "22.7",
-    "CLOSEP*": "23.2",
-    "YCP": "22.5",
-    "TRADE": "3399",
-    "VALUE (mn)": "347.816",
-    "VOLUME": "14914090"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "CITYBANK",
-    "LTP*": "23.7",
-    "HIGH": "24.2",
-    "LOW": "22.7",
-    "OPENP*": "23.1",
-    "CLOSEP*": "23.7",
-    "YCP": "23.2",
-    "TRADE": "3787",
-    "VALUE (mn)": "362.763",
-    "VOLUME": "15502827"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "CITYBANK",

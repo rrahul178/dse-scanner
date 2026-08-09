@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "ICICL",
-    "LTP*": "21.2",
-    "HIGH": "21.4",
-    "LOW": "21",
-    "OPENP*": "21.3",
-    "CLOSEP*": "21.2",
-    "YCP": "21.2",
-    "TRADE": "88",
-    "VALUE (mn)": "0.807",
-    "VOLUME": "38108"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "ICICL",
-    "LTP*": "21.2",
-    "HIGH": "21.4",
-    "LOW": "21.1",
-    "OPENP*": "21.2",
-    "CLOSEP*": "21.2",
-    "YCP": "21.2",
-    "TRADE": "253",
-    "VALUE (mn)": "4.073",
-    "VOLUME": "191815"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "ICICL",
-    "LTP*": "21.9",
-    "HIGH": "22",
-    "LOW": "21.1",
-    "OPENP*": "21.2",
-    "CLOSEP*": "21.9",
-    "YCP": "21.2",
-    "TRADE": "670",
-    "VALUE (mn)": "16.375",
-    "VOLUME": "754094"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "ICICL",

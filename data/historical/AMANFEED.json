@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "AMANFEED",
-    "LTP*": "24.9",
-    "HIGH": "25",
-    "LOW": "24.7",
-    "OPENP*": "24.7",
-    "CLOSEP*": "24.8",
-    "YCP": "25",
-    "TRADE": "310",
-    "VALUE (mn)": "10.129",
-    "VOLUME": "407938"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "AMANFEED",
-    "LTP*": "24.9",
-    "HIGH": "25.2",
-    "LOW": "24.7",
-    "OPENP*": "25.1",
-    "CLOSEP*": "24.9",
-    "YCP": "24.8",
-    "TRADE": "261",
-    "VALUE (mn)": "8.564",
-    "VOLUME": "343534"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "AMANFEED",
-    "LTP*": "24.8",
-    "HIGH": "25.1",
-    "LOW": "24.7",
-    "OPENP*": "25.1",
-    "CLOSEP*": "24.8",
-    "YCP": "24.9",
-    "TRADE": "209",
-    "VALUE (mn)": "4.841",
-    "VOLUME": "194754"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "AMANFEED",

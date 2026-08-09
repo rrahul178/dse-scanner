@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "SIPLC",
-    "LTP*": "48.4",
-    "HIGH": "49.2",
-    "LOW": "48",
-    "OPENP*": "48.5",
-    "CLOSEP*": "48.4",
-    "YCP": "48.5",
-    "TRADE": "355",
-    "VALUE (mn)": "5.914",
-    "VOLUME": "122027"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "SIPLC",
-    "LTP*": "48.6",
-    "HIGH": "49",
-    "LOW": "47.9",
-    "OPENP*": "48.9",
-    "CLOSEP*": "48.2",
-    "YCP": "48.4",
-    "TRADE": "306",
-    "VALUE (mn)": "9.307",
-    "VOLUME": "192613"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "SIPLC",
-    "LTP*": "49.5",
-    "HIGH": "50",
-    "LOW": "48",
-    "OPENP*": "49.1",
-    "CLOSEP*": "49.5",
-    "YCP": "48.2",
-    "TRADE": "745",
-    "VALUE (mn)": "19.562",
-    "VOLUME": "398885"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "SIPLC",

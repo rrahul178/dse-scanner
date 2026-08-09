@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "CENTRALINS",
-    "LTP*": "38.4",
-    "HIGH": "38.9",
-    "LOW": "36.4",
-    "OPENP*": "36.8",
-    "CLOSEP*": "38.4",
-    "YCP": "36.5",
-    "TRADE": "642",
-    "VALUE (mn)": "16.657",
-    "VOLUME": "439219"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "CENTRALINS",
-    "LTP*": "39.1",
-    "HIGH": "39.4",
-    "LOW": "37.7",
-    "OPENP*": "38.8",
-    "CLOSEP*": "39.1",
-    "YCP": "38.4",
-    "TRADE": "682",
-    "VALUE (mn)": "17.541",
-    "VOLUME": "451563"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "CENTRALINS",
-    "LTP*": "41.3",
-    "HIGH": "43",
-    "LOW": "39.1",
-    "OPENP*": "39.1",
-    "CLOSEP*": "41.3",
-    "YCP": "39.1",
-    "TRADE": "1609",
-    "VALUE (mn)": "76.05",
-    "VOLUME": "1816299"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "CENTRALINS",

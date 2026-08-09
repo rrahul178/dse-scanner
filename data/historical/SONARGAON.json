@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-22",
-    "TRADING CODE": "SONARGAON",
-    "LTP*": "34.1",
-    "HIGH": "35.1",
-    "LOW": "34",
-    "OPENP*": "35",
-    "CLOSEP*": "34.1",
-    "YCP": "34.8",
-    "TRADE": "961",
-    "VALUE (mn)": "21.649",
-    "VOLUME": "628959"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-23",
-    "TRADING CODE": "SONARGAON",
-    "LTP*": "33.9",
-    "HIGH": "34.7",
-    "LOW": "33.6",
-    "OPENP*": "34.4",
-    "CLOSEP*": "33.9",
-    "YCP": "34.1",
-    "TRADE": "1199",
-    "VALUE (mn)": "26.463",
-    "VOLUME": "776367"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-24",
-    "TRADING CODE": "SONARGAON",
-    "LTP*": "34",
-    "HIGH": "34.4",
-    "LOW": "33.8",
-    "OPENP*": "34.1",
-    "CLOSEP*": "34",
-    "YCP": "33.9",
-    "TRADE": "505",
-    "VALUE (mn)": "12.44",
-    "VOLUME": "365175"
-  },
-  {
     "#": "248",
     "DATE": "2025-07-27",
     "TRADING CODE": "SONARGAON",
