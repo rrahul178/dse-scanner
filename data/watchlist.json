@@ -22,9 +22,19 @@
     "obvTrend": "flat"
   },
   {
-    "code": "CAPMBDBLMF",
+    "code": "BPPL",
     "rank": 3,
-    "rankChange": 1,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 30.854719822233204,
+    "mfi": 77.05346228974457,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "CAPMBDBLMF",
+    "rank": 4,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -34,8 +44,8 @@
   },
   {
     "code": "SAPORTL",
-    "rank": 4,
-    "rankChange": 2,
+    "rank": 5,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.8
     },
@@ -45,9 +55,8 @@
   },
   {
     "code": "DSSL",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rank": 6,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.5
     },
@@ -57,8 +66,8 @@
   },
   {
     "code": "FUWANGCER",
-    "rank": 6,
-    "rankChange": 3,
+    "rank": 7,
+    "rankChange": -1,
     "riskReward": null,
     "adx": 36.89607953760669,
     "mfi": 68.48133171476702,
@@ -66,8 +75,8 @@
   },
   {
     "code": "QUEENSOUTH",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 8,
+    "rankChange": -1,
     "riskReward": null,
     "adx": 58.246328617299135,
     "mfi": 66.07668928969426,
@@ -75,8 +84,8 @@
   },
   {
     "code": "NITOLINS",
-    "rank": 8,
-    "rankChange": 2,
+    "rank": 9,
+    "rankChange": -1,
     "riskReward": null,
     "adx": 22.503229618991636,
     "mfi": 77.39908219209275,
@@ -84,24 +93,11 @@
   },
   {
     "code": "SONARGAON",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rank": 10,
+    "rankChange": -1,
     "riskReward": null,
     "adx": 36.903867073925944,
     "mfi": 81.19439249301655,
     "obvTrend": "rising"
-  },
-  {
-    "code": "SONALIPAPR",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 15.738640933259003,
-    "mfi": 49.12082044038954,
-    "obvTrend": "flat"
   }
 ]
