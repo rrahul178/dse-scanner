@@ -1,106 +1,110 @@
 [
   {
-    "code": "MONNOFABR",
+    "code": "SONALIPAPR",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 1.8
+      "ratio": 6.5
     },
-    "adx": 23.397116777830266,
-    "mfi": 78.41328108493792,
+    "adx": 16.705787225676016,
+    "mfi": 52.56899770618182,
     "obvTrend": "rising"
   },
   {
-    "code": "DOMINAGE",
+    "code": "ASIAPACINS",
     "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 27.480552958872266,
-    "mfi": 71.38886719375435,
-    "obvTrend": "flat"
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 31.42237733920832,
+    "mfi": 77.7107737453911,
+    "obvTrend": "rising"
   },
   {
-    "code": "SAPORTL",
+    "code": "MONNOFABR",
     "rank": 3,
-    "rankChange": 2,
+    "rankChange": -2,
     "riskReward": {
-      "ratio": 0.8
+      "ratio": 0.1
     },
-    "adx": 18.364120328975982,
-    "mfi": 68.76451133349971,
+    "adx": 24.527430281876693,
+    "mfi": 74.13378331160237,
     "obvTrend": "rising"
   },
   {
     "code": "FUWANGCER",
     "rank": 4,
-    "rankChange": 3,
-    "riskReward": null,
-    "adx": 36.89607953760669,
-    "mfi": 68.48133171476702,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "DSSL",
-    "rank": 5,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 0.2
     },
-    "adx": 50.95468829008725,
-    "mfi": 62.32011192685942,
+    "adx": 36.883764717056394,
+    "mfi": 67.06448552294603,
     "obvTrend": "rising"
   },
   {
     "code": "QUEENSOUTH",
-    "rank": 6,
-    "rankChange": 2,
+    "rank": 5,
+    "rankChange": 1,
     "riskReward": null,
-    "adx": 58.246328617299135,
-    "mfi": 66.07668928969426,
+    "adx": 57.58393316316797,
+    "mfi": 64.4663766666572,
     "obvTrend": "falling"
   },
   {
     "code": "NITOLINS",
-    "rank": 7,
-    "rankChange": 2,
+    "rank": 6,
+    "rankChange": 1,
     "riskReward": null,
-    "adx": 22.503229618991636,
-    "mfi": 77.39908219209275,
+    "adx": 25.0239360021017,
+    "mfi": 89.33156573295642,
     "obvTrend": "rising"
   },
   {
-    "code": "SONARGAON",
-    "rank": 8,
-    "rankChange": 2,
-    "riskReward": null,
-    "adx": 36.903867073925944,
-    "mfi": 81.19439249301655,
+    "code": "SAPORTL",
+    "rank": 7,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 1
+    },
+    "adx": 19.197890565181048,
+    "mfi": 69.55930627201937,
     "obvTrend": "rising"
   },
   {
     "code": "CITYBANK",
+    "rank": 8,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 25.164210249624496,
+    "mfi": 44.57788496496338,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "CVOPRL",
     "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 0
     },
-    "adx": 24.308569913442653,
-    "mfi": 45.13406410281391,
-    "obvTrend": "falling"
+    "adx": 26.927598243117586,
+    "mfi": 45.12619287302122,
+    "obvTrend": "flat"
   },
   {
-    "code": "ITC",
+    "code": "BXPHARMA",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.3
     },
-    "adx": 55.96505301115378,
-    "mfi": 53.143848747505636,
+    "adx": 24.828743358656457,
+    "mfi": 39.38956629554154,
     "obvTrend": "falling"
   }
 ]
