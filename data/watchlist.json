@@ -11,21 +11,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "EASTERNINS",
-    "rank": 2,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 19.17957546393496,
-    "mfi": 76.44189692132713,
-    "obvTrend": "rising"
-  },
-  {
     "code": "ASIAPACINS",
-    "rank": 3,
-    "rankChange": -1,
+    "rank": 2,
+    "rankChange": 1,
     "riskReward": null,
     "adx": 31.42237733920832,
     "mfi": 77.7107737453911,
@@ -33,8 +21,8 @@
   },
   {
     "code": "MONNOFABR",
-    "rank": 4,
-    "rankChange": -1,
+    "rank": 3,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -43,22 +31,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "EIL",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 7
-    },
-    "adx": 23.282486170326557,
-    "mfi": 68.25174873418331,
-    "obvTrend": "rising"
-  },
-  {
     "code": "GLOBALINS",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
+    "rank": 4,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.8
     },
@@ -67,48 +42,70 @@
     "obvTrend": "rising"
   },
   {
+    "code": "EIL",
+    "rank": 5,
+    "rankChange": 0,
+    "riskReward": {
+      "ratio": 7
+    },
+    "adx": 23.282486170326557,
+    "mfi": 68.25174873418331,
+    "obvTrend": "rising"
+  },
+  {
     "code": "QUEENSOUTH",
-    "rank": 7,
-    "rankChange": -2,
+    "rank": 6,
+    "rankChange": 1,
     "riskReward": null,
     "adx": 57.58393316316797,
     "mfi": 64.4663766666572,
     "obvTrend": "falling"
   },
   {
-    "code": "PEOPLESINS",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 1.9
-    },
-    "adx": 27.28486453957222,
-    "mfi": 79.3525802231252,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ASIAINS",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 2.5
-    },
-    "adx": 17.376941099698435,
-    "mfi": 71.28630164168062,
-    "obvTrend": "flat"
-  },
-  {
     "code": "REPUBLIC",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rank": 7,
+    "rankChange": 3,
     "riskReward": {
       "ratio": 0.3
     },
     "adx": 16.97521691981156,
     "mfi": 50.238603897400615,
     "obvTrend": "rising"
+  },
+  {
+    "code": "LHB",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 37.754603946852235,
+    "mfi": 39.83940953988549,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SAPORTL",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1
+    },
+    "adx": 19.197890565181048,
+    "mfi": 69.55930627201937,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "CITYBANK",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 25.164210249624496,
+    "mfi": 44.57788496496338,
+    "obvTrend": "falling"
   }
 ]

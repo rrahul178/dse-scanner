@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-08-10T05:27:10.939Z",
-  "lastScrapedAt": "2026-08-10T05:27:10.939Z",
+  "lastAttemptedAt": "2026-08-10T06:53:28.436Z",
+  "lastScrapedAt": "2026-08-10T06:53:28.436Z",
   "candidateCount": 40,
   "watchlist": [
     "SONALIPAPR",
-    "EASTERNINS",
     "ASIAPACINS",
     "MONNOFABR",
-    "EIL",
     "GLOBALINS",
+    "EIL",
     "QUEENSOUTH",
-    "PEOPLESINS",
-    "ASIAINS",
-    "REPUBLIC"
+    "REPUBLIC",
+    "LHB",
+    "SAPORTL",
+    "CITYBANK"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
