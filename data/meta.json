@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-08-10T10:00:04.113Z",
-  "lastScrapedAt": "2026-08-10T10:00:04.113Z",
+  "lastAttemptedAt": "2026-08-11T05:08:50.591Z",
+  "lastScrapedAt": "2026-08-11T05:08:50.591Z",
   "candidateCount": 40,
   "watchlist": [
     "REPUBLIC",
+    "JHRML",
     "BEXIMCO",
     "MONNOFABR",
+    "LEGACYFOOT",
     "BXPHARMA",
-    "MEGHNAINS",
-    "LHB",
-    "GLOBALINS",
-    "QUEENSOUTH",
+    "RUPALIINS",
     "BPPL",
-    "SHASHADNIM"
+    "MEGHNAINS",
+    "FEDERALINS"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
