@@ -1,19 +1,20 @@
 [
   {
-    "code": "REPUBLIC",
+    "code": "SOUTHEASTB",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 18.075466819687954,
-    "mfi": 69.21820125549611,
+    "adx": 27.320084870715295,
+    "mfi": 70.46360198549834,
     "obvTrend": "rising"
   },
   {
     "code": "BEXIMCO",
     "rank": 2,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 51.8
     },
@@ -22,19 +23,8 @@
     "obvTrend": "rising"
   },
   {
-    "code": "MONNOFABR",
-    "rank": 3,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 25.37263199658275,
-    "mfi": 68.23629168961052,
-    "obvTrend": "rising"
-  },
-  {
     "code": "LEGACYFOOT",
-    "rank": 4,
+    "rank": 3,
     "rankChange": 1,
     "riskReward": {
       "ratio": 0.5
@@ -45,7 +35,7 @@
   },
   {
     "code": "BXPHARMA",
-    "rank": 5,
+    "rank": 4,
     "rankChange": 1,
     "riskReward": {
       "ratio": 0.2
@@ -55,9 +45,20 @@
     "obvTrend": "falling"
   },
   {
+    "code": "BPPL",
+    "rank": 5,
+    "rankChange": 3,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 31.04355778969133,
+    "mfi": 72.2899555175964,
+    "obvTrend": "rising"
+  },
+  {
     "code": "RUPALIINS",
     "rank": 6,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.5
     },
@@ -68,7 +69,7 @@
   {
     "code": "MEGHNAINS",
     "rank": 7,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.8
     },
@@ -77,21 +78,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "BPPL",
-    "rank": 8,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 31.04355778969133,
-    "mfi": 72.2899555175964,
-    "obvTrend": "rising"
-  },
-  {
     "code": "PEOPLESINS",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rank": 8,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.6
     },
@@ -101,13 +90,25 @@
   },
   {
     "code": "FEDERALINS",
-    "rank": 10,
-    "rankChange": 0,
+    "rank": 9,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.1
     },
     "adx": 18.82638250440772,
     "mfi": 78.49070719410082,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "EIL",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 23.78231996239146,
+    "mfi": 76.78809684323515,
     "obvTrend": "rising"
   }
 ]
