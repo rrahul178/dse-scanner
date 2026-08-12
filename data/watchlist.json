@@ -13,8 +13,7 @@
   {
     "code": "SONALIANSH",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.9
     },
@@ -25,7 +24,7 @@
   {
     "code": "IPDC",
     "rank": 3,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 3
     },
@@ -36,8 +35,7 @@
   {
     "code": "CVOPRL",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -48,7 +46,7 @@
   {
     "code": "MEGHNAINS",
     "rank": 5,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -70,7 +68,7 @@
   {
     "code": "BXPHARMA",
     "rank": 7,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -81,8 +79,7 @@
   {
     "code": "MATINSPINN",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -104,8 +101,7 @@
   {
     "code": "GENEXIL",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1
     },
