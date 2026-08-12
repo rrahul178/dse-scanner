@@ -55,20 +55,9 @@
     "obvTrend": "flat"
   },
   {
-    "code": "FEDERALINS",
-    "rank": 6,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 19.145876736447217,
-    "mfi": 80.35749346153618,
-    "obvTrend": "rising"
-  },
-  {
     "code": "BXPHARMA",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 6,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -77,26 +66,37 @@
     "obvTrend": "falling"
   },
   {
-    "code": "MATINSPINN",
-    "rank": 8,
-    "rankChange": 0,
+    "code": "FEDERALINS",
+    "rank": 7,
+    "rankChange": -1,
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.1
     },
-    "adx": 49.99434141637324,
-    "mfi": 57.45333243793767,
+    "adx": 19.145876736447217,
+    "mfi": 80.35749346153618,
     "obvTrend": "rising"
   },
   {
     "code": "CITYBANK",
-    "rank": 9,
-    "rankChange": 0,
+    "rank": 8,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.5
     },
     "adx": 26.17838641458331,
     "mfi": 42.077771678182124,
     "obvTrend": "flat"
+  },
+  {
+    "code": "MATINSPINN",
+    "rank": 9,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 49.99434141637324,
+    "mfi": 57.45333243793767,
+    "obvTrend": "rising"
   },
   {
     "code": "GENEXIL",
