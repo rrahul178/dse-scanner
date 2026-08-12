@@ -6,51 +6,55 @@
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 27.805831111160504,
+    "adx": 27.805827494578327,
     "mfi": 85.42587903048513,
     "obvTrend": "rising"
   },
   {
-    "code": "IPDC",
+    "code": "SONALIANSH",
     "rank": 2,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.9
+    },
+    "adx": 27.080289536554684,
+    "mfi": 59.89281616243659,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "IPDC",
+    "rank": 3,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 3
     },
-    "adx": 22.507886755400058,
+    "adx": 22.507886075766383,
     "mfi": 43.34610169819342,
     "obvTrend": "flat"
   },
   {
-    "code": "BPPL",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 31.928299442510365,
-    "mfi": 73.95610159317651,
+    "code": "CVOPRL",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 28.2987797482953,
+    "mfi": 44.645961182971654,
     "obvTrend": "rising"
   },
   {
     "code": "MEGHNAINS",
-    "rank": 4,
-    "rankChange": 0,
+    "rank": 5,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 31.035431291635025,
+    "adx": 31.03543189859362,
     "mfi": 63.76838531985644,
     "obvTrend": "flat"
-  },
-  {
-    "code": "BXPHARMA",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 21.926388925426334,
-    "mfi": 56.715367004282086,
-    "obvTrend": "falling"
   },
   {
     "code": "FEDERALINS",
@@ -59,31 +63,32 @@
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 19.145877116857765,
+    "adx": 19.145876736447217,
     "mfi": 80.35749346153618,
     "obvTrend": "rising"
   },
   {
-    "code": "EIL",
+    "code": "BXPHARMA",
     "rank": 7,
-    "rankChange": 0,
+    "rankChange": -2,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 24.736775167431997,
-    "mfi": 79.47766962077009,
-    "obvTrend": "rising"
+    "adx": 21.926388194614074,
+    "mfi": 56.715367004282086,
+    "obvTrend": "falling"
   },
   {
-    "code": "GP",
+    "code": "MATINSPINN",
     "rank": 8,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.2
     },
-    "adx": 21.245322083832527,
-    "mfi": 56.81994326974347,
-    "obvTrend": "falling"
+    "adx": 49.99434141637324,
+    "mfi": 57.45333243793767,
+    "obvTrend": "rising"
   },
   {
     "code": "CITYBANK",
@@ -92,19 +97,20 @@
     "riskReward": {
       "ratio": 0.5
     },
-    "adx": 26.17838743101677,
+    "adx": 26.17838641458331,
     "mfi": 42.077771678182124,
     "obvTrend": "flat"
   },
   {
-    "code": "ACIFORMULA",
+    "code": "GENEXIL",
     "rank": 10,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.6
+      "ratio": 1
     },
-    "adx": 36.821589790464046,
-    "mfi": 56.561530751528196,
-    "obvTrend": "falling"
+    "adx": 30.66217046179088,
+    "mfi": 44.15816749805154,
+    "obvTrend": "flat"
   }
 ]
