@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-08-12T08:26:51.331Z",
-  "lastScrapedAt": "2026-08-12T08:26:51.331Z",
+  "lastAttemptedAt": "2026-08-12T09:42:17.193Z",
+  "lastScrapedAt": "2026-08-12T09:42:17.193Z",
   "candidateCount": 40,
   "watchlist": [
     "PEOPLESINS",
+    "QUEENSOUTH",
     "SONALIANSH",
     "IPDC",
-    "CVOPRL",
-    "MEGHNAINS",
-    "BXPHARMA",
+    "SAIHAMCOT",
+    "SHASHADNIM",
     "FEDERALINS",
-    "CITYBANK",
-    "MATINSPINN",
-    "GENEXIL"
+    "CVOPRL",
+    "REPUBLIC",
+    "MEGHNAINS"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
