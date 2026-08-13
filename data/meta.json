@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-08-12T09:42:17.193Z",
-  "lastScrapedAt": "2026-08-12T09:42:17.193Z",
+  "lastAttemptedAt": "2026-08-13T05:41:10.559Z",
+  "lastScrapedAt": "2026-08-13T05:41:10.559Z",
   "candidateCount": 40,
   "watchlist": [
     "PEOPLESINS",
+    "DAFODILCOM",
     "QUEENSOUTH",
     "SONALIANSH",
     "IPDC",
     "SAIHAMCOT",
-    "SHASHADNIM",
-    "FEDERALINS",
     "CVOPRL",
+    "GP",
     "REPUBLIC",
-    "MEGHNAINS"
+    "APEXFOODS"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false

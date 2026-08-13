@@ -4,109 +4,108 @@
     "rank": 1,
     "rankChange": 0,
     "riskReward": null,
-    "adx": 29.1229914808705,
+    "adx": 29.122989779243547,
     "mfi": 90.03168938811078,
     "obvTrend": "rising"
   },
   {
-    "code": "QUEENSOUTH",
+    "code": "DAFODILCOM",
     "rank": 2,
     "rankChange": null,
     "status": "new",
     "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 10.758892928620568,
+    "mfi": 69.12435579421751,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "QUEENSOUTH",
+    "rank": 3,
+    "rankChange": -1,
+    "riskReward": {
       "ratio": 0.6
     },
-    "adx": 56.35405044733788,
+    "adx": 56.35404983596255,
     "mfi": 57.85171655934286,
     "obvTrend": "falling"
   },
   {
     "code": "SONALIANSH",
-    "rank": 3,
+    "rank": 4,
     "rankChange": -1,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 28.25495133738148,
+    "adx": 28.254949780686633,
     "mfi": 72.69760351508455,
     "obvTrend": "rising"
   },
   {
     "code": "IPDC",
-    "rank": 4,
+    "rank": 5,
     "rankChange": -1,
     "riskReward": {
       "ratio": 4.3
     },
-    "adx": 21.340164978481845,
+    "adx": 21.340164496659046,
     "mfi": 49.73926558783767,
     "obvTrend": "falling"
   },
   {
     "code": "SAIHAMCOT",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rank": 6,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.6
     },
-    "adx": 39.948801853302555,
+    "adx": 39.9488016593206,
     "mfi": 64.67070683625002,
     "obvTrend": "flat"
   },
   {
-    "code": "SHASHADNIM",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 56.67649389525979,
-    "mfi": 73.11963579053314,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "FEDERALINS",
-    "rank": 7,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 19.44255033715441,
-    "mfi": 86.43122390502518,
-    "obvTrend": "rising"
-  },
-  {
     "code": "CVOPRL",
-    "rank": 8,
-    "rankChange": -4,
+    "rank": 7,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 29.382370573857852,
+    "adx": 29.382370719362502,
     "mfi": 57.005097386784605,
     "obvTrend": "flat"
   },
   {
-    "code": "REPUBLIC",
-    "rank": 9,
+    "code": "GP",
+    "rank": 8,
     "rankChange": null,
     "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 21.245323726183617,
+    "mfi": 56.81994326974347,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "REPUBLIC",
+    "rank": 9,
+    "rankChange": 0,
     "riskReward": null,
-    "adx": 21.341756014838897,
+    "adx": 21.34175801436647,
     "mfi": 84.98932695642668,
     "obvTrend": "rising"
   },
   {
-    "code": "MEGHNAINS",
+    "code": "APEXFOODS",
     "rank": 10,
-    "rankChange": -5,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.7
     },
-    "adx": 30.764861121102367,
-    "mfi": 63.39828688779264,
-    "obvTrend": "falling"
+    "adx": 17.62213659844611,
+    "mfi": 63.54830181846234,
+    "obvTrend": "rising"
   }
 ]
