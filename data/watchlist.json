@@ -1,11 +1,12 @@
 [
   {
-    "code": "PEOPLESINS",
+    "code": "DSHGARME",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": null,
-    "adx": 29.122989779243547,
-    "mfi": 90.03168938811078,
+    "adx": 45.07701377343739,
+    "mfi": 54.60074944681827,
     "obvTrend": "rising"
   },
   {
@@ -13,97 +14,97 @@
     "rank": 2,
     "rankChange": 0,
     "riskReward": {
-      "ratio": 0.8
-    },
-    "adx": 10.758892928620568,
-    "mfi": 69.12435579421751,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "QUEENSOUTH",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 56.35404983596255,
-    "mfi": 57.85171655934286,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SONALIANSH",
-    "rank": 4,
-    "rankChange": 0,
-    "riskReward": {
       "ratio": 0.2
     },
-    "adx": 28.254949780686633,
-    "mfi": 72.69760351508455,
+    "adx": 10.154400713998825,
+    "mfi": 76.24308562842084,
     "obvTrend": "rising"
   },
   {
     "code": "IPDC",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 4.3
-    },
-    "adx": 21.340164496659046,
-    "mfi": 49.73926558783767,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SAIHAMCOT",
-    "rank": 6,
-    "rankChange": 0,
+    "rank": 3,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.6
     },
-    "adx": 39.9488016593206,
-    "mfi": 64.67070683625002,
+    "adx": 20.022640707798388,
+    "mfi": 57.946092184303524,
     "obvTrend": "flat"
   },
   {
     "code": "CVOPRL",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 4,
+    "rankChange": 3,
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.6
     },
-    "adx": 29.382370719362502,
-    "mfi": 57.005097386784605,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "GP",
-    "rank": 8,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 21.245323726183617,
-    "mfi": 56.81994326974347,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "REPUBLIC",
-    "rank": 9,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 21.34175801436647,
-    "mfi": 84.98932695642668,
+    "adx": 30.798147755405775,
+    "mfi": 70.23941743936084,
     "obvTrend": "rising"
   },
   {
-    "code": "ACIFORMULA",
-    "rank": 10,
+    "code": "FEDERALINS",
+    "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 1.2
+      "ratio": 0.2
     },
-    "adx": 35.97007704181009,
-    "mfi": 59.131897693574736,
+    "adx": 19.718032308484972,
+    "mfi": 90.64477606153456,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PEOPLESINS",
+    "rank": 6,
+    "rankChange": -5,
+    "riskReward": null,
+    "adx": 30.34607073652297,
+    "mfi": 92.27705538495158,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PRIMEINSUR",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 39.108426722231734,
+    "mfi": 78.83225374719711,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BXPHARMA",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 19.85183233540712,
+    "mfi": 51.2172163506585,
     "obvTrend": "falling"
+  },
+  {
+    "code": "ACIFORMULA",
+    "rank": 9,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 35.4567936960765,
+    "mfi": 66.5942518647156,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SAIHAMCOT",
+    "rank": 10,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 39.97480353448499,
+    "mfi": 66.83917451765271,
+    "obvTrend": "flat"
   }
 ]
