@@ -2,8 +2,7 @@
   {
     "code": "DSHGARME",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 45.07701377343739,
     "mfi": 54.60074944681827,
@@ -23,7 +22,7 @@
   {
     "code": "IPDC",
     "rank": 3,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -34,7 +33,7 @@
   {
     "code": "CVOPRL",
     "rank": 4,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -45,8 +44,7 @@
   {
     "code": "FEDERALINS",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -57,7 +55,7 @@
   {
     "code": "PEOPLESINS",
     "rank": 6,
-    "rankChange": -5,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 30.34607073652297,
     "mfi": 92.27705538495158,
@@ -66,8 +64,7 @@
   {
     "code": "PRIMEINSUR",
     "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 39.108426722231734,
     "mfi": 78.83225374719711,
@@ -76,8 +73,7 @@
   {
     "code": "BXPHARMA",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -88,7 +84,7 @@
   {
     "code": "ACIFORMULA",
     "rank": 9,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.5
     },
@@ -99,7 +95,7 @@
   {
     "code": "SAIHAMCOT",
     "rank": 10,
-    "rankChange": -4,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
