@@ -11,8 +11,7 @@
   {
     "code": "DAFODILCOM",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.8
     },
@@ -23,7 +22,7 @@
   {
     "code": "QUEENSOUTH",
     "rank": 3,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -34,7 +33,7 @@
   {
     "code": "SONALIANSH",
     "rank": 4,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -45,7 +44,7 @@
   {
     "code": "IPDC",
     "rank": 5,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 4.3
     },
@@ -56,7 +55,7 @@
   {
     "code": "SAIHAMCOT",
     "rank": 6,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -67,7 +66,7 @@
   {
     "code": "CVOPRL",
     "rank": 7,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
@@ -78,8 +77,7 @@
   {
     "code": "GP",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
@@ -97,15 +95,15 @@
     "obvTrend": "rising"
   },
   {
-    "code": "APEXFOODS",
+    "code": "ACIFORMULA",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.7
+      "ratio": 1.2
     },
-    "adx": 17.62213659844611,
-    "mfi": 63.54830181846234,
-    "obvTrend": "rising"
+    "adx": 35.97007704181009,
+    "mfi": 59.131897693574736,
+    "obvTrend": "falling"
   }
 ]
