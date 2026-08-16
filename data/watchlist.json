@@ -42,50 +42,18 @@
     "obvTrend": "rising"
   },
   {
-    "code": "RUPALIINS",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 26.2319553452684,
-    "mfi": 76.48597040737312,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "CVOPRL",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 30.79814923804122,
-    "mfi": 70.23941743936084,
-    "obvTrend": "rising"
-  },
-  {
     "code": "PEOPLESINS",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 5,
+    "rankChange": 2,
     "riskReward": null,
     "adx": 30.346070227139982,
     "mfi": 92.27705538495158,
     "obvTrend": "rising"
   },
   {
-    "code": "GBBPOWER",
-    "rank": 8,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 47.162842390682265,
-    "mfi": 99.80004323604831,
-    "obvTrend": "rising"
-  },
-  {
     "code": "PRIMEINSUR",
-    "rank": 9,
-    "rankChange": 0,
+    "rank": 6,
+    "rankChange": 3,
     "riskReward": null,
     "adx": 39.10843233581829,
     "mfi": 78.83225374719711,
@@ -93,13 +61,49 @@
   },
   {
     "code": "SAIHAMCOT",
-    "rank": 10,
-    "rankChange": 0,
+    "rank": 7,
+    "rankChange": 3,
     "riskReward": {
       "ratio": 0.1
     },
     "adx": 39.97480226027358,
     "mfi": 66.83917451765271,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "ACIFORMULA",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 35.45679135832206,
+    "mfi": 66.5942518647156,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BXPHARMA",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 19.851831162210882,
+    "mfi": 51.2172163506585,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "CONTININS",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0
+    },
+    "adx": 18.825386032161,
+    "mfi": 69.61177239818802,
     "obvTrend": "flat"
   }
 ]
