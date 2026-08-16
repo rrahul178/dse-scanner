@@ -2,8 +2,7 @@
   {
     "code": "GLOBALINS",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 31.988086994869487,
     "mfi": 76.93095115951499,
@@ -12,7 +11,7 @@
   {
     "code": "IPDC",
     "rank": 2,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.5
     },
@@ -23,8 +22,7 @@
   {
     "code": "MEGHNAINS",
     "rank": 3,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.4
     },
@@ -35,8 +33,7 @@
   {
     "code": "ACMEPL",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -47,7 +44,7 @@
   {
     "code": "CONTININS",
     "rank": 5,
-    "rankChange": 4,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -58,8 +55,7 @@
   {
     "code": "PROVATIINS",
     "rank": 6,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -70,7 +66,7 @@
   {
     "code": "ASIAINS",
     "rank": 7,
-    "rankChange": -5,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0
     },
@@ -81,7 +77,7 @@
   {
     "code": "SAIHAMCOT",
     "rank": 8,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.9
     },
@@ -92,7 +88,7 @@
   {
     "code": "ACIFORMULA",
     "rank": 9,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1
     },
@@ -103,8 +99,7 @@
   {
     "code": "AMANFEED",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
