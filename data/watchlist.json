@@ -1,17 +1,8 @@
 [
   {
-    "code": "DSHGARME",
-    "rank": 1,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 45.07701361775654,
-    "mfi": 54.60074944681827,
-    "obvTrend": "rising"
-  },
-  {
     "code": "ASIAINS",
-    "rank": 2,
-    "rankChange": 0,
+    "rank": 1,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.3
     },
@@ -20,21 +11,18 @@
     "obvTrend": "flat"
   },
   {
-    "code": "DAFODILCOM",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 10.154399508329279,
-    "mfi": 76.24308562842084,
+    "code": "DSHGARME",
+    "rank": 2,
+    "rankChange": -1,
+    "riskReward": null,
+    "adx": 45.07701361775654,
+    "mfi": 54.60074944681827,
     "obvTrend": "rising"
   },
   {
     "code": "IPDC",
-    "rank": 4,
-    "rankChange": -1,
+    "rank": 3,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.6
     },
@@ -44,8 +32,8 @@
   },
   {
     "code": "FEDERALINS",
-    "rank": 5,
-    "rankChange": -1,
+    "rank": 4,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -54,20 +42,33 @@
     "obvTrend": "rising"
   },
   {
-    "code": "CVOPRL",
-    "rank": 6,
-    "rankChange": -1,
+    "code": "RUPALIINS",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.6
+      "ratio": 0.3
     },
-    "adx": 30.79814923804122,
-    "mfi": 70.23941743936084,
+    "adx": 26.2319553452684,
+    "mfi": 76.48597040737312,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "EASTERNINS",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0
+    },
+    "adx": 24.094140063449306,
+    "mfi": 59.53835592855581,
     "obvTrend": "rising"
   },
   {
     "code": "PEOPLESINS",
     "rank": 7,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 30.346070227139982,
     "mfi": 92.27705538495158,
@@ -76,7 +77,7 @@
   {
     "code": "GBBPOWER",
     "rank": 8,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 47.162842390682265,
     "mfi": 99.80004323604831,
@@ -92,14 +93,15 @@
     "obvTrend": "rising"
   },
   {
-    "code": "BXPHARMA",
+    "code": "SAIHAMCOT",
     "rank": 10,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 19.851831162210882,
-    "mfi": 51.2172163506585,
-    "obvTrend": "falling"
+    "adx": 39.97480226027358,
+    "mfi": 66.83917451765271,
+    "obvTrend": "flat"
   }
 ]
