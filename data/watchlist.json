@@ -1,23 +1,23 @@
 [
   {
-    "code": "ASIAINS",
+    "code": "DSHGARME",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": 1,
+    "riskReward": null,
+    "adx": 45.07701361775654,
+    "mfi": 54.60074944681827,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ASIAINS",
+    "rank": 2,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.3
     },
     "adx": 19.91312974978942,
     "mfi": 80.14475875292237,
     "obvTrend": "flat"
-  },
-  {
-    "code": "DSHGARME",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 45.07701361775654,
-    "mfi": 54.60074944681827,
-    "obvTrend": "rising"
   },
   {
     "code": "IPDC",
@@ -44,7 +44,7 @@
   {
     "code": "PEOPLESINS",
     "rank": 5,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 30.346070227139982,
     "mfi": 92.27705538495158,
@@ -53,7 +53,7 @@
   {
     "code": "PRIMEINSUR",
     "rank": 6,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 39.10843233581829,
     "mfi": 78.83225374719711,
@@ -62,7 +62,7 @@
   {
     "code": "SAIHAMCOT",
     "rank": 7,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -71,10 +71,20 @@
     "obvTrend": "flat"
   },
   {
-    "code": "ACIFORMULA",
+    "code": "CONTININS",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 2,
+    "riskReward": {
+      "ratio": 0
+    },
+    "adx": 18.825386032161,
+    "mfi": 69.61177239818802,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "ACIFORMULA",
+    "rank": 9,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.5
     },
@@ -84,26 +94,13 @@
   },
   {
     "code": "BXPHARMA",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rank": 10,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.1
     },
     "adx": 19.851831162210882,
     "mfi": 51.2172163506585,
     "obvTrend": "falling"
-  },
-  {
-    "code": "CONTININS",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 18.825386032161,
-    "mfi": 69.61177239818802,
-    "obvTrend": "flat"
   }
 ]
