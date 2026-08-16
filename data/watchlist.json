@@ -11,8 +11,7 @@
   {
     "code": "ASIAINS",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -21,9 +20,21 @@
     "obvTrend": "flat"
   },
   {
-    "code": "IPDC",
+    "code": "DAFODILCOM",
     "rank": 3,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 10.154399508329279,
+    "mfi": 76.24308562842084,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "IPDC",
+    "rank": 4,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.6
     },
@@ -33,8 +44,8 @@
   },
   {
     "code": "FEDERALINS",
-    "rank": 4,
-    "rankChange": 1,
+    "rank": 5,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -44,7 +55,7 @@
   },
   {
     "code": "CVOPRL",
-    "rank": 5,
+    "rank": 6,
     "rankChange": -1,
     "riskReward": {
       "ratio": 0.6
@@ -55,8 +66,8 @@
   },
   {
     "code": "PEOPLESINS",
-    "rank": 6,
-    "rankChange": 0,
+    "rank": 7,
+    "rankChange": -1,
     "riskReward": null,
     "adx": 30.346070227139982,
     "mfi": 92.27705538495158,
@@ -64,30 +75,17 @@
   },
   {
     "code": "GBBPOWER",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rank": 8,
+    "rankChange": -1,
     "riskReward": null,
     "adx": 47.162842390682265,
     "mfi": 99.80004323604831,
     "obvTrend": "rising"
   },
   {
-    "code": "TAMIJTEX",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 1.8
-    },
-    "adx": 22.488232758670478,
-    "mfi": 73.02471311859293,
-    "obvTrend": "flat"
-  },
-  {
     "code": "PRIMEINSUR",
     "rank": 9,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 39.10843233581829,
     "mfi": 78.83225374719711,
@@ -96,7 +94,7 @@
   {
     "code": "BXPHARMA",
     "rank": 10,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
