@@ -1,106 +1,115 @@
 [
   {
-    "code": "DSHGARME",
+    "code": "GLOBALINS",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": null,
-    "adx": 45.07701361775654,
-    "mfi": 54.60074944681827,
+    "adx": 31.988086994869487,
+    "mfi": 76.93095115951499,
     "obvTrend": "rising"
-  },
-  {
-    "code": "ASIAINS",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 19.91312974978942,
-    "mfi": 80.14475875292237,
-    "obvTrend": "flat"
   },
   {
     "code": "IPDC",
+    "rank": 2,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 19.531838150807605,
+    "mfi": 67.5711792338381,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "MEGHNAINS",
     "rank": 3,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.6
+      "ratio": 1.4
     },
-    "adx": 20.022640829548234,
-    "mfi": 57.946092184303524,
+    "adx": 30.72172734413531,
+    "mfi": 60.74200369256675,
     "obvTrend": "flat"
   },
   {
-    "code": "FEDERALINS",
+    "code": "ACMEPL",
     "rank": 4,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.3
     },
-    "adx": 19.71803607328008,
-    "mfi": 90.64477606153456,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "PEOPLESINS",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 30.346070227139982,
-    "mfi": 92.27705538495158,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "PRIMEINSUR",
-    "rank": 6,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 39.10843233581829,
-    "mfi": 78.83225374719711,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SAIHAMCOT",
-    "rank": 7,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 39.97480226027358,
-    "mfi": 66.83917451765271,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "BXPHARMA",
-    "rank": 8,
-    "rankChange": 2,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 19.851831162210882,
-    "mfi": 51.2172163506585,
+    "adx": 26.319664277950928,
+    "mfi": 82.66483838324811,
     "obvTrend": "falling"
   },
   {
     "code": "CONTININS",
-    "rank": 9,
-    "rankChange": -1,
+    "rank": 5,
+    "rankChange": 4,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 19.095520576688127,
+    "mfi": 75.22699452662306,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PROVATIINS",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 15.93943084940235,
+    "mfi": 79.93743989376485,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ASIAINS",
+    "rank": 7,
+    "rankChange": -5,
     "riskReward": {
       "ratio": 0
     },
-    "adx": 18.825386032161,
-    "mfi": 69.61177239818802,
-    "obvTrend": "flat"
+    "adx": 21.695544133914215,
+    "mfi": 83.02868204066792,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SAIHAMCOT",
+    "rank": 8,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.9
+    },
+    "adx": 40.288055432006466,
+    "mfi": 71.21066023420836,
+    "obvTrend": "rising"
   },
   {
     "code": "ACIFORMULA",
-    "rank": 10,
-    "rankChange": -1,
+    "rank": 9,
+    "rankChange": 1,
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 1
     },
-    "adx": 35.45679135832206,
-    "mfi": 66.5942518647156,
+    "adx": 34.98017126897247,
+    "mfi": 65.08488563044182,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "AMANFEED",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 33.14391837349476,
+    "mfi": 64.07706248817726,
     "obvTrend": "rising"
   }
 ]

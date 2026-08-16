@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-08-16T08:02:05.021Z",
-  "lastScrapedAt": "2026-08-16T08:02:05.021Z",
+  "lastAttemptedAt": "2026-08-16T08:41:53.686Z",
+  "lastScrapedAt": "2026-08-16T08:41:53.686Z",
   "candidateCount": 40,
   "watchlist": [
-    "DSHGARME",
-    "ASIAINS",
+    "GLOBALINS",
     "IPDC",
-    "FEDERALINS",
-    "PEOPLESINS",
-    "PRIMEINSUR",
-    "SAIHAMCOT",
-    "BXPHARMA",
+    "MEGHNAINS",
+    "ACMEPL",
     "CONTININS",
-    "ACIFORMULA"
+    "PROVATIINS",
+    "ASIAINS",
+    "SAIHAMCOT",
+    "ACIFORMULA",
+    "AMANFEED"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
