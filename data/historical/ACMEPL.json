@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "ACMEPL",
-    "LTP*": "15",
-    "HIGH": "15.5",
-    "LOW": "14.9",
-    "OPENP*": "15.1",
-    "CLOSEP*": "15",
-    "YCP": "15.1",
-    "TRADE": "773",
-    "VALUE (mn)": "22.638",
-    "VOLUME": "1488404"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "ACMEPL",
-    "LTP*": "15.2",
-    "HIGH": "15.3",
-    "LOW": "14.8",
-    "OPENP*": "14.9",
-    "CLOSEP*": "15.2",
-    "YCP": "15",
-    "TRADE": "698",
-    "VALUE (mn)": "29.861",
-    "VOLUME": "1973097"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "ACMEPL",
-    "LTP*": "15.3",
-    "HIGH": "15.6",
-    "LOW": "15.1",
-    "OPENP*": "15.3",
-    "CLOSEP*": "15.3",
-    "YCP": "15.2",
-    "TRADE": "853",
-    "VALUE (mn)": "35.258",
-    "VOLUME": "2295387"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "ACMEPL",

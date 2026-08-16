@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "PHENIXINS",
-    "LTP*": "26",
-    "HIGH": "27.4",
-    "LOW": "25.9",
-    "OPENP*": "27.4",
-    "CLOSEP*": "26",
-    "YCP": "26.4",
-    "TRADE": "170",
-    "VALUE (mn)": "5.617",
-    "VOLUME": "213726"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "PHENIXINS",
-    "LTP*": "26.5",
-    "HIGH": "26.7",
-    "LOW": "25.7",
-    "OPENP*": "25.7",
-    "CLOSEP*": "26.5",
-    "YCP": "26",
-    "TRADE": "100",
-    "VALUE (mn)": "2.336",
-    "VOLUME": "88217"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "PHENIXINS",
-    "LTP*": "27.3",
-    "HIGH": "27.6",
-    "LOW": "26.4",
-    "OPENP*": "26.4",
-    "CLOSEP*": "27.3",
-    "YCP": "26.5",
-    "TRADE": "247",
-    "VALUE (mn)": "7.048",
-    "VOLUME": "261583"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "PHENIXINS",

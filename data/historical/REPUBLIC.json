@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "REPUBLIC",
-    "LTP*": "28",
-    "HIGH": "28.7",
-    "LOW": "27.6",
-    "OPENP*": "28.4",
-    "CLOSEP*": "28",
-    "YCP": "28.4",
-    "TRADE": "107",
-    "VALUE (mn)": "2.137",
-    "VOLUME": "75946"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "REPUBLIC",
-    "LTP*": "30.2",
-    "HIGH": "30.8",
-    "LOW": "28.6",
-    "OPENP*": "28.6",
-    "CLOSEP*": "30.2",
-    "YCP": "28",
-    "TRADE": "551",
-    "VALUE (mn)": "12.432",
-    "VOLUME": "415536"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "REPUBLIC",
-    "LTP*": "30.3",
-    "HIGH": "30.5",
-    "LOW": "29.8",
-    "OPENP*": "30.3",
-    "CLOSEP*": "30.3",
-    "YCP": "30.2",
-    "TRADE": "225",
-    "VALUE (mn)": "3.352",
-    "VOLUME": "111294"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "REPUBLIC",

@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "FEDERALINS",
-    "LTP*": "21.2",
-    "HIGH": "21.3",
-    "LOW": "20.5",
-    "OPENP*": "20.5",
-    "CLOSEP*": "21.2",
-    "YCP": "20.6",
-    "TRADE": "395",
-    "VALUE (mn)": "13.095",
-    "VOLUME": "621915"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "FEDERALINS",
-    "LTP*": "22.1",
-    "HIGH": "22.6",
-    "LOW": "21.5",
-    "OPENP*": "21.5",
-    "CLOSEP*": "22.1",
-    "YCP": "21.2",
-    "TRADE": "988",
-    "VALUE (mn)": "26.299",
-    "VOLUME": "1197769"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "FEDERALINS",
-    "LTP*": "22.2",
-    "HIGH": "22.6",
-    "LOW": "22",
-    "OPENP*": "22.4",
-    "CLOSEP*": "22.2",
-    "YCP": "22.1",
-    "TRADE": "728",
-    "VALUE (mn)": "24.43",
-    "VOLUME": "1097254"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "FEDERALINS",

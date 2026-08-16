@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "MLDYEING",
-    "LTP*": "9.7",
-    "HIGH": "10.1",
-    "LOW": "9.7",
-    "OPENP*": "9.9",
-    "CLOSEP*": "9.7",
-    "YCP": "9.9",
-    "TRADE": "371",
-    "VALUE (mn)": "11.24",
-    "VOLUME": "1135731"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "MLDYEING",
-    "LTP*": "10.2",
-    "HIGH": "10.2",
-    "LOW": "9.7",
-    "OPENP*": "9.7",
-    "CLOSEP*": "10.2",
-    "YCP": "9.7",
-    "TRADE": "561",
-    "VALUE (mn)": "18.44",
-    "VOLUME": "1842949"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "MLDYEING",
-    "LTP*": "10",
-    "HIGH": "10.3",
-    "LOW": "9.8",
-    "OPENP*": "10.3",
-    "CLOSEP*": "10",
-    "YCP": "10.2",
-    "TRADE": "474",
-    "VALUE (mn)": "16.184",
-    "VOLUME": "1614468"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "MLDYEING",

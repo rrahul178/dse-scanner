@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "PEOPLESINS",
-    "LTP*": "35.5",
-    "HIGH": "36.8",
-    "LOW": "35.1",
-    "OPENP*": "36.8",
-    "CLOSEP*": "35.5",
-    "YCP": "36",
-    "TRADE": "747",
-    "VALUE (mn)": "21.374",
-    "VOLUME": "600859"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "PEOPLESINS",
-    "LTP*": "35.9",
-    "HIGH": "36.7",
-    "LOW": "35.3",
-    "OPENP*": "36",
-    "CLOSEP*": "35.9",
-    "YCP": "35.5",
-    "TRADE": "563",
-    "VALUE (mn)": "16.006",
-    "VOLUME": "445768"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "PEOPLESINS",
-    "LTP*": "35.5",
-    "HIGH": "36.6",
-    "LOW": "35.4",
-    "OPENP*": "36.3",
-    "CLOSEP*": "35.5",
-    "YCP": "35.9",
-    "TRADE": "433",
-    "VALUE (mn)": "15.787",
-    "VOLUME": "442905"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "PEOPLESINS",

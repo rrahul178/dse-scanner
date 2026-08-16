@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "DSHGARME",
-    "LTP*": "117.4",
-    "HIGH": "124",
-    "LOW": "116.1",
-    "OPENP*": "122.1",
-    "CLOSEP*": "117.4",
-    "YCP": "121.4",
-    "TRADE": "1093",
-    "VALUE (mn)": "14.455",
-    "VOLUME": "120841"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "DSHGARME",
-    "LTP*": "125.3",
-    "HIGH": "128.1",
-    "LOW": "117.4",
-    "OPENP*": "117.4",
-    "CLOSEP*": "125.3",
-    "YCP": "117.4",
-    "TRADE": "1832",
-    "VALUE (mn)": "29.731",
-    "VOLUME": "238836"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "DSHGARME",
-    "LTP*": "120.5",
-    "HIGH": "126.5",
-    "LOW": "120",
-    "OPENP*": "126",
-    "CLOSEP*": "120.5",
-    "YCP": "125.3",
-    "TRADE": "1534",
-    "VALUE (mn)": "24.397",
-    "VOLUME": "199079"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "DSHGARME",

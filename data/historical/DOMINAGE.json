@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "DOMINAGE",
-    "LTP*": "12.7",
-    "HIGH": "13.3",
-    "LOW": "12.6",
-    "OPENP*": "13.2",
-    "CLOSEP*": "12.7",
-    "YCP": "13",
-    "TRADE": "706",
-    "VALUE (mn)": "52.45",
-    "VOLUME": "4042483"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "DOMINAGE",
-    "LTP*": "13.5",
-    "HIGH": "13.6",
-    "LOW": "12.6",
-    "OPENP*": "12.6",
-    "CLOSEP*": "13.5",
-    "YCP": "12.7",
-    "TRADE": "1186",
-    "VALUE (mn)": "67.34",
-    "VOLUME": "5071864"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "DOMINAGE",
-    "LTP*": "13.3",
-    "HIGH": "13.6",
-    "LOW": "13.2",
-    "OPENP*": "13.6",
-    "CLOSEP*": "13.3",
-    "YCP": "13.5",
-    "TRADE": "617",
-    "VALUE (mn)": "19.195",
-    "VOLUME": "1438520"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "DOMINAGE",

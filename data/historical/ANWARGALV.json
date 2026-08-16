@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "ANWARGALV",
-    "LTP*": "68.4",
-    "HIGH": "70",
-    "LOW": "67.7",
-    "OPENP*": "69.8",
-    "CLOSEP*": "68.4",
-    "YCP": "69.2",
-    "TRADE": "621",
-    "VALUE (mn)": "6.652",
-    "VOLUME": "96539"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "ANWARGALV",
-    "LTP*": "69.2",
-    "HIGH": "70.4",
-    "LOW": "68.4",
-    "OPENP*": "68.4",
-    "CLOSEP*": "69.2",
-    "YCP": "68.4",
-    "TRADE": "470",
-    "VALUE (mn)": "6.42",
-    "VOLUME": "92550"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "ANWARGALV",
-    "LTP*": "69.4",
-    "HIGH": "70.6",
-    "LOW": "68.9",
-    "OPENP*": "70.6",
-    "CLOSEP*": "69.4",
-    "YCP": "69.2",
-    "TRADE": "437",
-    "VALUE (mn)": "7.363",
-    "VOLUME": "105868"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "ANWARGALV",

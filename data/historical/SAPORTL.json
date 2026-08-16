@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "SAPORTL",
-    "LTP*": "23.2",
-    "HIGH": "23.7",
-    "LOW": "23.2",
-    "OPENP*": "23.6",
-    "CLOSEP*": "23.2",
-    "YCP": "23.4",
-    "TRADE": "404",
-    "VALUE (mn)": "18.53",
-    "VOLUME": "790083"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "SAPORTL",
-    "LTP*": "23.3",
-    "HIGH": "23.5",
-    "LOW": "23.2",
-    "OPENP*": "23.4",
-    "CLOSEP*": "23.3",
-    "YCP": "23.2",
-    "TRADE": "423",
-    "VALUE (mn)": "9.505",
-    "VOLUME": "407587"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "SAPORTL",
-    "LTP*": "23.3",
-    "HIGH": "23.6",
-    "LOW": "23.2",
-    "OPENP*": "23.3",
-    "CLOSEP*": "23.3",
-    "YCP": "23.3",
-    "TRADE": "366",
-    "VALUE (mn)": "13.509",
-    "VOLUME": "577658"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "SAPORTL",

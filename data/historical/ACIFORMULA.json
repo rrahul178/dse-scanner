@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "ACIFORMULA",
-    "LTP*": "133.7",
-    "HIGH": "138",
-    "LOW": "133.2",
-    "OPENP*": "136",
-    "CLOSEP*": "133.7",
-    "YCP": "135.2",
-    "TRADE": "186",
-    "VALUE (mn)": "3.26",
-    "VOLUME": "24150"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "ACIFORMULA",
-    "LTP*": "136",
-    "HIGH": "136.7",
-    "LOW": "133.8",
-    "OPENP*": "134",
-    "CLOSEP*": "134.8",
-    "YCP": "133.7",
-    "TRADE": "244",
-    "VALUE (mn)": "3.362",
-    "VOLUME": "24870"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "ACIFORMULA",
-    "LTP*": "136.2",
-    "HIGH": "138.4",
-    "LOW": "134.8",
-    "OPENP*": "135.3",
-    "CLOSEP*": "136.2",
-    "YCP": "134.8",
-    "TRADE": "271",
-    "VALUE (mn)": "6.826",
-    "VOLUME": "50260"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "ACIFORMULA",

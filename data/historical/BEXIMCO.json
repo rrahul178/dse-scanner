@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-07-29",
-    "TRADING CODE": "BEXIMCO",
-    "LTP*": "110.1",
-    "HIGH": "110.1",
-    "LOW": "110.1",
-    "OPENP*": "110.1",
-    "CLOSEP*": "110.1",
-    "YCP": "110.1",
-    "TRADE": "1",
-    "VALUE (mn)": "0.001",
-    "VOLUME": "8"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-07-30",
-    "TRADING CODE": "BEXIMCO",
-    "LTP*": "110.1",
-    "HIGH": "110.1",
-    "LOW": "110.1",
-    "OPENP*": "110.1",
-    "CLOSEP*": "110.1",
-    "YCP": "110.1",
-    "TRADE": "1",
-    "VALUE (mn)": "0.023",
-    "VOLUME": "210"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-07-31",
-    "TRADING CODE": "BEXIMCO",
-    "LTP*": "110.1",
-    "HIGH": "110.1",
-    "LOW": "110.1",
-    "OPENP*": "110.1",
-    "CLOSEP*": "110.1",
-    "YCP": "110.1",
-    "TRADE": "2",
-    "VALUE (mn)": "0.006",
-    "VOLUME": "56"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-03",
     "TRADING CODE": "BEXIMCO",
