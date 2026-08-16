@@ -2,7 +2,7 @@
   {
     "code": "ASIAINS",
     "rank": 1,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -13,7 +13,7 @@
   {
     "code": "DSHGARME",
     "rank": 2,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 45.07701361775654,
     "mfi": 54.60074944681827,
@@ -22,7 +22,7 @@
   {
     "code": "IPDC",
     "rank": 3,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -33,7 +33,7 @@
   {
     "code": "FEDERALINS",
     "rank": 4,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -44,8 +44,7 @@
   {
     "code": "RUPALIINS",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -54,15 +53,15 @@
     "obvTrend": "falling"
   },
   {
-    "code": "EASTERNINS",
+    "code": "CVOPRL",
     "rank": 6,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0
+      "ratio": 0.6
     },
-    "adx": 24.094140063449306,
-    "mfi": 59.53835592855581,
+    "adx": 30.79814923804122,
+    "mfi": 70.23941743936084,
     "obvTrend": "rising"
   },
   {
@@ -95,8 +94,7 @@
   {
     "code": "SAIHAMCOT",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
