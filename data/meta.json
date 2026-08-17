@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-08-17T04:42:27.520Z",
-  "lastScrapedAt": "2026-08-17T04:42:27.520Z",
+  "lastAttemptedAt": "2026-08-17T05:23:36.073Z",
+  "lastScrapedAt": "2026-08-17T05:23:36.073Z",
   "candidateCount": 40,
   "watchlist": [
     "IPDC",
     "MEGHNAINS",
     "GLOBALINS",
     "CONTININS",
-    "ACMEPL",
-    "ASIAINS",
     "KPCL",
     "SAIHAMCOT",
     "EASTERNINS",
-    "BENGALWTL"
+    "BENGALWTL",
+    "AMANFEED",
+    "SOUTHEASTB"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
