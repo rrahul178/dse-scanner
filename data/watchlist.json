@@ -42,9 +42,21 @@
     "obvTrend": "rising"
   },
   {
-    "code": "KPCL",
+    "code": "ACMEPL",
     "rank": 5,
-    "rankChange": 2,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 26.319664277950928,
+    "mfi": 82.66483838324811,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "KPCL",
+    "rank": 6,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.3
     },
@@ -54,8 +66,8 @@
   },
   {
     "code": "SAIHAMCOT",
-    "rank": 6,
-    "rankChange": 2,
+    "rank": 7,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.9
     },
@@ -65,8 +77,8 @@
   },
   {
     "code": "EASTERNINS",
-    "rank": 7,
-    "rankChange": 2,
+    "rank": 8,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -76,8 +88,8 @@
   },
   {
     "code": "BENGALWTL",
-    "rank": 8,
-    "rankChange": 2,
+    "rank": 9,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -87,24 +99,13 @@
   },
   {
     "code": "AMANFEED",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rank": 10,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.3
     },
     "adx": 33.14391837349476,
     "mfi": 64.07706248817726,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SOUTHEASTB",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 33.44835340850393,
-    "mfi": 65.23024896755196,
     "obvTrend": "rising"
   }
 ]
