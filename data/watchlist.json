@@ -1,109 +1,111 @@
 [
   {
-    "code": "IPDC",
+    "code": "RUNNERAUTO",
     "rank": 1,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 19.531838150807605,
-    "mfi": 67.5711792338381,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "MEGHNAINS",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 1.4
-    },
-    "adx": 30.72172734413531,
-    "mfi": 60.74200369256675,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "ACMEPL",
-    "rank": 3,
-    "rankChange": 1,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
       "ratio": 0.3
     },
-    "adx": 26.319664277950928,
-    "mfi": 82.66483838324811,
+    "adx": 29.744621260197743,
+    "mfi": 72.52432945142914,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "EASTERNINS",
+    "rank": 2,
+    "rankChange": 5,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 26.90478229705528,
+    "mfi": 71.00977641944465,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "FEDERALINS",
+    "rank": 3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 22.748992554875628,
+    "mfi": 92.72464537490842,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "IPDC",
+    "rank": 4,
+    "rankChange": -3,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 19.513356655792652,
+    "mfi": 70.0918956953916,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ENVOYTEX",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 23.96894411583643,
+    "mfi": 53.93712175236597,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "PEOPLESINS",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0
+    },
+    "adx": 31.977107983971475,
+    "mfi": 86.43043764046058,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ACMEPL",
+    "rank": 7,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 25.875358277269186,
+    "mfi": 80.9470018236886,
     "obvTrend": "falling"
   },
   {
     "code": "GLOBALINS",
-    "rank": 4,
-    "rankChange": -1,
-    "riskReward": null,
-    "adx": 31.988086994869487,
-    "mfi": 76.93095115951499,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "KPCL",
-    "rank": 5,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 30.284677720213487,
-    "mfi": 83.44044729546557,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SAIHAMCOT",
-    "rank": 6,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.9
-    },
-    "adx": 40.288055432006466,
-    "mfi": 71.21066023420836,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "EASTERNINS",
-    "rank": 7,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 25.23741561644285,
-    "mfi": 64.00365634007233,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "BENGALWTL",
     "rank": 8,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 13.373664864172024,
-    "mfi": 79.37848494654861,
+    "rankChange": -4,
+    "riskReward": null,
+    "adx": 33.59383233758064,
+    "mfi": 78.13722323932888,
     "obvTrend": "rising"
   },
   {
-    "code": "AMANFEED",
+    "code": "MLDYEING",
     "rank": 9,
-    "rankChange": 1,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.6
     },
-    "adx": 33.14391837349476,
-    "mfi": 64.07706248817726,
-    "obvTrend": "rising"
+    "adx": 51.265459256871914,
+    "mfi": 36.245967547051954,
+    "obvTrend": "falling"
   },
   {
     "code": "SOUTHEASTB",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
-    "adx": 33.44835340850393,
-    "mfi": 65.23024896755196,
+    "adx": 35.231566874239945,
+    "mfi": 68.89857512676883,
     "obvTrend": "rising"
   }
 ]
