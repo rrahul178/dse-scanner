@@ -22,17 +22,8 @@
     "obvTrend": "flat"
   },
   {
-    "code": "GLOBALINS",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 31.988086994869487,
-    "mfi": 76.93095115951499,
-    "obvTrend": "rising"
-  },
-  {
     "code": "ACMEPL",
-    "rank": 4,
+    "rank": 3,
     "rankChange": 1,
     "riskReward": {
       "ratio": 0.3
@@ -42,20 +33,18 @@
     "obvTrend": "falling"
   },
   {
-    "code": "CONTININS",
-    "rank": 5,
+    "code": "GLOBALINS",
+    "rank": 4,
     "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 19.095520576688127,
-    "mfi": 75.22699452662306,
+    "riskReward": null,
+    "adx": 31.988086994869487,
+    "mfi": 76.93095115951499,
     "obvTrend": "rising"
   },
   {
     "code": "KPCL",
-    "rank": 6,
-    "rankChange": 0,
+    "rank": 5,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.3
     },
@@ -65,8 +54,8 @@
   },
   {
     "code": "SAIHAMCOT",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 6,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.9
     },
@@ -76,8 +65,8 @@
   },
   {
     "code": "EASTERNINS",
-    "rank": 8,
-    "rankChange": 0,
+    "rank": 7,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -87,8 +76,8 @@
   },
   {
     "code": "BENGALWTL",
-    "rank": 9,
-    "rankChange": 0,
+    "rank": 8,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -98,13 +87,23 @@
   },
   {
     "code": "AMANFEED",
-    "rank": 10,
-    "rankChange": 0,
+    "rank": 9,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.3
     },
     "adx": 33.14391837349476,
     "mfi": 64.07706248817726,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SOUTHEASTB",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 33.44835340850393,
+    "mfi": 65.23024896755196,
     "obvTrend": "rising"
   }
 ]
