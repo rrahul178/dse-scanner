@@ -1,104 +1,108 @@
 [
   {
-    "code": "RUNNERAUTO",
-    "rank": 1,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 29.744621260197743,
-    "mfi": 72.52432945142914,
-    "obvTrend": "falling"
-  },
-  {
     "code": "FEDERALINS",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 22.748992554875628,
-    "mfi": 92.72464537490842,
+    "rank": 1,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 22.587910754547938,
+    "mfi": 85.62773269189807,
     "obvTrend": "rising"
   },
   {
     "code": "IPDC",
-    "rank": 3,
-    "rankChange": 0,
+    "rank": 2,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 19.513356655792652,
-    "mfi": 70.0918956953916,
+    "adx": 20.08563988493997,
+    "mfi": 74.70088560789011,
     "obvTrend": "rising"
   },
   {
     "code": "ENVOYTEX",
-    "rank": 4,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 23.96894411583643,
-    "mfi": 53.93712175236597,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "PEOPLESINS",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 31.977107983971475,
-    "mfi": 86.43043764046058,
+    "rank": 3,
+    "rankChange": 1,
+    "riskReward": null,
+    "adx": 23.814828936328706,
+    "mfi": 72.90105422494497,
     "obvTrend": "rising"
-  },
-  {
-    "code": "ACMEPL",
-    "rank": 6,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 25.875358277269186,
-    "mfi": 80.9470018236886,
-    "obvTrend": "falling"
   },
   {
     "code": "GLOBALINS",
-    "rank": 7,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 33.59383233758064,
-    "mfi": 78.13722323932888,
-    "obvTrend": "rising"
+    "rank": 4,
+    "rankChange": 3,
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 33.59123592669868,
+    "mfi": 70.61551103036194,
+    "obvTrend": "flat"
   },
   {
-    "code": "MLDYEING",
-    "rank": 8,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 51.265459256871914,
-    "mfi": 36.245967547051954,
-    "obvTrend": "falling"
+    "code": "RUNNERAUTO",
+    "rank": 5,
+    "rankChange": -4,
+    "riskReward": null,
+    "adx": 31.2220455256628,
+    "mfi": 73.65143451998097,
+    "obvTrend": "rising"
   },
   {
     "code": "SOUTHEASTB",
-    "rank": 9,
-    "rankChange": 0,
+    "rank": 6,
+    "rankChange": 3,
     "riskReward": null,
-    "adx": 35.231566874239945,
-    "mfi": 68.89857512676883,
+    "adx": 35.00367931924456,
+    "mfi": 54.91972613911938,
     "obvTrend": "rising"
   },
   {
-    "code": "SAMORITA",
+    "code": "PUBALIBANK",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.9
+    },
+    "adx": 29.148234739439065,
+    "mfi": 59.70511446764404,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "ACMEPL",
+    "rank": 8,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 1.4
+    },
+    "adx": 24.482656492970797,
+    "mfi": 77.55677080465135,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "MLDYEING",
+    "rank": 9,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 47.9404883559694,
+    "mfi": 37.36794309910357,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "BXPHARMA",
     "rank": 10,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 51.63559262323984,
-    "mfi": 74.64310560379283,
-    "obvTrend": "rising"
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 2
+    },
+    "adx": 17.769968754015714,
+    "mfi": 60.79299177740004,
+    "obvTrend": "falling"
   }
 ]
