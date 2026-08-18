@@ -11,9 +11,18 @@
     "obvTrend": "falling"
   },
   {
-    "code": "EASTERNINS",
+    "code": "FEDERALINS",
     "rank": 2,
-    "rankChange": 0,
+    "rankChange": 1,
+    "riskReward": null,
+    "adx": 22.748992554875628,
+    "mfi": 92.72464537490842,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "EASTERNINS",
+    "rank": 3,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -22,29 +31,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "FEDERALINS",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 22.748992554875628,
-    "mfi": 92.72464537490842,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "IPDC",
-    "rank": 4,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 19.513356655792652,
-    "mfi": 70.0918956953916,
-    "obvTrend": "rising"
-  },
-  {
     "code": "ENVOYTEX",
-    "rank": 5,
-    "rankChange": 0,
+    "rank": 4,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.5
     },
@@ -53,21 +42,32 @@
     "obvTrend": "flat"
   },
   {
-    "code": "RELIANCE1",
+    "code": "IPDC",
+    "rank": 5,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 19.513356655792652,
+    "mfi": 70.0918956953916,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ACMEPL",
     "rank": 6,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 6
+      "ratio": 0.2
     },
-    "adx": 25.970564678811673,
-    "mfi": 54.890330857805075,
+    "adx": 25.875358277269186,
+    "mfi": 80.9470018236886,
     "obvTrend": "falling"
   },
   {
     "code": "GLOBALINS",
     "rank": 7,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 33.59383233758064,
     "mfi": 78.13722323932888,
@@ -76,7 +76,7 @@
   {
     "code": "MLDYEING",
     "rank": 8,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -87,7 +87,7 @@
   {
     "code": "SOUTHEASTB",
     "rank": 9,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 35.231566874239945,
     "mfi": 68.89857512676883,
@@ -96,8 +96,7 @@
   {
     "code": "AMANFEED",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
