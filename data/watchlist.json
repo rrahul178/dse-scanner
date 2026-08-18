@@ -11,9 +11,18 @@
     "obvTrend": "falling"
   },
   {
-    "code": "EASTERNINS",
+    "code": "FEDERALINS",
     "rank": 2,
     "rankChange": 1,
+    "riskReward": null,
+    "adx": 22.748992554875628,
+    "mfi": 92.72464537490842,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "EASTERNINS",
+    "rank": 3,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -22,29 +31,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "FEDERALINS",
-    "rank": 3,
-    "rankChange": -1,
-    "riskReward": null,
-    "adx": 22.748992554875628,
-    "mfi": 92.72464537490842,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 4,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 23.96894411583643,
-    "mfi": 53.93712175236597,
-    "obvTrend": "flat"
-  },
-  {
     "code": "IPDC",
-    "rank": 5,
-    "rankChange": 0,
+    "rank": 4,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -53,9 +42,20 @@
     "obvTrend": "rising"
   },
   {
+    "code": "ENVOYTEX",
+    "rank": 5,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 23.96894411583643,
+    "mfi": 53.93712175236597,
+    "obvTrend": "flat"
+  },
+  {
     "code": "GLOBALINS",
     "rank": 6,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 33.59383233758064,
     "mfi": 78.13722323932888,
@@ -64,7 +64,7 @@
   {
     "code": "MLDYEING",
     "rank": 7,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -75,7 +75,7 @@
   {
     "code": "SOUTHEASTB",
     "rank": 8,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 35.231566874239945,
     "mfi": 68.89857512676883,
@@ -84,8 +84,7 @@
   {
     "code": "SAMORITA",
     "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 51.63559262323984,
     "mfi": 74.64310560379283,
@@ -94,8 +93,7 @@
   {
     "code": "SAPORTL",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
