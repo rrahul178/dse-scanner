@@ -1,53 +1,60 @@
 [
   {
-    "code": "RELIANCE1",
+    "code": "DGIC",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 2.5
+      "ratio": 0.4
     },
-    "adx": 26.541066490628868,
-    "mfi": 60.36458545899779,
-    "obvTrend": "rising"
+    "adx": 38.90842961595929,
+    "mfi": 55.95113856338121,
+    "obvTrend": "flat"
   },
   {
     "code": "IPDC",
     "rank": 2,
     "rankChange": 0,
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.8
     },
-    "adx": 20.085639417592425,
-    "mfi": 74.70088560789011,
+    "adx": 20.39952656205074,
+    "mfi": 72.21247336157617,
     "obvTrend": "rising"
   },
   {
-    "code": "ENVOYTEX",
+    "code": "SAPORTL",
     "rank": 3,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 23.814832236058027,
-    "mfi": 72.90105422494497,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 30.50135716155023,
+    "mfi": 80.49618848035854,
     "obvTrend": "rising"
   },
   {
-    "code": "GLOBALINS",
+    "code": "BXPHARMA",
     "rank": 4,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.8
     },
-    "adx": 33.591235478394864,
-    "mfi": 70.61551103036194,
-    "obvTrend": "flat"
+    "adx": 17.24563036732851,
+    "mfi": 60.395724216501904,
+    "obvTrend": "falling"
   },
   {
-    "code": "RUNNERAUTO",
+    "code": "ACIFORMULA",
     "rank": 5,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 31.22204509189221,
-    "mfi": 73.65143451998097,
+    "rankChange": 3,
+    "riskReward": {
+      "ratio": 23
+    },
+    "adx": 29.2465419147864,
+    "mfi": 60.37660277882134,
     "obvTrend": "rising"
   },
   {
@@ -55,52 +62,54 @@
     "rank": 6,
     "rankChange": 0,
     "riskReward": {
-      "ratio": 1.4
+      "ratio": 0.7
     },
-    "adx": 24.482658766669406,
-    "mfi": 77.55677080465135,
+    "adx": 23.577005189018543,
+    "mfi": 75.72346766734637,
     "obvTrend": "falling"
   },
   {
-    "code": "SOUTHEASTB",
+    "code": "DSHGARME",
     "rank": 7,
-    "rankChange": 1,
+    "rankChange": null,
+    "status": "new",
     "riskReward": null,
-    "adx": 35.00367648394985,
-    "mfi": 54.91972613911938,
+    "adx": 51.38052723485794,
+    "mfi": 62.463367602418074,
     "obvTrend": "rising"
   },
   {
-    "code": "ACIFORMULA",
+    "code": "RELIANCE1",
     "rank": 8,
-    "rankChange": -1,
+    "rankChange": -7,
     "riskReward": {
-      "ratio": 27
+      "ratio": 0.6
     },
-    "adx": 31.34296567970521,
-    "mfi": 61.11636232081709,
-    "obvTrend": "falling"
+    "adx": 27.894488611882082,
+    "mfi": 72.92757005807607,
+    "obvTrend": "rising"
   },
   {
-    "code": "PUBALIBANK",
+    "code": "GLOBALINS",
     "rank": 9,
-    "rankChange": 0,
+    "rankChange": -5,
     "riskReward": {
-      "ratio": 1.9
+      "ratio": 0
     },
-    "adx": 29.148233714674014,
-    "mfi": 59.70511446764404,
-    "obvTrend": "falling"
+    "adx": 33.18907224425973,
+    "mfi": 63.02678615754822,
+    "obvTrend": "rising"
   },
   {
-    "code": "MLDYEING",
+    "code": "TECHNODRUG",
     "rank": 10,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.7
+      "ratio": 0.3
     },
-    "adx": 47.94048888480223,
-    "mfi": 37.36794309910357,
+    "adx": 20.074358133169532,
+    "mfi": 40.08004308797101,
     "obvTrend": "falling"
   }
 ]
