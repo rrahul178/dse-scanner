@@ -2,8 +2,7 @@
   {
     "code": "RELIANCE1",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 2.5
     },
@@ -14,7 +13,7 @@
   {
     "code": "IPDC",
     "rank": 2,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -25,7 +24,7 @@
   {
     "code": "ENVOYTEX",
     "rank": 3,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 23.814832236058027,
     "mfi": 72.90105422494497,
@@ -34,7 +33,7 @@
   {
     "code": "GLOBALINS",
     "rank": 4,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -45,25 +44,16 @@
   {
     "code": "RUNNERAUTO",
     "rank": 5,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 31.22204509189221,
     "mfi": 73.65143451998097,
     "obvTrend": "rising"
   },
   {
-    "code": "SOUTHEASTB",
-    "rank": 6,
-    "rankChange": -1,
-    "riskReward": null,
-    "adx": 35.00367648394985,
-    "mfi": 54.91972613911938,
-    "obvTrend": "rising"
-  },
-  {
     "code": "ACMEPL",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 6,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 1.4
     },
@@ -72,9 +62,30 @@
     "obvTrend": "falling"
   },
   {
-    "code": "PUBALIBANK",
+    "code": "ACIFORMULA",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 27
+    },
+    "adx": 31.34296567970521,
+    "mfi": 61.11636232081709,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SOUTHEASTB",
     "rank": 8,
     "rankChange": -2,
+    "riskReward": null,
+    "adx": 35.00367648394985,
+    "mfi": 54.91972613911938,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PUBALIBANK",
+    "rank": 9,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 1.9
     },
@@ -84,7 +95,7 @@
   },
   {
     "code": "MLDYEING",
-    "rank": 9,
+    "rank": 10,
     "rankChange": -1,
     "riskReward": {
       "ratio": 0.7
@@ -92,17 +103,5 @@
     "adx": 47.94048888480223,
     "mfi": 37.36794309910357,
     "obvTrend": "falling"
-  },
-  {
-    "code": "DGIC",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 7.3
-    },
-    "adx": 38.86320189553803,
-    "mfi": 54.39821426778868,
-    "obvTrend": "flat"
   }
 ]
