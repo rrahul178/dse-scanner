@@ -1,19 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-03",
-    "TRADING CODE": "AMANFEED",
-    "LTP*": "24.9",
-    "HIGH": "25",
-    "LOW": "24.5",
-    "OPENP*": "24.6",
-    "CLOSEP*": "24.9",
-    "YCP": "24.6",
-    "TRADE": "231",
-    "VALUE (mn)": "6.237",
-    "VOLUME": "252570"
-  },
-  {
     "#": "250",
     "DATE": "2025-08-04",
     "TRADING CODE": "AMANFEED",

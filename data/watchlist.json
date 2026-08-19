@@ -2,107 +2,107 @@
   {
     "code": "FEDERALINS",
     "rank": 1,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 22.587910754547938,
+    "adx": 22.58790996080895,
     "mfi": 85.62773269189807,
     "obvTrend": "rising"
   },
   {
-    "code": "IPDC",
+    "code": "ENVOYTEX",
     "rank": 2,
     "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 20.08563988493997,
-    "mfi": 74.70088560789011,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 3,
-    "rankChange": 1,
     "riskReward": null,
-    "adx": 23.814828936328706,
+    "adx": 23.814832236058027,
     "mfi": 72.90105422494497,
     "obvTrend": "rising"
   },
   {
-    "code": "GLOBALINS",
+    "code": "IPDC",
+    "rank": 3,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 20.085639417592425,
+    "mfi": 74.70088560789011,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SONALIANSH",
     "rank": 4,
-    "rankChange": 3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 2.9
+    },
+    "adx": 26.268604052060972,
+    "mfi": 64.19497271129376,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "MEGHNAINS",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 4.2
+    },
+    "adx": 30.67906014827096,
+    "mfi": 58.2156105021781,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "GLOBALINS",
+    "rank": 6,
+    "rankChange": -2,
     "riskReward": {
       "ratio": 0.3
     },
-    "adx": 33.59123592669868,
+    "adx": 33.591235478394864,
     "mfi": 70.61551103036194,
     "obvTrend": "flat"
   },
   {
     "code": "RUNNERAUTO",
-    "rank": 5,
-    "rankChange": -4,
+    "rank": 7,
+    "rankChange": -2,
     "riskReward": null,
-    "adx": 31.2220455256628,
+    "adx": 31.22204509189221,
     "mfi": 73.65143451998097,
     "obvTrend": "rising"
   },
   {
-    "code": "SOUTHEASTB",
-    "rank": 6,
-    "rankChange": 3,
-    "riskReward": null,
-    "adx": 35.00367931924456,
-    "mfi": 54.91972613911938,
-    "obvTrend": "rising"
-  },
-  {
     "code": "PUBALIBANK",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rank": 8,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 1.9
     },
-    "adx": 29.148234739439065,
+    "adx": 29.148233714674014,
     "mfi": 59.70511446764404,
     "obvTrend": "falling"
   },
   {
+    "code": "SOUTHEASTB",
+    "rank": 9,
+    "rankChange": -3,
+    "riskReward": null,
+    "adx": 35.00367648394985,
+    "mfi": 54.91972613911938,
+    "obvTrend": "rising"
+  },
+  {
     "code": "ACMEPL",
-    "rank": 8,
+    "rank": 10,
     "rankChange": -2,
     "riskReward": {
       "ratio": 1.4
     },
-    "adx": 24.482656492970797,
+    "adx": 24.482658766669406,
     "mfi": 77.55677080465135,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "MLDYEING",
-    "rank": 9,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 47.9404883559694,
-    "mfi": 37.36794309910357,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "BXPHARMA",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 2
-    },
-    "adx": 17.769968754015714,
-    "mfi": 60.79299177740004,
     "obvTrend": "falling"
   }
 ]
