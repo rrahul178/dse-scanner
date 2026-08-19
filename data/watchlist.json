@@ -2,7 +2,7 @@
   {
     "code": "IPDC",
     "rank": 1,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -22,7 +22,7 @@
   {
     "code": "GLOBALINS",
     "rank": 3,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -33,7 +33,7 @@
   {
     "code": "RUNNERAUTO",
     "rank": 4,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 31.22204509189221,
     "mfi": 73.65143451998097,
@@ -42,7 +42,7 @@
   {
     "code": "SOUTHEASTB",
     "rank": 5,
-    "rankChange": 4,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 35.00367648394985,
     "mfi": 54.91972613911938,
@@ -51,7 +51,7 @@
   {
     "code": "PUBALIBANK",
     "rank": 6,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.9
     },
@@ -62,7 +62,7 @@
   {
     "code": "ACMEPL",
     "rank": 7,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.4
     },
@@ -73,8 +73,7 @@
   {
     "code": "MLDYEING",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.7
     },
@@ -85,8 +84,7 @@
   {
     "code": "DHAKABANK",
     "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.7
     },
@@ -95,15 +93,15 @@
     "obvTrend": "flat"
   },
   {
-    "code": "DGIC",
+    "code": "MHSML",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 7.3
+      "ratio": 6.3
     },
-    "adx": 38.86320189553803,
-    "mfi": 54.39821426778868,
-    "obvTrend": "flat"
+    "adx": 12.89497109724614,
+    "mfi": 63.35238738889372,
+    "obvTrend": "falling"
   }
 ]
