@@ -1,28 +1,8 @@
 [
   {
-    "code": "FEDERALINS",
-    "rank": 1,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 22.58790996080895,
-    "mfi": 85.62773269189807,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 2,
-    "rankChange": 1,
-    "riskReward": null,
-    "adx": 23.814832236058027,
-    "mfi": 72.90105422494497,
-    "obvTrend": "rising"
-  },
-  {
     "code": "IPDC",
-    "rank": 3,
-    "rankChange": -1,
+    "rank": 1,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.1
     },
@@ -31,33 +11,18 @@
     "obvTrend": "rising"
   },
   {
-    "code": "SONALIANSH",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 2.9
-    },
-    "adx": 26.268604052060972,
-    "mfi": 64.19497271129376,
+    "code": "ENVOYTEX",
+    "rank": 2,
+    "rankChange": 0,
+    "riskReward": null,
+    "adx": 23.814832236058027,
+    "mfi": 72.90105422494497,
     "obvTrend": "rising"
   },
   {
-    "code": "MEGHNAINS",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 4.2
-    },
-    "adx": 30.67906014827096,
-    "mfi": 58.2156105021781,
-    "obvTrend": "flat"
-  },
-  {
     "code": "GLOBALINS",
-    "rank": 6,
-    "rankChange": -2,
+    "rank": 3,
+    "rankChange": 3,
     "riskReward": {
       "ratio": 0.3
     },
@@ -67,17 +32,26 @@
   },
   {
     "code": "RUNNERAUTO",
-    "rank": 7,
-    "rankChange": -2,
+    "rank": 4,
+    "rankChange": 3,
     "riskReward": null,
     "adx": 31.22204509189221,
     "mfi": 73.65143451998097,
     "obvTrend": "rising"
   },
   {
+    "code": "SOUTHEASTB",
+    "rank": 5,
+    "rankChange": 4,
+    "riskReward": null,
+    "adx": 35.00367648394985,
+    "mfi": 54.91972613911938,
+    "obvTrend": "rising"
+  },
+  {
     "code": "PUBALIBANK",
-    "rank": 8,
-    "rankChange": -1,
+    "rank": 6,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 1.9
     },
@@ -86,23 +60,50 @@
     "obvTrend": "falling"
   },
   {
-    "code": "SOUTHEASTB",
-    "rank": 9,
-    "rankChange": -3,
-    "riskReward": null,
-    "adx": 35.00367648394985,
-    "mfi": 54.91972613911938,
-    "obvTrend": "rising"
-  },
-  {
     "code": "ACMEPL",
-    "rank": 10,
-    "rankChange": -2,
+    "rank": 7,
+    "rankChange": 3,
     "riskReward": {
       "ratio": 1.4
     },
     "adx": 24.482658766669406,
     "mfi": 77.55677080465135,
     "obvTrend": "falling"
+  },
+  {
+    "code": "MLDYEING",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 47.94048888480223,
+    "mfi": 37.36794309910357,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "DHAKABANK",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 27.03117825242261,
+    "mfi": 57.43023123575656,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "DGIC",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 7.3
+    },
+    "adx": 38.86320189553803,
+    "mfi": 54.39821426778868,
+    "obvTrend": "flat"
   }
 ]
