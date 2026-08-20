@@ -24,8 +24,7 @@
   {
     "code": "DAFODILCOM",
     "rank": 3,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.1
     },
@@ -34,10 +33,21 @@
     "obvTrend": "flat"
   },
   {
-    "code": "KTL",
+    "code": "SAPORTL",
     "rank": 4,
     "rankChange": null,
     "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 30.501357116537324,
+    "mfi": 80.49618848035854,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "KTL",
+    "rank": 5,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.5
     },
@@ -47,7 +57,7 @@
   },
   {
     "code": "BXPHARMA",
-    "rank": 5,
+    "rank": 6,
     "rankChange": -1,
     "riskReward": {
       "ratio": 0.8
@@ -57,20 +67,9 @@
     "obvTrend": "falling"
   },
   {
-    "code": "ACIFORMULA",
-    "rank": 6,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 23
-    },
-    "adx": 29.24654216265293,
-    "mfi": 60.37660277882134,
-    "obvTrend": "rising"
-  },
-  {
     "code": "ACMEPL",
     "rank": 7,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.7
     },
@@ -81,7 +80,7 @@
   {
     "code": "DSHGARME",
     "rank": 8,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 51.3805257456449,
     "mfi": 62.463367602418074,
@@ -90,7 +89,7 @@
   {
     "code": "RELIANCE1",
     "rank": 9,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
