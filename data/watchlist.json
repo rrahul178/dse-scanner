@@ -1,109 +1,110 @@
 [
   {
-    "code": "IPDC",
+    "code": "SICL",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.8
+      "ratio": 0.4
     },
-    "adx": 20.39952696448333,
-    "mfi": 72.21247336157617,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SAPORTL",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 30.501357116537324,
-    "mfi": 80.49618848035854,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "BXPHARMA",
-    "rank": 3,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.8
-    },
-    "adx": 17.245629898291167,
-    "mfi": 60.395724216501904,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "KTL",
-    "rank": 4,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 36.527990735018754,
-    "mfi": 70.63962093279515,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "DSHGARME",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 51.3805257456449,
-    "mfi": 62.463367602418074,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "RELIANCE1",
-    "rank": 6,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 27.89448839628297,
-    "mfi": 72.92757005807607,
+    "adx": 15.45396547909779,
+    "mfi": 75.18136220259983,
     "obvTrend": "rising"
   },
   {
     "code": "TECHNODRUG",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 2,
+    "rankChange": 5,
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 4.1
     },
-    "adx": 20.074359390325675,
-    "mfi": 40.08004308797101,
+    "adx": 20.318269145345344,
+    "mfi": 36.13422209306841,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SOUTHEASTB",
+    "rank": 3,
+    "rankChange": 7,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 33.40258917561455,
+    "mfi": 46.374274176334126,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "PTL",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 17.56229112659153,
+    "mfi": 67.0562827348443,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PHENIXINS",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 37.97472938379499,
+    "mfi": 80.9709031608708,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SHARPIND",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 50.63779723391246,
+    "mfi": 69.58084382088465,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BXPHARMA",
+    "rank": 7,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 1
+    },
+    "adx": 16.758745355814337,
+    "mfi": 67.5151343329894,
     "obvTrend": "falling"
   },
   {
     "code": "GLOBALINS",
     "rank": 8,
     "rankChange": 0,
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 33.189071759755926,
-    "mfi": 63.02678615754822,
+    "riskReward": null,
+    "adx": 32.96591799277844,
+    "mfi": 67.9701930273238,
     "obvTrend": "rising"
   },
   {
     "code": "AMANFEED",
     "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
-      "ratio": 1.6
+      "ratio": 1.5
     },
-    "adx": 34.54542166475731,
-    "mfi": 50.870319806933054,
+    "adx": 34.545832275743905,
+    "mfi": 53.40856174971325,
     "obvTrend": "falling"
   },
   {
-    "code": "SOUTHEASTB",
+    "code": "DSHGARME",
     "rank": 10,
-    "rankChange": -1,
+    "rankChange": -5,
     "riskReward": null,
-    "adx": 34.79206833480142,
-    "mfi": 57.73682477334346,
+    "adx": 52.37879907316791,
+    "mfi": 60.15987830038479,
     "obvTrend": "rising"
   }
 ]
