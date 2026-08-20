@@ -2,7 +2,7 @@
   {
     "code": "IPDC",
     "rank": 1,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.8
     },
@@ -13,7 +13,7 @@
   {
     "code": "SAPORTL",
     "rank": 2,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -24,7 +24,7 @@
   {
     "code": "KTL",
     "rank": 3,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.5
     },
@@ -35,7 +35,7 @@
   {
     "code": "BXPHARMA",
     "rank": 4,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.8
     },
@@ -46,7 +46,7 @@
   {
     "code": "DSHGARME",
     "rank": 5,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 51.3805257456449,
     "mfi": 62.463367602418074,
@@ -55,7 +55,7 @@
   {
     "code": "RELIANCE1",
     "rank": 6,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -66,7 +66,7 @@
   {
     "code": "TECHNODRUG",
     "rank": 7,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -75,39 +75,37 @@
     "obvTrend": "falling"
   },
   {
-    "code": "CAPITECGBF",
+    "code": "GLOBALINS",
     "rank": 8,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0
     },
-    "adx": 55.03263166909204,
-    "mfi": 60.67822043017718,
-    "obvTrend": "falling"
+    "adx": 33.189071759755926,
+    "mfi": 63.02678615754822,
+    "obvTrend": "rising"
   },
   {
-    "code": "AMANFEED",
+    "code": "SOUTHEASTB",
     "rank": 9,
     "rankChange": null,
     "status": "new",
-    "riskReward": {
-      "ratio": 1.6
-    },
-    "adx": 34.54542166475731,
-    "mfi": 50.870319806933054,
-    "obvTrend": "falling"
+    "riskReward": null,
+    "adx": 34.79206833480142,
+    "mfi": 57.73682477334346,
+    "obvTrend": "rising"
   },
   {
-    "code": "FEKDIL",
+    "code": "FARCHEM",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 49
+      "ratio": 1.8
     },
-    "adx": 39.565450564931176,
-    "mfi": 35.13594629149864,
+    "adx": 36.236548504049274,
+    "mfi": 29.41261909715348,
     "obvTrend": "falling"
   }
 ]
