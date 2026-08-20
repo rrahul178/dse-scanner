@@ -35,8 +35,7 @@
   {
     "code": "SAPORTL",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -47,7 +46,7 @@
   {
     "code": "KTL",
     "rank": 5,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.5
     },
@@ -58,7 +57,7 @@
   {
     "code": "BXPHARMA",
     "rank": 6,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.8
     },
