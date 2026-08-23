@@ -2,7 +2,7 @@
   {
     "code": "RAKCERAMIC",
     "rank": 1,
-    "rankChange": 6,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -13,8 +13,7 @@
   {
     "code": "FARCHEM",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -25,7 +24,7 @@
   {
     "code": "SOUTHEASTB",
     "rank": 3,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 32.1123718903277,
     "mfi": 42.081948292136566,
@@ -34,8 +33,7 @@
   {
     "code": "IPDC",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 2.2
     },
@@ -46,7 +44,7 @@
   {
     "code": "PTL",
     "rank": 5,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -57,7 +55,7 @@
   {
     "code": "TECHNODRUG",
     "rank": 6,
-    "rankChange": -3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -68,7 +66,7 @@
   {
     "code": "SHARPIND",
     "rank": 7,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.5
     },
@@ -79,8 +77,7 @@
   {
     "code": "ENVOYTEX",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -91,8 +88,7 @@
   {
     "code": "MALEKSPIN",
     "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 39.171759797524665,
     "mfi": 61.991890728847274,
