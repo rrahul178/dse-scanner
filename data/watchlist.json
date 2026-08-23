@@ -11,20 +11,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "PARAMOUNT",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 24.27643900654758,
-    "mfi": 69.72707174382668,
-    "obvTrend": "rising"
-  },
-  {
     "code": "FEDERALINS",
-    "rank": 3,
-    "rankChange": 0,
+    "rank": 2,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0
     },
@@ -34,8 +23,8 @@
   },
   {
     "code": "TECHNODRUG",
-    "rank": 4,
-    "rankChange": 0,
+    "rank": 3,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 4.1
     },
@@ -45,8 +34,8 @@
   },
   {
     "code": "SOUTHEASTB",
-    "rank": 5,
-    "rankChange": 0,
+    "rank": 4,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -56,8 +45,8 @@
   },
   {
     "code": "JAMUNABANK",
-    "rank": 6,
-    "rankChange": 0,
+    "rank": 5,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 2.2
     },
@@ -66,18 +55,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "GBBPOWER",
-    "rank": 7,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 54.69895382791433,
-    "mfi": 83.69471514753076,
-    "obvTrend": "rising"
-  },
-  {
     "code": "PTL",
-    "rank": 8,
-    "rankChange": 0,
+    "rank": 6,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.1
     },
@@ -87,8 +67,8 @@
   },
   {
     "code": "RAKCERAMIC",
-    "rank": 9,
-    "rankChange": 0,
+    "rank": 7,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.4
     },
@@ -98,13 +78,37 @@
   },
   {
     "code": "MONNOFABR",
-    "rank": 10,
-    "rankChange": 0,
+    "rank": 8,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 1
     },
     "adx": 20.953255748451518,
     "mfi": 51.32900193062664,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SHARPIND",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 50.637796850147176,
+    "mfi": 69.58084382088465,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BXPHARMA",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1
+    },
+    "adx": 16.758748782147233,
+    "mfi": 67.5151343329894,
     "obvTrend": "falling"
   }
 ]
