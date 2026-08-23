@@ -46,8 +46,7 @@
   {
     "code": "SOUTHEASTB",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -58,8 +57,7 @@
   {
     "code": "JAMUNABANK",
     "rank": 6,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 2.2
     },
@@ -70,7 +68,7 @@
   {
     "code": "GBBPOWER",
     "rank": 7,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 54.69895382791433,
     "mfi": 83.69471514753076,
@@ -79,7 +77,7 @@
   {
     "code": "PTL",
     "rank": 8,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -90,7 +88,7 @@
   {
     "code": "RAKCERAMIC",
     "rank": 9,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
@@ -101,7 +99,7 @@
   {
     "code": "MONNOFABR",
     "rank": 10,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1
     },
