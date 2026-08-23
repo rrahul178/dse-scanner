@@ -11,10 +11,21 @@
     "obvTrend": "rising"
   },
   {
-    "code": "AAMRANET",
+    "code": "PARAMOUNT",
     "rank": 2,
     "rankChange": null,
     "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 24.27643900654758,
+    "mfi": 69.72707174382668,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "AAMRANET",
+    "rank": 3,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.3
     },
@@ -24,9 +35,8 @@
   },
   {
     "code": "FEDERALINS",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
+    "rank": 4,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0
     },
@@ -36,8 +46,8 @@
   },
   {
     "code": "TECHNODRUG",
-    "rank": 4,
-    "rankChange": -2,
+    "rank": 5,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 4.1
     },
@@ -47,9 +57,8 @@
   },
   {
     "code": "GBBPOWER",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rank": 6,
+    "rankChange": -1,
     "riskReward": null,
     "adx": 54.69895382791433,
     "mfi": 83.69471514753076,
@@ -57,8 +66,8 @@
   },
   {
     "code": "PTL",
-    "rank": 6,
-    "rankChange": -2,
+    "rank": 7,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -68,9 +77,8 @@
   },
   {
     "code": "RAKCERAMIC",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rank": 8,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.4
     },
@@ -80,9 +88,8 @@
   },
   {
     "code": "MONNOFABR",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rank": 9,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 1
     },
@@ -91,23 +98,13 @@
     "obvTrend": "falling"
   },
   {
-    "code": "SHARPIND",
-    "rank": 9,
-    "rankChange": -3,
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 50.637796850147176,
-    "mfi": 69.58084382088465,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "GLOBALINS",
+    "code": "PHENIXINS",
     "rank": 10,
-    "rankChange": -2,
+    "rankChange": null,
+    "status": "new",
     "riskReward": null,
-    "adx": 32.96592311961081,
-    "mfi": 67.9701930273238,
+    "adx": 37.9747315237699,
+    "mfi": 80.9709031608708,
     "obvTrend": "rising"
   }
 ]
