@@ -1,33 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-06",
-    "TRADING CODE": "RELIANCE1",
-    "LTP*": "16.6",
-    "HIGH": "16.9",
-    "LOW": "16.4",
-    "OPENP*": "16.8",
-    "CLOSEP*": "16.6",
-    "YCP": "17",
-    "TRADE": "276",
-    "VALUE (mn)": "9.487",
-    "VOLUME": "571953"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-07",
-    "TRADING CODE": "RELIANCE1",
-    "LTP*": "16",
-    "HIGH": "16.6",
-    "LOW": "16",
-    "OPENP*": "16.5",
-    "CLOSEP*": "16",
-    "YCP": "16.6",
-    "TRADE": "222",
-    "VALUE (mn)": "6.384",
-    "VOLUME": "395595"
-  },
-  {
     "#": "249",
     "DATE": "2025-08-10",
     "TRADING CODE": "RELIANCE1",

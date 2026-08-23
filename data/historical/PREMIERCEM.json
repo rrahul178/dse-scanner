@@ -1,33 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-06",
-    "TRADING CODE": "PREMIERCEM",
-    "LTP*": "48.4",
-    "HIGH": "49.4",
-    "LOW": "47.3",
-    "OPENP*": "48",
-    "CLOSEP*": "48.4",
-    "YCP": "47.3",
-    "TRADE": "366",
-    "VALUE (mn)": "10",
-    "VOLUME": "206425"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-07",
-    "TRADING CODE": "PREMIERCEM",
-    "LTP*": "48",
-    "HIGH": "49.1",
-    "LOW": "47.9",
-    "OPENP*": "48.5",
-    "CLOSEP*": "48",
-    "YCP": "48.4",
-    "TRADE": "164",
-    "VALUE (mn)": "3.229",
-    "VOLUME": "67129"
-  },
-  {
     "#": "249",
     "DATE": "2025-08-10",
     "TRADING CODE": "PREMIERCEM",

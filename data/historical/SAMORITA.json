@@ -1,33 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-06",
-    "TRADING CODE": "SAMORITA",
-    "LTP*": "68.1",
-    "HIGH": "69.2",
-    "LOW": "66.5",
-    "OPENP*": "67",
-    "CLOSEP*": "68.1",
-    "YCP": "66.3",
-    "TRADE": "778",
-    "VALUE (mn)": "16.003",
-    "VOLUME": "234791"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-07",
-    "TRADING CODE": "SAMORITA",
-    "LTP*": "66.8",
-    "HIGH": "69.5",
-    "LOW": "66.5",
-    "OPENP*": "68.2",
-    "CLOSEP*": "66.8",
-    "YCP": "68.1",
-    "TRADE": "608",
-    "VALUE (mn)": "9.377",
-    "VOLUME": "137969"
-  },
-  {
     "#": "249",
     "DATE": "2025-08-10",
     "TRADING CODE": "SAMORITA",

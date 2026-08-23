@@ -1,33 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-06",
-    "TRADING CODE": "MALEKSPIN",
-    "LTP*": "30.4",
-    "HIGH": "30.6",
-    "LOW": "28.2",
-    "OPENP*": "28.2",
-    "CLOSEP*": "30.4",
-    "YCP": "28",
-    "TRADE": "4144",
-    "VALUE (mn)": "219.719",
-    "VOLUME": "7395418"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-07",
-    "TRADING CODE": "MALEKSPIN",
-    "LTP*": "30.4",
-    "HIGH": "31.5",
-    "LOW": "30",
-    "OPENP*": "30.6",
-    "CLOSEP*": "30.4",
-    "YCP": "30.4",
-    "TRADE": "3349",
-    "VALUE (mn)": "165.284",
-    "VOLUME": "5390001"
-  },
-  {
     "#": "249",
     "DATE": "2025-08-10",
     "TRADING CODE": "MALEKSPIN",

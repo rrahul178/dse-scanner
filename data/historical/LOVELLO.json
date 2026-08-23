@@ -1,33 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-06",
-    "TRADING CODE": "LOVELLO",
-    "LTP*": "92.6",
-    "HIGH": "93.3",
-    "LOW": "90.1",
-    "OPENP*": "91",
-    "CLOSEP*": "92.6",
-    "YCP": "90.7",
-    "TRADE": "1864",
-    "VALUE (mn)": "74.602",
-    "VOLUME": "808615"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-07",
-    "TRADING CODE": "LOVELLO",
-    "LTP*": "90.7",
-    "HIGH": "92.7",
-    "LOW": "90.3",
-    "OPENP*": "92.5",
-    "CLOSEP*": "90.7",
-    "YCP": "92.6",
-    "TRADE": "1279",
-    "VALUE (mn)": "39.496",
-    "VOLUME": "432584"
-  },
-  {
     "#": "249",
     "DATE": "2025-08-10",
     "TRADING CODE": "LOVELLO",

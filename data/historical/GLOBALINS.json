@@ -1,33 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-06",
-    "TRADING CODE": "GLOBALINS",
-    "LTP*": "28.5",
-    "HIGH": "28.8",
-    "LOW": "28.2",
-    "OPENP*": "28.5",
-    "CLOSEP*": "28.5",
-    "YCP": "28.4",
-    "TRADE": "307",
-    "VALUE (mn)": "10.421",
-    "VOLUME": "366279"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-07",
-    "TRADING CODE": "GLOBALINS",
-    "LTP*": "27.8",
-    "HIGH": "28.7",
-    "LOW": "27.7",
-    "OPENP*": "28.7",
-    "CLOSEP*": "27.8",
-    "YCP": "28.5",
-    "TRADE": "302",
-    "VALUE (mn)": "7.029",
-    "VOLUME": "250077"
-  },
-  {
     "#": "249",
     "DATE": "2025-08-10",
     "TRADING CODE": "GLOBALINS",

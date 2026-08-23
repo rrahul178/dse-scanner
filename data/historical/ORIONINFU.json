@@ -1,33 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-06",
-    "TRADING CODE": "ORIONINFU",
-    "LTP*": "377.3",
-    "HIGH": "385.9",
-    "LOW": "368.5",
-    "OPENP*": "368.5",
-    "CLOSEP*": "377.3",
-    "YCP": "368.1",
-    "TRADE": "3162",
-    "VALUE (mn)": "139.644",
-    "VOLUME": "368328"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-07",
-    "TRADING CODE": "ORIONINFU",
-    "LTP*": "388",
-    "HIGH": "389",
-    "LOW": "377.1",
-    "OPENP*": "379",
-    "CLOSEP*": "388",
-    "YCP": "377.3",
-    "TRADE": "2837",
-    "VALUE (mn)": "126.22",
-    "VOLUME": "329192"
-  },
-  {
     "#": "249",
     "DATE": "2025-08-10",
     "TRADING CODE": "ORIONINFU",

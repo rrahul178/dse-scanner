@@ -1,33 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-06",
-    "TRADING CODE": "ENVOYTEX",
-    "LTP*": "45",
-    "HIGH": "45.5",
-    "LOW": "44.7",
-    "OPENP*": "45.5",
-    "CLOSEP*": "45",
-    "YCP": "44.5",
-    "TRADE": "311",
-    "VALUE (mn)": "8.29",
-    "VOLUME": "183960"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-07",
-    "TRADING CODE": "ENVOYTEX",
-    "LTP*": "44.8",
-    "HIGH": "45.6",
-    "LOW": "44.6",
-    "OPENP*": "45.5",
-    "CLOSEP*": "44.8",
-    "YCP": "45",
-    "TRADE": "370",
-    "VALUE (mn)": "8.669",
-    "VOLUME": "192262"
-  },
-  {
     "#": "249",
     "DATE": "2025-08-10",
     "TRADING CODE": "ENVOYTEX",

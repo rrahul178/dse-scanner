@@ -1,33 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-06",
-    "TRADING CODE": "TRUSTBANK",
-    "LTP*": "21",
-    "HIGH": "22",
-    "LOW": "20.8",
-    "OPENP*": "21.6",
-    "CLOSEP*": "21",
-    "YCP": "21.3",
-    "TRADE": "1056",
-    "VALUE (mn)": "55.218",
-    "VOLUME": "2612433"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-07",
-    "TRADING CODE": "TRUSTBANK",
-    "LTP*": "20.3",
-    "HIGH": "21.3",
-    "LOW": "20.2",
-    "OPENP*": "21.1",
-    "CLOSEP*": "20.3",
-    "YCP": "21",
-    "TRADE": "989",
-    "VALUE (mn)": "38.601",
-    "VOLUME": "1871698"
-  },
-  {
     "#": "249",
     "DATE": "2025-08-10",
     "TRADING CODE": "TRUSTBANK",
