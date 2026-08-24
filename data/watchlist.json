@@ -24,7 +24,7 @@
   {
     "code": "PTL",
     "rank": 3,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -35,7 +35,7 @@
   {
     "code": "TECHNODRUG",
     "rank": 4,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -46,7 +46,7 @@
   {
     "code": "IPDC",
     "rank": 5,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 2.2
     },
@@ -57,7 +57,7 @@
   {
     "code": "SHARPIND",
     "rank": 6,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.5
     },
@@ -68,7 +68,7 @@
   {
     "code": "ENVOYTEX",
     "rank": 7,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -77,34 +77,36 @@
     "obvTrend": "rising"
   },
   {
-    "code": "MALEKSPIN",
+    "code": "ACMEPL",
     "rank": 8,
-    "rankChange": 1,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.1
+    },
+    "adx": 21.417821632060953,
+    "mfi": 71.0176167300211,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "ACIFORMULA",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.1
+    },
+    "adx": 25.919490588371414,
+    "mfi": 50.124550560369244,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "MALEKSPIN",
+    "rank": 10,
+    "rankChange": -2,
     "riskReward": null,
     "adx": 39.171759797524665,
     "mfi": 61.991890728847274,
     "obvTrend": "rising"
-  },
-  {
-    "code": "GBBPOWER",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 53.310785847527086,
-    "mfi": 83.67928504220468,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "AMANFEED",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 33.32612955391354,
-    "mfi": 53.64437483780046,
-    "obvTrend": "falling"
   }
 ]
