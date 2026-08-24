@@ -22,9 +22,19 @@
     "obvTrend": "rising"
   },
   {
-    "code": "PTL",
+    "code": "SOUTHEASTB",
     "rank": 3,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 32.1123718903277,
+    "mfi": 42.081948292136566,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PTL",
+    "rank": 4,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -34,8 +44,8 @@
   },
   {
     "code": "TECHNODRUG",
-    "rank": 4,
-    "rankChange": 1,
+    "rank": 5,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -45,7 +55,7 @@
   },
   {
     "code": "IPDC",
-    "rank": 5,
+    "rank": 6,
     "rankChange": -1,
     "riskReward": {
       "ratio": 2.2
@@ -56,8 +66,8 @@
   },
   {
     "code": "SHARPIND",
-    "rank": 6,
-    "rankChange": 0,
+    "rank": 7,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.5
     },
@@ -67,8 +77,8 @@
   },
   {
     "code": "ENVOYTEX",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 8,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -78,8 +88,8 @@
   },
   {
     "code": "ACMEPL",
-    "rank": 8,
-    "rankChange": 0,
+    "rank": 9,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 1.1
     },
@@ -89,22 +99,13 @@
   },
   {
     "code": "ACIFORMULA",
-    "rank": 9,
-    "rankChange": 0,
+    "rank": 10,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 1.1
     },
     "adx": 25.919490588371414,
     "mfi": 50.124550560369244,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "MALEKSPIN",
-    "rank": 10,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 39.171759797524665,
-    "mfi": 61.991890728847274,
     "obvTrend": "rising"
   }
 ]
