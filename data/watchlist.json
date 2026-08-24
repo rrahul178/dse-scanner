@@ -33,26 +33,26 @@
     "obvTrend": "rising"
   },
   {
-    "code": "IPDC",
+    "code": "TECHNODRUG",
     "rank": 4,
     "rankChange": 1,
-    "riskReward": {
-      "ratio": 2.2
-    },
-    "adx": 19.407487629404336,
-    "mfi": 61.347895028449415,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "TECHNODRUG",
-    "rank": 5,
-    "rankChange": -1,
     "riskReward": {
       "ratio": 0.1
     },
     "adx": 20.295917554042465,
     "mfi": 37.485011511660794,
     "obvTrend": "flat"
+  },
+  {
+    "code": "IPDC",
+    "rank": 5,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 2.2
+    },
+    "adx": 19.407487629404336,
+    "mfi": 61.347895028449415,
+    "obvTrend": "rising"
   },
   {
     "code": "SHARPIND",
