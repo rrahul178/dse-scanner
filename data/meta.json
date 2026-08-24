@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-08-23T09:05:31.767Z",
-  "lastScrapedAt": "2026-08-23T09:05:31.767Z",
+  "lastAttemptedAt": "2026-08-24T04:44:44.667Z",
+  "lastScrapedAt": "2026-08-24T04:44:44.667Z",
   "candidateCount": 40,
   "watchlist": [
     "RAKCERAMIC",
     "FARCHEM",
-    "SOUTHEASTB",
-    "IPDC",
     "PTL",
     "TECHNODRUG",
+    "IPDC",
     "SHARPIND",
     "ENVOYTEX",
     "MALEKSPIN",
-    "BXPHARMA"
+    "GBBPOWER",
+    "AMANFEED"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false

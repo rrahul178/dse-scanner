@@ -22,29 +22,9 @@
     "obvTrend": "rising"
   },
   {
-    "code": "SOUTHEASTB",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 32.1123718903277,
-    "mfi": 42.081948292136566,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "IPDC",
-    "rank": 4,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 2.2
-    },
-    "adx": 19.407487629404336,
-    "mfi": 61.347895028449415,
-    "obvTrend": "rising"
-  },
-  {
     "code": "PTL",
-    "rank": 5,
-    "rankChange": 0,
+    "rank": 3,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.1
     },
@@ -54,8 +34,8 @@
   },
   {
     "code": "TECHNODRUG",
-    "rank": 6,
-    "rankChange": 0,
+    "rank": 4,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.1
     },
@@ -64,9 +44,20 @@
     "obvTrend": "flat"
   },
   {
+    "code": "IPDC",
+    "rank": 5,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 2.2
+    },
+    "adx": 19.407487629404336,
+    "mfi": 61.347895028449415,
+    "obvTrend": "rising"
+  },
+  {
     "code": "SHARPIND",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 6,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.5
     },
@@ -76,8 +67,8 @@
   },
   {
     "code": "ENVOYTEX",
-    "rank": 8,
-    "rankChange": 0,
+    "rank": 7,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.2
     },
@@ -87,22 +78,33 @@
   },
   {
     "code": "MALEKSPIN",
-    "rank": 9,
-    "rankChange": 0,
+    "rank": 8,
+    "rankChange": 1,
     "riskReward": null,
     "adx": 39.171759797524665,
     "mfi": 61.991890728847274,
     "obvTrend": "rising"
   },
   {
-    "code": "BXPHARMA",
+    "code": "GBBPOWER",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 53.310785847527086,
+    "mfi": 83.67928504220468,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "AMANFEED",
     "rank": 10,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 4.4
+      "ratio": 0.7
     },
-    "adx": 17.498862419466978,
-    "mfi": 58.85840266110739,
+    "adx": 33.32612955391354,
+    "mfi": 53.64437483780046,
     "obvTrend": "falling"
   }
 ]
