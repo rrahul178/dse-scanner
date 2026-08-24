@@ -1,111 +1,115 @@
 [
   {
-    "code": "RAKCERAMIC",
+    "code": "ACMEPL",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": 8,
     "riskReward": {
-      "ratio": 0.6
+      "ratio": 0.7
     },
-    "adx": 22.893364376346927,
-    "mfi": 55.27012481138908,
-    "obvTrend": "rising"
+    "adx": 20.11772085237437,
+    "mfi": 69.37062511591283,
+    "obvTrend": "falling"
   },
   {
-    "code": "FARCHEM",
+    "code": "RAKCERAMIC",
     "rank": 2,
-    "rankChange": 0,
+    "rankChange": -1,
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.3
     },
-    "adx": 36.07258018668047,
-    "mfi": 49.443537830799855,
+    "adx": 22.76611928474005,
+    "mfi": 66.936964460543,
     "obvTrend": "rising"
   },
   {
-    "code": "SOUTHEASTB",
+    "code": "GBBPOWER",
     "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": null,
-    "adx": 32.1123718903277,
-    "mfi": 42.081948292136566,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "PTL",
-    "rank": 4,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 18.655221564570073,
-    "mfi": 74.28802386188465,
+    "adx": 52.74587104007129,
+    "mfi": 84.70684984667854,
     "obvTrend": "rising"
   },
   {
     "code": "TECHNODRUG",
-    "rank": 5,
-    "rankChange": -1,
+    "rank": 4,
+    "rankChange": 1,
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 1.8
     },
-    "adx": 20.295917554042465,
-    "mfi": 37.485011511660794,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "IPDC",
-    "rank": 6,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 2.2
-    },
-    "adx": 19.407487629404336,
-    "mfi": 61.347895028449415,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SHARPIND",
-    "rank": 7,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 47.265157880895615,
-    "mfi": 70.76210598403652,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 8,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 24.809662711638826,
-    "mfi": 59.87452640574891,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ACMEPL",
-    "rank": 9,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 1.1
-    },
-    "adx": 21.417821632060953,
-    "mfi": 71.0176167300211,
+    "adx": 19.01618574514089,
+    "mfi": 39.0938716868255,
     "obvTrend": "falling"
   },
   {
-    "code": "ACIFORMULA",
-    "rank": 10,
-    "rankChange": -1,
+    "code": "JAMUNABANK",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 1.1
+      "ratio": 0.6
     },
-    "adx": 25.919490588371414,
-    "mfi": 50.124550560369244,
+    "adx": 22.98456107160798,
+    "mfi": 49.637722624338195,
     "obvTrend": "rising"
+  },
+  {
+    "code": "PTL",
+    "rank": 6,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 20.010978118394416,
+    "mfi": 80.62075932853128,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BXPHARMA",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 36.8
+    },
+    "adx": 18.725292314120104,
+    "mfi": 63.51895029924262,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SAPORTL",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 32.04898085607648,
+    "mfi": 68.35783347198976,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BDLAMPS",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 38.927266370922794,
+    "mfi": 78.38553365975858,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SOUTHEASTB",
+    "rank": 10,
+    "rankChange": -7,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 30.91429970500729,
+    "mfi": 37.80949022133672,
+    "obvTrend": "flat"
   }
 ]
