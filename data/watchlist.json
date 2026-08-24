@@ -33,26 +33,26 @@
     "obvTrend": "rising"
   },
   {
-    "code": "TECHNODRUG",
-    "rank": 4,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 20.295917554042465,
-    "mfi": 37.485011511660794,
-    "obvTrend": "flat"
-  },
-  {
     "code": "IPDC",
-    "rank": 5,
-    "rankChange": 0,
+    "rank": 4,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 2.2
     },
     "adx": 19.407487629404336,
     "mfi": 61.347895028449415,
     "obvTrend": "rising"
+  },
+  {
+    "code": "TECHNODRUG",
+    "rank": 5,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 20.295917554042465,
+    "mfi": 37.485011511660794,
+    "obvTrend": "flat"
   },
   {
     "code": "SHARPIND",
@@ -79,8 +79,7 @@
   {
     "code": "ACMEPL",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.1
     },
@@ -91,8 +90,7 @@
   {
     "code": "ACIFORMULA",
     "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.1
     },
@@ -103,7 +101,7 @@
   {
     "code": "MALEKSPIN",
     "rank": 10,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 39.171759797524665,
     "mfi": 61.991890728847274,
