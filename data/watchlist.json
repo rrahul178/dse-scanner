@@ -11,9 +11,21 @@
     "obvTrend": "falling"
   },
   {
-    "code": "GBBPOWER",
+    "code": "RAKCERAMIC",
     "rank": 2,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 22.76611928474005,
+    "mfi": 66.936964460543,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "GBBPOWER",
+    "rank": 3,
+    "rankChange": -1,
     "riskReward": null,
     "adx": 52.74587104007129,
     "mfi": 84.70684984667854,
@@ -21,8 +33,8 @@
   },
   {
     "code": "TECHNODRUG",
-    "rank": 3,
-    "rankChange": 0,
+    "rank": 4,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 1.8
     },
@@ -32,8 +44,8 @@
   },
   {
     "code": "DSHGARME",
-    "rank": 4,
-    "rankChange": 0,
+    "rank": 5,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.4
     },
@@ -43,8 +55,8 @@
   },
   {
     "code": "PTL",
-    "rank": 5,
-    "rankChange": 0,
+    "rank": 6,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -54,8 +66,8 @@
   },
   {
     "code": "BXPHARMA",
-    "rank": 6,
-    "rankChange": 0,
+    "rank": 7,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 36.8
     },
@@ -65,8 +77,8 @@
   },
   {
     "code": "SAPORTL",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 8,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.4
     },
@@ -76,8 +88,8 @@
   },
   {
     "code": "CAPITECGBF",
-    "rank": 8,
-    "rankChange": 0,
+    "rank": 9,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.4
     },
@@ -87,26 +99,13 @@
   },
   {
     "code": "BDLAMPS",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
+    "rank": 10,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.4
     },
     "adx": 38.927266370922794,
     "mfi": 78.38553365975858,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "FEDERALINS",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 21.255869189104992,
-    "mfi": 75.31578609091835,
     "obvTrend": "rising"
   }
 ]

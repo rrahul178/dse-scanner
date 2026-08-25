@@ -1,9 +1,10 @@
 {
-  "lastAttemptedAt": "2026-08-25T05:19:02.182Z",
-  "lastScrapedAt": "2026-08-25T05:19:02.182Z",
+  "lastAttemptedAt": "2026-08-25T05:59:22.028Z",
+  "lastScrapedAt": "2026-08-25T05:59:22.028Z",
   "candidateCount": 40,
   "watchlist": [
     "ACMEPL",
+    "RAKCERAMIC",
     "GBBPOWER",
     "TECHNODRUG",
     "DSHGARME",
@@ -11,8 +12,7 @@
     "BXPHARMA",
     "SAPORTL",
     "CAPITECGBF",
-    "BDLAMPS",
-    "FEDERALINS"
+    "BDLAMPS"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
