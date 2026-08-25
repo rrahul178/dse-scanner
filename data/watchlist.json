@@ -2,7 +2,7 @@
   {
     "code": "ACMEPL",
     "rank": 1,
-    "rankChange": 8,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.7
     },
@@ -11,21 +11,9 @@
     "obvTrend": "falling"
   },
   {
-    "code": "RAKCERAMIC",
-    "rank": 2,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 22.76611928474005,
-    "mfi": 66.936964460543,
-    "obvTrend": "rising"
-  },
-  {
     "code": "GBBPOWER",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
+    "rank": 2,
+    "rankChange": 1,
     "riskReward": null,
     "adx": 52.74587104007129,
     "mfi": 84.70684984667854,
@@ -33,7 +21,7 @@
   },
   {
     "code": "TECHNODRUG",
-    "rank": 4,
+    "rank": 3,
     "rankChange": 1,
     "riskReward": {
       "ratio": 1.8
@@ -43,21 +31,21 @@
     "obvTrend": "falling"
   },
   {
-    "code": "JAMUNABANK",
-    "rank": 5,
+    "code": "DSHGARME",
+    "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.6
+      "ratio": 0.4
     },
-    "adx": 22.98456107160798,
-    "mfi": 49.637722624338195,
+    "adx": 51.07924634428641,
+    "mfi": 55.913337608994674,
     "obvTrend": "rising"
   },
   {
     "code": "PTL",
-    "rank": 6,
-    "rankChange": -2,
+    "rank": 5,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.1
     },
@@ -67,9 +55,8 @@
   },
   {
     "code": "BXPHARMA",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rank": 6,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 36.8
     },
@@ -79,9 +66,8 @@
   },
   {
     "code": "SAPORTL",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rank": 7,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.4
     },
@@ -90,26 +76,37 @@
     "obvTrend": "rising"
   },
   {
-    "code": "BDLAMPS",
-    "rank": 9,
+    "code": "CAPITECGBF",
+    "rank": 8,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 38.927266370922794,
-    "mfi": 78.38553365975858,
+    "adx": 51.92199216279609,
+    "mfi": 51.91974994938775,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SAMORITA",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 53.451382294640446,
+    "mfi": 82.8674471665979,
     "obvTrend": "rising"
   },
   {
-    "code": "SOUTHEASTB",
+    "code": "RELIANCE1",
     "rank": 10,
-    "rankChange": -7,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.6
     },
-    "adx": 30.91429970500729,
-    "mfi": 37.80949022133672,
-    "obvTrend": "flat"
+    "adx": 31.39373668603093,
+    "mfi": 58.65254889720715,
+    "obvTrend": "rising"
   }
 ]
