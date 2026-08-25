@@ -11,30 +11,9 @@
     "obvTrend": "falling"
   },
   {
-    "code": "RAKCERAMIC",
-    "rank": 2,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 22.76611928474005,
-    "mfi": 66.936964460543,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "GBBPOWER",
-    "rank": 3,
-    "rankChange": -1,
-    "riskReward": null,
-    "adx": 52.74587104007129,
-    "mfi": 84.70684984667854,
-    "obvTrend": "rising"
-  },
-  {
     "code": "TECHNODRUG",
-    "rank": 4,
-    "rankChange": -1,
+    "rank": 2,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 1.8
     },
@@ -43,20 +22,21 @@
     "obvTrend": "falling"
   },
   {
-    "code": "DSHGARME",
-    "rank": 5,
-    "rankChange": -1,
+    "code": "JAMUNABANK",
+    "rank": 3,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.6
     },
-    "adx": 51.07924634428641,
-    "mfi": 55.913337608994674,
+    "adx": 22.98456107160798,
+    "mfi": 49.637722624338195,
     "obvTrend": "rising"
   },
   {
     "code": "PTL",
-    "rank": 6,
-    "rankChange": -1,
+    "rank": 4,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.1
     },
@@ -66,8 +46,8 @@
   },
   {
     "code": "BXPHARMA",
-    "rank": 7,
-    "rankChange": -1,
+    "rank": 5,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 36.8
     },
@@ -77,8 +57,8 @@
   },
   {
     "code": "SAPORTL",
-    "rank": 8,
-    "rankChange": -1,
+    "rank": 6,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.4
     },
@@ -88,8 +68,8 @@
   },
   {
     "code": "CAPITECGBF",
-    "rank": 9,
-    "rankChange": -1,
+    "rank": 7,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.4
     },
@@ -98,14 +78,38 @@
     "obvTrend": "falling"
   },
   {
+    "code": "PUBALIBANK",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 3
+    },
+    "adx": 28.83393856879209,
+    "mfi": 42.75238329608084,
+    "obvTrend": "falling"
+  },
+  {
     "code": "BDLAMPS",
-    "rank": 10,
-    "rankChange": -1,
+    "rank": 9,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.4
     },
     "adx": 38.927266370922794,
     "mfi": 78.38553365975858,
     "obvTrend": "rising"
+  },
+  {
+    "code": "SOUTHEASTB",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 30.91429970500729,
+    "mfi": 37.80949022133672,
+    "obvTrend": "flat"
   }
 ]
