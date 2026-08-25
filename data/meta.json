@@ -1,6 +1,6 @@
 {
-  "lastAttemptedAt": "2026-08-25T04:39:14.475Z",
-  "lastScrapedAt": "2026-08-25T04:39:14.475Z",
+  "lastAttemptedAt": "2026-08-25T05:19:02.182Z",
+  "lastScrapedAt": "2026-08-25T05:19:02.182Z",
   "candidateCount": 40,
   "watchlist": [
     "ACMEPL",
@@ -11,8 +11,8 @@
     "BXPHARMA",
     "SAPORTL",
     "CAPITECGBF",
-    "SAMORITA",
-    "RELIANCE1"
+    "BDLAMPS",
+    "FEDERALINS"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
