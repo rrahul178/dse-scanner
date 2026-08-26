@@ -1,19 +1,5 @@
 [
   {
-    "#": "252",
-    "DATE": "2025-08-10",
-    "TRADING CODE": "ACMEPL",
-    "LTP*": "14.4",
-    "HIGH": "14.7",
-    "LOW": "14.2",
-    "OPENP*": "14.5",
-    "CLOSEP*": "14.4",
-    "YCP": "14.3",
-    "TRADE": "409",
-    "VALUE (mn)": "11.58",
-    "VOLUME": "802678"
-  },
-  {
     "#": "251",
     "DATE": "2025-08-11",
     "TRADING CODE": "ACMEPL",
