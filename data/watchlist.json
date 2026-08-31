@@ -2,117 +2,117 @@
   {
     "code": "SAIHAMCOT",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.2
     },
-    "adx": 28.478956425889546,
-    "mfi": 61.78087903813091,
+    "adx": 29.332052570515167,
+    "mfi": 64.91675030069962,
     "obvTrend": "flat"
   },
   {
-    "code": "ARGONDENIM",
+    "code": "ENVOYTEX",
     "rank": 2,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.3
     },
-    "adx": 26.30936433857517,
-    "mfi": 52.60795619778026,
+    "adx": 19.123122270232205,
+    "mfi": 60.40765464457606,
     "obvTrend": "rising"
   },
   {
     "code": "FEKDIL",
     "rank": 3,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
-      "ratio": 7.3
+      "ratio": 2.6
     },
-    "adx": 29.48663177078217,
-    "mfi": 46.29318395393689,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "TECHNODRUG",
-    "rank": 4,
-    "rankChange": 2,
-    "riskReward": {
-      "ratio": 4.7
-    },
-    "adx": 15.66155264643675,
-    "mfi": 46.02832359541372,
+    "adx": 27.519362846189402,
+    "mfi": 55.521764310437135,
     "obvTrend": "flat"
   },
   {
-    "code": "MONNOFABR",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 1.3
-    },
-    "adx": 17.001188825217064,
-    "mfi": 16.916788816393435,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SOUTHEASTB",
-    "rank": 6,
-    "rankChange": -4,
-    "riskReward": {
-      "ratio": 1.7
-    },
-    "adx": 30.39957184659574,
-    "mfi": 41.770831609320425,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SONALIANSH",
-    "rank": 7,
+    "code": "SAMORITA",
+    "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 1.8
     },
-    "adx": 18.263045990839583,
-    "mfi": 58.37489023367228,
-    "obvTrend": "falling"
+    "adx": 41.132658798090496,
+    "mfi": 75.12260140662997,
+    "obvTrend": "rising"
   },
   {
-    "code": "MATINSPINN",
-    "rank": 8,
+    "code": "WALTONHIL",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 18.13973317344674,
+    "mfi": 53.31249195687866,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ACMEPL",
+    "rank": 6,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 39.19670260309003,
-    "mfi": 59.14981129905591,
-    "obvTrend": "falling"
+    "adx": 16.78899631360531,
+    "mfi": 68.86308231044906,
+    "obvTrend": "flat"
   },
   {
-    "code": "MALEKSPIN",
-    "rank": 9,
+    "code": "TECHNODRUG",
+    "rank": 7,
+    "rankChange": -3,
+    "riskReward": {
+      "ratio": 10.3
+    },
+    "adx": 14.908706649356455,
+    "mfi": 40.55220426294286,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SONARGAON",
+    "rank": 8,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.1
     },
-    "adx": 33.31755286659385,
-    "mfi": 61.524668597841426,
+    "adx": 29.527683420408486,
+    "mfi": 44.31062908669924,
     "obvTrend": "falling"
   },
   {
-    "code": "IPDC",
-    "rank": 10,
+    "code": "MATINSPINN",
+    "rank": 9,
     "rankChange": -1,
     "riskReward": {
-      "ratio": 2.8
+      "ratio": 0.2
     },
-    "adx": 16.592660771675074,
-    "mfi": 65.04530118409164,
-    "obvTrend": "rising"
+    "adx": 37.3329140941467,
+    "mfi": 62.04014887700369,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "PUBALIBANK",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 23.173555695856887,
+    "mfi": 54.07687081900246,
+    "obvTrend": "falling"
   }
 ]
