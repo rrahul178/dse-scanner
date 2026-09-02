@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-09-02T08:26:59.997Z",
-  "lastScrapedAt": "2026-09-02T08:26:59.997Z",
+  "lastAttemptedAt": "2026-09-02T12:55:12.052Z",
+  "lastScrapedAt": "2026-09-02T12:55:12.052Z",
   "candidateCount": 40,
   "watchlist": [
-    "ENVOYTEX",
-    "FEKDIL",
-    "DAFODILCOM",
-    "IBP",
-    "SAIHAMCOT",
     "AIBL1STIMF",
-    "MLDYEING",
+    "DAFODILCOM",
     "ARGONDENIM",
-    "RELIANCE1",
-    "GLOBALINS"
+    "FEKDIL",
+    "ENVOYTEX",
+    "MALEKSPIN",
+    "QUEENSOUTH",
+    "ACMEPL",
+    "MLDYEING",
+    "SIPLC"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false

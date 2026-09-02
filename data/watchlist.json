@@ -1,117 +1,114 @@
 [
   {
-    "code": "ENVOYTEX",
+    "code": "AIBL1STIMF",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": 5,
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.9
     },
-    "adx": 18.34627500534694,
-    "mfi": 62.839330884348726,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "FEKDIL",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 1.8
-    },
-    "adx": 26.357268527932185,
-    "mfi": 58.40892087890599,
+    "adx": 33.82648698347998,
+    "mfi": 45.06203449961672,
     "obvTrend": "rising"
   },
   {
     "code": "DAFODILCOM",
+    "rank": 2,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 17.06440260239057,
+    "mfi": 67.15878247063543,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ARGONDENIM",
     "rank": 3,
+    "rankChange": 5,
+    "riskReward": {
+      "ratio": 1.2
+    },
+    "adx": 22.71976108509693,
+    "mfi": 65.67884361181385,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "FEKDIL",
+    "rank": 4,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 3.2
+    },
+    "adx": 24.94474127568255,
+    "mfi": 55.55385981091161,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ENVOYTEX",
+    "rank": 5,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 17.886183404479343,
+    "mfi": 65.766437754035,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "MALEKSPIN",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 32.244704095386275,
+    "mfi": 60.628769323232184,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "QUEENSOUTH",
+    "rank": 7,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 5.3
+      "ratio": 0.3
     },
-    "adx": 17.01967820559944,
-    "mfi": 65.50050567229198,
+    "adx": 28.375623403855553,
+    "mfi": 28.880306976876497,
     "obvTrend": "flat"
   },
   {
-    "code": "IBP",
-    "rank": 4,
+    "code": "ACMEPL",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 16.876346803429403,
+    "mfi": 79.94382381292664,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "MLDYEING",
+    "rank": 9,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 4.4
+    },
+    "adx": 38.12703483502732,
+    "mfi": 20.69690789513912,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SIPLC",
+    "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.5
     },
-    "adx": 26.036490693476257,
-    "mfi": 32.905676163872585,
+    "adx": 26.39989370967012,
+    "mfi": 60.508378847578825,
     "obvTrend": "flat"
-  },
-  {
-    "code": "SAIHAMCOT",
-    "rank": 5,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 30.602033074640882,
-    "mfi": 68.28069576097205,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "AIBL1STIMF",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 1.9
-    },
-    "adx": 35.333205082948915,
-    "mfi": 18.687984099647153,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "MLDYEING",
-    "rank": 7,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 1.4
-    },
-    "adx": 39.141766700519256,
-    "mfi": 14.817573436997407,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "ARGONDENIM",
-    "rank": 8,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 7.3
-    },
-    "adx": 23.470212850288874,
-    "mfi": 62.037568489480286,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "RELIANCE1",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 3.5
-    },
-    "adx": 32.245010155493325,
-    "mfi": 59.37071042022381,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "GLOBALINS",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 23.493076895772074,
-    "mfi": 53.57789114401044,
-    "obvTrend": "falling"
   }
 ]
