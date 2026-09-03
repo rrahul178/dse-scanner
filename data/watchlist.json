@@ -2,7 +2,7 @@
   {
     "code": "DAFODILCOM",
     "rank": 1,
-    "rankChange": 1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.5
     },
@@ -13,8 +13,7 @@
   {
     "code": "PEOPLESINS",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1
     },
@@ -25,8 +24,7 @@
   {
     "code": "MBL1STMF",
     "rank": 3,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -37,8 +35,7 @@
   {
     "code": "BDLAMPS",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.1
     },
@@ -49,8 +46,7 @@
   {
     "code": "RUNNERAUTO",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
@@ -61,8 +57,7 @@
   {
     "code": "SAMORITA",
     "rank": 6,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 5.5
     },
@@ -73,7 +68,7 @@
   {
     "code": "MALEKSPIN",
     "rank": 7,
-    "rankChange": -1,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -84,7 +79,7 @@
   {
     "code": "ENVOYTEX",
     "rank": 8,
-    "rankChange": -3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -95,7 +90,7 @@
   {
     "code": "FEKDIL",
     "rank": 9,
-    "rankChange": -5,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 24
     },
@@ -106,8 +101,7 @@
   {
     "code": "GLOBALINS",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
