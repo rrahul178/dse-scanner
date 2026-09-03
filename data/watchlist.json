@@ -1,114 +1,118 @@
 [
   {
-    "code": "AIBL1STIMF",
-    "rank": 1,
-    "rankChange": 5,
-    "riskReward": {
-      "ratio": 0.9
-    },
-    "adx": 33.82648698347998,
-    "mfi": 45.06203449961672,
-    "obvTrend": "rising"
-  },
-  {
     "code": "DAFODILCOM",
-    "rank": 2,
+    "rank": 1,
     "rankChange": 1,
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.5
     },
-    "adx": 17.06440260239057,
-    "mfi": 67.15878247063543,
+    "adx": 16.409216154924266,
+    "mfi": 68.17328321044812,
     "obvTrend": "rising"
   },
   {
-    "code": "ARGONDENIM",
-    "rank": 3,
-    "rankChange": 5,
-    "riskReward": {
-      "ratio": 1.2
-    },
-    "adx": 22.71976108509693,
-    "mfi": 65.67884361181385,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "FEKDIL",
-    "rank": 4,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 3.2
-    },
-    "adx": 24.94474127568255,
-    "mfi": 55.55385981091161,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 5,
-    "rankChange": -4,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 17.886183404479343,
-    "mfi": 65.766437754035,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "MALEKSPIN",
-    "rank": 6,
+    "code": "PEOPLESINS",
+    "rank": 2,
     "rankChange": null,
     "status": "new",
-    "riskReward": null,
-    "adx": 32.244704095386275,
-    "mfi": 60.628769323232184,
-    "obvTrend": "rising"
+    "riskReward": {
+      "ratio": 1
+    },
+    "adx": 19.25032207362973,
+    "mfi": 51.01259421883631,
+    "obvTrend": "flat"
   },
   {
-    "code": "QUEENSOUTH",
-    "rank": 7,
+    "code": "MBL1STMF",
+    "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.3
     },
-    "adx": 28.375623403855553,
-    "mfi": 28.880306976876497,
-    "obvTrend": "flat"
+    "adx": 52.31864499944242,
+    "mfi": 51.545454963300415,
+    "obvTrend": "rising"
   },
   {
-    "code": "ACMEPL",
-    "rank": 8,
+    "code": "BDLAMPS",
+    "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 16.876346803429403,
-    "mfi": 79.94382381292664,
-    "obvTrend": "rising"
+    "adx": 36.65373287050507,
+    "mfi": 59.70403756844498,
+    "obvTrend": "flat"
   },
   {
-    "code": "MLDYEING",
-    "rank": 9,
-    "rankChange": -2,
+    "code": "RUNNERAUTO",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 4.4
+      "ratio": 0.4
     },
-    "adx": 38.12703483502732,
-    "mfi": 20.69690789513912,
-    "obvTrend": "rising"
+    "adx": 29.495053071905197,
+    "mfi": 64.96556805843458,
+    "obvTrend": "falling"
   },
   {
-    "code": "SIPLC",
+    "code": "SAMORITA",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 5.5
+    },
+    "adx": 34.98312216847319,
+    "mfi": 70.18145741011524,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "MALEKSPIN",
+    "rank": 7,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 33.63079053749893,
+    "mfi": 62.94622303077245,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "ENVOYTEX",
+    "rank": 8,
+    "rankChange": -3,
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 17.458955524048545,
+    "mfi": 62.318190697440436,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "FEKDIL",
+    "rank": 9,
+    "rankChange": -5,
+    "riskReward": {
+      "ratio": 24
+    },
+    "adx": 23.774953204599175,
+    "mfi": 44.87789521992425,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "GLOBALINS",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 0.2
     },
-    "adx": 26.39989370967012,
-    "mfi": 60.508378847578825,
+    "adx": 22.2333822936298,
+    "mfi": 63.72387318639814,
     "obvTrend": "flat"
   }
 ]
