@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "BDLAMPS",
-    "LTP*": "165",
-    "HIGH": "168",
-    "LOW": "158",
-    "OPENP*": "166.6",
-    "CLOSEP*": "162.3",
-    "YCP": "166.6",
-    "TRADE": "618",
-    "VALUE (mn)": "12.196",
-    "VOLUME": "73975"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "BDLAMPS",
-    "LTP*": "161.4",
-    "HIGH": "166",
-    "LOW": "158.2",
-    "OPENP*": "158.2",
-    "CLOSEP*": "161.4",
-    "YCP": "162.3",
-    "TRADE": "406",
-    "VALUE (mn)": "7.196",
-    "VOLUME": "44240"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "BDLAMPS",
-    "LTP*": "168.1",
-    "HIGH": "169",
-    "LOW": "161",
-    "OPENP*": "164.9",
-    "CLOSEP*": "168.1",
-    "YCP": "161.4",
-    "TRADE": "541",
-    "VALUE (mn)": "8.955",
-    "VOLUME": "54053"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "BDLAMPS",

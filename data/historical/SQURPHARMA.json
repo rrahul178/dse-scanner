@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "SQURPHARMA",
-    "LTP*": "223.2",
-    "HIGH": "225",
-    "LOW": "222",
-    "OPENP*": "224.5",
-    "CLOSEP*": "223.2",
-    "YCP": "224.5",
-    "TRADE": "1742",
-    "VALUE (mn)": "93.903",
-    "VOLUME": "419652"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "SQURPHARMA",
-    "LTP*": "222.9",
-    "HIGH": "224.7",
-    "LOW": "222.6",
-    "OPENP*": "222.8",
-    "CLOSEP*": "222.9",
-    "YCP": "223.2",
-    "TRADE": "1115",
-    "VALUE (mn)": "87.252",
-    "VOLUME": "390670"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "SQURPHARMA",
-    "LTP*": "221.3",
-    "HIGH": "222.9",
-    "LOW": "220.2",
-    "OPENP*": "222.9",
-    "CLOSEP*": "221.3",
-    "YCP": "222.9",
-    "TRADE": "1722",
-    "VALUE (mn)": "84.084",
-    "VOLUME": "380148"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "SQURPHARMA",

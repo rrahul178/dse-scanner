@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "SAIHAMTEX",
-    "LTP*": "15.5",
-    "HIGH": "15.8",
-    "LOW": "15.3",
-    "OPENP*": "15.3",
-    "CLOSEP*": "15.5",
-    "YCP": "15.5",
-    "TRADE": "485",
-    "VALUE (mn)": "15.667",
-    "VOLUME": "1008015"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "SAIHAMTEX",
-    "LTP*": "15.2",
-    "HIGH": "15.8",
-    "LOW": "15.2",
-    "OPENP*": "15.5",
-    "CLOSEP*": "15.2",
-    "YCP": "15.5",
-    "TRADE": "317",
-    "VALUE (mn)": "13.902",
-    "VOLUME": "903476"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "SAIHAMTEX",
-    "LTP*": "15.4",
-    "HIGH": "15.5",
-    "LOW": "15.1",
-    "OPENP*": "15.2",
-    "CLOSEP*": "15.4",
-    "YCP": "15.2",
-    "TRADE": "247",
-    "VALUE (mn)": "8.357",
-    "VOLUME": "546896"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "SAIHAMTEX",

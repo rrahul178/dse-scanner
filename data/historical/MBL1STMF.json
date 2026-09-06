@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "MBL1STMF",
-    "LTP*": "4.4",
-    "HIGH": "4.4",
-    "LOW": "4.3",
-    "OPENP*": "4.4",
-    "CLOSEP*": "4.3",
-    "YCP": "4.3",
-    "TRADE": "12",
-    "VALUE (mn)": "0.03",
-    "VOLUME": "7022"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "MBL1STMF",
-    "LTP*": "4.2",
-    "HIGH": "4.4",
-    "LOW": "4.2",
-    "OPENP*": "4.2",
-    "CLOSEP*": "4.2",
-    "YCP": "4.3",
-    "TRADE": "15",
-    "VALUE (mn)": "0.422",
-    "VOLUME": "99803"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "MBL1STMF",
-    "LTP*": "4.2",
-    "HIGH": "4.4",
-    "LOW": "4.1",
-    "OPENP*": "4.2",
-    "CLOSEP*": "4.2",
-    "YCP": "4.2",
-    "TRADE": "37",
-    "VALUE (mn)": "0.731",
-    "VOLUME": "174000"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "MBL1STMF",

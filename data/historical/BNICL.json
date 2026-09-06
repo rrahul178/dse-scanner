@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "BNICL",
-    "LTP*": "40",
-    "HIGH": "40.6",
-    "LOW": "39.1",
-    "OPENP*": "39.1",
-    "CLOSEP*": "40",
-    "YCP": "39.6",
-    "TRADE": "275",
-    "VALUE (mn)": "5.895",
-    "VOLUME": "146411"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "BNICL",
-    "LTP*": "42.7",
-    "HIGH": "43.6",
-    "LOW": "40",
-    "OPENP*": "40.6",
-    "CLOSEP*": "42.7",
-    "YCP": "40",
-    "TRADE": "886",
-    "VALUE (mn)": "21.72",
-    "VOLUME": "513323"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "BNICL",
-    "LTP*": "41.9",
-    "HIGH": "43.3",
-    "LOW": "41.3",
-    "OPENP*": "43.1",
-    "CLOSEP*": "41.9",
-    "YCP": "42.7",
-    "TRADE": "523",
-    "VALUE (mn)": "10.647",
-    "VOLUME": "252912"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "BNICL",

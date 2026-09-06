@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "RELIANCINS",
-    "LTP*": "60.2",
-    "HIGH": "61.3",
-    "LOW": "59.8",
-    "OPENP*": "61.3",
-    "CLOSEP*": "60.2",
-    "YCP": "60.7",
-    "TRADE": "171",
-    "VALUE (mn)": "3.289",
-    "VOLUME": "54437"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "RELIANCINS",
-    "LTP*": "61.8",
-    "HIGH": "62",
-    "LOW": "59.7",
-    "OPENP*": "60",
-    "CLOSEP*": "61.8",
-    "YCP": "60.2",
-    "TRADE": "292",
-    "VALUE (mn)": "6.855",
-    "VOLUME": "111485"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "RELIANCINS",
-    "LTP*": "61.4",
-    "HIGH": "62.7",
-    "LOW": "60.5",
-    "OPENP*": "62.7",
-    "CLOSEP*": "61.5",
-    "YCP": "61.8",
-    "TRADE": "201",
-    "VALUE (mn)": "3.444",
-    "VOLUME": "56216"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "RELIANCINS",

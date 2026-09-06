@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "SHARPIND",
-    "LTP*": "18.7",
-    "HIGH": "18.9",
-    "LOW": "17.8",
-    "OPENP*": "17.8",
-    "CLOSEP*": "18.7",
-    "YCP": "17.6",
-    "TRADE": "923",
-    "VALUE (mn)": "19.177",
-    "VOLUME": "1038824"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "SHARPIND",
-    "LTP*": "18.1",
-    "HIGH": "18.8",
-    "LOW": "17.8",
-    "OPENP*": "18.8",
-    "CLOSEP*": "18.1",
-    "YCP": "18.7",
-    "TRADE": "356",
-    "VALUE (mn)": "6.363",
-    "VOLUME": "346960"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "SHARPIND",
-    "LTP*": "18",
-    "HIGH": "18.2",
-    "LOW": "17.9",
-    "OPENP*": "18.1",
-    "CLOSEP*": "18",
-    "YCP": "18.1",
-    "TRADE": "169",
-    "VALUE (mn)": "2.863",
-    "VOLUME": "159075"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "SHARPIND",

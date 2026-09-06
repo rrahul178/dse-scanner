@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "BDTHAIFOOD",
-    "LTP*": "15.6",
-    "HIGH": "16.5",
-    "LOW": "15.1",
-    "OPENP*": "15.1",
-    "CLOSEP*": "15.6",
-    "YCP": "15",
-    "TRADE": "1132",
-    "VALUE (mn)": "40.188",
-    "VOLUME": "2515535"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "BDTHAIFOOD",
-    "LTP*": "15.2",
-    "HIGH": "15.7",
-    "LOW": "15",
-    "OPENP*": "15.6",
-    "CLOSEP*": "15.2",
-    "YCP": "15.6",
-    "TRADE": "575",
-    "VALUE (mn)": "14.305",
-    "VOLUME": "934814"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "BDTHAIFOOD",
-    "LTP*": "15.1",
-    "HIGH": "15.3",
-    "LOW": "14.7",
-    "OPENP*": "14.9",
-    "CLOSEP*": "15.1",
-    "YCP": "15.2",
-    "TRADE": "476",
-    "VALUE (mn)": "13.303",
-    "VOLUME": "890266"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "BDTHAIFOOD",

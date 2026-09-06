@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "ARGONDENIM",
-    "LTP*": "18.2",
-    "HIGH": "18.4",
-    "LOW": "17.9",
-    "OPENP*": "18",
-    "CLOSEP*": "18.2",
-    "YCP": "17.9",
-    "TRADE": "477",
-    "VALUE (mn)": "15.087",
-    "VOLUME": "830669"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "ARGONDENIM",
-    "LTP*": "18",
-    "HIGH": "18.4",
-    "LOW": "17.9",
-    "OPENP*": "18.2",
-    "CLOSEP*": "18",
-    "YCP": "18.2",
-    "TRADE": "278",
-    "VALUE (mn)": "11.607",
-    "VOLUME": "641352"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "ARGONDENIM",
-    "LTP*": "17.9",
-    "HIGH": "18.1",
-    "LOW": "17.8",
-    "OPENP*": "18",
-    "CLOSEP*": "17.9",
-    "YCP": "18",
-    "TRADE": "194",
-    "VALUE (mn)": "10.839",
-    "VOLUME": "604943"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "ARGONDENIM",

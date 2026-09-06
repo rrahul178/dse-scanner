@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "ASIATICLAB",
-    "LTP*": "54.7",
-    "HIGH": "56.7",
-    "LOW": "52.8",
-    "OPENP*": "52.9",
-    "CLOSEP*": "54.7",
-    "YCP": "52.4",
-    "TRADE": "2699",
-    "VALUE (mn)": "194.56",
-    "VOLUME": "3533295"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "ASIATICLAB",
-    "LTP*": "54.5",
-    "HIGH": "55.5",
-    "LOW": "53.8",
-    "OPENP*": "54.4",
-    "CLOSEP*": "54.5",
-    "YCP": "54.7",
-    "TRADE": "2057",
-    "VALUE (mn)": "106.486",
-    "VOLUME": "1946527"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "ASIATICLAB",
-    "LTP*": "55.8",
-    "HIGH": "56",
-    "LOW": "54.4",
-    "OPENP*": "54.9",
-    "CLOSEP*": "55.8",
-    "YCP": "54.5",
-    "TRADE": "1761",
-    "VALUE (mn)": "136.951",
-    "VOLUME": "2482793"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "ASIATICLAB",

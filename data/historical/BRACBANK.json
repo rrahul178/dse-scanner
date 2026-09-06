@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "BRACBANK",
-    "LTP*": "66.6",
-    "HIGH": "68.4",
-    "LOW": "65.1",
-    "OPENP*": "68",
-    "CLOSEP*": "66.6",
-    "YCP": "68",
-    "TRADE": "1753",
-    "VALUE (mn)": "116.8",
-    "VOLUME": "1738925"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "BRACBANK",
-    "LTP*": "67.9",
-    "HIGH": "68.5",
-    "LOW": "66.3",
-    "OPENP*": "66.6",
-    "CLOSEP*": "67.9",
-    "YCP": "66.6",
-    "TRADE": "1378",
-    "VALUE (mn)": "92.321",
-    "VOLUME": "1371807"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "BRACBANK",
-    "LTP*": "67.5",
-    "HIGH": "68",
-    "LOW": "67",
-    "OPENP*": "68",
-    "CLOSEP*": "67.5",
-    "YCP": "67.9",
-    "TRADE": "783",
-    "VALUE (mn)": "53.628",
-    "VOLUME": "794226"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "BRACBANK",

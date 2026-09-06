@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "FARCHEM",
-    "LTP*": "22.2",
-    "HIGH": "22.5",
-    "LOW": "21.8",
-    "OPENP*": "22.5",
-    "CLOSEP*": "22.2",
-    "YCP": "22.2",
-    "TRADE": "408",
-    "VALUE (mn)": "9.416",
-    "VOLUME": "425174"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "FARCHEM",
-    "LTP*": "22.1",
-    "HIGH": "22.5",
-    "LOW": "21.9",
-    "OPENP*": "22.3",
-    "CLOSEP*": "22.1",
-    "YCP": "22.2",
-    "TRADE": "351",
-    "VALUE (mn)": "10.181",
-    "VOLUME": "459006"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "FARCHEM",
-    "LTP*": "23",
-    "HIGH": "23.4",
-    "LOW": "22.3",
-    "OPENP*": "22.3",
-    "CLOSEP*": "23",
-    "YCP": "22.1",
-    "TRADE": "883",
-    "VALUE (mn)": "26.926",
-    "VOLUME": "1176296"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "FARCHEM",

@@ -1,112 +1,116 @@
 [
   {
-    "code": "DAFODILCOM",
-    "rank": 1,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 16.409216154924266,
-    "mfi": 68.17328321044812,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "PEOPLESINS",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 1
-    },
-    "adx": 19.25032207362973,
-    "mfi": 51.01259421883631,
-    "obvTrend": "flat"
-  },
-  {
     "code": "MBL1STMF",
-    "rank": 3,
-    "rankChange": 0,
+    "rank": 1,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.3
     },
-    "adx": 52.31864499944242,
+    "adx": 52.31864791191536,
     "mfi": 51.545454963300415,
     "obvTrend": "rising"
   },
   {
+    "code": "EASTRNLUB",
+    "rank": 2,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0
+    },
+    "adx": 30.116838485608337,
+    "mfi": 17.352807728361086,
+    "obvTrend": "falling"
+  },
+  {
     "code": "BDLAMPS",
-    "rank": 4,
-    "rankChange": 0,
+    "rank": 3,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 36.65373287050507,
+    "adx": 36.6537305475119,
     "mfi": 59.70403756844498,
     "obvTrend": "flat"
   },
   {
-    "code": "RUNNERAUTO",
-    "rank": 5,
-    "rankChange": 0,
+    "code": "SOUTHEASTB",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.8
     },
-    "adx": 29.495053071905197,
-    "mfi": 64.96556805843458,
+    "adx": 30.7964224000818,
+    "mfi": 34.47982704080164,
     "obvTrend": "falling"
   },
   {
-    "code": "SAMORITA",
+    "code": "JAMUNABANK",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.6
+    },
+    "adx": 16.534081534333165,
+    "mfi": 32.2172817183919,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "EXIM1STMF",
     "rank": 6,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 34.84443287890626,
+    "mfi": 61.42907922137235,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SAMORITA",
+    "rank": 7,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 5.5
     },
-    "adx": 34.98312216847319,
+    "adx": 34.98312242436425,
     "mfi": 70.18145741011524,
     "obvTrend": "falling"
   },
   {
     "code": "MALEKSPIN",
-    "rank": 7,
-    "rankChange": 0,
+    "rank": 8,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 33.63079053749893,
+    "adx": 33.630791860587905,
     "mfi": 62.94622303077245,
     "obvTrend": "falling"
   },
   {
     "code": "ENVOYTEX",
-    "rank": 8,
-    "rankChange": 0,
+    "rank": 9,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 0.3
     },
-    "adx": 17.458955524048545,
+    "adx": 17.458955843226214,
     "mfi": 62.318190697440436,
     "obvTrend": "falling"
   },
   {
     "code": "FEKDIL",
-    "rank": 9,
-    "rankChange": 0,
+    "rank": 10,
+    "rankChange": -1,
     "riskReward": {
       "ratio": 24
     },
-    "adx": 23.774953204599175,
+    "adx": 23.77495253132574,
     "mfi": 44.87789521992425,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "GLOBALINS",
-    "rank": 10,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 22.2333822936298,
-    "mfi": 63.72387318639814,
     "obvTrend": "flat"
   }
 ]

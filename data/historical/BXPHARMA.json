@@ -1,47 +1,5 @@
 [
   {
-    "#": "251",
-    "DATE": "2025-08-19",
-    "TRADING CODE": "BXPHARMA",
-    "LTP*": "129.7",
-    "HIGH": "132.9",
-    "LOW": "123.7",
-    "OPENP*": "123.7",
-    "CLOSEP*": "129.7",
-    "YCP": "123.7",
-    "TRADE": "5978",
-    "VALUE (mn)": "478.42",
-    "VOLUME": "3724208"
-  },
-  {
-    "#": "250",
-    "DATE": "2025-08-20",
-    "TRADING CODE": "BXPHARMA",
-    "LTP*": "123.3",
-    "HIGH": "133",
-    "LOW": "121.8",
-    "OPENP*": "133",
-    "CLOSEP*": "123.3",
-    "YCP": "129.7",
-    "TRADE": "4231",
-    "VALUE (mn)": "272.598",
-    "VOLUME": "2163991"
-  },
-  {
-    "#": "249",
-    "DATE": "2025-08-21",
-    "TRADING CODE": "BXPHARMA",
-    "LTP*": "128",
-    "HIGH": "129",
-    "LOW": "121.5",
-    "OPENP*": "123",
-    "CLOSEP*": "128",
-    "YCP": "123.3",
-    "TRADE": "2852",
-    "VALUE (mn)": "152.303",
-    "VOLUME": "1216040"
-  },
-  {
     "#": "248",
     "DATE": "2025-08-24",
     "TRADING CODE": "BXPHARMA",
