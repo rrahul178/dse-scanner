@@ -1,116 +1,114 @@
 [
   {
-    "code": "MBL1STMF",
+    "code": "EASTRNLUB",
     "rank": 1,
-    "rankChange": 2,
+    "rankChange": 1,
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 15.5
     },
-    "adx": 52.31864791191536,
-    "mfi": 51.545454963300415,
+    "adx": 29.78738085485872,
+    "mfi": 42.36354840105974,
     "obvTrend": "rising"
   },
   {
-    "code": "EASTRNLUB",
+    "code": "ENVOYTEX",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 7,
     "riskReward": {
-      "ratio": 0
+      "ratio": 0.2
     },
-    "adx": 30.116838485608337,
-    "mfi": 17.352807728361086,
+    "adx": 16.757554498903392,
+    "mfi": 65.67627816984077,
     "obvTrend": "falling"
   },
   {
-    "code": "BDLAMPS",
+    "code": "PF1STMF",
     "rank": 3,
-    "rankChange": 1,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 37.40605135759711,
+    "mfi": 54.850628906235485,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "MALEKSPIN",
+    "rank": 4,
+    "rankChange": 4,
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.2
     },
-    "adx": 36.6537305475119,
-    "mfi": 59.70403756844498,
-    "obvTrend": "flat"
+    "adx": 32.23395134307708,
+    "mfi": 53.21711673279588,
+    "obvTrend": "falling"
   },
   {
     "code": "SOUTHEASTB",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.8
-    },
-    "adx": 30.7964224000818,
-    "mfi": 34.47982704080164,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "JAMUNABANK",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": -1,
     "riskReward": {
-      "ratio": 1.6
+      "ratio": 0.4
     },
-    "adx": 16.534081534333165,
-    "mfi": 32.2172817183919,
-    "obvTrend": "falling"
+    "adx": 30.593694414211473,
+    "mfi": 39.46936918839145,
+    "obvTrend": "rising"
   },
   {
     "code": "EXIM1STMF",
     "rank": 6,
+    "rankChange": 0,
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 33.960978375098215,
+    "mfi": 60.37560535726902,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ACMEPL",
+    "rank": 7,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 34.84443287890626,
-    "mfi": 61.42907922137235,
+    "adx": 16.519742328768878,
+    "mfi": 59.19321609654451,
     "obvTrend": "rising"
   },
   {
-    "code": "SAMORITA",
-    "rank": 7,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 5.5
-    },
-    "adx": 34.98312242436425,
-    "mfi": 70.18145741011524,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "MALEKSPIN",
+    "code": "BDLAMPS",
     "rank": 8,
-    "rankChange": -1,
+    "rankChange": -5,
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.1
     },
-    "adx": 33.630791860587905,
-    "mfi": 62.94622303077245,
-    "obvTrend": "falling"
+    "adx": 37.35390017539175,
+    "mfi": 68.01851588519116,
+    "obvTrend": "flat"
   },
   {
-    "code": "ENVOYTEX",
+    "code": "SAPORTL",
     "rank": 9,
-    "rankChange": -1,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.6
     },
-    "adx": 17.458955843226214,
-    "mfi": 62.318190697440436,
+    "adx": 21.927922196805685,
+    "mfi": 41.01797486757952,
     "obvTrend": "falling"
   },
   {
-    "code": "FEKDIL",
+    "code": "BNICL",
     "rank": 10,
-    "rankChange": -1,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 24
+      "ratio": 2.4
     },
-    "adx": 23.77495253132574,
-    "mfi": 44.87789521992425,
+    "adx": 13.82360101992388,
+    "mfi": 37.46235895083183,
     "obvTrend": "flat"
   }
 ]
