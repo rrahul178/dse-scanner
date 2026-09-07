@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-09-06T12:16:21.784Z",
-  "lastScrapedAt": "2026-09-06T12:16:21.784Z",
+  "lastAttemptedAt": "2026-09-07T08:58:53.165Z",
+  "lastScrapedAt": "2026-09-07T08:58:53.165Z",
   "candidateCount": 40,
   "watchlist": [
-    "EASTRNLUB",
+    "TAKAFULINS",
+    "SAIHAMCOT",
     "ENVOYTEX",
-    "PF1STMF",
-    "MALEKSPIN",
-    "SOUTHEASTB",
-    "EXIM1STMF",
     "ACMEPL",
-    "BDLAMPS",
-    "SAPORTL",
-    "BNICL"
+    "SOUTHEASTB",
+    "MALEKSPIN",
+    "KARNAPHULI",
+    "EXIM1STMF",
+    "SHARPIND",
+    "JAMUNABANK"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
