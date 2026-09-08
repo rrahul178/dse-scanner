@@ -2,8 +2,7 @@
   {
     "code": "DAFODILCOM",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.2
     },
@@ -14,8 +13,7 @@
   {
     "code": "MATINSPINN",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
@@ -26,7 +24,7 @@
   {
     "code": "TAKAFULINS",
     "rank": 3,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.8
     },
@@ -37,7 +35,7 @@
   {
     "code": "SAIHAMCOT",
     "rank": 4,
-    "rankChange": -2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
@@ -48,8 +46,7 @@
   {
     "code": "BDTHAIFOOD",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.7
     },
@@ -60,8 +57,7 @@
   {
     "code": "GQBALLPEN",
     "rank": 6,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 6.2
     },
@@ -83,7 +79,7 @@
   {
     "code": "JAMUNABANK",
     "rank": 8,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 5
     },
@@ -94,7 +90,7 @@
   {
     "code": "ENVOYTEX",
     "rank": 9,
-    "rankChange": -6,
+    "rankChange": 0,
     "riskReward": null,
     "adx": 19.137113207774938,
     "mfi": 68.13137863668702,
@@ -103,8 +99,7 @@
   {
     "code": "IPDC",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.7
     },
