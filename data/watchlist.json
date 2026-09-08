@@ -1,115 +1,115 @@
 [
   {
-    "code": "TAKAFULINS",
+    "code": "DAFODILCOM",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 22.543114985253858,
-    "mfi": 59.74648778478315,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SAIHAMCOT",
-    "rank": 2,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 30.199030924724678,
-    "mfi": 55.48972540650697,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 3,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 17.291196041036162,
-    "mfi": 68.5577396087237,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ACMEPL",
-    "rank": 4,
-    "rankChange": 3,
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 15.449861850143071,
-    "mfi": 59.855581868054735,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SOUTHEASTB",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 31.1059150352505,
-    "mfi": 40.00502689617084,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "MALEKSPIN",
-    "rank": 6,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 30.9368851482456,
-    "mfi": 62.933427924630244,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "KARNAPHULI",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 30.049430236385767,
-    "mfi": 59.79666516744783,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "EXIM1STMF",
-    "rank": 8,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 33.140627764419314,
-    "mfi": 58.92086738578942,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SHARPIND",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 9.3
-    },
-    "adx": 43.89628669179285,
-    "mfi": 20.155236461879156,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "JAMUNABANK",
-    "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 1.2
     },
-    "adx": 17.861166777041966,
-    "mfi": 26.377277798319895,
+    "adx": 16.00978800448821,
+    "mfi": 70.70713317253866,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "MATINSPINN",
+    "rank": 2,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 27.060111220035367,
+    "mfi": 62.15044906381035,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "TAKAFULINS",
+    "rank": 3,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 22.024423713209636,
+    "mfi": 75.39155718517665,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SAIHAMCOT",
+    "rank": 4,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 29.414504472574613,
+    "mfi": 53.187020978209254,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BDTHAIFOOD",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 12.004390299214847,
+    "mfi": 68.98772430913802,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "GQBALLPEN",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 6.2
+    },
+    "adx": 28.374056086663483,
+    "mfi": 59.431779026785385,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "KARNAPHULI",
+    "rank": 7,
+    "rankChange": 0,
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 28.097322505375626,
+    "mfi": 48.462743904684814,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "JAMUNABANK",
+    "rank": 8,
+    "rankChange": 2,
+    "riskReward": {
+      "ratio": 5
+    },
+    "adx": 19.354559485682046,
+    "mfi": 20.076875997455275,
     "obvTrend": "falling"
+  },
+  {
+    "code": "ENVOYTEX",
+    "rank": 9,
+    "rankChange": -6,
+    "riskReward": null,
+    "adx": 19.137113207774938,
+    "mfi": 68.13137863668702,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "IPDC",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 13.339331485587994,
+    "mfi": 36.45014672162815,
+    "obvTrend": "rising"
   }
 ]
