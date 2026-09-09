@@ -1,110 +1,118 @@
 [
   {
-    "code": "DAFODILCOM",
+    "code": "SIPLC",
     "rank": 1,
-    "rankChange": 0,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 1.2
+      "ratio": 2
     },
-    "adx": 16.00978800448821,
-    "mfi": 70.70713317253866,
-    "obvTrend": "rising"
+    "adx": 24.98696601857332,
+    "mfi": 42.42903724619843,
+    "obvTrend": "flat"
   },
   {
-    "code": "MATINSPINN",
+    "code": "BDTHAIFOOD",
     "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 27.060111220035367,
-    "mfi": 62.15044906381035,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "TAKAFULINS",
-    "rank": 3,
-    "rankChange": 0,
+    "rankChange": 3,
     "riskReward": {
       "ratio": 0.8
     },
-    "adx": 22.024423713209636,
-    "mfi": 75.39155718517665,
-    "obvTrend": "flat"
+    "adx": 11.428683200212863,
+    "mfi": 76.33640080667496,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PUBALIBANK",
+    "rank": 3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 18.959579834522263,
+    "mfi": 11.635646281989025,
+    "obvTrend": "falling"
   },
   {
     "code": "SAIHAMCOT",
     "rank": 4,
     "rankChange": 0,
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.2
     },
-    "adx": 29.414504472574613,
-    "mfi": 53.187020978209254,
+    "adx": 28.68601500244963,
+    "mfi": 58.46534880615954,
     "obvTrend": "rising"
   },
   {
-    "code": "BDTHAIFOOD",
+    "code": "DAFODILCOM",
     "rank": 5,
-    "rankChange": 0,
+    "rankChange": -4,
     "riskReward": {
-      "ratio": 0.7
+      "ratio": 0.5
     },
-    "adx": 12.004390299214847,
-    "mfi": 68.98772430913802,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "GQBALLPEN",
-    "rank": 6,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 6.2
-    },
-    "adx": 28.374056086663483,
-    "mfi": 59.431779026785385,
+    "adx": 15.374863113313486,
+    "mfi": 76.04503214512923,
     "obvTrend": "rising"
   },
   {
-    "code": "KARNAPHULI",
-    "rank": 7,
-    "rankChange": 0,
+    "code": "RELIANCE1",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.7
+      "ratio": 6
     },
-    "adx": 28.097322505375626,
-    "mfi": 48.462743904684814,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "JAMUNABANK",
-    "rank": 8,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 5
-    },
-    "adx": 19.354559485682046,
-    "mfi": 20.076875997455275,
+    "adx": 25.27444452031747,
+    "mfi": 47.58731496901829,
     "obvTrend": "falling"
   },
   {
-    "code": "ENVOYTEX",
+    "code": "SAIHAMTEX",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 60.23970381209813,
+    "mfi": 55.51559460392864,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SAPORTL",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 19.51292354101886,
+    "mfi": 36.082365792984795,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "ACMEPL",
     "rank": 9,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 19.137113207774938,
-    "mfi": 68.13137863668702,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 13.781123548606777,
+    "mfi": 58.78412477357589,
     "obvTrend": "rising"
   },
   {
-    "code": "IPDC",
+    "code": "MATINSPINN",
     "rank": 10,
-    "rankChange": 0,
+    "rankChange": -8,
     "riskReward": {
-      "ratio": 0.7
+      "ratio": 0.2
     },
-    "adx": 13.339331485587994,
-    "mfi": 36.45014672162815,
+    "adx": 26.556548716059563,
+    "mfi": 60.79619194569205,
     "obvTrend": "rising"
   }
 ]
