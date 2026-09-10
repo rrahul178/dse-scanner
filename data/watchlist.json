@@ -2,8 +2,7 @@
   {
     "code": "EXIM1STMF",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 32.65261062726626,
     "mfi": 76.29204752853529,
@@ -12,8 +11,7 @@
   {
     "code": "TAKAFULINS",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 22.24676298071522,
     "mfi": 86.08212056906987,
@@ -22,7 +20,7 @@
   {
     "code": "RELIANCE1",
     "rank": 3,
-    "rankChange": 3,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.7
     },
@@ -33,7 +31,7 @@
   {
     "code": "MATINSPINN",
     "rank": 4,
-    "rankChange": 6,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.3
     },
@@ -44,8 +42,7 @@
   {
     "code": "KTL",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.3
     },
@@ -56,7 +53,7 @@
   {
     "code": "SAPORTL",
     "rank": 6,
-    "rankChange": 2,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -67,7 +64,7 @@
   {
     "code": "SIPLC",
     "rank": 7,
-    "rankChange": -6,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 2.2
     },
@@ -78,8 +75,7 @@
   {
     "code": "ANWARGALV",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 18.9
     },
@@ -90,7 +86,7 @@
   {
     "code": "SAIHAMCOT",
     "rank": 9,
-    "rankChange": -5,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
@@ -101,7 +97,7 @@
   {
     "code": "BDTHAIFOOD",
     "rank": 10,
-    "rankChange": -8,
+    "rankChange": 0,
     "riskReward": {
       "ratio": 1.3
     },
