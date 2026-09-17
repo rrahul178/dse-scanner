@@ -1,110 +1,112 @@
 [
   {
-    "code": "SAMORITA",
+    "code": "MBL1STMF",
     "rank": 1,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 26.8
-    },
-    "adx": 31.332158457268083,
-    "mfi": 47.48832940577499,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SAPORTL",
-    "rank": 2,
-    "rankChange": 2,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 15.89205647441452,
-    "mfi": 54.38955639314303,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SAIHAMCOT",
-    "rank": 3,
-    "rankChange": -2,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 25.18035055543441,
-    "mfi": 62.57612677482423,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "ORIONINFU",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 53.784470694763634,
-    "mfi": 33.73381075094076,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "GLOBALINS",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 4.3
-    },
-    "adx": 14.937532215370693,
-    "mfi": 50.9181817043591,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "AL-HAJTEX",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 52.81022640964466,
-    "mfi": 33.58362978791939,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "BDTHAIFOOD",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 25
-    },
-    "adx": 16.067011633576904,
-    "mfi": 58.74663487992267,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 25.1617333081193,
-    "mfi": 69.60635516583153,
+    "adx": 38.91970330255318,
+    "mfi": 70.72561715429492,
     "obvTrend": "rising"
   },
   {
-    "code": "SAIHAMTEX",
-    "rank": 9,
+    "code": "MERCINS",
+    "rank": 2,
     "rankChange": null,
     "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 50.88604618942218,
-    "mfi": 59.3442531815933,
+    "riskReward": null,
+    "adx": 22.492990200997628,
+    "mfi": 64.64447845068992,
     "obvTrend": "rising"
   },
   {
     "code": "BNICL",
-    "rank": 10,
-    "rankChange": -1,
+    "rank": 3,
+    "rankChange": 7,
     "riskReward": null,
-    "adx": 25.697503623393906,
-    "mfi": 61.01188617648005,
+    "adx": 27.34084032867494,
+    "mfi": 69.92590291958751,
     "obvTrend": "rising"
+  },
+  {
+    "code": "ICBSONALI1",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 21.267633051221953,
+    "mfi": 83.76336858943425,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ENVOYTEX",
+    "rank": 5,
+    "rankChange": 3,
+    "riskReward": null,
+    "adx": 24.07370285518559,
+    "mfi": 68.11155494317921,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ACMEPL",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 11.616145355089062,
+    "mfi": 55.14278144013673,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "RELIANCINS",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 16.683010786381107,
+    "mfi": 69.70646450144734,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SAIHAMCOT",
+    "rank": 8,
+    "rankChange": -5,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 24.677359453166755,
+    "mfi": 56.89717184995426,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SAPORTL",
+    "rank": 9,
+    "rankChange": -7,
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 15.157843668392692,
+    "mfi": 59.100783832615036,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "MONNOCERA",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 26.58155917604002,
+    "mfi": 58.04750390548841,
+    "obvTrend": "flat"
   }
 ]
