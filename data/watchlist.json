@@ -2,111 +2,110 @@
   {
     "code": "MBL1STMF",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 38.91970330255318,
-    "mfi": 70.72561715429492,
+    "rankChange": 0,
+    "riskReward": null,
+    "adx": 38.129578449854364,
+    "mfi": 77.26541981324236,
     "obvTrend": "rising"
   },
   {
-    "code": "MERCINS",
+    "code": "KBPPWBIL",
     "rank": 2,
     "rankChange": null,
     "status": "new",
-    "riskReward": null,
-    "adx": 22.492990200997628,
-    "mfi": 64.64447845068992,
+    "riskReward": {
+      "ratio": 6.8
+    },
+    "adx": 41.50464627193836,
+    "mfi": 69.80672692632164,
     "obvTrend": "rising"
   },
   {
-    "code": "BNICL",
+    "code": "ORIONINFU",
     "rank": 3,
-    "rankChange": 7,
+    "rankChange": null,
+    "status": "new",
     "riskReward": null,
-    "adx": 27.34084032867494,
-    "mfi": 69.92590291958751,
+    "adx": 47.57990147979448,
+    "mfi": 58.02588344124339,
     "obvTrend": "rising"
+  },
+  {
+    "code": "SAPORTL",
+    "rank": 4,
+    "rankChange": 5,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 15.358674448298688,
+    "mfi": 66.88052677096107,
+    "obvTrend": "flat"
   },
   {
     "code": "ICBSONALI1",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 21.267633051221953,
-    "mfi": 83.76336858943425,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ENVOYTEX",
     "rank": 5,
-    "rankChange": 3,
-    "riskReward": null,
-    "adx": 24.07370285518559,
-    "mfi": 68.11155494317921,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 22.682955808899802,
+    "mfi": 88.61538959882623,
     "obvTrend": "rising"
   },
   {
-    "code": "ACMEPL",
+    "code": "SIPLC",
     "rank": 6,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 4
     },
-    "adx": 11.616145355089062,
-    "mfi": 55.14278144013673,
+    "adx": 19.71548945895437,
+    "mfi": 60.13301777634209,
     "obvTrend": "rising"
   },
   {
-    "code": "RELIANCINS",
+    "code": "MERCINS",
     "rank": 7,
+    "rankChange": -5,
+    "riskReward": null,
+    "adx": 22.509096773633303,
+    "mfi": 68.16858305785213,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "1STPRIMFMF",
+    "rank": 8,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.8
+      "ratio": 0.1
     },
-    "adx": 16.683010786381107,
-    "mfi": 69.70646450144734,
+    "adx": 27.41771297088934,
+    "mfi": 75.53483817756197,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SAIHAMTEX",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 46.86517814347947,
+    "mfi": 43.033499595926095,
     "obvTrend": "rising"
   },
   {
     "code": "SAIHAMCOT",
-    "rank": 8,
-    "rankChange": -5,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 24.677359453166755,
-    "mfi": 56.89717184995426,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "SAPORTL",
-    "rank": 9,
-    "rankChange": -7,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 15.157843668392692,
-    "mfi": 59.100783832615036,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "MONNOCERA",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": -2,
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0
     },
-    "adx": 26.58155917604002,
-    "mfi": 58.04750390548841,
-    "obvTrend": "flat"
+    "adx": 24.21029641647932,
+    "mfi": 55.84997566309866,
+    "obvTrend": "rising"
   }
 ]
