@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-09-20T09:07:22.493Z",
-  "lastScrapedAt": "2026-09-20T09:07:22.493Z",
+  "lastAttemptedAt": "2026-09-21T09:39:25.048Z",
+  "lastScrapedAt": "2026-09-21T09:39:25.048Z",
   "candidateCount": 40,
   "watchlist": [
-    "MBL1STMF",
-    "KBPPWBIL",
     "ORIONINFU",
+    "GLOBALINS",
     "SAPORTL",
-    "ICBSONALI1",
+    "MBL1STMF",
+    "PTL",
+    "ANWARGALV",
     "SIPLC",
+    "BEXIMCO",
     "MERCINS",
-    "1STPRIMFMF",
-    "SAIHAMTEX",
-    "SAIHAMCOT"
+    "SAIHAMTEX"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false
