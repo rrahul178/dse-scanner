@@ -1,115 +1,120 @@
 [
   {
-    "code": "ACMEPL",
+    "code": "BXPHARMA",
     "rank": 1,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 13.339045350812402,
-    "mfi": 48.89229549224502,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ICICL",
-    "rank": 2,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 12.065381551031328,
-    "mfi": 70.95781900619922,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "GLOBALINS",
-    "rank": 3,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.9
-    },
-    "adx": 13.917230220017645,
-    "mfi": 63.257850327457454,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "PTL",
-    "rank": 4,
-    "rankChange": 1,
-    "riskReward": null,
-    "adx": 49.83769331992278,
-    "mfi": 73.00789535569353,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "DOMINAGE",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 9.3
-    },
-    "adx": 42.66180964250406,
-    "mfi": 64.3551268919148,
+    "adx": 17.23783673937186,
+    "mfi": 46.78377126953043,
     "obvTrend": "flat"
   },
   {
-    "code": "ORIONINFU",
-    "rank": 6,
-    "rankChange": -5,
+    "code": "ACMEPL",
+    "rank": 2,
+    "rankChange": -1,
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 0.1
     },
-    "adx": 44.439383731406515,
-    "mfi": 72.16689637594928,
+    "adx": 14.5332904984878,
+    "mfi": 61.311694853816526,
     "obvTrend": "rising"
   },
   {
-    "code": "ETL",
-    "rank": 7,
+    "code": "UNIQUEHRL",
+    "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 19.544689223367158,
-    "mfi": 74.69665011010902,
+    "adx": 33.36585721735596,
+    "mfi": 64.54003299892933,
     "obvTrend": "rising"
   },
   {
-    "code": "SPCERAMICS",
-    "rank": 8,
+    "code": "INDEXAGRO",
+    "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 1.5
+      "ratio": 2.2
     },
-    "adx": 15.345633929482196,
-    "mfi": 76.59780706531286,
+    "adx": 12.636185151861214,
+    "mfi": 85.75031618272878,
     "obvTrend": "rising"
   },
   {
-    "code": "ICBSONALI1",
+    "code": "MATINSPINN",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 20.626046904150076,
+    "mfi": 49.77992407984788,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "APEXSPINN",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 4.3
+    },
+    "adx": 27.663667262068063,
+    "mfi": 81.50721410651383,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SAIHAMTEX",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 42.032958420184414,
+    "mfi": 54.5699076534896,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "DOMINAGE",
+    "rank": 8,
+    "rankChange": -3,
+    "riskReward": {
+      "ratio": 3.2
+    },
+    "adx": 40.20534290776737,
+    "mfi": 70.1528582861461,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "GQBALLPEN",
     "rank": 9,
     "rankChange": null,
     "status": "new",
-    "riskReward": null,
-    "adx": 26.55719974150862,
-    "mfi": 92.70346834216926,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 18.195942198128602,
+    "mfi": 61.4288309261728,
     "obvTrend": "rising"
   },
   {
-    "code": "RELIANCE1",
+    "code": "MALEKSPIN",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.7
+      "ratio": 0.3
     },
-    "adx": 17.424134426010276,
-    "mfi": 60.29884160892968,
-    "obvTrend": "rising"
+    "adx": 15.887053436005147,
+    "mfi": 48.02352832926184,
+    "obvTrend": "flat"
   }
 ]
