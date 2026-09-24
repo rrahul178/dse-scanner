@@ -1,7 +1,7 @@
 {
-  "lastAttemptedAt": "2026-09-23T09:08:04.232Z",
+  "lastAttemptedAt": "2026-09-24T09:00:47.932Z",
   "lastScrapedAt": "2026-09-23T09:08:04.232Z",
-  "candidateCount": 40,
+  "candidateCount": 0,
   "watchlist": [
     "BXPHARMA",
     "ACMEPL",
@@ -15,5 +15,5 @@
     "MALEKSPIN"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
-  "noFreshSession": false
+  "noFreshSession": true
 }
