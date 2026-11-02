@@ -4,107 +4,109 @@
     "rank": 1,
     "rankChange": 0,
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.2
     },
-    "adx": 16.245762245429724,
-    "mfi": 71.77331661482523,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 2,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 13.51407013311777,
-    "mfi": 49.5502154540211,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "DGIC",
-    "rank": 3,
-    "rankChange": 0,
-    "riskReward": null,
-    "adx": 30.724702005444254,
-    "mfi": 69.40186612333315,
+    "adx": 17.685656332798697,
+    "mfi": 76.65461992702072,
     "obvTrend": "rising"
   },
   {
     "code": "EASTRNLUB",
-    "rank": 4,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 2.1
-    },
-    "adx": 13.279958998644316,
-    "mfi": 57.15487140851562,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SPCL",
-    "rank": 5,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 23.409778787292357,
-    "mfi": 64.80599245161883,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "APEXSPINN",
-    "rank": 6,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 32.15582960836725,
-    "mfi": 69.2706888053238,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "RELIANCE1",
-    "rank": 7,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 17.26283435934559,
-    "mfi": 69.4713297553022,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SQURPHARMA",
-    "rank": 8,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 2.6
-    },
-    "adx": 9.188239821464817,
-    "mfi": 48.36269918836957,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "ANWARGALV",
-    "rank": 9,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 2.3
-    },
-    "adx": 16.854603000824955,
-    "mfi": 63.57894903653385,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ICBSONALI1",
-    "rank": 10,
-    "rankChange": -1,
+    "rank": 2,
+    "rankChange": 2,
     "riskReward": {
       "ratio": 0.3
     },
-    "adx": 18.78838155699242,
-    "mfi": 76.0145491346824,
+    "adx": 13.49401701874495,
+    "mfi": 42.876769466565804,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "ENVOYTEX",
+    "rank": 3,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 13.984634646736863,
+    "mfi": 62.46996753209474,
     "obvTrend": "rising"
+  },
+  {
+    "code": "SPCL",
+    "rank": 4,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 23.234256221821674,
+    "mfi": 57.27240819693489,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "PUBALIBANK",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 26.414800309385136,
+    "mfi": 51.12196859418192,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "ICBSONALI1",
+    "rank": 6,
+    "rankChange": 4,
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 18.072408156897687,
+    "mfi": 69.93935050397987,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "IBP",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 33.68232523945632,
+    "mfi": 62.656240173460084,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "AGRANINS",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 23.584742368138375,
+    "mfi": 97.72231626943598,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "DGIC",
+    "rank": 9,
+    "rankChange": -6,
+    "riskReward": null,
+    "adx": 31.901130757637066,
+    "mfi": 75.17272531361898,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "CAPMIBBLMF",
+    "rank": 10,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.8
+    },
+    "adx": 12.00809186699137,
+    "mfi": 60.13812441065021,
+    "obvTrend": "falling"
   }
 ]
