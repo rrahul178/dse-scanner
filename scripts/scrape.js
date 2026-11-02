@@ -75,7 +75,14 @@ function writeJson(filePath, data) {
 }
 
 async function fetchHtml(url, params = {}) {
-  const res = await client.get(url, { params });
+  let res;
+  try {
+    res = await client.get(url, { params });
+  } catch (err) {
+    // কারণ যেন লগে পরিষ্কার দেখা যায় (HTTP স্ট্যাটাস / নেটওয়ার্ক কোড)
+    const why = err.response ? `HTTP ${err.response.status}` : err.code || err.message;
+    throw new Error(`${why} — ${url}`);
+  }
   if (res.status !== 200) {
     throw new Error(`HTTP ${res.status} ফেরত এসেছে: ${url}`);
   }
@@ -460,7 +467,12 @@ function scoreStock(code, historyRaw) {
 // ---------- Scrapers ----------
 async function scrapeLatest() {
   const $ = await fetchHtml(URLS.LATEST);
-  return parseTable($, "table.table-bordered", "table.table-bordered tr", true);
+  const rows = parseTable($, "table.table-bordered", "table.table-bordered tr", true);
+  // ব্লক/ক্যাপচা/পরিবর্তিত পেজে টেবিল না পেলে চুপ করে খালি ডেটা না লিখে এরর দিই
+  if (!rows.length) {
+    throw new Error("টেবিল পাওয়া যায়নি (পেজ ব্লকড বা HTML বদলেছে?)");
+  }
+  return rows;
 }
 
 async function scrapeTop30() {
@@ -511,10 +523,12 @@ async function main() {
   const scoredList = [];
   const results = { latest: null, top30: null, dsex: null };
 
+  let lastError = null;
   try {
     results.latest = await scrapeLatest();
     writeJson(path.join(OUTPUT_DIR, "latest.json"), results.latest);
   } catch (err) {
+    lastError = err.message;
     console.error("✗ latest.json স্ক্র্যাপ ব্যর্থ:", err.message);
   }
 
@@ -537,18 +551,28 @@ async function main() {
     candidates = selectCandidates(results.latest);
     writeJson(path.join(OUTPUT_DIR, "candidates.json"), candidates);
   } else {
-    console.error("✗ latest.json না থাকায় candidate বাছাই করা যায়নি, historical scrape স্কিপ করা হচ্ছে");
+    // আজকের latest আনা যায়নি — আগের candidates.json দিয়েই historical চালাই,
+    // যাতে ফ্রন্টএন্ডের চার্ট/স্কোর ডেটা হারিয়ে না যায়
+    try {
+      candidates = JSON.parse(fs.readFileSync(path.join(OUTPUT_DIR, "candidates.json"), "utf-8"));
+      console.error(`✗ latest.json পাওয়া যায়নি, আগের ${candidates.length}টা candidate ব্যবহার করা হচ্ছে`);
+    } catch (err) {
+      console.error("✗ latest.json ও আগের candidates.json দুটোই নেই, historical স্কিপ");
+    }
   }
 
   // আগের রানের historical ফাইল থেকে যেগুলো এখন আর candidate লিস্টে নেই,
-  // সেগুলো মুছে ফেলা হচ্ছে (repo তে অপ্রয়োজনীয় পুরনো ফাইল জমা এড়াতে)
+  // সেগুলো মুছে ফেলা হচ্ছে (repo তে অপ্রয়োজনীয় পুরনো ফাইল জমা এড়াতে)।
+  // candidate লিস্ট খালি হলে কিছুই মোছা হবে না — নইলে একটা ব্যর্থ রানেই সব ডেটা চলে যেত
   try {
-    const existing = fs.readdirSync(HIST_DIR).filter((f) => f.endsWith(".json"));
-    for (const f of existing) {
-      const code = f.replace(/\.json$/, "");
-      if (!candidates.includes(code)) {
-        fs.unlinkSync(path.join(HIST_DIR, f));
-        console.log(`🗑 পুরনো ফাইল মুছে ফেলা হলো: data/historical/${f}`);
+    if (candidates.length) {
+      const existing = fs.readdirSync(HIST_DIR).filter((f) => f.endsWith(".json"));
+      for (const f of existing) {
+        const code = f.replace(/\.json$/, "");
+        if (!candidates.includes(code)) {
+          fs.unlinkSync(path.join(HIST_DIR, f));
+          console.log(`🗑 পুরনো ফাইল মুছে ফেলা হলো: data/historical/${f}`);
+        }
       }
     }
   } catch (err) {
@@ -622,6 +646,7 @@ async function main() {
     watchlist: top10.length ? top10 : previousMeta.watchlist || [],
     strategy: "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
     noFreshSession,
+    lastError,
   });
 
   console.log("\n✅ স্ক্র্যাপ সম্পন্ন\n");
