@@ -4,7 +4,7 @@
   "description": "DSE (Dhaka Stock Exchange) data scraper + scanner - static hosting friendly",
   "type": "commonjs",
   "scripts": {
-    "scrape": "node scripts/scrape.js"
+    "scrape": "node scripts/scrape.js && node scripts/probe-company.js"
   },
   "dependencies": {
     "axios": "^1.7.7",
