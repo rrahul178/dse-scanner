@@ -8,9 +8,9 @@
     "CLOSEP*": "0",
     "YCP*": "18.3",
     "% CHANGE": "0.55",
-    "TRADE": "24",
-    "VALUE (mn)": "0.2820",
-    "VOLUME": "15437"
+    "TRADE": "36",
+    "VALUE (mn)": "0.4930",
+    "VOLUME": "26915"
   },
   {
     "#": "2",
@@ -21,9 +21,9 @@
     "CLOSEP*": "0",
     "YCP*": "15.3",
     "% CHANGE": "1.96",
-    "TRADE": "18",
-    "VALUE (mn)": "0.0620",
-    "VOLUME": "3965"
+    "TRADE": "20",
+    "VALUE (mn)": "0.0650",
+    "VOLUME": "4167"
   },
   {
     "#": "3",
@@ -34,9 +34,9 @@
     "CLOSEP*": "0",
     "YCP*": "4.3",
     "% CHANGE": "0",
-    "TRADE": "80",
-    "VALUE (mn)": "1.8920",
-    "VOLUME": "442901"
+    "TRADE": "87",
+    "VALUE (mn)": "2.1130",
+    "VOLUME": "494423"
   },
   {
     "#": "4",
@@ -47,9 +47,9 @@
     "CLOSEP*": "0",
     "YCP*": "22.2",
     "% CHANGE": "0.45",
-    "TRADE": "24",
-    "VALUE (mn)": "0.1490",
-    "VOLUME": "6674"
+    "TRADE": "26",
+    "VALUE (mn)": "0.1530",
+    "VOLUME": "6857"
   },
   {
     "#": "5",
@@ -60,48 +60,48 @@
     "CLOSEP*": "0",
     "YCP*": "177.7",
     "% CHANGE": "0.17",
-    "TRADE": "85",
-    "VALUE (mn)": "1.1830",
-    "VOLUME": "6644"
+    "TRADE": "87",
+    "VALUE (mn)": "1.1850",
+    "VOLUME": "6654"
   },
   {
     "#": "6",
     "TRADING CODE": "ACIFORMULA",
-    "LTP*": "136",
+    "LTP*": "135.8",
     "HIGH": "137.4",
     "LOW": "135.3",
     "CLOSEP*": "0",
     "YCP*": "135.2",
-    "% CHANGE": "0.59",
-    "TRADE": "58",
-    "VALUE (mn)": "1.0540",
-    "VOLUME": "7762"
+    "% CHANGE": "0.44",
+    "TRADE": "61",
+    "VALUE (mn)": "1.0580",
+    "VOLUME": "7791"
   },
   {
     "#": "7",
     "TRADING CODE": "ACMELAB",
-    "LTP*": "77.3",
+    "LTP*": "77.2",
     "HIGH": "78",
     "LOW": "77.1",
     "CLOSEP*": "0",
     "YCP*": "77.6",
-    "% CHANGE": "-0.39",
-    "TRADE": "147",
-    "VALUE (mn)": "2.9050",
-    "VOLUME": "37550"
+    "% CHANGE": "-0.52",
+    "TRADE": "153",
+    "VALUE (mn)": "2.9170",
+    "VOLUME": "37705"
   },
   {
     "#": "8",
     "TRADING CODE": "ACMEPL",
-    "LTP*": "23.2",
+    "LTP*": "23.3",
     "HIGH": "23.7",
     "LOW": "22.7",
     "CLOSEP*": "0",
     "YCP*": "22.7",
-    "% CHANGE": "2.20",
-    "TRADE": "376",
-    "VALUE (mn)": "7.7400",
-    "VOLUME": "334446"
+    "% CHANGE": "2.64",
+    "TRADE": "408",
+    "VALUE (mn)": "8.1700",
+    "VOLUME": "352911"
   },
   {
     "#": "9",
@@ -125,9 +125,9 @@
     "CLOSEP*": "0",
     "YCP*": "53.8",
     "% CHANGE": "-1.49",
-    "TRADE": "155",
-    "VALUE (mn)": "1.7640",
-    "VOLUME": "32989"
+    "TRADE": "161",
+    "VALUE (mn)": "1.8700",
+    "VOLUME": "34990"
   },
   {
     "#": "11",
@@ -138,9 +138,9 @@
     "CLOSEP*": "0",
     "YCP*": "13.2",
     "% CHANGE": "0.76",
-    "TRADE": "66",
-    "VALUE (mn)": "0.6770",
-    "VOLUME": "50897"
+    "TRADE": "70",
+    "VALUE (mn)": "0.7040",
+    "VOLUME": "52923"
   },
   {
     "#": "12",
@@ -158,15 +158,15 @@
   {
     "#": "13",
     "TRADING CODE": "AFTABAUTO",
-    "LTP*": "24.6",
+    "LTP*": "24.5",
     "HIGH": "24.8",
     "LOW": "24.5",
     "CLOSEP*": "0",
     "YCP*": "24.8",
-    "% CHANGE": "-0.81",
-    "TRADE": "33",
-    "VALUE (mn)": "0.2400",
-    "VOLUME": "9773"
+    "% CHANGE": "-1.21",
+    "TRADE": "42",
+    "VALUE (mn)": "0.2870",
+    "VOLUME": "11673"
   },
   {
     "#": "14",
@@ -177,22 +177,22 @@
     "CLOSEP*": "0",
     "YCP*": "26.9",
     "% CHANGE": "0",
-    "TRADE": "368",
-    "VALUE (mn)": "5.6390",
-    "VOLUME": "209000"
+    "TRADE": "370",
+    "VALUE (mn)": "5.6420",
+    "VOLUME": "209102"
   },
   {
     "#": "15",
     "TRADING CODE": "AGRANINS",
-    "LTP*": "35.7",
+    "LTP*": "35.6",
     "HIGH": "36.8",
     "LOW": "33.8",
     "CLOSEP*": "0",
     "YCP*": "33.8",
-    "% CHANGE": "5.62",
-    "TRADE": "1285",
-    "VALUE (mn)": "34.4450",
-    "VOLUME": "972645"
+    "% CHANGE": "5.33",
+    "TRADE": "1306",
+    "VALUE (mn)": "34.8330",
+    "VOLUME": "983551"
   },
   {
     "#": "16",
@@ -203,35 +203,35 @@
     "CLOSEP*": "0",
     "YCP*": "27.6",
     "% CHANGE": "-1.45",
-    "TRADE": "34",
-    "VALUE (mn)": "0.2690",
-    "VOLUME": "9894"
+    "TRADE": "36",
+    "VALUE (mn)": "0.2720",
+    "VOLUME": "9999"
   },
   {
     "#": "17",
     "TRADING CODE": "AL-HAJTEX",
-    "LTP*": "67.6",
+    "LTP*": "67.2",
     "HIGH": "68.1",
     "LOW": "67",
     "CLOSEP*": "0",
     "YCP*": "67.3",
-    "% CHANGE": "0.45",
-    "TRADE": "156",
-    "VALUE (mn)": "1.3810",
-    "VOLUME": "20386"
+    "% CHANGE": "-0.15",
+    "TRADE": "181",
+    "VALUE (mn)": "1.5080",
+    "VOLUME": "22276"
   },
   {
     "#": "18",
     "TRADING CODE": "ALARABANK",
-    "LTP*": "15.2",
+    "LTP*": "15",
     "HIGH": "16",
     "LOW": "14.8",
     "CLOSEP*": "0",
     "YCP*": "14.8",
-    "% CHANGE": "2.70",
-    "TRADE": "32",
-    "VALUE (mn)": "0.2970",
-    "VOLUME": "19098"
+    "% CHANGE": "1.35",
+    "TRADE": "34",
+    "VALUE (mn)": "0.2990",
+    "VOLUME": "19199"
   },
   {
     "#": "19",
@@ -268,9 +268,9 @@
     "CLOSEP*": "0",
     "YCP*": "29.3",
     "% CHANGE": "1.71",
-    "TRADE": "514",
-    "VALUE (mn)": "13.4900",
-    "VOLUME": "453094"
+    "TRADE": "534",
+    "VALUE (mn)": "13.9210",
+    "VOLUME": "467570"
   },
   {
     "#": "22",
@@ -307,9 +307,9 @@
     "CLOSEP*": "0",
     "YCP*": "114",
     "% CHANGE": "0",
-    "TRADE": "664",
-    "VALUE (mn)": "18.3490",
-    "VOLUME": "160391"
+    "TRADE": "694",
+    "VALUE (mn)": "18.7010",
+    "VOLUME": "163475"
   },
   {
     "#": "25",
@@ -327,15 +327,15 @@
   {
     "#": "26",
     "TRADING CODE": "APEXFOODS",
-    "LTP*": "287.3",
+    "LTP*": "286",
     "HIGH": "287.7",
     "LOW": "283",
     "CLOSEP*": "0",
     "YCP*": "281.6",
-    "% CHANGE": "2.02",
-    "TRADE": "250",
-    "VALUE (mn)": "8.6340",
-    "VOLUME": "30252"
+    "% CHANGE": "1.56",
+    "TRADE": "260",
+    "VALUE (mn)": "8.8140",
+    "VOLUME": "30882"
   },
   {
     "#": "27",
@@ -346,9 +346,9 @@
     "CLOSEP*": "0",
     "YCP*": "159.2",
     "% CHANGE": "-0.13",
-    "TRADE": "244",
-    "VALUE (mn)": "5.2630",
-    "VOLUME": "33081"
+    "TRADE": "247",
+    "VALUE (mn)": "5.2640",
+    "VOLUME": "33088"
   },
   {
     "#": "28",
@@ -366,28 +366,28 @@
   {
     "#": "29",
     "TRADING CODE": "APEXTANRY",
-    "LTP*": "71",
+    "LTP*": "70.5",
     "HIGH": "71.5",
-    "LOW": "71",
+    "LOW": "70.5",
     "CLOSEP*": "0",
     "YCP*": "70.5",
-    "% CHANGE": "0.71",
-    "TRADE": "9",
-    "VALUE (mn)": "0.0090",
-    "VOLUME": "133"
+    "% CHANGE": "0",
+    "TRADE": "22",
+    "VALUE (mn)": "0.0380",
+    "VOLUME": "535"
   },
   {
     "#": "30",
     "TRADING CODE": "ARAMIT",
-    "LTP*": "161.1",
+    "LTP*": "162",
     "HIGH": "167.5",
     "LOW": "160",
     "CLOSEP*": "0",
     "YCP*": "163.7",
-    "% CHANGE": "-1.59",
-    "TRADE": "81",
-    "VALUE (mn)": "0.6500",
-    "VOLUME": "4035"
+    "% CHANGE": "-1.04",
+    "TRADE": "86",
+    "VALUE (mn)": "0.6750",
+    "VOLUME": "4187"
   },
   {
     "#": "31",
@@ -398,9 +398,9 @@
     "CLOSEP*": "0",
     "YCP*": "19.4",
     "% CHANGE": "1.03",
-    "TRADE": "215",
-    "VALUE (mn)": "7.0730",
-    "VOLUME": "361512"
+    "TRADE": "221",
+    "VALUE (mn)": "7.2220",
+    "VOLUME": "369085"
   },
   {
     "#": "32",
@@ -411,22 +411,22 @@
     "CLOSEP*": "0",
     "YCP*": "40.8",
     "% CHANGE": "-1.23",
-    "TRADE": "107",
-    "VALUE (mn)": "2.0130",
-    "VOLUME": "49810"
+    "TRADE": "111",
+    "VALUE (mn)": "2.1010",
+    "VOLUME": "52010"
   },
   {
     "#": "33",
     "TRADING CODE": "ASIAPACINS",
-    "LTP*": "44.1",
+    "LTP*": "44.3",
     "HIGH": "44.9",
     "LOW": "44.1",
     "CLOSEP*": "0",
     "YCP*": "44.4",
-    "% CHANGE": "-0.68",
-    "TRADE": "64",
-    "VALUE (mn)": "1.0670",
-    "VOLUME": "24092"
+    "% CHANGE": "-0.23",
+    "TRADE": "67",
+    "VALUE (mn)": "1.0700",
+    "VOLUME": "24170"
   },
   {
     "#": "34",
@@ -437,22 +437,22 @@
     "CLOSEP*": "0",
     "YCP*": "106.7",
     "% CHANGE": "-1.59",
-    "TRADE": "512",
-    "VALUE (mn)": "15.3170",
-    "VOLUME": "145442"
+    "TRADE": "526",
+    "VALUE (mn)": "15.6210",
+    "VOLUME": "148337"
   },
   {
     "#": "35",
     "TRADING CODE": "AZIZPIPES",
-    "LTP*": "96.9",
+    "LTP*": "97",
     "HIGH": "97.4",
     "LOW": "95.6",
     "CLOSEP*": "0",
     "YCP*": "96.4",
-    "% CHANGE": "0.52",
-    "TRADE": "80",
-    "VALUE (mn)": "0.3640",
-    "VOLUME": "3779"
+    "% CHANGE": "0.62",
+    "TRADE": "102",
+    "VALUE (mn)": "0.5030",
+    "VOLUME": "5214"
   },
   {
     "#": "36",
@@ -463,9 +463,9 @@
     "CLOSEP*": "0",
     "YCP*": "105.6",
     "% CHANGE": "-0.85",
-    "TRADE": "121",
-    "VALUE (mn)": "1.5660",
-    "VOLUME": "14878"
+    "TRADE": "122",
+    "VALUE (mn)": "1.5690",
+    "VOLUME": "14908"
   },
   {
     "#": "37",
@@ -476,9 +476,9 @@
     "CLOSEP*": "0",
     "YCP*": "17.1",
     "% CHANGE": "-0.58",
-    "TRADE": "129",
-    "VALUE (mn)": "3.2700",
-    "VOLUME": "191999"
+    "TRADE": "131",
+    "VALUE (mn)": "3.3040",
+    "VOLUME": "193999"
   },
   {
     "#": "38",
@@ -509,15 +509,15 @@
   {
     "#": "40",
     "TRADING CODE": "BATBC",
-    "LTP*": "191.7",
+    "LTP*": "191.5",
     "HIGH": "201",
     "LOW": "190.8",
     "CLOSEP*": "0",
     "YCP*": "201.1",
-    "% CHANGE": "-4.67",
-    "TRADE": "2621",
-    "VALUE (mn)": "33.0540",
-    "VOLUME": "168953"
+    "% CHANGE": "-4.77",
+    "TRADE": "2716",
+    "VALUE (mn)": "34.7080",
+    "VOLUME": "177595"
   },
   {
     "#": "41",
@@ -528,9 +528,9 @@
     "CLOSEP*": "0",
     "YCP*": "4.3",
     "% CHANGE": "0",
-    "TRADE": "42",
-    "VALUE (mn)": "1.4330",
-    "VOLUME": "336493"
+    "TRADE": "44",
+    "VALUE (mn)": "1.6910",
+    "VOLUME": "396493"
   },
   {
     "#": "42",
@@ -541,35 +541,35 @@
     "CLOSEP*": "0",
     "YCP*": "8.6",
     "% CHANGE": "-1.16",
-    "TRADE": "127",
-    "VALUE (mn)": "1.5220",
-    "VOLUME": "179332"
+    "TRADE": "128",
+    "VALUE (mn)": "1.5310",
+    "VOLUME": "180332"
   },
   {
     "#": "43",
     "TRADING CODE": "BBSCABLES",
-    "LTP*": "16.2",
+    "LTP*": "16.1",
     "HIGH": "16.4",
     "LOW": "16.1",
     "CLOSEP*": "0",
     "YCP*": "16.2",
-    "% CHANGE": "0",
-    "TRADE": "392",
-    "VALUE (mn)": "8.2420",
-    "VOLUME": "508795"
+    "% CHANGE": "-0.62",
+    "TRADE": "397",
+    "VALUE (mn)": "8.2910",
+    "VOLUME": "511765"
   },
   {
     "#": "44",
     "TRADING CODE": "BDAUTOCA",
-    "LTP*": "168.6",
+    "LTP*": "168",
     "HIGH": "169",
     "LOW": "165",
     "CLOSEP*": "0",
     "YCP*": "165.8",
-    "% CHANGE": "1.69",
-    "TRADE": "334",
-    "VALUE (mn)": "3.1100",
-    "VOLUME": "18496"
+    "% CHANGE": "1.33",
+    "TRADE": "344",
+    "VALUE (mn)": "3.3270",
+    "VOLUME": "19786"
   },
   {
     "#": "45",
@@ -580,9 +580,9 @@
     "CLOSEP*": "0",
     "YCP*": "27.7",
     "% CHANGE": "-1.81",
-    "TRADE": "300",
-    "VALUE (mn)": "5.9160",
-    "VOLUME": "215885"
+    "TRADE": "308",
+    "VALUE (mn)": "6.1810",
+    "VOLUME": "225596"
   },
   {
     "#": "46",
@@ -593,35 +593,35 @@
     "CLOSEP*": "0",
     "YCP*": "10.9",
     "% CHANGE": "2.75",
-    "TRADE": "21",
-    "VALUE (mn)": "0.2550",
-    "VOLUME": "22893"
+    "TRADE": "24",
+    "VALUE (mn)": "0.3220",
+    "VOLUME": "28893"
   },
   {
     "#": "47",
     "TRADING CODE": "BDLAMPS",
-    "LTP*": "214.6",
+    "LTP*": "214.5",
     "HIGH": "230",
     "LOW": "212",
     "CLOSEP*": "0",
     "YCP*": "214.7",
-    "% CHANGE": "-0.05",
-    "TRADE": "219",
+    "% CHANGE": "-0.09",
+    "TRADE": "220",
     "VALUE (mn)": "3.2790",
-    "VOLUME": "15372"
+    "VOLUME": "15375"
   },
   {
     "#": "48",
     "TRADING CODE": "BDTHAI",
-    "LTP*": "11.4",
+    "LTP*": "11.5",
     "HIGH": "11.6",
     "LOW": "11.4",
     "CLOSEP*": "0",
     "YCP*": "11.3",
-    "% CHANGE": "0.88",
-    "TRADE": "260",
-    "VALUE (mn)": "3.5250",
-    "VOLUME": "306556"
+    "% CHANGE": "1.77",
+    "TRADE": "266",
+    "VALUE (mn)": "3.5280",
+    "VOLUME": "306838"
   },
   {
     "#": "49",
@@ -632,9 +632,9 @@
     "CLOSEP*": "0",
     "YCP*": "17.4",
     "% CHANGE": "-4.02",
-    "TRADE": "416",
-    "VALUE (mn)": "8.0190",
-    "VOLUME": "471776"
+    "TRADE": "418",
+    "VALUE (mn)": "8.0280",
+    "VOLUME": "472316"
   },
   {
     "#": "50",
@@ -645,9 +645,9 @@
     "CLOSEP*": "0",
     "YCP*": "11.2",
     "% CHANGE": "-1.79",
-    "TRADE": "75",
+    "TRADE": "77",
     "VALUE (mn)": "0.6550",
-    "VOLUME": "59341"
+    "VOLUME": "59362"
   },
   {
     "#": "51",
@@ -665,15 +665,15 @@
   {
     "#": "52",
     "TRADING CODE": "BEACONPHAR",
-    "LTP*": "91.1",
+    "LTP*": "91",
     "HIGH": "92.7",
     "LOW": "90.5",
     "CLOSEP*": "0",
     "YCP*": "91.5",
-    "% CHANGE": "-0.44",
-    "TRADE": "353",
-    "VALUE (mn)": "4.4970",
-    "VOLUME": "49395"
+    "% CHANGE": "-0.55",
+    "TRADE": "360",
+    "VALUE (mn)": "4.5070",
+    "VOLUME": "49507"
   },
   {
     "#": "53",
@@ -697,9 +697,9 @@
     "CLOSEP*": "0",
     "YCP*": "1437.2",
     "% CHANGE": "-0.57",
-    "TRADE": "247",
-    "VALUE (mn)": "2.6010",
-    "VOLUME": "1814"
+    "TRADE": "267",
+    "VALUE (mn)": "2.9060",
+    "VOLUME": "2028"
   },
   {
     "#": "55",
@@ -710,9 +710,9 @@
     "CLOSEP*": "0",
     "YCP*": "12.9",
     "% CHANGE": "0.78",
-    "TRADE": "116",
+    "TRADE": "117",
     "VALUE (mn)": "1.4610",
-    "VOLUME": "113000"
+    "VOLUME": "113001"
   },
   {
     "#": "56",
@@ -730,15 +730,15 @@
   {
     "#": "57",
     "TRADING CODE": "BNIPLC",
-    "LTP*": "153.5",
+    "LTP*": "155.8",
     "HIGH": "157.5",
     "LOW": "153.1",
     "CLOSEP*": "0",
     "YCP*": "153.8",
-    "% CHANGE": "-0.20",
-    "TRADE": "101",
+    "% CHANGE": "1.30",
+    "TRADE": "102",
     "VALUE (mn)": "2.6810",
-    "VOLUME": "17239"
+    "VOLUME": "17240"
   },
   {
     "#": "58",
@@ -756,15 +756,15 @@
   {
     "#": "59",
     "TRADING CODE": "BPPL",
-    "LTP*": "18.9",
+    "LTP*": "18.8",
     "HIGH": "19.1",
     "LOW": "18.6",
     "CLOSEP*": "0",
     "YCP*": "18.8",
-    "% CHANGE": "0.53",
-    "TRADE": "531",
-    "VALUE (mn)": "14.0010",
-    "VOLUME": "742895"
+    "% CHANGE": "0",
+    "TRADE": "563",
+    "VALUE (mn)": "15.0610",
+    "VOLUME": "799208"
   },
   {
     "#": "60",
@@ -775,87 +775,87 @@
     "CLOSEP*": "0",
     "YCP*": "66.4",
     "% CHANGE": "-0.45",
-    "TRADE": "1127",
-    "VALUE (mn)": "48.0030",
-    "VOLUME": "725447"
+    "TRADE": "1245",
+    "VALUE (mn)": "53.8710",
+    "VOLUME": "814348"
   },
   {
     "#": "61",
     "TRADING CODE": "BSC",
-    "LTP*": "101.9",
+    "LTP*": "101.8",
     "HIGH": "103.6",
     "LOW": "101.6",
     "CLOSEP*": "0",
     "YCP*": "101.9",
-    "% CHANGE": "0",
-    "TRADE": "233",
-    "VALUE (mn)": "3.5070",
-    "VOLUME": "34348"
+    "% CHANGE": "-0.10",
+    "TRADE": "248",
+    "VALUE (mn)": "4.0030",
+    "VOLUME": "39215"
   },
   {
     "#": "62",
     "TRADING CODE": "BSCPLC",
-    "LTP*": "141",
+    "LTP*": "139.6",
     "HIGH": "141.8",
-    "LOW": "139.9",
+    "LOW": "139.6",
     "CLOSEP*": "0",
     "YCP*": "140.3",
-    "% CHANGE": "0.50",
-    "TRADE": "63",
-    "VALUE (mn)": "0.5750",
-    "VOLUME": "4093"
+    "% CHANGE": "-0.50",
+    "TRADE": "81",
+    "VALUE (mn)": "0.7690",
+    "VOLUME": "5483"
   },
   {
     "#": "63",
     "TRADING CODE": "BSRMLTD",
-    "LTP*": "94.2",
+    "LTP*": "94.3",
     "HIGH": "95.9",
     "LOW": "94.1",
     "CLOSEP*": "0",
     "YCP*": "94.3",
-    "% CHANGE": "-0.11",
-    "TRADE": "90",
-    "VALUE (mn)": "0.9690",
-    "VOLUME": "10259"
+    "% CHANGE": "0",
+    "TRADE": "93",
+    "VALUE (mn)": "1.0770",
+    "VOLUME": "11410"
   },
   {
     "#": "64",
     "TRADING CODE": "BSRMSTEEL",
     "LTP*": "90.5",
     "HIGH": "91.2",
-    "LOW": "90.5",
+    "LOW": "90.4",
     "CLOSEP*": "0",
     "YCP*": "90.8",
     "% CHANGE": "-0.33",
-    "TRADE": "275",
-    "VALUE (mn)": "6.0110",
-    "VOLUME": "66311"
+    "TRADE": "284",
+    "VALUE (mn)": "6.2320",
+    "VOLUME": "68757"
   },
   {
     "#": "65",
     "TRADING CODE": "BXPHARMA",
-    "LTP*": "142.1",
+    "LTP*": "142",
     "HIGH": "144.8",
     "LOW": "141.9",
     "CLOSEP*": "0",
     "YCP*": "144.3",
-    "% CHANGE": "-1.52",
-    "TRADE": "757",
-    "VALUE (mn)": "25.8840",
-    "VOLUME": "181081"
+    "% CHANGE": "-1.59",
+    "TRADE": "867",
+    "VALUE (mn)": "31.3490",
+    "VOLUME": "219579"
   },
   {
     "#": "66",
     "TRADING CODE": "CENTRALINS",
-    "LTP*": "43.6",
+    "LTP*": "43.5",
     "HIGH": "44.7",
     "LOW": "43.5",
     "CLOSEP*": "0",
     "YCP*": "44.4",
-    "% CHANGE": "-1.80",
-    "TRADE": "226",
-    "VALUE (mn)": "5.6320",
-    "VOLUME": "127634"
+    "% CHANGE": "-2.03",
+    "TRADE": "233",
+    "VALUE (mn)": "5.7060",
+    "VOLUME": "129333"
   },
   {
     "#": "67",
@@ -866,9 +866,9 @@
     "CLOSEP*": "0",
     "YCP*": "8.3",
     "% CHANGE": "0",
-    "TRADE": "39",
-    "VALUE (mn)": "0.2400",
-    "VOLUME": "28946"
+    "TRADE": "46",
+    "VALUE (mn)": "0.2900",
+    "VOLUME": "35044"
   },
   {
     "#": "68",
@@ -879,9 +879,9 @@
     "CLOSEP*": "0",
     "YCP*": "29.3",
     "% CHANGE": "-0.68",
-    "TRADE": "654",
-    "VALUE (mn)": "16.3570",
-    "VOLUME": "561709"
+    "TRADE": "668",
+    "VALUE (mn)": "16.5240",
+    "VOLUME": "567458"
   },
   {
     "#": "69",
@@ -914,13 +914,13 @@
     "TRADING CODE": "CNATEX",
     "LTP*": "2.5",
     "HIGH": "2.6",
-    "LOW": "2.5",
+    "LOW": "2.4",
     "CLOSEP*": "0",
     "YCP*": "2.5",
     "% CHANGE": "0",
-    "TRADE": "33",
+    "TRADE": "35",
     "VALUE (mn)": "0.0570",
-    "VOLUME": "22942"
+    "VOLUME": "22947"
   },
   {
     "#": "72",
@@ -938,28 +938,28 @@
   {
     "#": "73",
     "TRADING CODE": "CONTININS",
-    "LTP*": "31.8",
+    "LTP*": "31.7",
     "HIGH": "32.7",
-    "LOW": "31.8",
+    "LOW": "31.7",
     "CLOSEP*": "0",
     "YCP*": "32",
-    "% CHANGE": "-0.62",
-    "TRADE": "276",
-    "VALUE (mn)": "6.4890",
-    "VOLUME": "200646"
+    "% CHANGE": "-0.94",
+    "TRADE": "278",
+    "VALUE (mn)": "6.4970",
+    "VOLUME": "200911"
   },
   {
     "#": "74",
     "TRADING CODE": "COPPERTECH",
-    "LTP*": "23.4",
+    "LTP*": "23.5",
     "HIGH": "23.7",
     "LOW": "22.8",
     "CLOSEP*": "0",
     "YCP*": "22.6",
-    "% CHANGE": "3.54",
-    "TRADE": "338",
-    "VALUE (mn)": "6.7420",
-    "VOLUME": "289362"
+    "% CHANGE": "3.98",
+    "TRADE": "366",
+    "VALUE (mn)": "7.2420",
+    "VOLUME": "310660"
   },
   {
     "#": "75",
@@ -977,28 +977,28 @@
   {
     "#": "76",
     "TRADING CODE": "CRYSTALINS",
-    "LTP*": "65.7",
+    "LTP*": "65.2",
     "HIGH": "67.6",
-    "LOW": "65.5",
+    "LOW": "65.2",
     "CLOSEP*": "0",
     "YCP*": "67.2",
-    "% CHANGE": "-2.23",
-    "TRADE": "453",
-    "VALUE (mn)": "8.8680",
-    "VOLUME": "133294"
+    "% CHANGE": "-2.98",
+    "TRADE": "489",
+    "VALUE (mn)": "9.7600",
+    "VOLUME": "146926"
   },
   {
     "#": "77",
     "TRADING CODE": "CVOPRL",
-    "LTP*": "138.3",
+    "LTP*": "138.8",
     "HIGH": "143.5",
     "LOW": "138.3",
     "CLOSEP*": "0",
     "YCP*": "142.5",
-    "% CHANGE": "-2.95",
-    "TRADE": "572",
-    "VALUE (mn)": "7.7940",
-    "VOLUME": "55401"
+    "% CHANGE": "-2.60",
+    "TRADE": "584",
+    "VALUE (mn)": "7.9220",
+    "VOLUME": "56322"
   },
   {
     "#": "78",
@@ -1009,9 +1009,9 @@
     "CLOSEP*": "0",
     "YCP*": "14.8",
     "% CHANGE": "-0.68",
-    "TRADE": "52",
-    "VALUE (mn)": "0.9260",
-    "VOLUME": "63050"
+    "TRADE": "57",
+    "VALUE (mn)": "0.9560",
+    "VOLUME": "65050"
   },
   {
     "#": "79",
@@ -1022,22 +1022,22 @@
     "CLOSEP*": "0",
     "YCP*": "158.1",
     "% CHANGE": "-0.32",
-    "TRADE": "322",
-    "VALUE (mn)": "6.9340",
-    "VOLUME": "44105"
+    "TRADE": "325",
+    "VALUE (mn)": "6.9510",
+    "VOLUME": "44215"
   },
   {
     "#": "80",
     "TRADING CODE": "DBH",
-    "LTP*": "37.6",
+    "LTP*": "37.3",
     "HIGH": "39.4",
-    "LOW": "37.5",
+    "LOW": "37.3",
     "CLOSEP*": "0",
     "YCP*": "37.9",
-    "% CHANGE": "-0.79",
-    "TRADE": "33",
-    "VALUE (mn)": "0.1900",
-    "VOLUME": "5062"
+    "% CHANGE": "-1.58",
+    "TRADE": "41",
+    "VALUE (mn)": "0.2240",
+    "VOLUME": "5958"
   },
   {
     "#": "81",
@@ -1048,22 +1048,22 @@
     "CLOSEP*": "0",
     "YCP*": "67.4",
     "% CHANGE": "-0.15",
-    "TRADE": "140",
-    "VALUE (mn)": "3.0550",
-    "VOLUME": "45491"
+    "TRADE": "144",
+    "VALUE (mn)": "3.1040",
+    "VOLUME": "46220"
   },
   {
     "#": "82",
     "TRADING CODE": "DELTASPINN",
-    "LTP*": "7.1",
+    "LTP*": "6.9",
     "HIGH": "7.3",
     "LOW": "6.9",
     "CLOSEP*": "0",
     "YCP*": "7",
-    "% CHANGE": "1.43",
-    "TRADE": "50",
-    "VALUE (mn)": "1.0390",
-    "VOLUME": "148993"
+    "% CHANGE": "-1.43",
+    "TRADE": "68",
+    "VALUE (mn)": "1.3850",
+    "VOLUME": "198993"
   },
   {
     "#": "83",
@@ -1081,28 +1081,28 @@
   {
     "#": "84",
     "TRADING CODE": "DESHBANDHU",
-    "LTP*": "13.1",
+    "LTP*": "13",
     "HIGH": "13.2",
     "LOW": "13",
     "CLOSEP*": "0",
     "YCP*": "12.9",
-    "% CHANGE": "1.55",
-    "TRADE": "81",
-    "VALUE (mn)": "0.7430",
-    "VOLUME": "56832"
+    "% CHANGE": "0.78",
+    "TRADE": "84",
+    "VALUE (mn)": "0.8600",
+    "VOLUME": "65832"
   },
   {
     "#": "85",
     "TRADING CODE": "DGIC",
-    "LTP*": "44.4",
+    "LTP*": "44.6",
     "HIGH": "45.9",
     "LOW": "44.2",
     "CLOSEP*": "0",
     "YCP*": "44.8",
-    "% CHANGE": "-0.89",
-    "TRADE": "563",
-    "VALUE (mn)": "18.3770",
-    "VOLUME": "408891"
+    "% CHANGE": "-0.45",
+    "TRADE": "571",
+    "VALUE (mn)": "18.9990",
+    "VOLUME": "422868"
   },
   {
     "#": "86",
@@ -1133,15 +1133,15 @@
   {
     "#": "88",
     "TRADING CODE": "DOMINAGE",
-    "LTP*": "63.3",
+    "LTP*": "63.1",
     "HIGH": "63.9",
     "LOW": "62.6",
     "CLOSEP*": "0",
     "YCP*": "62.9",
-    "% CHANGE": "0.64",
-    "TRADE": "580",
-    "VALUE (mn)": "17.4550",
-    "VOLUME": "275373"
+    "% CHANGE": "0.32",
+    "TRADE": "583",
+    "VALUE (mn)": "17.6150",
+    "VOLUME": "277907"
   },
   {
     "#": "89",
@@ -1152,22 +1152,22 @@
     "CLOSEP*": "0",
     "YCP*": "32.1",
     "% CHANGE": "-1.25",
-    "TRADE": "332",
-    "VALUE (mn)": "12.5490",
-    "VOLUME": "393826"
+    "TRADE": "341",
+    "VALUE (mn)": "13.2230",
+    "VOLUME": "415081"
   },
   {
     "#": "90",
     "TRADING CODE": "DSHGARME",
-    "LTP*": "120.4",
+    "LTP*": "121",
     "HIGH": "122.7",
     "LOW": "116.2",
     "CLOSEP*": "0",
     "YCP*": "117.7",
-    "% CHANGE": "2.29",
-    "TRADE": "282",
-    "VALUE (mn)": "2.3570",
-    "VOLUME": "19763"
+    "% CHANGE": "2.80",
+    "TRADE": "294",
+    "VALUE (mn)": "2.4430",
+    "VOLUME": "20467"
   },
   {
     "#": "91",
@@ -1178,22 +1178,22 @@
     "CLOSEP*": "0",
     "YCP*": "9.1",
     "% CHANGE": "5.49",
-    "TRADE": "1136",
-    "VALUE (mn)": "23.5560",
-    "VOLUME": "2483652"
+    "TRADE": "1155",
+    "VALUE (mn)": "23.7610",
+    "VOLUME": "2505132"
   },
   {
     "#": "92",
     "TRADING CODE": "DULAMIACOT",
-    "LTP*": "194.9",
+    "LTP*": "195",
     "HIGH": "195",
     "LOW": "191",
     "CLOSEP*": "0",
     "YCP*": "191.4",
-    "% CHANGE": "1.83",
-    "TRADE": "19",
-    "VALUE (mn)": "0.3930",
-    "VOLUME": "2017"
+    "% CHANGE": "1.88",
+    "TRADE": "30",
+    "VALUE (mn)": "0.4890",
+    "VOLUME": "2509"
   },
   {
     "#": "93",
@@ -1204,9 +1204,9 @@
     "CLOSEP*": "0",
     "YCP*": "46.7",
     "% CHANGE": "-2.14",
-    "TRADE": "210",
-    "VALUE (mn)": "4.5570",
-    "VOLUME": "99046"
+    "TRADE": "213",
+    "VALUE (mn)": "4.5580",
+    "VOLUME": "99054"
   },
   {
     "#": "94",
@@ -1230,22 +1230,22 @@
     "CLOSEP*": "0",
     "YCP*": "27.6",
     "% CHANGE": "-0.36",
-    "TRADE": "190",
-    "VALUE (mn)": "2.4850",
-    "VOLUME": "89912"
+    "TRADE": "193",
+    "VALUE (mn)": "2.4990",
+    "VOLUME": "90422"
   },
   {
     "#": "96",
     "TRADING CODE": "EASTRNLUB",
-    "LTP*": "1967",
+    "LTP*": "1970",
     "HIGH": "2019",
     "LOW": "1950",
     "CLOSEP*": "0",
     "YCP*": "2012.3",
-    "% CHANGE": "-2.25",
-    "TRADE": "1122",
-    "VALUE (mn)": "26.9990",
-    "VOLUME": "13573"
+    "% CHANGE": "-2.10",
+    "TRADE": "1128",
+    "VALUE (mn)": "27.0870",
+    "VOLUME": "13618"
   },
   {
     "#": "97",
@@ -1256,9 +1256,9 @@
     "CLOSEP*": "0",
     "YCP*": "23.3",
     "% CHANGE": "0",
-    "TRADE": "217",
-    "VALUE (mn)": "3.0500",
-    "VOLUME": "131149"
+    "TRADE": "222",
+    "VALUE (mn)": "3.0540",
+    "VOLUME": "131317"
   },
   {
     "#": "98",
@@ -1276,28 +1276,28 @@
   {
     "#": "99",
     "TRADING CODE": "EGEN",
-    "LTP*": "19.5",
+    "LTP*": "19.4",
     "HIGH": "19.6",
     "LOW": "19.3",
     "CLOSEP*": "0",
     "YCP*": "19.4",
-    "% CHANGE": "0.52",
-    "TRADE": "159",
-    "VALUE (mn)": "3.6390",
-    "VOLUME": "187211"
+    "% CHANGE": "0",
+    "TRADE": "162",
+    "VALUE (mn)": "3.7260",
+    "VOLUME": "191712"
   },
   {
     "#": "100",
     "TRADING CODE": "EHL",
-    "LTP*": "72.5",
+    "LTP*": "72.6",
     "HIGH": "73.8",
     "LOW": "72.5",
     "CLOSEP*": "0",
     "YCP*": "73.8",
-    "% CHANGE": "-1.76",
-    "TRADE": "316",
-    "VALUE (mn)": "2.8360",
-    "VOLUME": "38872"
+    "% CHANGE": "-1.63",
+    "TRADE": "321",
+    "VALUE (mn)": "2.8730",
+    "VOLUME": "39381"
   },
   {
     "#": "101",
@@ -1308,9 +1308,9 @@
     "CLOSEP*": "0",
     "YCP*": "30.5",
     "% CHANGE": "0.33",
-    "TRADE": "140",
-    "VALUE (mn)": "3.9930",
-    "VOLUME": "130200"
+    "TRADE": "142",
+    "VALUE (mn)": "4.0170",
+    "VOLUME": "131000"
   },
   {
     "#": "102",
@@ -1321,22 +1321,22 @@
     "CLOSEP*": "0",
     "YCP*": "27.4",
     "% CHANGE": "-1.46",
-    "TRADE": "167",
-    "VALUE (mn)": "1.5550",
-    "VOLUME": "56495"
+    "TRADE": "168",
+    "VALUE (mn)": "1.5690",
+    "VOLUME": "56995"
   },
   {
     "#": "103",
     "TRADING CODE": "ENVOYTEX",
-    "LTP*": "73.6",
+    "LTP*": "73.8",
     "HIGH": "73.8",
     "LOW": "72.6",
     "CLOSEP*": "0",
     "YCP*": "72.6",
-    "% CHANGE": "1.38",
-    "TRADE": "1222",
-    "VALUE (mn)": "57.6900",
-    "VOLUME": "788185"
+    "% CHANGE": "1.65",
+    "TRADE": "1331",
+    "VALUE (mn)": "63.9100",
+    "VOLUME": "872623"
   },
   {
     "#": "104",
@@ -1360,9 +1360,9 @@
     "CLOSEP*": "0",
     "YCP*": "19",
     "% CHANGE": "0.53",
-    "TRADE": "101",
-    "VALUE (mn)": "0.8250",
-    "VOLUME": "43498"
+    "TRADE": "102",
+    "VALUE (mn)": "0.8290",
+    "VOLUME": "43748"
   },
   {
     "#": "106",
@@ -1373,9 +1373,9 @@
     "CLOSEP*": "0",
     "YCP*": "14.4",
     "% CHANGE": "2.08",
-    "TRADE": "1851",
-    "VALUE (mn)": "117.2220",
-    "VOLUME": "7873620"
+    "TRADE": "1930",
+    "VALUE (mn)": "120.8170",
+    "VOLUME": "8118219"
   },
   {
     "#": "107",
@@ -1386,9 +1386,9 @@
     "CLOSEP*": "0",
     "YCP*": "2",
     "% CHANGE": "0",
-    "TRADE": "29",
+    "TRADE": "31",
     "VALUE (mn)": "0.1000",
-    "VOLUME": "50324"
+    "VOLUME": "50329"
   },
   {
     "#": "108",
@@ -1399,9 +1399,9 @@
     "CLOSEP*": "0",
     "YCP*": "16.7",
     "% CHANGE": "-0.60",
-    "TRADE": "759",
-    "VALUE (mn)": "37.3020",
-    "VOLUME": "2221552"
+    "TRADE": "773",
+    "VALUE (mn)": "37.6460",
+    "VOLUME": "2242298"
   },
   {
     "#": "109",
@@ -1412,9 +1412,9 @@
     "CLOSEP*": "0",
     "YCP*": "16.3",
     "% CHANGE": "0",
-    "TRADE": "8",
-    "VALUE (mn)": "0.0100",
-    "VOLUME": "633"
+    "TRADE": "9",
+    "VALUE (mn)": "0.0180",
+    "VOLUME": "1121"
   },
   {
     "#": "110",
@@ -1438,9 +1438,9 @@
     "CLOSEP*": "0",
     "YCP*": "19.6",
     "% CHANGE": "0.51",
-    "TRADE": "477",
-    "VALUE (mn)": "18.4790",
-    "VOLUME": "926049"
+    "TRADE": "485",
+    "VALUE (mn)": "18.7810",
+    "VOLUME": "941426"
   },
   {
     "#": "112",
@@ -1471,54 +1471,54 @@
   {
     "#": "114",
     "TRADING CODE": "FUWANGCER",
-    "LTP*": "11.4",
+    "LTP*": "11.3",
     "HIGH": "11.5",
     "LOW": "11.1",
     "CLOSEP*": "0",
     "YCP*": "11.1",
-    "% CHANGE": "2.70",
-    "TRADE": "340",
-    "VALUE (mn)": "5.7350",
-    "VOLUME": "506036"
+    "% CHANGE": "1.80",
+    "TRADE": "345",
+    "VALUE (mn)": "5.7470",
+    "VOLUME": "507059"
   },
   {
     "#": "115",
     "TRADING CODE": "FUWANGFOOD",
-    "LTP*": "8.1",
+    "LTP*": "8",
     "HIGH": "8.2",
     "LOW": "8",
     "CLOSEP*": "0",
     "YCP*": "8",
-    "% CHANGE": "1.25",
-    "TRADE": "51",
+    "% CHANGE": "0",
+    "TRADE": "52",
     "VALUE (mn)": "0.3630",
-    "VOLUME": "45130"
+    "VOLUME": "45133"
   },
   {
     "#": "116",
     "TRADING CODE": "GBBPOWER",
-    "LTP*": "13.5",
+    "LTP*": "13.2",
     "HIGH": "13.9",
-    "LOW": "13.3",
+    "LOW": "13.2",
     "CLOSEP*": "0",
     "YCP*": "13.6",
-    "% CHANGE": "-0.74",
-    "TRADE": "258",
-    "VALUE (mn)": "4.4160",
-    "VOLUME": "327725"
+    "% CHANGE": "-2.94",
+    "TRADE": "291",
+    "VALUE (mn)": "4.9590",
+    "VOLUME": "368446"
   },
   {
     "#": "117",
     "TRADING CODE": "GEMINISEA",
-    "LTP*": "95.9",
+    "LTP*": "95.5",
     "HIGH": "98.2",
     "LOW": "94.9",
     "CLOSEP*": "0",
     "YCP*": "98.1",
-    "% CHANGE": "-2.24",
-    "TRADE": "110",
-    "VALUE (mn)": "0.5560",
-    "VOLUME": "5789"
+    "% CHANGE": "-2.65",
+    "TRADE": "113",
+    "VALUE (mn)": "0.5590",
+    "VOLUME": "5816"
   },
   {
     "#": "118",
@@ -1542,22 +1542,22 @@
     "CLOSEP*": "0",
     "YCP*": "2.5",
     "% CHANGE": "0",
-    "TRADE": "22",
-    "VALUE (mn)": "0.0540",
-    "VOLUME": "22254"
+    "TRADE": "26",
+    "VALUE (mn)": "0.0590",
+    "VOLUME": "24355"
   },
   {
     "#": "120",
     "TRADING CODE": "GHAIL",
-    "LTP*": "11.6",
+    "LTP*": "11.5",
     "HIGH": "11.8",
     "LOW": "11.5",
     "CLOSEP*": "0",
     "YCP*": "11.4",
-    "% CHANGE": "1.75",
-    "TRADE": "216",
-    "VALUE (mn)": "3.5820",
-    "VOLUME": "306696"
+    "% CHANGE": "0.88",
+    "TRADE": "227",
+    "VALUE (mn)": "3.6520",
+    "VOLUME": "312696"
   },
   {
     "#": "121",
@@ -1568,22 +1568,22 @@
     "CLOSEP*": "0",
     "YCP*": "19",
     "% CHANGE": "1.58",
-    "TRADE": "22",
-    "VALUE (mn)": "0.0680",
-    "VOLUME": "3572"
+    "TRADE": "23",
+    "VALUE (mn)": "0.0690",
+    "VOLUME": "3598"
   },
   {
     "#": "122",
     "TRADING CODE": "GLOBALINS",
-    "LTP*": "41",
+    "LTP*": "40.9",
     "HIGH": "41.7",
     "LOW": "40.6",
     "CLOSEP*": "0",
     "YCP*": "40.7",
-    "% CHANGE": "0.74",
-    "TRADE": "436",
-    "VALUE (mn)": "10.6230",
-    "VOLUME": "257553"
+    "% CHANGE": "0.49",
+    "TRADE": "446",
+    "VALUE (mn)": "11.3390",
+    "VOLUME": "275064"
   },
   {
     "#": "123",
@@ -1594,22 +1594,22 @@
     "CLOSEP*": "0",
     "YCP*": "9.8",
     "% CHANGE": "2.04",
-    "TRADE": "123",
-    "VALUE (mn)": "2.0180",
-    "VOLUME": "202530"
+    "TRADE": "127",
+    "VALUE (mn)": "2.0480",
+    "VOLUME": "205530"
   },
   {
     "#": "124",
     "TRADING CODE": "GP",
-    "LTP*": "232",
+    "LTP*": "231.9",
     "HIGH": "236.9",
-    "LOW": "231.9",
+    "LOW": "231.8",
     "CLOSEP*": "0",
     "YCP*": "235.6",
-    "% CHANGE": "-1.53",
-    "TRADE": "1564",
-    "VALUE (mn)": "18.1580",
-    "VOLUME": "77785"
+    "% CHANGE": "-1.57",
+    "TRADE": "1616",
+    "VALUE (mn)": "18.4370",
+    "VOLUME": "78990"
   },
   {
     "#": "125",
@@ -1620,35 +1620,35 @@
     "CLOSEP*": "0",
     "YCP*": "15",
     "% CHANGE": "0.67",
-    "TRADE": "100",
-    "VALUE (mn)": "1.2970",
-    "VOLUME": "85603"
+    "TRADE": "103",
+    "VALUE (mn)": "1.4230",
+    "VOLUME": "93903"
   },
   {
     "#": "126",
     "TRADING CODE": "GQBALLPEN",
-    "LTP*": "598.1",
+    "LTP*": "594.2",
     "HIGH": "625",
-    "LOW": "595",
+    "LOW": "594.2",
     "CLOSEP*": "0",
     "YCP*": "604.8",
-    "% CHANGE": "-1.11",
-    "TRADE": "141",
-    "VALUE (mn)": "3.1350",
-    "VOLUME": "5196"
+    "% CHANGE": "-1.75",
+    "TRADE": "144",
+    "VALUE (mn)": "3.2240",
+    "VOLUME": "5346"
   },
   {
     "#": "127",
     "TRADING CODE": "GREENDELT",
-    "LTP*": "62",
+    "LTP*": "61.7",
     "HIGH": "62.7",
-    "LOW": "62",
+    "LOW": "61.7",
     "CLOSEP*": "0",
     "YCP*": "62.2",
-    "% CHANGE": "-0.32",
-    "TRADE": "60",
-    "VALUE (mn)": "1.5190",
-    "VOLUME": "24392"
+    "% CHANGE": "-0.80",
+    "TRADE": "82",
+    "VALUE (mn)": "1.9670",
+    "VOLUME": "31633"
   },
   {
     "#": "128",
@@ -1659,61 +1659,61 @@
     "CLOSEP*": "0",
     "YCP*": "3.4",
     "% CHANGE": "5.88",
-    "TRADE": "149",
-    "VALUE (mn)": "1.5310",
-    "VOLUME": "424588"
+    "TRADE": "153",
+    "VALUE (mn)": "1.5480",
+    "VOLUME": "429285"
   },
   {
     "#": "129",
     "TRADING CODE": "HAKKANIPUL",
-    "LTP*": "62.5",
+    "LTP*": "62.3",
     "HIGH": "64",
     "LOW": "62.3",
     "CLOSEP*": "0",
     "YCP*": "63.8",
-    "% CHANGE": "-2.04",
-    "TRADE": "165",
-    "VALUE (mn)": "3.0410",
-    "VOLUME": "48047"
+    "% CHANGE": "-2.35",
+    "TRADE": "171",
+    "VALUE (mn)": "3.0520",
+    "VOLUME": "48224"
   },
   {
     "#": "130",
     "TRADING CODE": "HAMI",
-    "LTP*": "139.6",
+    "LTP*": "139.3",
     "HIGH": "148.5",
-    "LOW": "139.6",
+    "LOW": "139.3",
     "CLOSEP*": "0",
     "YCP*": "140.7",
-    "% CHANGE": "-0.78",
-    "TRADE": "35",
-    "VALUE (mn)": "0.4770",
-    "VOLUME": "3337"
+    "% CHANGE": "-1.00",
+    "TRADE": "45",
+    "VALUE (mn)": "0.5890",
+    "VOLUME": "4137"
   },
   {
     "#": "131",
     "TRADING CODE": "HEIDELBCEM",
-    "LTP*": "194.8",
+    "LTP*": "194.6",
     "HIGH": "198",
     "LOW": "188",
     "CLOSEP*": "0",
     "YCP*": "188.9",
-    "% CHANGE": "3.12",
-    "TRADE": "102",
-    "VALUE (mn)": "0.7070",
-    "VOLUME": "3680"
+    "% CHANGE": "3.02",
+    "TRADE": "104",
+    "VALUE (mn)": "0.7160",
+    "VOLUME": "3725"
   },
   {
     "#": "132",
     "TRADING CODE": "HRTEX",
-    "LTP*": "15.2",
+    "LTP*": "15.3",
     "HIGH": "15.4",
     "LOW": "15.2",
     "CLOSEP*": "0",
     "YCP*": "15",
-    "% CHANGE": "1.33",
-    "TRADE": "21",
-    "VALUE (mn)": "0.2120",
-    "VOLUME": "13886"
+    "% CHANGE": "2",
+    "TRADE": "23",
+    "VALUE (mn)": "0.2160",
+    "VOLUME": "14106"
   },
   {
     "#": "133",
@@ -1750,9 +1750,9 @@
     "CLOSEP*": "0",
     "YCP*": "13",
     "% CHANGE": "5.38",
-    "TRADE": "839",
-    "VALUE (mn)": "22.7870",
-    "VOLUME": "1671442"
+    "TRADE": "855",
+    "VALUE (mn)": "23.1250",
+    "VOLUME": "1696202"
   },
   {
     "#": "136",
@@ -1763,9 +1763,9 @@
     "CLOSEP*": "0",
     "YCP*": "32",
     "% CHANGE": "0.94",
-    "TRADE": "65",
-    "VALUE (mn)": "0.5200",
-    "VOLUME": "16178"
+    "TRADE": "66",
+    "VALUE (mn)": "0.5220",
+    "VOLUME": "16250"
   },
   {
     "#": "137",
@@ -1776,9 +1776,9 @@
     "CLOSEP*": "0",
     "YCP*": "38.7",
     "% CHANGE": "-0.78",
-    "TRADE": "456",
-    "VALUE (mn)": "10.7070",
-    "VOLUME": "276255"
+    "TRADE": "470",
+    "VALUE (mn)": "10.9140",
+    "VOLUME": "281665"
   },
   {
     "#": "138",
@@ -1802,22 +1802,22 @@
     "CLOSEP*": "0",
     "YCP*": "21.4",
     "% CHANGE": "0",
-    "TRADE": "71",
-    "VALUE (mn)": "1.3160",
-    "VOLUME": "61400"
+    "TRADE": "75",
+    "VALUE (mn)": "1.4120",
+    "VOLUME": "65900"
   },
   {
     "#": "140",
     "TRADING CODE": "IFIC",
-    "LTP*": "4.9",
+    "LTP*": "5",
     "HIGH": "5",
     "LOW": "4.9",
     "CLOSEP*": "0",
     "YCP*": "5",
-    "% CHANGE": "-2",
-    "TRADE": "67",
-    "VALUE (mn)": "2.5050",
-    "VOLUME": "511305"
+    "% CHANGE": "0",
+    "TRADE": "70",
+    "VALUE (mn)": "2.5060",
+    "VOLUME": "511478"
   },
   {
     "#": "141",
@@ -1841,48 +1841,48 @@
     "CLOSEP*": "0",
     "YCP*": "20",
     "% CHANGE": "-0.50",
-    "TRADE": "29",
-    "VALUE (mn)": "0.6070",
-    "VOLUME": "30517"
+    "TRADE": "38",
+    "VALUE (mn)": "0.6430",
+    "VOLUME": "32347"
   },
   {
     "#": "143",
     "TRADING CODE": "INTRACO",
-    "LTP*": "22.3",
+    "LTP*": "22.4",
     "HIGH": "22.8",
     "LOW": "22.1",
     "CLOSEP*": "0",
     "YCP*": "22.5",
-    "% CHANGE": "-0.89",
-    "TRADE": "356",
-    "VALUE (mn)": "10.7360",
-    "VOLUME": "479532"
+    "% CHANGE": "-0.44",
+    "TRADE": "370",
+    "VALUE (mn)": "11.4640",
+    "VOLUME": "512177"
   },
   {
     "#": "144",
     "TRADING CODE": "IPDC",
-    "LTP*": "30",
+    "LTP*": "30.1",
     "HIGH": "30.5",
     "LOW": "29.9",
     "CLOSEP*": "0",
     "YCP*": "30.2",
-    "% CHANGE": "-0.66",
-    "TRADE": "721",
-    "VALUE (mn)": "28.8120",
-    "VOLUME": "957292"
+    "% CHANGE": "-0.33",
+    "TRADE": "756",
+    "VALUE (mn)": "32.9770",
+    "VOLUME": "1096056"
   },
   {
     "#": "145",
     "TRADING CODE": "ISLAMIBANK",
     "LTP*": "19.4",
     "HIGH": "20.3",
-    "LOW": "19.4",
+    "LOW": "19.3",
     "CLOSEP*": "0",
     "YCP*": "20.6",
     "% CHANGE": "-5.83",
-    "TRADE": "351",
-    "VALUE (mn)": "2.3570",
-    "VOLUME": "119607"
+    "TRADE": "356",
+    "VALUE (mn)": "2.3660",
+    "VOLUME": "120062"
   },
   {
     "#": "146",
@@ -1900,15 +1900,15 @@
   {
     "#": "147",
     "TRADING CODE": "ISLAMIINS",
-    "LTP*": "67.6",
+    "LTP*": "67.7",
     "HIGH": "69.5",
     "LOW": "67.3",
     "CLOSEP*": "0",
     "YCP*": "69.4",
-    "% CHANGE": "-2.59",
-    "TRADE": "570",
-    "VALUE (mn)": "17.5970",
-    "VOLUME": "256947"
+    "% CHANGE": "-2.45",
+    "TRADE": "586",
+    "VALUE (mn)": "18.1880",
+    "VOLUME": "265697"
   },
   {
     "#": "148",
@@ -1926,41 +1926,41 @@
   {
     "#": "149",
     "TRADING CODE": "ITC",
-    "LTP*": "38.6",
+    "LTP*": "38.7",
     "HIGH": "39.4",
     "LOW": "38.5",
     "CLOSEP*": "0",
     "YCP*": "39",
-    "% CHANGE": "-1.03",
-    "TRADE": "239",
-    "VALUE (mn)": "4.0700",
-    "VOLUME": "104540"
+    "% CHANGE": "-0.77",
+    "TRADE": "246",
+    "VALUE (mn)": "4.4650",
+    "VOLUME": "114777"
   },
   {
     "#": "150",
     "TRADING CODE": "JAMUNABANK",
-    "LTP*": "23.4",
+    "LTP*": "23.3",
     "HIGH": "23.5",
     "LOW": "23.2",
     "CLOSEP*": "0",
     "YCP*": "23.5",
-    "% CHANGE": "-0.43",
-    "TRADE": "206",
-    "VALUE (mn)": "5.1670",
-    "VOLUME": "221606"
+    "% CHANGE": "-0.85",
+    "TRADE": "210",
+    "VALUE (mn)": "5.1720",
+    "VOLUME": "221811"
   },
   {
     "#": "151",
     "TRADING CODE": "JAMUNAOIL",
-    "LTP*": "176.1",
+    "LTP*": "176.2",
     "HIGH": "177.1",
     "LOW": "176",
     "CLOSEP*": "0",
     "YCP*": "177.1",
-    "% CHANGE": "-0.56",
-    "TRADE": "92",
-    "VALUE (mn)": "1.8420",
-    "VOLUME": "10449"
+    "% CHANGE": "-0.51",
+    "TRADE": "93",
+    "VALUE (mn)": "1.8740",
+    "VOLUME": "10634"
   },
   {
     "#": "152",
@@ -1978,15 +1978,15 @@
   {
     "#": "153",
     "TRADING CODE": "JHRML",
-    "LTP*": "36.8",
+    "LTP*": "36.9",
     "HIGH": "37.5",
     "LOW": "36.7",
     "CLOSEP*": "0",
     "YCP*": "36.7",
-    "% CHANGE": "0.27",
-    "TRADE": "159",
-    "VALUE (mn)": "1.0820",
-    "VOLUME": "29246"
+    "% CHANGE": "0.54",
+    "TRADE": "162",
+    "VALUE (mn)": "1.0830",
+    "VOLUME": "29284"
   },
   {
     "#": "154",
@@ -2010,9 +2010,9 @@
     "CLOSEP*": "0",
     "YCP*": "53.5",
     "% CHANGE": "-1.31",
-    "TRADE": "442",
-    "VALUE (mn)": "12.8930",
-    "VOLUME": "241024"
+    "TRADE": "448",
+    "VALUE (mn)": "13.0130",
+    "VOLUME": "243301"
   },
   {
     "#": "156",
@@ -2030,15 +2030,15 @@
   {
     "#": "157",
     "TRADING CODE": "KBPPWBIL",
-    "LTP*": "31.1",
+    "LTP*": "31.2",
     "HIGH": "31.5",
     "LOW": "31",
     "CLOSEP*": "0",
     "YCP*": "31.4",
-    "% CHANGE": "-0.96",
-    "TRADE": "456",
-    "VALUE (mn)": "7.7710",
-    "VOLUME": "249000"
+    "% CHANGE": "-0.64",
+    "TRADE": "463",
+    "VALUE (mn)": "7.8400",
+    "VOLUME": "251221"
   },
   {
     "#": "158",
@@ -2049,9 +2049,9 @@
     "CLOSEP*": "0",
     "YCP*": "40.6",
     "% CHANGE": "-1.23",
-    "TRADE": "121",
-    "VALUE (mn)": "1.2470",
-    "VOLUME": "31134"
+    "TRADE": "122",
+    "VALUE (mn)": "1.2870",
+    "VOLUME": "32134"
   },
   {
     "#": "159",
@@ -2062,22 +2062,22 @@
     "CLOSEP*": "0",
     "YCP*": "4.6",
     "% CHANGE": "-2.17",
-    "TRADE": "128",
-    "VALUE (mn)": "2.6080",
-    "VOLUME": "579694"
+    "TRADE": "130",
+    "VALUE (mn)": "2.6130",
+    "VOLUME": "580698"
   },
   {
     "#": "160",
     "TRADING CODE": "KOHINOOR",
-    "LTP*": "506.5",
+    "LTP*": "505",
     "HIGH": "516.2",
-    "LOW": "506.1",
+    "LOW": "505",
     "CLOSEP*": "0",
     "YCP*": "510.3",
-    "% CHANGE": "-0.74",
-    "TRADE": "95",
-    "VALUE (mn)": "0.5070",
-    "VOLUME": "994"
+    "% CHANGE": "-1.04",
+    "TRADE": "158",
+    "VALUE (mn)": "1.7390",
+    "VOLUME": "3429"
   },
   {
     "#": "161",
@@ -2088,9 +2088,9 @@
     "CLOSEP*": "0",
     "YCP*": "11",
     "% CHANGE": "0",
-    "TRADE": "72",
-    "VALUE (mn)": "1.4790",
-    "VOLUME": "134362"
+    "TRADE": "73",
+    "VALUE (mn)": "1.5090",
+    "VOLUME": "137162"
   },
   {
     "#": "162",
@@ -2101,9 +2101,9 @@
     "CLOSEP*": "0",
     "YCP*": "11.7",
     "% CHANGE": "1.71",
-    "TRADE": "66",
-    "VALUE (mn)": "0.3750",
-    "VOLUME": "31916"
+    "TRADE": "67",
+    "VALUE (mn)": "0.3770",
+    "VOLUME": "32116"
   },
   {
     "#": "163",
@@ -2114,22 +2114,22 @@
     "CLOSEP*": "0",
     "YCP*": "13",
     "% CHANGE": "-0.77",
-    "TRADE": "194",
-    "VALUE (mn)": "5.0560",
-    "VOLUME": "390008"
+    "TRADE": "198",
+    "VALUE (mn)": "5.1780",
+    "VOLUME": "399408"
   },
   {
     "#": "164",
     "TRADING CODE": "LANKABAFIN",
-    "LTP*": "12.9",
+    "LTP*": "12.8",
     "HIGH": "13",
     "LOW": "12.7",
     "CLOSEP*": "0",
     "YCP*": "12.9",
-    "% CHANGE": "0",
-    "TRADE": "268",
-    "VALUE (mn)": "4.4100",
-    "VOLUME": "342972"
+    "% CHANGE": "-0.78",
+    "TRADE": "277",
+    "VALUE (mn)": "4.4830",
+    "VOLUME": "348707"
   },
   {
     "#": "165",
@@ -2153,9 +2153,9 @@
     "CLOSEP*": "0",
     "YCP*": "48.2",
     "% CHANGE": "-0.41",
-    "TRADE": "396",
-    "VALUE (mn)": "5.4420",
-    "VOLUME": "113483"
+    "TRADE": "404",
+    "VALUE (mn)": "5.5240",
+    "VOLUME": "115190"
   },
   {
     "#": "167",
@@ -2166,9 +2166,9 @@
     "CLOSEP*": "0",
     "YCP*": "555.9",
     "% CHANGE": "-1.96",
-    "TRADE": "207",
-    "VALUE (mn)": "1.6430",
-    "VOLUME": "2971"
+    "TRADE": "214",
+    "VALUE (mn)": "1.7600",
+    "VOLUME": "3186"
   },
   {
     "#": "168",
@@ -2179,9 +2179,9 @@
     "CLOSEP*": "0",
     "YCP*": "620.9",
     "% CHANGE": "-0.81",
-    "TRADE": "203",
-    "VALUE (mn)": "1.8840",
-    "VOLUME": "3050"
+    "TRADE": "205",
+    "VALUE (mn)": "1.8910",
+    "VOLUME": "3062"
   },
   {
     "#": "169",
@@ -2192,9 +2192,9 @@
     "CLOSEP*": "0",
     "YCP*": "48.7",
     "% CHANGE": "-1.03",
-    "TRADE": "416",
-    "VALUE (mn)": "9.3430",
-    "VOLUME": "192855"
+    "TRADE": "427",
+    "VALUE (mn)": "9.6370",
+    "VOLUME": "198970"
   },
   {
     "#": "170",
@@ -2244,35 +2244,35 @@
     "CLOSEP*": "0",
     "YCP*": "43.9",
     "% CHANGE": "-0.23",
-    "TRADE": "348",
-    "VALUE (mn)": "12.7840",
-    "VOLUME": "289994"
+    "TRADE": "364",
+    "VALUE (mn)": "14.0090",
+    "VOLUME": "317994"
   },
   {
     "#": "174",
     "TRADING CODE": "MARICO",
-    "LTP*": "2633.5",
+    "LTP*": "2631.8",
     "HIGH": "2650",
     "LOW": "2630.5",
     "CLOSEP*": "0",
     "YCP*": "2642.5",
-    "% CHANGE": "-0.34",
-    "TRADE": "314",
-    "VALUE (mn)": "3.5310",
-    "VOLUME": "1340"
+    "% CHANGE": "-0.40",
+    "TRADE": "326",
+    "VALUE (mn)": "3.6700",
+    "VOLUME": "1393"
   },
   {
     "#": "175",
     "TRADING CODE": "MATINSPINN",
-    "LTP*": "94.2",
+    "LTP*": "93.9",
     "HIGH": "95.6",
     "LOW": "91.5",
     "CLOSEP*": "0",
     "YCP*": "91.6",
-    "% CHANGE": "2.84",
-    "TRADE": "1760",
-    "VALUE (mn)": "88.2550",
-    "VOLUME": "946889"
+    "% CHANGE": "2.51",
+    "TRADE": "1806",
+    "VALUE (mn)": "89.8800",
+    "VOLUME": "964177"
   },
   {
     "#": "176",
@@ -2290,15 +2290,15 @@
   {
     "#": "177",
     "TRADING CODE": "MEGHNAINS",
-    "LTP*": "31.3",
+    "LTP*": "31.1",
     "HIGH": "31.9",
     "LOW": "30.9",
     "CLOSEP*": "0",
     "YCP*": "31.3",
-    "% CHANGE": "0",
-    "TRADE": "381",
+    "% CHANGE": "-0.64",
+    "TRADE": "382",
     "VALUE (mn)": "7.2740",
-    "VOLUME": "232034"
+    "VOLUME": "232035"
   },
   {
     "#": "178",
@@ -2335,35 +2335,35 @@
     "CLOSEP*": "0",
     "YCP*": "8.2",
     "% CHANGE": "0",
-    "TRADE": "24",
-    "VALUE (mn)": "0.0920",
-    "VOLUME": "11163"
+    "TRADE": "26",
+    "VALUE (mn)": "0.0980",
+    "VOLUME": "11863"
   },
   {
     "#": "181",
     "TRADING CODE": "MHSML",
-    "LTP*": "16.3",
+    "LTP*": "16.4",
     "HIGH": "16.6",
     "LOW": "16.1",
     "CLOSEP*": "0",
     "YCP*": "16.1",
-    "% CHANGE": "1.24",
-    "TRADE": "191",
-    "VALUE (mn)": "4.7470",
-    "VOLUME": "289149"
+    "% CHANGE": "1.86",
+    "TRADE": "194",
+    "VALUE (mn)": "4.7960",
+    "VOLUME": "292149"
   },
   {
     "#": "182",
     "TRADING CODE": "MIDLANDBNK",
-    "LTP*": "16.9",
+    "LTP*": "17",
     "HIGH": "17.3",
     "LOW": "16.9",
     "CLOSEP*": "0",
     "YCP*": "17.1",
-    "% CHANGE": "-1.17",
-    "TRADE": "196",
-    "VALUE (mn)": "5.3730",
-    "VOLUME": "316105"
+    "% CHANGE": "-0.58",
+    "TRADE": "202",
+    "VALUE (mn)": "5.7110",
+    "VOLUME": "336106"
   },
   {
     "#": "183",
@@ -2374,9 +2374,9 @@
     "CLOSEP*": "0",
     "YCP*": "31.1",
     "% CHANGE": "0",
-    "TRADE": "554",
-    "VALUE (mn)": "12.5430",
-    "VOLUME": "399220"
+    "TRADE": "573",
+    "VALUE (mn)": "12.8480",
+    "VOLUME": "409020"
   },
   {
     "#": "184",
@@ -2387,9 +2387,9 @@
     "CLOSEP*": "0",
     "YCP*": "24.1",
     "% CHANGE": "2.07",
-    "TRADE": "208",
-    "VALUE (mn)": "2.0600",
-    "VOLUME": "83781"
+    "TRADE": "210",
+    "VALUE (mn)": "2.0610",
+    "VOLUME": "83851"
   },
   {
     "#": "185",
@@ -2407,15 +2407,15 @@
   {
     "#": "186",
     "TRADING CODE": "MJLBD",
-    "LTP*": "90.8",
+    "LTP*": "90.7",
     "HIGH": "91.1",
     "LOW": "90.2",
     "CLOSEP*": "0",
     "YCP*": "91",
-    "% CHANGE": "-0.22",
-    "TRADE": "92",
-    "VALUE (mn)": "1.1010",
-    "VOLUME": "12119"
+    "% CHANGE": "-0.33",
+    "TRADE": "93",
+    "VALUE (mn)": "1.1230",
+    "VOLUME": "12366"
   },
   {
     "#": "187",
@@ -2426,9 +2426,9 @@
     "CLOSEP*": "0",
     "YCP*": "10.3",
     "% CHANGE": "5.83",
-    "TRADE": "1672",
-    "VALUE (mn)": "48.4650",
-    "VOLUME": "4486674"
+    "TRADE": "1712",
+    "VALUE (mn)": "49.2520",
+    "VOLUME": "4558870"
   },
   {
     "#": "188",
@@ -2446,15 +2446,15 @@
   {
     "#": "189",
     "TRADING CODE": "MONNOCERA",
-    "LTP*": "71.7",
+    "LTP*": "71",
     "HIGH": "72.6",
-    "LOW": "71.1",
+    "LOW": "71",
     "CLOSEP*": "0",
     "YCP*": "72.6",
-    "% CHANGE": "-1.24",
-    "TRADE": "402",
-    "VALUE (mn)": "5.6140",
-    "VOLUME": "78316"
+    "% CHANGE": "-2.20",
+    "TRADE": "450",
+    "VALUE (mn)": "6.0590",
+    "VOLUME": "84574"
   },
   {
     "#": "190",
@@ -2472,28 +2472,28 @@
   {
     "#": "191",
     "TRADING CODE": "MONOSPOOL",
-    "LTP*": "97.2",
+    "LTP*": "98",
     "HIGH": "100",
     "LOW": "97.2",
     "CLOSEP*": "0",
     "YCP*": "99.5",
-    "% CHANGE": "-2.31",
-    "TRADE": "501",
-    "VALUE (mn)": "7.9200",
-    "VOLUME": "80425"
+    "% CHANGE": "-1.51",
+    "TRADE": "516",
+    "VALUE (mn)": "8.0200",
+    "VOLUME": "81451"
   },
   {
     "#": "192",
     "TRADING CODE": "MPETROLEUM",
-    "LTP*": "209.8",
+    "LTP*": "209.7",
     "HIGH": "212",
     "LOW": "208.6",
     "CLOSEP*": "0",
     "YCP*": "212.8",
-    "% CHANGE": "-1.41",
-    "TRADE": "178",
-    "VALUE (mn)": "1.7160",
-    "VOLUME": "8148"
+    "% CHANGE": "-1.46",
+    "TRADE": "180",
+    "VALUE (mn)": "1.7270",
+    "VOLUME": "8198"
   },
   {
     "#": "193",
@@ -2511,28 +2511,28 @@
   {
     "#": "194",
     "TRADING CODE": "NAHEEACP",
-    "LTP*": "41.4",
+    "LTP*": "41.3",
     "HIGH": "41.6",
     "LOW": "40.1",
     "CLOSEP*": "0",
     "YCP*": "40.1",
-    "% CHANGE": "3.24",
-    "TRADE": "1340",
-    "VALUE (mn)": "42.9970",
-    "VOLUME": "1048218"
+    "% CHANGE": "2.99",
+    "TRADE": "1363",
+    "VALUE (mn)": "44.1770",
+    "VOLUME": "1076757"
   },
   {
     "#": "195",
     "TRADING CODE": "NATLIFEINS",
-    "LTP*": "90.7",
+    "LTP*": "91.5",
     "HIGH": "92.5",
     "LOW": "90.7",
     "CLOSEP*": "0",
     "YCP*": "91.5",
-    "% CHANGE": "-0.87",
-    "TRADE": "57",
-    "VALUE (mn)": "0.3150",
-    "VOLUME": "3431"
+    "% CHANGE": "0",
+    "TRADE": "63",
+    "VALUE (mn)": "0.3580",
+    "VOLUME": "3909"
   },
   {
     "#": "196",
@@ -2543,9 +2543,9 @@
     "CLOSEP*": "0",
     "YCP*": "17.1",
     "% CHANGE": "-1.75",
-    "TRADE": "76",
-    "VALUE (mn)": "0.2710",
-    "VOLUME": "15980"
+    "TRADE": "79",
+    "VALUE (mn)": "0.3380",
+    "VOLUME": "20007"
   },
   {
     "#": "197",
@@ -2556,9 +2556,9 @@
     "CLOSEP*": "0",
     "YCP*": "60.2",
     "% CHANGE": "-0.17",
-    "TRADE": "223",
-    "VALUE (mn)": "3.8000",
-    "VOLUME": "63265"
+    "TRADE": "224",
+    "VALUE (mn)": "3.8010",
+    "VOLUME": "63272"
   },
   {
     "#": "198",
@@ -2569,22 +2569,22 @@
     "CLOSEP*": "0",
     "YCP*": "3.7",
     "% CHANGE": "0",
-    "TRADE": "75",
+    "TRADE": "77",
     "VALUE (mn)": "0.8530",
-    "VOLUME": "235731"
+    "VOLUME": "235748"
   },
   {
     "#": "199",
     "TRADING CODE": "NCCBANK",
-    "LTP*": "14.8",
+    "LTP*": "14.9",
     "HIGH": "15.1",
     "LOW": "14.8",
     "CLOSEP*": "0",
     "YCP*": "15.1",
-    "% CHANGE": "-1.99",
-    "TRADE": "307",
-    "VALUE (mn)": "17.4540",
-    "VOLUME": "1166056"
+    "% CHANGE": "-1.32",
+    "TRADE": "319",
+    "VALUE (mn)": "18.5420",
+    "VOLUME": "1239098"
   },
   {
     "#": "200",
@@ -2608,22 +2608,22 @@
     "CLOSEP*": "0",
     "YCP*": "13.9",
     "% CHANGE": "0.72",
-    "TRADE": "350",
-    "VALUE (mn)": "4.6780",
-    "VOLUME": "335986"
+    "TRADE": "366",
+    "VALUE (mn)": "4.9210",
+    "VOLUME": "353431"
   },
   {
     "#": "202",
     "TRADING CODE": "NHFIL",
-    "LTP*": "25.1",
+    "LTP*": "25",
     "HIGH": "25.4",
-    "LOW": "25.1",
+    "LOW": "25",
     "CLOSEP*": "0",
     "YCP*": "25.2",
-    "% CHANGE": "-0.40",
-    "TRADE": "104",
-    "VALUE (mn)": "3.5770",
-    "VOLUME": "141683"
+    "% CHANGE": "-0.79",
+    "TRADE": "111",
+    "VALUE (mn)": "3.8250",
+    "VOLUME": "151583"
   },
   {
     "#": "203",
@@ -2634,9 +2634,9 @@
     "CLOSEP*": "0",
     "YCP*": "58",
     "% CHANGE": "-1.21",
-    "TRADE": "354",
-    "VALUE (mn)": "9.8960",
-    "VOLUME": "171242"
+    "TRADE": "362",
+    "VALUE (mn)": "10.0820",
+    "VOLUME": "174482"
   },
   {
     "#": "204",
@@ -2660,9 +2660,9 @@
     "CLOSEP*": "0",
     "YCP*": "25.9",
     "% CHANGE": "0.77",
-    "TRADE": "116",
-    "VALUE (mn)": "1.6670",
-    "VOLUME": "63636"
+    "TRADE": "121",
+    "VALUE (mn)": "1.7840",
+    "VOLUME": "68101"
   },
   {
     "#": "206",
@@ -2680,15 +2680,15 @@
   {
     "#": "207",
     "TRADING CODE": "NRBCBANK",
-    "LTP*": "8.9",
+    "LTP*": "9",
     "HIGH": "9.2",
     "LOW": "8.9",
     "CLOSEP*": "0",
     "YCP*": "9.2",
-    "% CHANGE": "-3.26",
-    "TRADE": "19",
+    "% CHANGE": "-2.17",
+    "TRADE": "20",
     "VALUE (mn)": "0.0770",
-    "VOLUME": "8564"
+    "VOLUME": "8565"
   },
   {
     "#": "208",
@@ -2706,15 +2706,15 @@
   {
     "#": "209",
     "TRADING CODE": "NTLTUBES",
-    "LTP*": "56",
-    "HIGH": "56.2",
+    "LTP*": "55.6",
+    "HIGH": "56.4",
     "LOW": "55.5",
     "CLOSEP*": "0",
     "YCP*": "55.7",
-    "% CHANGE": "0.54",
-    "TRADE": "37",
-    "VALUE (mn)": "0.9520",
-    "VOLUME": "17133"
+    "% CHANGE": "-0.18",
+    "TRADE": "69",
+    "VALUE (mn)": "1.4470",
+    "VOLUME": "25999"
   },
   {
     "#": "210",
@@ -2725,74 +2725,74 @@
     "CLOSEP*": "0",
     "YCP*": "5.4",
     "% CHANGE": "-1.85",
-    "TRADE": "36",
+    "TRADE": "38",
     "VALUE (mn)": "0.2580",
-    "VOLUME": "48629"
+    "VOLUME": "48634"
   },
   {
     "#": "211",
     "TRADING CODE": "OIMEX",
-    "LTP*": "13.3",
+    "LTP*": "13.2",
     "HIGH": "13.4",
     "LOW": "12.8",
     "CLOSEP*": "0",
     "YCP*": "12.8",
-    "% CHANGE": "3.91",
-    "TRADE": "103",
-    "VALUE (mn)": "0.4910",
-    "VOLUME": "37500"
+    "% CHANGE": "3.12",
+    "TRADE": "106",
+    "VALUE (mn)": "0.5570",
+    "VOLUME": "42501"
   },
   {
     "#": "212",
     "TRADING CODE": "OLYMPIC",
-    "LTP*": "135.7",
+    "LTP*": "135.6",
     "HIGH": "136.4",
     "LOW": "135.2",
     "CLOSEP*": "0",
     "YCP*": "135.5",
-    "% CHANGE": "0.15",
-    "TRADE": "136",
-    "VALUE (mn)": "1.5020",
-    "VOLUME": "11074"
+    "% CHANGE": "0.07",
+    "TRADE": "140",
+    "VALUE (mn)": "1.5190",
+    "VOLUME": "11204"
   },
   {
     "#": "213",
     "TRADING CODE": "ONEBANKPLC",
-    "LTP*": "6.9",
+    "LTP*": "6.8",
     "HIGH": "7",
     "LOW": "6.8",
     "CLOSEP*": "0",
     "YCP*": "7",
-    "% CHANGE": "-1.43",
-    "TRADE": "37",
-    "VALUE (mn)": "0.7150",
-    "VOLUME": "103709"
+    "% CHANGE": "-2.86",
+    "TRADE": "40",
+    "VALUE (mn)": "0.7160",
+    "VOLUME": "103742"
   },
   {
     "#": "214",
     "TRADING CODE": "ORIONINFU",
-    "LTP*": "214",
+    "LTP*": "213.2",
     "HIGH": "221.7",
     "LOW": "211.6",
     "CLOSEP*": "0",
     "YCP*": "213.6",
-    "% CHANGE": "0.19",
-    "TRADE": "1385",
-    "VALUE (mn)": "21.7910",
-    "VOLUME": "100359"
+    "% CHANGE": "-0.19",
+    "TRADE": "1388",
+    "VALUE (mn)": "21.9020",
+    "VOLUME": "100880"
   },
   {
     "#": "215",
     "TRADING CODE": "ORIONPHARM",
-    "LTP*": "27.1",
+    "LTP*": "26.8",
     "HIGH": "27.8",
     "LOW": "26.8",
     "CLOSEP*": "0",
     "YCP*": "27.3",
-    "% CHANGE": "-0.73",
-    "TRADE": "260",
-    "VALUE (mn)": "3.6560",
-    "VOLUME": "134536"
+    "% CHANGE": "-1.83",
+    "TRADE": "262",
+    "VALUE (mn)": "3.7100",
+    "VOLUME": "136536"
   },
   {
     "#": "216",
@@ -2816,22 +2816,22 @@
     "CLOSEP*": "0",
     "YCP*": "197.8",
     "% CHANGE": "0.05",
-    "TRADE": "105",
-    "VALUE (mn)": "1.2590",
-    "VOLUME": "6377"
+    "TRADE": "120",
+    "VALUE (mn)": "1.6400",
+    "VOLUME": "8302"
   },
   {
     "#": "218",
     "TRADING CODE": "PARAMOUNT",
-    "LTP*": "61.5",
+    "LTP*": "61",
     "HIGH": "62.7",
-    "LOW": "61.5",
+    "LOW": "61",
     "CLOSEP*": "0",
     "YCP*": "61.9",
-    "% CHANGE": "-0.65",
-    "TRADE": "177",
-    "VALUE (mn)": "3.3090",
-    "VOLUME": "53433"
+    "% CHANGE": "-1.45",
+    "TRADE": "253",
+    "VALUE (mn)": "5.5470",
+    "VOLUME": "90033"
   },
   {
     "#": "219",
@@ -2842,22 +2842,22 @@
     "CLOSEP*": "0",
     "YCP*": "4.8",
     "% CHANGE": "2.08",
-    "TRADE": "111",
-    "VALUE (mn)": "0.7790",
-    "VOLUME": "164746"
+    "TRADE": "114",
+    "VALUE (mn)": "0.7910",
+    "VOLUME": "167247"
   },
   {
     "#": "220",
     "TRADING CODE": "PENINSULA",
-    "LTP*": "16.4",
+    "LTP*": "16.3",
     "HIGH": "16.6",
     "LOW": "16.1",
     "CLOSEP*": "0",
     "YCP*": "16.3",
-    "% CHANGE": "0.61",
-    "TRADE": "66",
-    "VALUE (mn)": "0.2790",
-    "VOLUME": "17177"
+    "% CHANGE": "0",
+    "TRADE": "69",
+    "VALUE (mn)": "0.2830",
+    "VOLUME": "17387"
   },
   {
     "#": "221",
@@ -2868,35 +2868,35 @@
     "CLOSEP*": "0",
     "YCP*": "61.5",
     "% CHANGE": "-1.79",
-    "TRADE": "250",
-    "VALUE (mn)": "7.8290",
-    "VOLUME": "128157"
+    "TRADE": "270",
+    "VALUE (mn)": "8.4350",
+    "VOLUME": "138163"
   },
   {
     "#": "222",
     "TRADING CODE": "PHARMAID",
-    "LTP*": "537.1",
+    "LTP*": "537.2",
     "HIGH": "545",
     "LOW": "537",
     "CLOSEP*": "0",
     "YCP*": "539.6",
-    "% CHANGE": "-0.46",
-    "TRADE": "302",
-    "VALUE (mn)": "3.3720",
-    "VOLUME": "6232"
+    "% CHANGE": "-0.44",
+    "TRADE": "304",
+    "VALUE (mn)": "3.3840",
+    "VOLUME": "6254"
   },
   {
     "#": "223",
     "TRADING CODE": "PHENIXINS",
-    "LTP*": "43.3",
+    "LTP*": "43.4",
     "HIGH": "44.2",
     "LOW": "43.2",
     "CLOSEP*": "0",
     "YCP*": "43.8",
-    "% CHANGE": "-1.14",
-    "TRADE": "314",
-    "VALUE (mn)": "11.0410",
-    "VOLUME": "252285"
+    "% CHANGE": "-0.91",
+    "TRADE": "321",
+    "VALUE (mn)": "11.3130",
+    "VOLUME": "258587"
   },
   {
     "#": "224",
@@ -2907,9 +2907,9 @@
     "CLOSEP*": "0",
     "YCP*": "65",
     "% CHANGE": "-0.77",
-    "TRADE": "121",
-    "VALUE (mn)": "3.4670",
-    "VOLUME": "53395"
+    "TRADE": "122",
+    "VALUE (mn)": "3.5000",
+    "VOLUME": "53895"
   },
   {
     "#": "225",
@@ -2927,15 +2927,15 @@
   {
     "#": "226",
     "TRADING CODE": "POPULARLIF",
-    "LTP*": "50.8",
+    "LTP*": "50.7",
     "HIGH": "50.8",
     "LOW": "50.6",
     "CLOSEP*": "0",
     "YCP*": "51.1",
-    "% CHANGE": "-0.59",
-    "TRADE": "44",
-    "VALUE (mn)": "0.2590",
-    "VOLUME": "5108"
+    "% CHANGE": "-0.78",
+    "TRADE": "49",
+    "VALUE (mn)": "0.3150",
+    "VOLUME": "6208"
   },
   {
     "#": "227",
@@ -2946,35 +2946,35 @@
     "CLOSEP*": "0",
     "YCP*": "38.7",
     "% CHANGE": "-0.26",
-    "TRADE": "123",
-    "VALUE (mn)": "1.3480",
-    "VOLUME": "34732"
+    "TRADE": "144",
+    "VALUE (mn)": "1.5490",
+    "VOLUME": "39925"
   },
   {
     "#": "228",
     "TRADING CODE": "PRAGATIINS",
-    "LTP*": "70.5",
+    "LTP*": "70.6",
     "HIGH": "72.1",
     "LOW": "70.4",
     "CLOSEP*": "0",
     "YCP*": "71.5",
-    "% CHANGE": "-1.40",
-    "TRADE": "47",
-    "VALUE (mn)": "1.2630",
-    "VOLUME": "17910"
+    "% CHANGE": "-1.26",
+    "TRADE": "50",
+    "VALUE (mn)": "1.3480",
+    "VOLUME": "19110"
   },
   {
     "#": "229",
     "TRADING CODE": "PRAGATILIF",
-    "LTP*": "132",
+    "LTP*": "132.4",
     "HIGH": "133.8",
     "LOW": "132",
     "CLOSEP*": "0",
     "YCP*": "132.6",
-    "% CHANGE": "-0.45",
-    "TRADE": "272",
-    "VALUE (mn)": "5.6580",
-    "VOLUME": "42580"
+    "% CHANGE": "-0.15",
+    "TRADE": "276",
+    "VALUE (mn)": "5.7650",
+    "VOLUME": "43392"
   },
   {
     "#": "230",
@@ -2992,28 +2992,28 @@
   {
     "#": "231",
     "TRADING CODE": "PREMIERCEM",
-    "LTP*": "36.9",
+    "LTP*": "36.8",
     "HIGH": "37.8",
     "LOW": "36.8",
     "CLOSEP*": "0",
     "YCP*": "37.6",
-    "% CHANGE": "-1.86",
-    "TRADE": "242",
-    "VALUE (mn)": "4.7050",
-    "VOLUME": "126454"
+    "% CHANGE": "-2.13",
+    "TRADE": "262",
+    "VALUE (mn)": "5.1020",
+    "VOLUME": "137218"
   },
   {
     "#": "232",
     "TRADING CODE": "PRIMEBANK",
-    "LTP*": "29",
+    "LTP*": "28.9",
     "HIGH": "29.3",
     "LOW": "28.8",
     "CLOSEP*": "0",
     "YCP*": "29.2",
-    "% CHANGE": "-0.68",
-    "TRADE": "418",
-    "VALUE (mn)": "24.9440",
-    "VOLUME": "860107"
+    "% CHANGE": "-1.03",
+    "TRADE": "424",
+    "VALUE (mn)": "25.2170",
+    "VOLUME": "869537"
   },
   {
     "#": "233",
@@ -3024,9 +3024,9 @@
     "CLOSEP*": "0",
     "YCP*": "45.5",
     "% CHANGE": "-0.66",
-    "TRADE": "145",
-    "VALUE (mn)": "3.0140",
-    "VOLUME": "66238"
+    "TRADE": "147",
+    "VALUE (mn)": "3.0590",
+    "VOLUME": "67238"
   },
   {
     "#": "234",
@@ -3037,9 +3037,9 @@
     "CLOSEP*": "0",
     "YCP*": "35",
     "% CHANGE": "0",
-    "TRADE": "31",
-    "VALUE (mn)": "0.5860",
-    "VOLUME": "16610"
+    "TRADE": "43",
+    "VALUE (mn)": "0.9370",
+    "VOLUME": "26636"
   },
   {
     "#": "235",
@@ -3057,41 +3057,41 @@
   {
     "#": "236",
     "TRADING CODE": "PROVATIINS",
-    "LTP*": "57",
+    "LTP*": "57.1",
     "HIGH": "59.5",
     "LOW": "56.6",
     "CLOSEP*": "0",
     "YCP*": "59.1",
-    "% CHANGE": "-3.55",
-    "TRADE": "1057",
-    "VALUE (mn)": "32.5320",
-    "VOLUME": "563455"
+    "% CHANGE": "-3.38",
+    "TRADE": "1078",
+    "VALUE (mn)": "33.2070",
+    "VOLUME": "575289"
   },
   {
     "#": "237",
     "TRADING CODE": "PTL",
-    "LTP*": "77.3",
+    "LTP*": "77.4",
     "HIGH": "77.6",
     "LOW": "76.5",
     "CLOSEP*": "0",
     "YCP*": "76.2",
-    "% CHANGE": "1.44",
-    "TRADE": "650",
-    "VALUE (mn)": "32.2250",
-    "VOLUME": "417383"
+    "% CHANGE": "1.57",
+    "TRADE": "666",
+    "VALUE (mn)": "33.2240",
+    "VOLUME": "430296"
   },
   {
     "#": "238",
     "TRADING CODE": "PUBALIBANK",
-    "LTP*": "42",
+    "LTP*": "42.1",
     "HIGH": "42.5",
     "LOW": "41.9",
     "CLOSEP*": "0",
     "YCP*": "42.6",
-    "% CHANGE": "-1.41",
-    "TRADE": "396",
-    "VALUE (mn)": "17.6030",
-    "VOLUME": "418214"
+    "% CHANGE": "-1.17",
+    "TRADE": "401",
+    "VALUE (mn)": "17.9500",
+    "VOLUME": "426484"
   },
   {
     "#": "239",
@@ -3102,9 +3102,9 @@
     "CLOSEP*": "0",
     "YCP*": "29.2",
     "% CHANGE": "-0.68",
-    "TRADE": "140",
-    "VALUE (mn)": "7.1240",
-    "VOLUME": "244510"
+    "TRADE": "147",
+    "VALUE (mn)": "7.2690",
+    "VOLUME": "249507"
   },
   {
     "#": "240",
@@ -3122,15 +3122,15 @@
   {
     "#": "241",
     "TRADING CODE": "QUEENSOUTH",
-    "LTP*": "13",
+    "LTP*": "12.9",
     "HIGH": "13.3",
     "LOW": "12.7",
     "CLOSEP*": "0",
     "YCP*": "12.6",
-    "% CHANGE": "3.17",
-    "TRADE": "623",
-    "VALUE (mn)": "18.3190",
-    "VOLUME": "1403313"
+    "% CHANGE": "2.38",
+    "TRADE": "626",
+    "VALUE (mn)": "18.3590",
+    "VOLUME": "1406413"
   },
   {
     "#": "242",
@@ -3161,15 +3161,15 @@
   {
     "#": "244",
     "TRADING CODE": "RAKCERAMIC",
-    "LTP*": "23.9",
+    "LTP*": "24",
     "HIGH": "24.3",
     "LOW": "23.8",
     "CLOSEP*": "0",
     "YCP*": "24.1",
-    "% CHANGE": "-0.83",
-    "TRADE": "61",
-    "VALUE (mn)": "0.6030",
-    "VOLUME": "25204"
+    "% CHANGE": "-0.41",
+    "TRADE": "63",
+    "VALUE (mn)": "0.6320",
+    "VOLUME": "26404"
   },
   {
     "#": "245",
@@ -3193,61 +3193,61 @@
     "CLOSEP*": "0",
     "YCP*": "20.8",
     "% CHANGE": "1.92",
-    "TRADE": "260",
+    "TRADE": "261",
     "VALUE (mn)": "4.1740",
-    "VOLUME": "197642"
+    "VOLUME": "197652"
   },
   {
     "#": "247",
     "TRADING CODE": "RECKITTBEN",
-    "LTP*": "3213.8",
+    "LTP*": "3211",
     "HIGH": "3220",
-    "LOW": "3213.8",
+    "LOW": "3211",
     "CLOSEP*": "0",
     "YCP*": "3218.6",
-    "% CHANGE": "-0.15",
-    "TRADE": "8",
-    "VALUE (mn)": "0.0900",
-    "VOLUME": "28"
+    "% CHANGE": "-0.24",
+    "TRADE": "14",
+    "VALUE (mn)": "0.1220",
+    "VOLUME": "38"
   },
   {
     "#": "248",
     "TRADING CODE": "RELIANCINS",
-    "LTP*": "93.4",
+    "LTP*": "92.9",
     "HIGH": "94.7",
     "LOW": "92.7",
     "CLOSEP*": "0",
     "YCP*": "93",
-    "% CHANGE": "0.43",
-    "TRADE": "432",
-    "VALUE (mn)": "9.5970",
-    "VOLUME": "102404"
+    "% CHANGE": "-0.11",
+    "TRADE": "435",
+    "VALUE (mn)": "9.6930",
+    "VOLUME": "103434"
   },
   {
     "#": "249",
     "TRADING CODE": "RENATA",
-    "LTP*": "421",
+    "LTP*": "420.9",
     "HIGH": "427.4",
     "LOW": "420.3",
     "CLOSEP*": "0",
     "YCP*": "425.7",
-    "% CHANGE": "-1.10",
-    "TRADE": "166",
-    "VALUE (mn)": "4.0980",
-    "VOLUME": "9719"
+    "% CHANGE": "-1.13",
+    "TRADE": "168",
+    "VALUE (mn)": "4.1190",
+    "VOLUME": "9769"
   },
   {
     "#": "250",
     "TRADING CODE": "REPUBLIC",
-    "LTP*": "36.2",
+    "LTP*": "36.1",
     "HIGH": "36.9",
     "LOW": "36",
     "CLOSEP*": "0",
     "YCP*": "36.5",
-    "% CHANGE": "-0.82",
-    "TRADE": "138",
-    "VALUE (mn)": "3.2360",
-    "VOLUME": "89006"
+    "% CHANGE": "-1.10",
+    "TRADE": "139",
+    "VALUE (mn)": "3.2390",
+    "VOLUME": "89106"
   },
   {
     "#": "251",
@@ -3267,39 +3267,39 @@
     "TRADING CODE": "ROBI",
     "LTP*": "29.5",
     "HIGH": "29.7",
-    "LOW": "29.5",
+    "LOW": "29.4",
     "CLOSEP*": "0",
     "YCP*": "29.6",
     "% CHANGE": "-0.34",
-    "TRADE": "508",
-    "VALUE (mn)": "8.2090",
-    "VOLUME": "277721"
+    "TRADE": "520",
+    "VALUE (mn)": "8.4150",
+    "VOLUME": "284720"
   },
   {
     "#": "253",
     "TRADING CODE": "RUNNERAUTO",
-    "LTP*": "45",
+    "LTP*": "45.1",
     "HIGH": "46.6",
     "LOW": "44.4",
     "CLOSEP*": "0",
     "YCP*": "44.8",
-    "% CHANGE": "0.45",
-    "TRADE": "624",
-    "VALUE (mn)": "10.0010",
-    "VOLUME": "221820"
+    "% CHANGE": "0.67",
+    "TRADE": "677",
+    "VALUE (mn)": "10.2450",
+    "VOLUME": "227246"
   },
   {
     "#": "254",
     "TRADING CODE": "RUPALIBANK",
-    "LTP*": "15.5",
+    "LTP*": "15.4",
     "HIGH": "15.7",
     "LOW": "15.4",
     "CLOSEP*": "0",
     "YCP*": "15.6",
-    "% CHANGE": "-0.64",
-    "TRADE": "25",
-    "VALUE (mn)": "0.1460",
-    "VOLUME": "9398"
+    "% CHANGE": "-1.28",
+    "TRADE": "28",
+    "VALUE (mn)": "0.1820",
+    "VOLUME": "11723"
   },
   {
     "#": "255",
@@ -3317,28 +3317,28 @@
   {
     "#": "256",
     "TRADING CODE": "RUPALILIFE",
-    "LTP*": "73.4",
+    "LTP*": "73.5",
     "HIGH": "75",
     "LOW": "73.4",
     "CLOSEP*": "0",
     "YCP*": "74.2",
-    "% CHANGE": "-1.08",
-    "TRADE": "126",
-    "VALUE (mn)": "1.6210",
-    "VOLUME": "21902"
+    "% CHANGE": "-0.94",
+    "TRADE": "132",
+    "VALUE (mn)": "1.7650",
+    "VOLUME": "23858"
   },
   {
     "#": "257",
     "TRADING CODE": "SAFKOSPINN",
-    "LTP*": "20.8",
+    "LTP*": "20.9",
     "HIGH": "21",
     "LOW": "20.6",
     "CLOSEP*": "0",
     "YCP*": "20.8",
-    "% CHANGE": "0",
-    "TRADE": "16",
-    "VALUE (mn)": "0.1330",
-    "VOLUME": "6415"
+    "% CHANGE": "0.48",
+    "TRADE": "18",
+    "VALUE (mn)": "0.1440",
+    "VOLUME": "6915"
   },
   {
     "#": "258",
@@ -3349,9 +3349,9 @@
     "CLOSEP*": "0",
     "YCP*": "6.5",
     "% CHANGE": "1.54",
-    "TRADE": "91",
-    "VALUE (mn)": "1.0550",
-    "VOLUME": "159789"
+    "TRADE": "94",
+    "VALUE (mn)": "1.0700",
+    "VOLUME": "162029"
   },
   {
     "#": "259",
@@ -3362,22 +3362,22 @@
     "CLOSEP*": "0",
     "YCP*": "21.6",
     "% CHANGE": "-0.46",
-    "TRADE": "878",
-    "VALUE (mn)": "26.8300",
-    "VOLUME": "1240702"
+    "TRADE": "888",
+    "VALUE (mn)": "26.9500",
+    "VOLUME": "1246337"
   },
   {
     "#": "260",
     "TRADING CODE": "SAIHAMTEX",
-    "LTP*": "45.5",
+    "LTP*": "45",
     "HIGH": "46.3",
     "LOW": "44.5",
     "CLOSEP*": "0",
     "YCP*": "46.7",
-    "% CHANGE": "-2.57",
-    "TRADE": "760",
-    "VALUE (mn)": "30.7870",
-    "VOLUME": "678876"
+    "% CHANGE": "-3.64",
+    "TRADE": "823",
+    "VALUE (mn)": "32.0440",
+    "VOLUME": "706576"
   },
   {
     "#": "261",
@@ -3395,15 +3395,15 @@
   {
     "#": "262",
     "TRADING CODE": "SALVO",
-    "LTP*": "27.2",
+    "LTP*": "27",
     "HIGH": "27.8",
-    "LOW": "27.2",
+    "LOW": "27",
     "CLOSEP*": "0",
     "YCP*": "27.6",
-    "% CHANGE": "-1.45",
-    "TRADE": "216",
-    "VALUE (mn)": "4.4600",
-    "VOLUME": "161958"
+    "% CHANGE": "-2.17",
+    "TRADE": "328",
+    "VALUE (mn)": "6.3920",
+    "VOLUME": "233208"
   },
   {
     "#": "263",
@@ -3414,9 +3414,9 @@
     "CLOSEP*": "0",
     "YCP*": "92.7",
     "% CHANGE": "-0.97",
-    "TRADE": "147",
+    "TRADE": "148",
     "VALUE (mn)": "0.7370",
-    "VOLUME": "7994"
+    "VOLUME": "7996"
   },
   {
     "#": "264",
@@ -3427,9 +3427,9 @@
     "CLOSEP*": "0",
     "YCP*": "83.2",
     "% CHANGE": "-0.24",
-    "TRADE": "268",
-    "VALUE (mn)": "3.2070",
-    "VOLUME": "38388"
+    "TRADE": "292",
+    "VALUE (mn)": "3.3580",
+    "VOLUME": "40207"
   },
   {
     "#": "265",
@@ -3440,9 +3440,9 @@
     "CLOSEP*": "0",
     "YCP*": "22",
     "% CHANGE": "0.45",
-    "TRADE": "42",
-    "VALUE (mn)": "0.4340",
-    "VOLUME": "19657"
+    "TRADE": "50",
+    "VALUE (mn)": "0.4560",
+    "VOLUME": "20667"
   },
   {
     "#": "266",
@@ -3453,9 +3453,9 @@
     "CLOSEP*": "0",
     "YCP*": "58.8",
     "% CHANGE": "-0.68",
-    "TRADE": "216",
-    "VALUE (mn)": "7.1300",
-    "VOLUME": "121782"
+    "TRADE": "219",
+    "VALUE (mn)": "7.2490",
+    "VOLUME": "123832"
   },
   {
     "#": "267",
@@ -3479,9 +3479,9 @@
     "CLOSEP*": "0",
     "YCP*": "32.3",
     "% CHANGE": "0.62",
-    "TRADE": "215",
-    "VALUE (mn)": "3.8880",
-    "VOLUME": "120280"
+    "TRADE": "216",
+    "VALUE (mn)": "3.8890",
+    "VOLUME": "120294"
   },
   {
     "#": "269",
@@ -3492,22 +3492,22 @@
     "CLOSEP*": "0",
     "YCP*": "17.3",
     "% CHANGE": "-0.58",
-    "TRADE": "55",
-    "VALUE (mn)": "1.5990",
-    "VOLUME": "92911"
+    "TRADE": "57",
+    "VALUE (mn)": "1.6260",
+    "VOLUME": "94532"
   },
   {
     "#": "270",
     "TRADING CODE": "SHARPIND",
-    "LTP*": "11",
+    "LTP*": "11.1",
     "HIGH": "11.4",
     "LOW": "10.9",
     "CLOSEP*": "0",
     "YCP*": "10.8",
-    "% CHANGE": "1.85",
-    "TRADE": "804",
-    "VALUE (mn)": "14.7450",
-    "VOLUME": "1310829"
+    "% CHANGE": "2.78",
+    "TRADE": "819",
+    "VALUE (mn)": "14.9440",
+    "VOLUME": "1328929"
   },
   {
     "#": "271",
@@ -3518,9 +3518,9 @@
     "CLOSEP*": "0",
     "YCP*": "26.3",
     "% CHANGE": "-0.38",
-    "TRADE": "68",
-    "VALUE (mn)": "1.0950",
-    "VOLUME": "41495"
+    "TRADE": "69",
+    "VALUE (mn)": "1.1080",
+    "VOLUME": "41995"
   },
   {
     "#": "272",
@@ -3531,22 +3531,22 @@
     "CLOSEP*": "0",
     "YCP*": "10.2",
     "% CHANGE": "4.90",
-    "TRADE": "404",
-    "VALUE (mn)": "8.1580",
-    "VOLUME": "773926"
+    "TRADE": "418",
+    "VALUE (mn)": "8.2850",
+    "VOLUME": "785871"
   },
   {
     "#": "273",
     "TRADING CODE": "SHYAMPSUG",
-    "LTP*": "278",
-    "HIGH": "278.4",
+    "LTP*": "287.6",
+    "HIGH": "287.6",
     "LOW": "278",
     "CLOSEP*": "0",
     "YCP*": "288.1",
-    "% CHANGE": "-3.51",
-    "TRADE": "30",
-    "VALUE (mn)": "0.3130",
-    "VOLUME": "1127"
+    "% CHANGE": "-0.17",
+    "TRADE": "35",
+    "VALUE (mn)": "0.4430",
+    "VOLUME": "1580"
   },
   {
     "#": "274",
@@ -3557,9 +3557,9 @@
     "CLOSEP*": "0",
     "YCP*": "32.9",
     "% CHANGE": "-1.52",
-    "TRADE": "171",
-    "VALUE (mn)": "3.6360",
-    "VOLUME": "111703"
+    "TRADE": "176",
+    "VALUE (mn)": "3.7030",
+    "VOLUME": "113746"
   },
   {
     "#": "275",
@@ -3570,22 +3570,22 @@
     "CLOSEP*": "0",
     "YCP*": "14.5",
     "% CHANGE": "2.76",
-    "TRADE": "246",
-    "VALUE (mn)": "5.7330",
-    "VOLUME": "384906"
+    "TRADE": "247",
+    "VALUE (mn)": "5.7400",
+    "VOLUME": "385406"
   },
   {
     "#": "276",
     "TRADING CODE": "SILVAPHL",
-    "LTP*": "11",
+    "LTP*": "10.9",
     "HIGH": "11.1",
     "LOW": "10.2",
     "CLOSEP*": "0",
     "YCP*": "10.2",
-    "% CHANGE": "7.84",
-    "TRADE": "534",
-    "VALUE (mn)": "9.3750",
-    "VOLUME": "869734"
+    "% CHANGE": "6.86",
+    "TRADE": "547",
+    "VALUE (mn)": "9.4970",
+    "VOLUME": "880962"
   },
   {
     "#": "277",
@@ -3596,22 +3596,22 @@
     "CLOSEP*": "0",
     "YCP*": "24.2",
     "% CHANGE": "2.07",
-    "TRADE": "631",
-    "VALUE (mn)": "28.5830",
-    "VOLUME": "1163459"
+    "TRADE": "664",
+    "VALUE (mn)": "29.0240",
+    "VOLUME": "1181310"
   },
   {
     "#": "278",
     "TRADING CODE": "SINGERBD",
-    "LTP*": "63.3",
+    "LTP*": "62.2",
     "HIGH": "64.7",
     "LOW": "61.5",
     "CLOSEP*": "0",
     "YCP*": "63.2",
-    "% CHANGE": "0.16",
-    "TRADE": "87",
-    "VALUE (mn)": "0.3900",
-    "VOLUME": "6173"
+    "% CHANGE": "-1.58",
+    "TRADE": "89",
+    "VALUE (mn)": "0.3910",
+    "VOLUME": "6185"
   },
   {
     "#": "279",
@@ -3622,74 +3622,74 @@
     "CLOSEP*": "0",
     "YCP*": "48.1",
     "% CHANGE": "-0.62",
-    "TRADE": "287",
-    "VALUE (mn)": "9.5570",
-    "VOLUME": "198800"
+    "TRADE": "293",
+    "VALUE (mn)": "9.5890",
+    "VOLUME": "199460"
   },
   {
     "#": "280",
     "TRADING CODE": "SIPLC",
-    "LTP*": "135.8",
+    "LTP*": "135.7",
     "HIGH": "138.8",
     "LOW": "135.6",
     "CLOSEP*": "0",
     "YCP*": "136.8",
-    "% CHANGE": "-0.73",
-    "TRADE": "351",
-    "VALUE (mn)": "9.6300",
-    "VOLUME": "70316"
+    "% CHANGE": "-0.80",
+    "TRADE": "352",
+    "VALUE (mn)": "9.6700",
+    "VOLUME": "70608"
   },
   {
     "#": "281",
     "TRADING CODE": "SKTRIMS",
-    "LTP*": "12.1",
+    "LTP*": "12.5",
     "HIGH": "13",
     "LOW": "12",
     "CLOSEP*": "0",
     "YCP*": "12.5",
-    "% CHANGE": "-3.2",
-    "TRADE": "49",
+    "% CHANGE": "0",
+    "TRADE": "50",
     "VALUE (mn)": "0.6250",
-    "VOLUME": "51025"
+    "VOLUME": "51026"
   },
   {
     "#": "282",
     "TRADING CODE": "SONALIANSH",
-    "LTP*": "194.7",
+    "LTP*": "194.6",
     "HIGH": "196.9",
     "LOW": "190.4",
     "CLOSEP*": "0",
     "YCP*": "191",
-    "% CHANGE": "1.94",
-    "TRADE": "1614",
-    "VALUE (mn)": "24.5760",
-    "VOLUME": "126511"
+    "% CHANGE": "1.88",
+    "TRADE": "1686",
+    "VALUE (mn)": "25.7990",
+    "VOLUME": "132783"
   },
   {
     "#": "283",
     "TRADING CODE": "SONALILIFE",
-    "LTP*": "98.8",
+    "LTP*": "97.4",
     "HIGH": "99.7",
     "LOW": "97",
     "CLOSEP*": "0",
     "YCP*": "98.1",
-    "% CHANGE": "0.71",
-    "TRADE": "499",
-    "VALUE (mn)": "12.1710",
-    "VOLUME": "123546"
+    "% CHANGE": "-0.71",
+    "TRADE": "513",
+    "VALUE (mn)": "12.2720",
+    "VOLUME": "124581"
   },
   {
     "#": "284",
     "TRADING CODE": "SONALIPAPR",
-    "LTP*": "205.9",
+    "LTP*": "205.2",
     "HIGH": "209",
     "LOW": "205.2",
     "CLOSEP*": "0",
     "YCP*": "208.2",
-    "% CHANGE": "-1.10",
-    "TRADE": "356",
-    "VALUE (mn)": "5.1330",
-    "VOLUME": "24810"
+    "% CHANGE": "-1.44",
+    "TRADE": "369",
+    "VALUE (mn)": "5.4220",
+    "VOLUME": "26215"
   },
   {
     "#": "285",
@@ -3700,74 +3700,74 @@
     "CLOSEP*": "0",
     "YCP*": "41.1",
     "% CHANGE": "0",
-    "TRADE": "360",
-    "VALUE (mn)": "7.6550",
-    "VOLUME": "184647"
+    "TRADE": "364",
+    "VALUE (mn)": "7.6960",
+    "VOLUME": "185647"
   },
   {
     "#": "286",
     "TRADING CODE": "SONARGAON",
-    "LTP*": "114.3",
+    "LTP*": "114",
     "HIGH": "115.8",
     "LOW": "111.1",
     "CLOSEP*": "0",
     "YCP*": "113.9",
-    "% CHANGE": "0.35",
-    "TRADE": "477",
-    "VALUE (mn)": "7.8720",
-    "VOLUME": "68955"
+    "% CHANGE": "0.09",
+    "TRADE": "484",
+    "VALUE (mn)": "8.0410",
+    "VOLUME": "70438"
   },
   {
     "#": "287",
     "TRADING CODE": "SOUTHEASTB",
-    "LTP*": "11.6",
+    "LTP*": "11.7",
     "HIGH": "11.7",
     "LOW": "11.6",
     "CLOSEP*": "0",
     "YCP*": "11.6",
-    "% CHANGE": "0",
-    "TRADE": "94",
+    "% CHANGE": "0.86",
+    "TRADE": "95",
     "VALUE (mn)": "6.2920",
-    "VOLUME": "541567"
+    "VOLUME": "541568"
   },
   {
     "#": "288",
     "TRADING CODE": "SPCERAMICS",
-    "LTP*": "21.1",
+    "LTP*": "21.2",
     "HIGH": "21.5",
     "LOW": "20.9",
     "CLOSEP*": "0",
     "YCP*": "21.2",
-    "% CHANGE": "-0.47",
-    "TRADE": "289",
+    "% CHANGE": "0",
+    "TRADE": "290",
     "VALUE (mn)": "5.7600",
-    "VOLUME": "272694"
+    "VOLUME": "272704"
   },
   {
     "#": "289",
     "TRADING CODE": "SPCL",
-    "LTP*": "55.1",
+    "LTP*": "55",
     "HIGH": "55.6",
     "LOW": "54.8",
     "CLOSEP*": "0",
     "YCP*": "55.3",
-    "% CHANGE": "-0.36",
-    "TRADE": "811",
-    "VALUE (mn)": "23.8950",
-    "VOLUME": "433598"
+    "% CHANGE": "-0.54",
+    "TRADE": "840",
+    "VALUE (mn)": "24.6320",
+    "VOLUME": "447003"
   },
   {
     "#": "290",
     "TRADING CODE": "SQUARETEXT",
-    "LTP*": "49.6",
+    "LTP*": "49.5",
     "HIGH": "50",
     "LOW": "49.5",
     "CLOSEP*": "0",
     "YCP*": "49.6",
-    "% CHANGE": "0",
-    "TRADE": "124",
-    "VALUE (mn)": "1.7220",
-    "VOLUME": "34608"
+    "% CHANGE": "-0.20",
+    "TRADE": "128",
+    "VALUE (mn)": "1.7390",
+    "VOLUME": "34953"
   },
   {
     "#": "291",
@@ -3778,9 +3778,9 @@
     "CLOSEP*": "0",
     "YCP*": "217.9",
     "% CHANGE": "-0.55",
-    "TRADE": "1368",
-    "VALUE (mn)": "26.6200",
-    "VOLUME": "122699"
+    "TRADE": "1485",
+    "VALUE (mn)": "28.2470",
+    "VOLUME": "130212"
   },
   {
     "#": "292",
@@ -3791,9 +3791,9 @@
     "CLOSEP*": "0",
     "YCP*": "4.9",
     "% CHANGE": "0",
-    "TRADE": "90",
+    "TRADE": "92",
     "VALUE (mn)": "0.5670",
-    "VOLUME": "115644"
+    "VOLUME": "115649"
   },
   {
     "#": "293",
@@ -3811,41 +3811,41 @@
   {
     "#": "294",
     "TRADING CODE": "STANDARINS",
-    "LTP*": "49.8",
+    "LTP*": "49.7",
     "HIGH": "50.6",
     "LOW": "49.6",
     "CLOSEP*": "0",
     "YCP*": "49.4",
-    "% CHANGE": "0.81",
-    "TRADE": "96",
-    "VALUE (mn)": "1.2140",
-    "VOLUME": "24311"
+    "% CHANGE": "0.61",
+    "TRADE": "99",
+    "VALUE (mn)": "1.2840",
+    "VOLUME": "25711"
   },
   {
     "#": "295",
     "TRADING CODE": "STANDBANKL",
-    "LTP*": "4",
+    "LTP*": "3.9",
     "HIGH": "4",
     "LOW": "3.9",
     "CLOSEP*": "0",
     "YCP*": "4",
-    "% CHANGE": "0",
-    "TRADE": "27",
-    "VALUE (mn)": "0.1470",
-    "VOLUME": "37469"
+    "% CHANGE": "-2.5",
+    "TRADE": "29",
+    "VALUE (mn)": "0.1480",
+    "VOLUME": "37771"
   },
   {
     "#": "296",
     "TRADING CODE": "STYLECRAFT",
-    "LTP*": "47.5",
+    "LTP*": "47.7",
     "HIGH": "47.9",
     "LOW": "47",
     "CLOSEP*": "0",
     "YCP*": "47.8",
-    "% CHANGE": "-0.63",
-    "TRADE": "40",
-    "VALUE (mn)": "0.5170",
-    "VOLUME": "10854"
+    "% CHANGE": "-0.21",
+    "TRADE": "50",
+    "VALUE (mn)": "0.6060",
+    "VOLUME": "12733"
   },
   {
     "#": "297",
@@ -3856,48 +3856,48 @@
     "CLOSEP*": "0",
     "YCP*": "15.5",
     "% CHANGE": "0",
-    "TRADE": "106",
-    "VALUE (mn)": "1.8900",
-    "VOLUME": "121435"
+    "TRADE": "107",
+    "VALUE (mn)": "1.8990",
+    "VOLUME": "121985"
   },
   {
     "#": "298",
     "TRADING CODE": "SUNLIFEINS",
-    "LTP*": "48.5",
+    "LTP*": "48.6",
     "HIGH": "49.3",
     "LOW": "48.3",
     "CLOSEP*": "0",
     "YCP*": "48.5",
-    "% CHANGE": "0",
-    "TRADE": "193",
-    "VALUE (mn)": "3.8520",
-    "VOLUME": "79067"
+    "% CHANGE": "0.21",
+    "TRADE": "197",
+    "VALUE (mn)": "3.8760",
+    "VOLUME": "79568"
   },
   {
     "#": "299",
     "TRADING CODE": "TAKAFULINS",
-    "LTP*": "45.7",
+    "LTP*": "45.9",
     "HIGH": "46.6",
     "LOW": "45.7",
     "CLOSEP*": "0",
     "YCP*": "46.2",
-    "% CHANGE": "-1.08",
-    "TRADE": "139",
+    "% CHANGE": "-0.65",
+    "TRADE": "140",
     "VALUE (mn)": "2.5770",
-    "VOLUME": "55743"
+    "VOLUME": "55745"
   },
   {
     "#": "300",
     "TRADING CODE": "TAMIJTEX",
-    "LTP*": "102",
+    "LTP*": "102.7",
     "HIGH": "105.8",
     "LOW": "101.3",
     "CLOSEP*": "0",
     "YCP*": "102.6",
-    "% CHANGE": "-0.58",
-    "TRADE": "102",
+    "% CHANGE": "0.10",
+    "TRADE": "104",
     "VALUE (mn)": "1.2430",
-    "VOLUME": "12061"
+    "VOLUME": "12067"
   },
   {
     "#": "301",
@@ -3908,22 +3908,22 @@
     "CLOSEP*": "0",
     "YCP*": "33.9",
     "% CHANGE": "-1.18",
-    "TRADE": "320",
-    "VALUE (mn)": "7.7090",
-    "VOLUME": "228821"
+    "TRADE": "336",
+    "VALUE (mn)": "8.0270",
+    "VOLUME": "238334"
   },
   {
     "#": "302",
     "TRADING CODE": "TILIL",
-    "LTP*": "41.7",
+    "LTP*": "41.8",
     "HIGH": "42.7",
     "LOW": "41.7",
     "CLOSEP*": "0",
     "YCP*": "42.3",
-    "% CHANGE": "-1.42",
-    "TRADE": "116",
-    "VALUE (mn)": "1.8360",
-    "VOLUME": "43808"
+    "% CHANGE": "-1.18",
+    "TRADE": "119",
+    "VALUE (mn)": "1.8380",
+    "VOLUME": "43845"
   },
   {
     "#": "303",
@@ -3934,22 +3934,22 @@
     "CLOSEP*": "0",
     "YCP*": "16.5",
     "% CHANGE": "0",
-    "TRADE": "37",
-    "VALUE (mn)": "0.2940",
-    "VOLUME": "17730"
+    "TRADE": "38",
+    "VALUE (mn)": "0.3430",
+    "VOLUME": "20730"
   },
   {
     "#": "304",
     "TRADING CODE": "TOSRIFA",
-    "LTP*": "19",
+    "LTP*": "18.9",
     "HIGH": "19.1",
     "LOW": "17.5",
     "CLOSEP*": "0",
     "YCP*": "18.1",
-    "% CHANGE": "4.97",
-    "TRADE": "284",
-    "VALUE (mn)": "5.0810",
-    "VOLUME": "273901"
+    "% CHANGE": "4.42",
+    "TRADE": "311",
+    "VALUE (mn)": "5.5670",
+    "VOLUME": "299531"
   },
   {
     "#": "305",
@@ -3960,35 +3960,35 @@
     "CLOSEP*": "0",
     "YCP*": "13.2",
     "% CHANGE": "-0.76",
-    "TRADE": "145",
-    "VALUE (mn)": "5.4010",
-    "VOLUME": "410492"
+    "TRADE": "187",
+    "VALUE (mn)": "6.2800",
+    "VOLUME": "477551"
   },
   {
     "#": "306",
     "TRADING CODE": "UCB",
-    "LTP*": "8.6",
+    "LTP*": "8.4",
     "HIGH": "8.7",
     "LOW": "8",
     "CLOSEP*": "0",
     "YCP*": "8.8",
-    "% CHANGE": "-2.27",
-    "TRADE": "414",
-    "VALUE (mn)": "12.6960",
-    "VOLUME": "1554046"
+    "% CHANGE": "-4.55",
+    "TRADE": "420",
+    "VALUE (mn)": "12.6970",
+    "VOLUME": "1554101"
   },
   {
     "#": "307",
     "TRADING CODE": "UNIONINS",
-    "LTP*": "46.4",
+    "LTP*": "46.3",
     "HIGH": "47.4",
     "LOW": "46.3",
     "CLOSEP*": "0",
     "YCP*": "46",
-    "% CHANGE": "0.87",
-    "TRADE": "450",
-    "VALUE (mn)": "11.1320",
-    "VOLUME": "238673"
+    "% CHANGE": "0.65",
+    "TRADE": "461",
+    "VALUE (mn)": "11.2670",
+    "VOLUME": "241589"
   },
   {
     "#": "308",
@@ -3999,22 +3999,22 @@
     "CLOSEP*": "0",
     "YCP*": "38.9",
     "% CHANGE": "-1.03",
-    "TRADE": "109",
-    "VALUE (mn)": "1.5340",
-    "VOLUME": "39651"
+    "TRADE": "118",
+    "VALUE (mn)": "1.6490",
+    "VOLUME": "42651"
   },
   {
     "#": "309",
     "TRADING CODE": "UNITEDFIN",
-    "LTP*": "15.6",
+    "LTP*": "15.5",
     "HIGH": "15.8",
     "LOW": "15.4",
     "CLOSEP*": "0",
     "YCP*": "15.6",
-    "% CHANGE": "0",
-    "TRADE": "115",
-    "VALUE (mn)": "2.8690",
-    "VOLUME": "184548"
+    "% CHANGE": "-0.64",
+    "TRADE": "116",
+    "VALUE (mn)": "3.0240",
+    "VOLUME": "194548"
   },
   {
     "#": "310",
@@ -4025,22 +4025,22 @@
     "CLOSEP*": "0",
     "YCP*": "55.8",
     "% CHANGE": "-0.54",
-    "TRADE": "31",
-    "VALUE (mn)": "1.2850",
-    "VOLUME": "22942"
+    "TRADE": "33",
+    "VALUE (mn)": "1.3130",
+    "VOLUME": "23442"
   },
   {
     "#": "311",
     "TRADING CODE": "UPGDCL",
-    "LTP*": "110.1",
+    "LTP*": "111",
     "HIGH": "111.8",
     "LOW": "110",
     "CLOSEP*": "0",
     "YCP*": "111.6",
-    "% CHANGE": "-1.34",
-    "TRADE": "322",
-    "VALUE (mn)": "2.1850",
-    "VOLUME": "19741"
+    "% CHANGE": "-0.54",
+    "TRADE": "324",
+    "VALUE (mn)": "2.1860",
+    "VOLUME": "19745"
   },
   {
     "#": "312",
@@ -4051,9 +4051,9 @@
     "CLOSEP*": "0",
     "YCP*": "21.2",
     "% CHANGE": "-0.47",
-    "TRADE": "177",
-    "VALUE (mn)": "11.5090",
-    "VOLUME": "544276"
+    "TRADE": "181",
+    "VALUE (mn)": "11.6340",
+    "VOLUME": "550197"
   },
   {
     "#": "313",
@@ -4064,35 +4064,35 @@
     "CLOSEP*": "0",
     "YCP*": "11.3",
     "% CHANGE": "5.31",
-    "TRADE": "478",
-    "VALUE (mn)": "9.8510",
-    "VOLUME": "837196"
+    "TRADE": "480",
+    "VALUE (mn)": "9.8610",
+    "VOLUME": "838006"
   },
   {
     "#": "314",
     "TRADING CODE": "WALTONHIL",
-    "LTP*": "326",
+    "LTP*": "325.8",
     "HIGH": "328.1",
     "LOW": "325.6",
     "CLOSEP*": "0",
     "YCP*": "326.5",
-    "% CHANGE": "-0.15",
-    "TRADE": "289",
-    "VALUE (mn)": "1.9150",
-    "VOLUME": "5869"
+    "% CHANGE": "-0.21",
+    "TRADE": "299",
+    "VALUE (mn)": "1.9770",
+    "VOLUME": "6060"
   },
   {
     "#": "315",
     "TRADING CODE": "WATACHEM",
-    "LTP*": "121.4",
+    "LTP*": "120.5",
     "HIGH": "126.9",
     "LOW": "120.2",
     "CLOSEP*": "0",
     "YCP*": "121.6",
-    "% CHANGE": "-0.16",
-    "TRADE": "82",
-    "VALUE (mn)": "1.2570",
-    "VOLUME": "10292"
+    "% CHANGE": "-0.90",
+    "TRADE": "109",
+    "VALUE (mn)": "1.3940",
+    "VOLUME": "11424"
   },
   {
     "#": "316",
@@ -4103,35 +4103,35 @@
     "CLOSEP*": "0",
     "YCP*": "8.1",
     "% CHANGE": "0",
-    "TRADE": "57",
-    "VALUE (mn)": "0.7920",
-    "VOLUME": "98263"
+    "TRADE": "60",
+    "VALUE (mn)": "0.8240",
+    "VOLUME": "102265"
   },
   {
     "#": "317",
     "TRADING CODE": "YPL",
-    "LTP*": "18.9",
+    "LTP*": "18.8",
     "HIGH": "19.5",
     "LOW": "18.5",
     "CLOSEP*": "0",
     "YCP*": "18.6",
-    "% CHANGE": "1.61",
-    "TRADE": "15",
-    "VALUE (mn)": "0.0990",
-    "VOLUME": "5253"
+    "% CHANGE": "1.08",
+    "TRADE": "16",
+    "VALUE (mn)": "0.1170",
+    "VOLUME": "6253"
   },
   {
     "#": "318",
     "TRADING CODE": "ZAHEENSPIN",
-    "LTP*": "4.6",
+    "LTP*": "4.5",
     "HIGH": "4.6",
     "LOW": "4.5",
     "CLOSEP*": "0",
     "YCP*": "4.5",
-    "% CHANGE": "2.22",
-    "TRADE": "32",
+    "% CHANGE": "0",
+    "TRADE": "44",
     "VALUE (mn)": "0.1020",
-    "VOLUME": "22147"
+    "VOLUME": "22160"
   },
   {
     "#": "319",

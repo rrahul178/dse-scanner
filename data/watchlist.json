@@ -2,8 +2,7 @@
   {
     "code": "NAHEEACP",
     "rank": 1,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.4
     },
@@ -14,8 +13,7 @@
   {
     "code": "ENVOYTEX",
     "rank": 2,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.6
     },
@@ -26,8 +24,7 @@
   {
     "code": "DGIC",
     "rank": 3,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": null,
     "adx": 30.724702005444254,
     "mfi": 69.40186612333315,
@@ -36,8 +33,7 @@
   {
     "code": "EASTRNLUB",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 2.1
     },
@@ -48,8 +44,7 @@
   {
     "code": "SPCL",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.2
     },
@@ -71,8 +66,7 @@
   {
     "code": "RELIANCE1",
     "rank": 7,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 0.7
     },
@@ -83,8 +77,7 @@
   {
     "code": "SQURPHARMA",
     "rank": 8,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": 0,
     "riskReward": {
       "ratio": 2.6
     },
@@ -93,27 +86,25 @@
     "obvTrend": "falling"
   },
   {
-    "code": "ICBSONALI1",
-    "rank": 9,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 18.78838155699242,
-    "mfi": 76.0145491346824,
-    "obvTrend": "rising"
-  },
-  {
     "code": "ANWARGALV",
-    "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rank": 9,
+    "rankChange": 1,
     "riskReward": {
       "ratio": 2.3
     },
     "adx": 16.854603000824955,
     "mfi": 63.57894903653385,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ICBSONALI1",
+    "rank": 10,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 18.78838155699242,
+    "mfi": 76.0145491346824,
     "obvTrend": "rising"
   }
 ]
