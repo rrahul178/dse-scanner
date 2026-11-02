@@ -18,7 +18,7 @@ const fs = require("fs");
 const path = require("path");
 
 // ---------- Config ----------
-const DSE_BASE_URL = "https://dsebd.org";
+const DSE_BASE_URL = "https://old.dsebd.org"; // মূল dsebd.org এখন 410 Gone — পুরনো সাইট old.dsebd.org এ সরেছে
 
 const URLS = {
   LATEST: `${DSE_BASE_URL}/latest_share_price_scroll_l.php`,
