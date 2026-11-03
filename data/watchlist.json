@@ -1,112 +1,112 @@
 [
   {
-    "code": "NAHEEACP",
-    "rank": 1,
-    "rankChange": 0,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 17.685656332798697,
-    "mfi": 76.65461992702072,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "EASTRNLUB",
-    "rank": 2,
-    "rankChange": 2,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 13.49401701874495,
-    "mfi": 42.876769466565804,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 3,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 13.984634646736863,
-    "mfi": 62.46996753209474,
-    "obvTrend": "rising"
-  },
-  {
     "code": "SPCL",
-    "rank": 4,
-    "rankChange": 1,
+    "rank": 1,
+    "rankChange": 3,
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0
     },
-    "adx": 23.234256221821674,
-    "mfi": 57.27240819693489,
-    "obvTrend": "flat"
+    "adx": 24.327056619566417,
+    "mfi": 65.56058452728035,
+    "obvTrend": "rising"
   },
   {
     "code": "PUBALIBANK",
+    "rank": 2,
+    "rankChange": 3,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 25.315493799832705,
+    "mfi": 40.99920168931067,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "HWAWELLTEX",
+    "rank": 3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 10.840606481919318,
+    "mfi": 72.77596123940091,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "AGRANINS",
+    "rank": 4,
+    "rankChange": 4,
+    "riskReward": null,
+    "adx": 25.836763693957014,
+    "mfi": 78.76244790596985,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ANWARGALV",
     "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.7
     },
-    "adx": 26.414800309385136,
-    "mfi": 51.12196859418192,
+    "adx": 17.223722664048978,
+    "mfi": 53.499444314142245,
     "obvTrend": "flat"
   },
   {
-    "code": "ICBSONALI1",
+    "code": "EASTRNLUB",
     "rank": 6,
-    "rankChange": 4,
+    "rankChange": -4,
     "riskReward": {
-      "ratio": 0.8
+      "ratio": 6.9
     },
-    "adx": 18.072408156897687,
-    "mfi": 69.93935050397987,
+    "adx": 14.338133393024792,
+    "mfi": 29.90646327327741,
     "obvTrend": "falling"
   },
   {
-    "code": "IBP",
+    "code": "ENVOYTEX",
     "rank": 7,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 33.68232523945632,
-    "mfi": 62.656240173460084,
-    "obvTrend": "flat"
+    "rankChange": -4,
+    "riskReward": null,
+    "adx": 16.19571641192744,
+    "mfi": 78.46417784985337,
+    "obvTrend": "rising"
   },
   {
-    "code": "AGRANINS",
+    "code": "PTL",
     "rank": 8,
     "rankChange": null,
     "status": "new",
-    "riskReward": null,
-    "adx": 23.584742368138375,
-    "mfi": 97.72231626943598,
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 17.198016174134203,
+    "mfi": 84.52559082417616,
     "obvTrend": "rising"
   },
   {
-    "code": "DGIC",
+    "code": "MPETROLEUM",
     "rank": 9,
-    "rankChange": -6,
-    "riskReward": null,
-    "adx": 31.901130757637066,
-    "mfi": 75.17272531361898,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "CAPMIBBLMF",
-    "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 1.8
+      "ratio": 1.6
     },
-    "adx": 12.00809186699137,
-    "mfi": 60.13812441065021,
-    "obvTrend": "falling"
+    "adx": 30.39641974650922,
+    "mfi": 82.22166367509891,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "NAHEEACP",
+    "rank": 10,
+    "rankChange": -9,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 19.106726705874614,
+    "mfi": 80.56127350219415,
+    "obvTrend": "rising"
   }
 ]

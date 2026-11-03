@@ -1,18 +1,18 @@
 {
-  "lastAttemptedAt": "2026-11-02T12:01:55.035Z",
-  "lastScrapedAt": "2026-11-02T12:01:55.035Z",
+  "lastAttemptedAt": "2026-11-03T11:40:33.569Z",
+  "lastScrapedAt": "2026-11-03T11:40:33.569Z",
   "candidateCount": 40,
   "watchlist": [
-    "NAHEEACP",
-    "EASTRNLUB",
-    "ENVOYTEX",
     "SPCL",
     "PUBALIBANK",
-    "ICBSONALI1",
-    "IBP",
+    "HWAWELLTEX",
     "AGRANINS",
-    "DGIC",
-    "CAPMIBBLMF"
+    "ANWARGALV",
+    "EASTRNLUB",
+    "ENVOYTEX",
+    "PTL",
+    "MPETROLEUM",
+    "NAHEEACP"
   ],
   "strategy": "RSI(14) + MA20/50 ক্রসওভার + ২০-দিন ব্রেকআউট + ভলিউম স্পাইক + ক্যান্ডেলস্টিক প্যাটার্ন + SMC (Order Block/FVG/Liquidity Sweep)",
   "noFreshSession": false,
