@@ -1,112 +1,122 @@
 [
   {
-    "code": "SPCL",
+    "code": "FARCHEM",
     "rank": 1,
-    "rankChange": 3,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0
+      "ratio": 0.2
     },
-    "adx": 24.327056619566417,
-    "mfi": 65.56058452728035,
+    "adx": 18.844815162589324,
+    "mfi": 76.70204952358988,
     "obvTrend": "rising"
   },
   {
-    "code": "PUBALIBANK",
+    "code": "SQURPHARMA",
     "rank": 2,
-    "rankChange": 3,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 25.315493799832705,
-    "mfi": 40.99920168931067,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "HWAWELLTEX",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.6
-    },
-    "adx": 10.840606481919318,
-    "mfi": 72.77596123940091,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "AGRANINS",
-    "rank": 4,
-    "rankChange": 4,
-    "riskReward": null,
-    "adx": 25.836763693957014,
-    "mfi": 78.76244790596985,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ANWARGALV",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.7
-    },
-    "adx": 17.223722664048978,
-    "mfi": 53.499444314142245,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "EASTRNLUB",
-    "rank": 6,
-    "rankChange": -4,
-    "riskReward": {
-      "ratio": 6.9
-    },
-    "adx": 14.338133393024792,
-    "mfi": 29.90646327327741,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 7,
-    "rankChange": -4,
-    "riskReward": null,
-    "adx": 16.19571641192744,
-    "mfi": 78.46417784985337,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "PTL",
-    "rank": 8,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 17.198016174134203,
-    "mfi": 84.52559082417616,
+    "adx": 14.537593258146867,
+    "mfi": 44.94586549308879,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "DOREENPWR",
+    "rank": 3,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 11.817909986304839,
+    "mfi": 55.13576768368677,
     "obvTrend": "rising"
   },
   {
-    "code": "MPETROLEUM",
+    "code": "SONARGAON",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 23.589631621269064,
+    "mfi": 68.2391766385738,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "ORIONINFU",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.3
+    },
+    "adx": 18.84181680226592,
+    "mfi": 31.822218288555774,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "BSRMSTEEL",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 7
+    },
+    "adx": 27.52207289243097,
+    "mfi": 74.7055185465827,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "FINEFOODS",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 10.374839499406828,
+    "mfi": 71.6806146996447,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PRIMEBANK",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 23.316553662785594,
+    "mfi": 43.8752366820848,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SIMTEX",
     "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 1.6
+      "ratio": 1
     },
-    "adx": 30.39641974650922,
-    "mfi": 82.22166367509891,
+    "adx": 18.673147763200635,
+    "mfi": 57.53846019786857,
     "obvTrend": "rising"
   },
   {
-    "code": "NAHEEACP",
+    "code": "PIONEERINS",
     "rank": 10,
-    "rankChange": -9,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 4.7
     },
-    "adx": 19.106726705874614,
-    "mfi": 80.56127350219415,
-    "obvTrend": "rising"
+    "adx": 13.750572615746426,
+    "mfi": 76.11854873716389,
+    "obvTrend": "flat"
   }
 ]
