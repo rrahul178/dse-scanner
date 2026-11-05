@@ -1,122 +1,117 @@
 [
   {
-    "code": "FARCHEM",
-    "rank": 1,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 18.844815162589324,
-    "mfi": 76.70204952358988,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SQURPHARMA",
-    "rank": 2,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 14.537593258146867,
-    "mfi": 44.94586549308879,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "DOREENPWR",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 11.817909986304839,
-    "mfi": 55.13576768368677,
-    "obvTrend": "rising"
-  },
-  {
     "code": "SONARGAON",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rank": 1,
+    "rankChange": 3,
     "riskReward": {
-      "ratio": 0.5
+      "ratio": 0.1
     },
-    "adx": 23.589631621269064,
-    "mfi": 68.2391766385738,
+    "adx": 23.089615496728772,
+    "mfi": 69.06779489509621,
     "obvTrend": "flat"
   },
   {
     "code": "ORIONINFU",
+    "rank": 2,
+    "rankChange": 3,
+    "riskReward": {
+      "ratio": 4.4
+    },
+    "adx": 17.758769420413792,
+    "mfi": 43.14431291124185,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SQURPHARMA",
+    "rank": 3,
+    "rankChange": -1,
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 14.364436246204917,
+    "mfi": 46.51509234474295,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SPCERAMICS",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.5
+    },
+    "adx": 15.970874359874879,
+    "mfi": 58.817155357503516,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BANKASIA",
     "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 1.3
-    },
-    "adx": 18.84181680226592,
-    "mfi": 31.822218288555774,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "BSRMSTEEL",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 7
-    },
-    "adx": 27.52207289243097,
-    "mfi": 74.7055185465827,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "FINEFOODS",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 10.374839499406828,
-    "mfi": 71.6806146996447,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "PRIMEBANK",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 23.316553662785594,
-    "mfi": 43.8752366820848,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SIMTEX",
-    "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 1
     },
-    "adx": 18.673147763200635,
-    "mfi": 57.53846019786857,
+    "adx": 27.037824570126965,
+    "mfi": 75.9889046294526,
     "obvTrend": "rising"
   },
   {
-    "code": "PIONEERINS",
+    "code": "INTRACO",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.8
+    },
+    "adx": 17.165444121607152,
+    "mfi": 61.058534604632044,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "DOREENPWR",
+    "rank": 7,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 1
+    },
+    "adx": 13.113770645799292,
+    "mfi": 66.4703352809046,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PRIMEBANK",
+    "rank": 8,
+    "rankChange": 0,
+    "riskReward": {
+      "ratio": 1.1
+    },
+    "adx": 23.424780666340588,
+    "mfi": 48.38728065141791,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "BNIPLC",
+    "rank": 9,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 2
+    },
+    "adx": 23.29833153831761,
+    "mfi": 54.13553005724241,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "NAHEEACP",
     "rank": 10,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 4.7
+      "ratio": 1
     },
-    "adx": 13.750572615746426,
-    "mfi": 76.11854873716389,
-    "obvTrend": "flat"
+    "adx": 19.28420171190645,
+    "mfi": 62.460451620632824,
+    "obvTrend": "falling"
   }
 ]
