@@ -1,117 +1,116 @@
 [
   {
-    "code": "SONARGAON",
-    "rank": 1,
-    "rankChange": 3,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 23.089615496728772,
-    "mfi": 69.06779489509621,
-    "obvTrend": "flat"
-  },
-  {
     "code": "ORIONINFU",
-    "rank": 2,
-    "rankChange": 3,
+    "rank": 1,
+    "rankChange": 1,
     "riskReward": {
-      "ratio": 4.4
+      "ratio": 11.2
     },
-    "adx": 17.758769420413792,
-    "mfi": 43.14431291124185,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SQURPHARMA",
-    "rank": 3,
-    "rankChange": -1,
-    "riskReward": {
-      "ratio": 0.8
-    },
-    "adx": 14.364436246204917,
-    "mfi": 46.51509234474295,
+    "adx": 17.011460258323318,
+    "mfi": 43.56590021445353,
     "obvTrend": "falling"
   },
   {
     "code": "SPCERAMICS",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
+    "rank": 2,
+    "rankChange": 2,
     "riskReward": {
-      "ratio": 1.5
+      "ratio": 2.9
     },
-    "adx": 15.970874359874879,
-    "mfi": 58.817155357503516,
+    "adx": 15.457973134196603,
+    "mfi": 70.49850990634721,
     "obvTrend": "rising"
   },
   {
-    "code": "BANKASIA",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
+    "code": "SONARGAON",
+    "rank": 3,
+    "rankChange": -2,
     "riskReward": {
-      "ratio": 1
+      "ratio": 0.3
     },
-    "adx": 27.037824570126965,
-    "mfi": 75.9889046294526,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "INTRACO",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.8
-    },
-    "adx": 17.165444121607152,
-    "mfi": 61.058534604632044,
+    "adx": 22.79719570266399,
+    "mfi": 69.19764463643803,
     "obvTrend": "rising"
   },
   {
     "code": "DOREENPWR",
-    "rank": 7,
-    "rankChange": -4,
+    "rank": 4,
+    "rankChange": 3,
     "riskReward": {
-      "ratio": 1
+      "ratio": 0.5
     },
-    "adx": 13.113770645799292,
-    "mfi": 66.4703352809046,
+    "adx": 14.852508595080241,
+    "mfi": 75.09603765240449,
     "obvTrend": "rising"
   },
   {
-    "code": "PRIMEBANK",
-    "rank": 8,
-    "rankChange": 0,
+    "code": "BSRMSTEEL",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 6.2
+    },
+    "adx": 30.45497410307656,
+    "mfi": 63.017767323803234,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SQURPHARMA",
+    "rank": 6,
+    "rankChange": -3,
     "riskReward": {
       "ratio": 1.1
     },
-    "adx": 23.424780666340588,
-    "mfi": 48.38728065141791,
+    "adx": 14.203652047219872,
+    "mfi": 43.773043100978974,
     "obvTrend": "falling"
   },
   {
-    "code": "BNIPLC",
+    "code": "SAIHAMTEX",
+    "rank": 7,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 23.380404833496694,
+    "mfi": 58.35063852569519,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "FARCHEM",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 20.33857972146935,
+    "mfi": 59.07153216913245,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "ANWARGALV",
     "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 2
+      "ratio": 5.1
     },
-    "adx": 23.29833153831761,
-    "mfi": 54.13553005724241,
+    "adx": 18.748153740687247,
+    "mfi": 51.153918291392245,
     "obvTrend": "flat"
   },
   {
-    "code": "NAHEEACP",
+    "code": "INTRACO",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": -4,
     "riskReward": {
-      "ratio": 1
+      "ratio": 0.4
     },
-    "adx": 19.28420171190645,
-    "mfi": 62.460451620632824,
-    "obvTrend": "falling"
+    "adx": 17.955447775624435,
+    "mfi": 69.56109082061124,
+    "obvTrend": "rising"
   }
 ]
