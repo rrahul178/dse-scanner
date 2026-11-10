@@ -1,112 +1,113 @@
 [
   {
-    "code": "SPCERAMICS",
+    "code": "BPPL",
     "rank": 1,
     "rankChange": 1,
     "riskReward": {
-      "ratio": 0.2
+      "ratio": 0.1
     },
-    "adx": 15.847992579485815,
-    "mfi": 80.63942338265082,
+    "adx": 20.093741199336726,
+    "mfi": 64.33689146752229,
     "obvTrend": "rising"
   },
   {
-    "code": "BPPL",
+    "code": "SPCERAMICS",
     "rank": 2,
+    "rankChange": -1,
+    "riskReward": null,
+    "adx": 17.187755173459095,
+    "mfi": 86.58282356350108,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "GENEXIL",
+    "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 1.4
     },
-    "adx": 18.87922108655325,
-    "mfi": 57.80744646534097,
+    "adx": 35.50803742905824,
+    "mfi": 69.44282085384162,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "INTRACO",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 20.172510493734478,
+    "mfi": 61.414917652935586,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "PURABIGEN",
+    "rank": 5,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 29.26979203748522,
+    "mfi": 80.10138299385021,
     "obvTrend": "rising"
   },
   {
     "code": "SAIHAMTEX",
-    "rank": 3,
-    "rankChange": 4,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 21.716337857809037,
-    "mfi": 59.81676331754577,
-    "obvTrend": "flat"
+    "rank": 6,
+    "rankChange": -3,
+    "riskReward": null,
+    "adx": 20.688081321182903,
+    "mfi": 60.37664643964514,
+    "obvTrend": "rising"
   },
   {
     "code": "SONARGAON",
-    "rank": 4,
-    "rankChange": -1,
+    "rank": 7,
+    "rankChange": -3,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 22.783307445133577,
-    "mfi": 70.83061078787787,
+    "adx": 22.770411205998194,
+    "mfi": 69.3936931764189,
     "obvTrend": "rising"
   },
   {
     "code": "FARCHEM",
-    "rank": 5,
-    "rankChange": 3,
+    "rank": 8,
+    "rankChange": -3,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 21.30816810960815,
-    "mfi": 63.003753285541386,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ORIONINFU",
-    "rank": 6,
-    "rankChange": -5,
-    "riskReward": {
-      "ratio": 1.2
-    },
-    "adx": 15.967865344654,
-    "mfi": 40.943934703685386,
+    "adx": 22.208500184308463,
+    "mfi": 60.73543377744925,
     "obvTrend": "falling"
   },
   {
-    "code": "GQBALLPEN",
-    "rank": 7,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 12.117206496554255,
-    "mfi": 49.45910647325272,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "PRIMEBANK",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 23.385950109667277,
-    "mfi": 48.323625560661235,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "DOREENPWR",
+    "code": "BSRMSTEEL",
     "rank": 9,
-    "rankChange": -5,
-    "riskReward": null,
-    "adx": 17.8462992486612,
-    "mfi": 82.70587773264108,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 2.1
+    },
+    "adx": 33.120648298752926,
+    "mfi": 72.39424522934979,
     "obvTrend": "rising"
   },
   {
-    "code": "MATINSPINN",
+    "code": "ETL",
     "rank": 10,
     "rankChange": null,
     "status": "new",
-    "riskReward": null,
-    "adx": 50.60586431332671,
-    "mfi": 86.90395468762202,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 18.81393736245679,
+    "mfi": 65.676389761037,
     "obvTrend": "rising"
   }
 ]
