@@ -1,113 +1,109 @@
 [
   {
-    "code": "BPPL",
+    "code": "SAIHAMTEX",
     "rank": 1,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 20.093741199336726,
-    "mfi": 64.33689146752229,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SPCERAMICS",
-    "rank": 2,
-    "rankChange": -1,
+    "rankChange": 5,
     "riskReward": null,
-    "adx": 17.187755173459095,
-    "mfi": 86.58282356350108,
+    "adx": 20.95242009907624,
+    "mfi": 69.1235679418587,
     "obvTrend": "rising"
   },
   {
-    "code": "GENEXIL",
+    "code": "RUNNERAUTO",
+    "rank": 2,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 27.27289336436538,
+    "mfi": 74.23630815062347,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SIMTEX",
     "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 1.4
+      "ratio": 1.2
     },
-    "adx": 35.50803742905824,
-    "mfi": 69.44282085384162,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "INTRACO",
-    "rank": 4,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.5
-    },
-    "adx": 20.172510493734478,
-    "mfi": 61.414917652935586,
-    "obvTrend": "flat"
-  },
-  {
-    "code": "PURABIGEN",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 29.26979203748522,
-    "mfi": 80.10138299385021,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SAIHAMTEX",
-    "rank": 6,
-    "rankChange": -3,
-    "riskReward": null,
-    "adx": 20.688081321182903,
-    "mfi": 60.37664643964514,
+    "adx": 20.147180308248387,
+    "mfi": 64.206201253035,
     "obvTrend": "rising"
   },
   {
     "code": "SONARGAON",
-    "rank": 7,
-    "rankChange": -3,
+    "rank": 4,
+    "rankChange": 3,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 22.770411205998194,
-    "mfi": 69.3936931764189,
+    "adx": 22.0010291626774,
+    "mfi": 59.76170395407755,
     "obvTrend": "rising"
   },
   {
-    "code": "FARCHEM",
-    "rank": 8,
-    "rankChange": -3,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 22.208500184308463,
-    "mfi": 60.73543377744925,
-    "obvTrend": "falling"
+    "code": "INTRACO",
+    "rank": 5,
+    "rankChange": -1,
+    "riskReward": null,
+    "adx": 20.044693684516123,
+    "mfi": 68.69064294035056,
+    "obvTrend": "rising"
   },
   {
-    "code": "BSRMSTEEL",
+    "code": "BPPL",
+    "rank": 6,
+    "rankChange": -5,
+    "riskReward": {
+      "ratio": 0.4
+    },
+    "adx": 21.54990175304144,
+    "mfi": 71.82193497536673,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "PURABIGEN",
+    "rank": 7,
+    "rankChange": -2,
+    "riskReward": {
+      "ratio": 0.9
+    },
+    "adx": 30.36314623233074,
+    "mfi": 81.64543991713222,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SPCERAMICS",
+    "rank": 8,
+    "rankChange": -6,
+    "riskReward": null,
+    "adx": 18.608183169035243,
+    "mfi": 88.44862333032148,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "LANKABAFIN",
     "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 2.1
+      "ratio": 4.2
     },
-    "adx": 33.120648298752926,
-    "mfi": 72.39424522934979,
+    "adx": 34.7760373977818,
+    "mfi": 62.225084449259015,
     "obvTrend": "rising"
   },
   {
-    "code": "ETL",
+    "code": "FARCHEM",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
+    "rankChange": -2,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 18.81393736245679,
-    "mfi": 65.676389761037,
+    "adx": 23.53195827254888,
+    "mfi": 63.525336362243614,
     "obvTrend": "rising"
   }
 ]
