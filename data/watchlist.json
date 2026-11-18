@@ -1,114 +1,111 @@
 [
   {
-    "code": "PRIMEBANK",
+    "code": "INTRACO",
     "rank": 1,
+    "rankChange": 5,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 22.10901940312136,
+    "mfi": 62.79571212378143,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ISLAMIINS",
+    "rank": 2,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 17.197080109793536,
+    "mfi": 53.45842877018303,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BSRMSTEEL",
+    "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 3.8
     },
-    "adx": 20.10912934228193,
-    "mfi": 46.93586891022313,
+    "adx": 32.10124652930924,
+    "mfi": 59.46442498165719,
     "obvTrend": "rising"
   },
   {
-    "code": "SQUARETEXT",
-    "rank": 2,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 38.025537374348815,
-    "mfi": 55.187514129907605,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SIMTEX",
-    "rank": 3,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.9
-    },
-    "adx": 24.63589840232677,
-    "mfi": 64.60556977632402,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SAPORTL",
+    "code": "ASIATICLAB",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 19.010614268610453,
-    "mfi": 66.29736898364251,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ENVOYTEX",
-    "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 32.46340516554393,
-    "mfi": 79.08461330689106,
-    "obvTrend": "flat"
+    "adx": 18.912807914728933,
+    "mfi": 74.40771245114495,
+    "obvTrend": "rising"
   },
   {
-    "code": "INTRACO",
-    "rank": 6,
+    "code": "PUBALIBANK",
+    "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": null,
-    "adx": 20.955603484839475,
-    "mfi": 66.95436500269065,
+    "adx": 15.85389656237854,
+    "mfi": 57.12991152688227,
     "obvTrend": "rising"
   },
   {
     "code": "RUNNERAUTO",
+    "rank": 6,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0.3
+    },
+    "adx": 30.625361671745708,
+    "mfi": 63.09054870802936,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "ENVOYTEX",
     "rank": 7,
     "rankChange": -2,
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 29.635028148326693,
-    "mfi": 71.18917846030841,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "ACMEPL",
-    "rank": 8,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 9
-    },
-    "adx": 17.234064376645417,
-    "mfi": 54.539864235396834,
-    "obvTrend": "rising"
+    "adx": 33.345444079638746,
+    "mfi": 73.79493475115738,
+    "obvTrend": "falling"
   },
   {
     "code": "SAIHAMTEX",
-    "rank": 9,
-    "rankChange": -2,
+    "rank": 8,
+    "rankChange": 1,
     "riskReward": null,
-    "adx": 23.329440813031677,
-    "mfi": 68.99784796045743,
+    "adx": 23.521503984502072,
+    "mfi": 74.01682146815644,
     "obvTrend": "rising"
   },
   {
-    "code": "KBPPWBIL",
+    "code": "SIMTEX",
+    "rank": 9,
+    "rankChange": -6,
+    "riskReward": {
+      "ratio": 0.2
+    },
+    "adx": 26.888717552483,
+    "mfi": 69.33191954939582,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "DGIC",
     "rank": 10,
     "rankChange": null,
     "status": "new",
-    "riskReward": {
-      "ratio": 17
-    },
-    "adx": 14.986614072474813,
-    "mfi": 41.67446693981928,
-    "obvTrend": "falling"
+    "riskReward": null,
+    "adx": 35.60432579079836,
+    "mfi": 64.78712228229963,
+    "obvTrend": "flat"
   }
 ]
