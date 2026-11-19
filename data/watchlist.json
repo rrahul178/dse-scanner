@@ -1,111 +1,114 @@
 [
   {
-    "code": "INTRACO",
+    "code": "GQBALLPEN",
     "rank": 1,
-    "rankChange": 5,
+    "rankChange": null,
+    "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.3
     },
-    "adx": 22.10901940312136,
-    "mfi": 62.79571212378143,
-    "obvTrend": "rising"
+    "adx": 17.238866154724832,
+    "mfi": 51.51320816742664,
+    "obvTrend": "falling"
   },
   {
-    "code": "ISLAMIINS",
+    "code": "SQUARETEXT",
     "rank": 2,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.4
     },
-    "adx": 17.197080109793536,
-    "mfi": 53.45842877018303,
+    "adx": 37.19593145556246,
+    "mfi": 60.05452726373302,
     "obvTrend": "rising"
   },
   {
-    "code": "BSRMSTEEL",
+    "code": "HWAWELLTEX",
     "rank": 3,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 3.8
+      "ratio": 0.2
     },
-    "adx": 32.10124652930924,
-    "mfi": 59.46442498165719,
+    "adx": 21.06463616240841,
+    "mfi": 65.42110690847582,
     "obvTrend": "rising"
   },
   {
-    "code": "ASIATICLAB",
+    "code": "INTRACO",
     "rank": 4,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 18.912807914728933,
-    "mfi": 74.40771245114495,
+    "rankChange": -3,
+    "riskReward": null,
+    "adx": 23.64839508018296,
+    "mfi": 68.2996784184761,
     "obvTrend": "rising"
   },
   {
-    "code": "PUBALIBANK",
+    "code": "FEKDIL",
     "rank": 5,
     "rankChange": null,
     "status": "new",
-    "riskReward": null,
-    "adx": 15.85389656237854,
-    "mfi": 57.12991152688227,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "RUNNERAUTO",
-    "rank": 6,
-    "rankChange": 1,
     "riskReward": {
-      "ratio": 0.3
+      "ratio": 2
     },
-    "adx": 30.625361671745708,
-    "mfi": 63.09054870802936,
+    "adx": 23.34370566652419,
+    "mfi": 69.27868258397864,
     "obvTrend": "rising"
   },
   {
     "code": "ENVOYTEX",
-    "rank": 7,
-    "rankChange": -2,
-    "riskReward": {
-      "ratio": 0.1
-    },
-    "adx": 33.345444079638746,
-    "mfi": 73.79493475115738,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "SAIHAMTEX",
-    "rank": 8,
+    "rank": 6,
     "rankChange": 1,
-    "riskReward": null,
-    "adx": 23.521503984502072,
-    "mfi": 74.01682146815644,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SIMTEX",
-    "rank": 9,
-    "rankChange": -6,
     "riskReward": {
       "ratio": 0.2
     },
-    "adx": 26.888717552483,
-    "mfi": 69.33191954939582,
+    "adx": 34.28934465138969,
+    "mfi": 74.39895944787042,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "BSRMSTEEL",
+    "rank": 7,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 4.8
+    },
+    "adx": 31.44186284465542,
+    "mfi": 60.762545187542514,
     "obvTrend": "rising"
   },
   {
-    "code": "DGIC",
-    "rank": 10,
+    "code": "APEXSPINN",
+    "rank": 8,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 0.7
+    },
+    "adx": 22.084886157758095,
+    "mfi": 40.06207582545261,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "MALEKSPIN",
+    "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": null,
-    "adx": 35.60432579079836,
-    "mfi": 64.78712228229963,
-    "obvTrend": "flat"
+    "adx": 25.165331963248157,
+    "mfi": 92.0915499688259,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "RUNNERAUTO",
+    "rank": 10,
+    "rankChange": -4,
+    "riskReward": {
+      "ratio": 0.1
+    },
+    "adx": 31.3896424009942,
+    "mfi": 68.88940433184375,
+    "obvTrend": "rising"
   }
 ]
