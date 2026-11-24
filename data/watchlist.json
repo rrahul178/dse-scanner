@@ -1,117 +1,115 @@
 [
   {
-    "code": "NAHEEACP",
+    "code": "DOMINAGE",
     "rank": 1,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.1
+      "ratio": 0.2
     },
-    "adx": 16.044591952261097,
-    "mfi": 30.770082467452823,
-    "obvTrend": "falling"
+    "adx": 14.267268304807274,
+    "mfi": 85.6790500092498,
+    "obvTrend": "rising"
   },
   {
-    "code": "ARGONDENIM",
+    "code": "BSRMSTEEL",
     "rank": 2,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.4
     },
-    "adx": 27.941379726287106,
-    "mfi": 65.8792621436963,
+    "adx": 30.561560662803654,
+    "mfi": 72.9686193089237,
     "obvTrend": "rising"
   },
   {
-    "code": "RUNNERAUTO",
+    "code": "PTL",
     "rank": 3,
     "rankChange": null,
     "status": "new",
-    "riskReward": null,
-    "adx": 34.38999874870718,
-    "mfi": 76.10535207843529,
+    "riskReward": {
+      "ratio": 0.5
+    },
+    "adx": 17.509813221212816,
+    "mfi": 40.15927639859645,
     "obvTrend": "rising"
   },
   {
-    "code": "LOVELLO",
+    "code": "EBL",
     "rank": 4,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 20
+      "ratio": 5.2
     },
-    "adx": 19.858340649165353,
-    "mfi": 48.06967200619473,
-    "obvTrend": "flat"
+    "adx": 22.31874492980427,
+    "mfi": 81.7301064572462,
+    "obvTrend": "rising"
   },
   {
-    "code": "ENVOYTEX",
+    "code": "MLDYEING",
     "rank": 5,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.7
+      "ratio": 0.3
     },
-    "adx": 35.714620628326124,
-    "mfi": 68.48232427774789,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "INTRACO",
-    "rank": 6,
-    "rankChange": 4,
-    "riskReward": null,
-    "adx": 26.527642490059026,
-    "mfi": 68.92397494867147,
+    "adx": 27.192652136926473,
+    "mfi": 56.66510400486688,
     "obvTrend": "rising"
   },
   {
-    "code": "KBPPWBIL",
+    "code": "SAIHAMCOT",
+    "rank": 6,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.5
+    },
+    "adx": 24.895335431704503,
+    "mfi": 50.92123746059664,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "SPCL",
     "rank": 7,
     "rankChange": null,
     "status": "new",
-    "riskReward": {
-      "ratio": 8
-    },
-    "adx": 12.734513137556863,
-    "mfi": 47.64172667282974,
+    "riskReward": null,
+    "adx": 48.80985769595998,
+    "mfi": 72.91266586236948,
     "obvTrend": "falling"
   },
   {
-    "code": "FEKDIL",
+    "code": "HWAWELLTEX",
     "rank": 8,
     "rankChange": null,
     "status": "new",
-    "riskReward": {
-      "ratio": 0
-    },
-    "adx": 27.325052322378394,
-    "mfi": 79.44199298558763,
+    "riskReward": null,
+    "adx": 28.635801385555954,
+    "mfi": 77.45613913903601,
     "obvTrend": "rising"
   },
   {
-    "code": "ACMEPL",
+    "code": "DOREENPWR",
     "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 0.4
+      "ratio": 0.6
     },
-    "adx": 22.480492698856267,
-    "mfi": 75.79887518685624,
-    "obvTrend": "rising"
+    "adx": 41.81300512043282,
+    "mfi": 61.61195880464052,
+    "obvTrend": "falling"
   },
   {
-    "code": "TECHNODRUG",
+    "code": "INTRACO",
     "rank": 10,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.8
-    },
-    "adx": 14.507977564462802,
-    "mfi": 77.98694469441321,
+    "rankChange": -4,
+    "riskReward": null,
+    "adx": 28.085172569357592,
+    "mfi": 70.28281862388712,
     "obvTrend": "rising"
   }
 ]
