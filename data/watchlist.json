@@ -1,110 +1,111 @@
 [
   {
-    "code": "BERGERPBL",
+    "code": "HWAWELLTEX",
     "rank": 1,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": null,
+    "adx": 30.00715326921669,
+    "mfi": 71.94395453596172,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "BEXIMCO",
+    "rank": 2,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 4.5
+    },
+    "adx": null,
+    "mfi": 81.86974285260965,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "SAIHAMTEX",
+    "rank": 3,
+    "rankChange": 3,
+    "riskReward": null,
+    "adx": 29.559862434852967,
+    "mfi": 77.76148077512522,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "ENVOYTEX",
+    "rank": 4,
+    "rankChange": null,
+    "status": "new",
+    "riskReward": {
+      "ratio": 1.6
+    },
+    "adx": 32.47044486910365,
+    "mfi": 54.75230175421429,
+    "obvTrend": "falling"
+  },
+  {
+    "code": "SPCL",
+    "rank": 5,
+    "rankChange": 5,
+    "riskReward": null,
+    "adx": 47.50107405176052,
+    "mfi": 67.42847632933683,
+    "obvTrend": "flat"
+  },
+  {
+    "code": "INTRACO",
+    "rank": 6,
     "rankChange": null,
     "status": "new",
     "riskReward": {
       "ratio": 0.1
     },
-    "adx": 19.580137331317868,
-    "mfi": 59.5928015561896,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "RUNNERAUTO",
-    "rank": 2,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": {
-      "ratio": 0.4
-    },
-    "adx": 33.19311433192055,
-    "mfi": 67.38346080051366,
+    "adx": 28.499716072449193,
+    "mfi": 61.12387396279083,
     "obvTrend": "rising"
   },
   {
-    "code": "EBL",
-    "rank": 3,
-    "rankChange": 1,
-    "riskReward": {
-      "ratio": 0.3
-    },
-    "adx": 24.55521333210427,
-    "mfi": 80.65007230719631,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "DOMINAGE",
-    "rank": 4,
-    "rankChange": -3,
-    "riskReward": {
-      "ratio": 0.2
-    },
-    "adx": 16.202852688799716,
-    "mfi": 87.44317673848616,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "BPPL",
-    "rank": 5,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 40.72435199430458,
-    "mfi": 68.52007541761705,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "SAIHAMTEX",
-    "rank": 6,
-    "rankChange": null,
-    "status": "new",
-    "riskReward": null,
-    "adx": 28.927438125153703,
-    "mfi": 72.10839682055962,
-    "obvTrend": "rising"
-  },
-  {
-    "code": "DOREENPWR",
+    "code": "SAPORTL",
     "rank": 7,
-    "rankChange": 2,
-    "riskReward": {
-      "ratio": 0.8
-    },
-    "adx": 40.78633689734418,
-    "mfi": 57.94521080688777,
-    "obvTrend": "falling"
-  },
-  {
-    "code": "MATINSPINN",
-    "rank": 8,
     "rankChange": null,
     "status": "new",
-    "riskReward": null,
-    "adx": 55.90643567160856,
-    "mfi": 49.40900354797657,
-    "obvTrend": "falling"
+    "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 16.28731038754949,
+    "mfi": 57.583252833340694,
+    "obvTrend": "rising"
   },
   {
     "code": "FEKDIL",
+    "rank": 8,
+    "rankChange": 1,
+    "riskReward": {
+      "ratio": 0.6
+    },
+    "adx": 30.888296007554082,
+    "mfi": 69.77119154417807,
+    "obvTrend": "rising"
+  },
+  {
+    "code": "NITOLINS",
     "rank": 9,
     "rankChange": null,
     "status": "new",
     "riskReward": {
-      "ratio": 1
+      "ratio": 0.7
     },
-    "adx": 30.271411763238696,
-    "mfi": 74.0055042780144,
-    "obvTrend": "rising"
+    "adx": 10.299193127258699,
+    "mfi": 52.38913101709669,
+    "obvTrend": "falling"
   },
   {
-    "code": "SPCL",
+    "code": "ICBAMCL2ND",
     "rank": 10,
-    "rankChange": -3,
+    "rankChange": null,
+    "status": "new",
     "riskReward": null,
-    "adx": 48.131229409142676,
-    "mfi": 68.19074881041348,
-    "obvTrend": "falling"
+    "adx": 38.75881319622493,
+    "mfi": 83.67959839866606,
+    "obvTrend": "rising"
   }
 ]
